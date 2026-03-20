@@ -14,6 +14,14 @@ dependencies = [
     "rich>=13.7",
 ]
 
+[tool.uv.sources]
+shared = { workspace = true }
+trend-extractor = { workspace = true }
+script-generator = { workspace = true }
+script-reviewer = { workspace = true }
+audio-synthesizer = { workspace = true }
+uploader = { workspace = true }
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
