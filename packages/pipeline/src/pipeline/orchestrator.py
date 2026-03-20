@@ -110,3 +110,57 @@ class Pipeline:
         except (MaxRetriesExceededError, PolicyViolationError) as e:
             logger.error("review_failed", error=str(e))
             raise PipelineError(f"Script review failed: {e}") from e
+
+    def run_audio_pipeline(
+        self,
+        script_path: str,
+    ) -> dict:
+        """
+        Phase 2: 台本JSON → 音声合成 → AudioManifest
+        """
+        from pathlib import Path
+        from audio_synthesizer import AudioSynthesizer
+
+        logger.info("audio_pipeline_started", script_path=script_path)
+
+        synthesizer = AudioSynthesizer(
+            voicevox_url=self.config.VOICEVOX_URL,
+            audio_dir=self.config.OUTPUT_DIR / "audio",
+        )
+
+        manifest = synthesizer.synthesize_script(script_path=Path(script_path))
+
+        logger.info(
+            "audio_pipeline_completed",
+            title=manifest.script_title,
+            total_duration_ms=manifest.total_duration_ms,
+            segments=len(manifest.segments),
+        )
+
+        return {
+            "script_title": manifest.script_title,
+            "total_duration_ms": manifest.total_duration_ms,
+            "segment_count": len(manifest.segments),
+            "audio_dir": str(self.config.OUTPUT_DIR / "audio"),
+        }
+
+    def run_full_pipeline(
+        self,
+        topic: str | None = None,
+        auto_topic: bool = False,
+    ) -> dict:
+        """
+        Phase 1 + Phase 2: テーマ抽出 → 台本生成 → レビュー → 音声合成
+        """
+        # Phase 1
+        script_result = self.run_script_pipeline(
+            topic=topic,
+            auto_topic=auto_topic,
+        )
+
+        # Phase 2
+        audio_result = self.run_audio_pipeline(
+            script_path=script_result["script_path"],
+        )
+
+        return {**script_result, **audio_result}

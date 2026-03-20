@@ -62,6 +62,30 @@ def generate_script(topic: str | None, description: str, auto_topic: bool):
     console.print(Panel(f"[green]Script saved to:[/green] {result['script_path']}"))
 
 
+@main.command("synthesize-audio")
+@click.option("--script", "-s", required=True, help="Path to script JSON file")
+def synthesize_audio(script: str):
+    """Synthesize audio from a script JSON (Phase 2)."""
+    config = Config()
+    pipeline = Pipeline(config=config)
+
+    with console.status("[bold green]Synthesizing audio...[/bold green]"):
+        try:
+            result = pipeline.run_audio_pipeline(script_path=script)
+        except Exception as e:
+            console.print(f"[red]Audio synthesis failed: {e}[/red]")
+            raise SystemExit(1)
+
+    table = Table(title="Audio Synthesis Result")
+    table.add_column("Field", style="cyan")
+    table.add_column("Value", style="white")
+    table.add_row("Title", result["script_title"])
+    table.add_row("Duration", f"{result['total_duration_ms'] / 1000:.1f}s")
+    table.add_row("Segments", str(result["segment_count"]))
+    table.add_row("Audio Dir", result["audio_dir"])
+    console.print(table)
+
+
 @main.command("run")
 @click.option("--topic", "-t", default=None)
 @click.option("--auto", "auto_topic", is_flag=True)
