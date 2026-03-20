@@ -1,0 +1,30 @@
+# AIエージェントキャラクター定義
+agents:
+  - id: agent_a
+    name: "AXIS（アクシス）"
+    description: "論理と効率を最優先する理性派AIエージェント"
+    color: "#00D4FF"
+    voicevox_speaker_id: 3  # ずんだもん（ノーマル）
+    emotion_map:
+      calm:      { style_id: 3,  speed: 0.90, pitch: -0.05, intonation: 1.0 }
+      normal:    { style_id: 3,  speed: 1.00, pitch: 0.00,  intonation: 1.0 }
+      heated:    { style_id: 2,  speed: 1.10, pitch: 0.05,  intonation: 1.2 }
+      intense:   { style_id: 2,  speed: 1.20, pitch: 0.10,  intonation: 1.4 }
+
+  - id: agent_b
+    name: "LYRA（ライラ）"
+    description: "人間の感情と倫理を重視する感性派AIエージェント"
+    color: "#FF6B9D"
+    voicevox_speaker_id: 8  # 春日部つむぎ
+    emotion_map:
+      calm:      { style_id: 8,  speed: 0.90, pitch: -0.03, intonation: 1.0 }
+      normal:    { style_id: 8,  speed: 1.00, pitch: 0.00,  intonation: 1.0 }
+      heated:    { style_id: 10, speed: 1.08, pitch: 0.05,  intonation: 1.2 }
+      intense:   { style_id: 10, speed: 1.18, pitch: 0.08,  intonation: 1.5 }
+
+# 感情レベルのしきい値
+emotion_thresholds:
+  calm:    { min: 0,  max: 20 }
+  normal:  { min: 21, max: 50 }
+  heated:  { min: 51, max: 75 }
+  intense: { min: 76, max: 100 }

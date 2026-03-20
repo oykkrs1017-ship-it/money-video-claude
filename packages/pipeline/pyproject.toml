@@ -1,0 +1,25 @@
+[project]
+name = "pipeline"
+version = "0.1.0"
+description = "Main orchestrator for the AI debate video pipeline"
+requires-python = ">=3.12"
+dependencies = [
+    "shared",
+    "trend-extractor",
+    "script-generator",
+    "script-reviewer",
+    "audio-synthesizer",
+    "uploader",
+    "click>=8.1",
+    "rich>=13.7",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pipeline"]
+
+[project.scripts]
+pipeline = "pipeline.cli:main"
