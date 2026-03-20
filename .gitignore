@@ -49,3 +49,6 @@ logs/
 
 # Remotion
 out/
+
+# Claude Code local settings
+.claude/
