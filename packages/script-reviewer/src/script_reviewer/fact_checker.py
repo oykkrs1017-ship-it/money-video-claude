@@ -49,7 +49,7 @@ def check_facts(script_json: str, api_key: str | None = None) -> list[ReviewIssu
             max_tokens=2048,
             messages=[{
                 "role": "user",
-                "content": FACT_CHECK_PROMPT.format(script_json=script_json),
+                "content": FACT_CHECK_PROMPT.replace("{script_json}", script_json),
             }],
         )
         raw = response.content[0].text

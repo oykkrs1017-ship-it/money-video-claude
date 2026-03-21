@@ -52,7 +52,7 @@ def review_quality(script_json: str, api_key: str | None = None) -> tuple[int, l
             max_tokens=2048,
             messages=[{
                 "role": "user",
-                "content": REVIEW_PROMPT.format(script_json=script_json),
+                "content": REVIEW_PROMPT.replace("{script_json}", script_json),
             }],
         )
         raw = response.content[0].text

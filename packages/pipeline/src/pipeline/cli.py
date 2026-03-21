@@ -12,7 +12,7 @@ from rich.panel import Panel
 from pipeline.orchestrator import Pipeline
 from pipeline.config import Config
 
-console = Console()
+console = Console(force_terminal=True, highlight=False)
 
 
 @click.group()
@@ -55,7 +55,7 @@ def generate_script(topic: str | None, description: str, auto_topic: bool):
     table.add_column("Value", style="white")
     table.add_row("Topic", result["topic"])
     table.add_row("Script Path", result["script_path"])
-    table.add_row("Review Passed", "✅" if result["review_passed"] else "❌")
+    table.add_row("Review Passed", "OK" if result["review_passed"] else "NG")
     table.add_row("Review Loops", str(result["review_loops"]))
     table.add_row("Issues Found", str(result["issue_count"]))
     console.print(table)

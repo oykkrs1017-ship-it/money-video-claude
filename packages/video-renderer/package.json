@@ -1,0 +1,21 @@
+{
+  "name": "video-renderer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npx remotion studio",
+    "build": "npx remotion render",
+    "preview": "npx remotion studio --port 3000"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "remotion": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -37,7 +37,7 @@ def apply_corrections(
 
     genai.configure(api_key=key)
     model = genai.GenerativeModel(
-        model_name="gemini-2.0-flash",
+        model_name="gemini-2.5-flash",
         generation_config=genai.GenerationConfig(
             temperature=0.7,
             response_mime_type="application/json",
