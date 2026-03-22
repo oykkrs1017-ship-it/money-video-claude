@@ -131,6 +131,15 @@ ${topic}
       ]
     }
   ],
+  "bgm": "bgm/main_lofi.mp3",
+  "bgmVolume": 0.12,
+  "bgmMap": {
+    "hook": "bgm/news.mp3",
+    "explanation": "bgm/main_lofi.mp3",
+    "analysis": "bgm/main_lofi.mp3",
+    "summary": "bgm/uplifting_piano.mp3",
+    "cta": "bgm/uplifting_piano.mp3"
+  },
   "chartData": {}
 }
 

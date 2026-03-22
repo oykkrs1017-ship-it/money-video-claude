@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCurrentFrame, useVideoConfig, Audio, interpolate, spring, staticFile } from 'remotion';
+import { useCurrentFrame, useVideoConfig, Audio, Sequence, interpolate, spring, staticFile } from 'remotion';
 import { ScriptInput, VariationConfig, Chapter, ScriptLine } from '../utils/types';
 import { getVariation } from '../components/VariationEngine';
 import { THEMES } from '../styles/themes';
@@ -258,22 +258,72 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
     });
   };
 
-  // ---- BGM ----
+  // ---- BGM（チャプター別切り替え） ----
   const renderBgm = () => {
-    if (!scriptInput.bgm) return null;
-    const bgmVolume = scriptInput.bgmVolume ?? 0.12;
-    const fadeFrames = fps * 2; // フェードイン/アウト: 2秒
+    const baseVolume = scriptInput.bgmVolume ?? 0.12;
+    const crossFade = fps * 1; // クロスフェード: 1秒
 
+    // bgmMap がある場合はチャプター別に切り替え
+    if (scriptInput.bgmMap) {
+      const map = scriptInput.bgmMap;
+
+      // チャプターごとのフレーム範囲を計算
+      type BgmSegment = { src: string; start: number; end: number };
+      const segments: BgmSegment[] = [];
+
+      scriptInput.chapters.forEach((chapter, ci) => {
+        const src = map[chapter.type as keyof typeof map];
+        if (!src) return;
+        const firstEntry = timeline.find((e) => e.chapterIndex === ci);
+        const lastEntry = [...timeline].reverse().find((e) => e.chapterIndex === ci);
+        if (!firstEntry || !lastEntry) return;
+        segments.push({ src, start: firstEntry.startFrame, end: lastEntry.endFrame });
+      });
+
+      // 同じBGMが連続する場合は結合（章をまたいでもループが途切れない）
+      const merged: BgmSegment[] = [];
+      for (const seg of segments) {
+        const prev = merged[merged.length - 1];
+        if (prev && prev.src === seg.src) {
+          prev.end = seg.end;
+        } else {
+          merged.push({ ...seg });
+        }
+      }
+
+      return merged.map((seg, i) => {
+        const duration = seg.end - seg.start;
+        return (
+          <Sequence key={i} from={seg.start} durationInFrames={duration}>
+            <Audio
+              src={staticFile(seg.src)}
+              loop
+              volume={(f) => {
+                // チャプター先頭でフェードイン
+                const fadeIn = Math.min(f / crossFade, 1);
+                // チャプター末尾でフェードアウト
+                const fadeOut = Math.min((duration - f) / crossFade, 1);
+                // 動画全体の末尾でもフェードアウト
+                const globalFadeOut = Math.min((totalFrames - (seg.start + f)) / crossFade, 1);
+                return Math.min(fadeIn, fadeOut, globalFadeOut) * baseVolume;
+              }}
+            />
+          </Sequence>
+        );
+      });
+    }
+
+    // bgmMap なし → 全編共通BGM（後方互換）
+    if (!scriptInput.bgm) return null;
+    const fadeFrames = fps * 2;
     return (
       <Audio
         src={staticFile(scriptInput.bgm)}
         loop
         volume={(f) => {
-          // フェードイン
           const fadeIn = Math.min(f / fadeFrames, 1);
-          // フェードアウト（動画末尾）
           const fadeOut = Math.min((totalFrames - f) / fadeFrames, 1);
-          return Math.min(fadeIn, fadeOut) * bgmVolume;
+          return Math.min(fadeIn, fadeOut) * baseVolume;
         }}
       />
     );

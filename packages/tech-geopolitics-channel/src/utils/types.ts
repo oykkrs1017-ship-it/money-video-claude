@@ -101,13 +101,24 @@ export interface ScriptInput {
   chapters: Chapter[];
   chartData: Record<string, ChartDataPoint[]>;
   /**
-   * BGMファイルパス（public/ からの相対パス）
-   * 例: "bgm/なんということはない日常.mp3"
-   * 省略時はBGMなし
+   * BGMファイルパス（全編共通・後方互換用）
+   * 例: "bgm/main_lofi.mp3"
+   * bgmMap が指定されている場合はそちらが優先される
    */
   bgm?: string;
   /** BGM音量 0.0〜1.0 デフォルト: 0.12 */
   bgmVolume?: number;
+  /**
+   * チャプタータイプ別BGMマップ
+   * 指定されたチャプターの再生中のみそのBGMが流れる（クロスフェード付き）
+   */
+  bgmMap?: {
+    hook?: string;
+    explanation?: string;
+    analysis?: string;
+    summary?: string;
+    cta?: string;
+  };
 }
 
 // VariationEngine の型定義
