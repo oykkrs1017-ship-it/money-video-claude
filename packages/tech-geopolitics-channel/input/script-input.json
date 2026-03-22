@@ -1,0 +1,141 @@
+{
+  "videoId": "ep001",
+  "seed": "tech-invest-ep001",
+  "title": "半導体規制の裏側｜台湾TSMCと日本の未来",
+  "description": "YouTube説明欄に使うテキスト",
+  "tags": [
+    "半導体",
+    "TSMC",
+    "地政学",
+    "投資"
+  ],
+  "chapters": [
+    {
+      "type": "hook",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "zundamon",
+          "text": "ねえめたん、知ってた？今年の半導体規制で、日本企業の株価が大きく動いたのだ",
+          "emotion": "serious",
+          "audioFile": "voices/0001_zundamon.wav",
+          "audioDuration": 6.773,
+          "frameCount": 208
+        },
+        {
+          "speaker": "metan",
+          "text": "え、そうなの？詳しく教えて！",
+          "emotion": "surprised",
+          "audioFile": "voices/0002_metan.wav",
+          "audioDuration": 2.933,
+          "frameCount": 93
+        }
+      ]
+    },
+    {
+      "type": "explanation",
+      "duration": 180,
+      "lines": [
+        {
+          "speaker": "zundamon",
+          "text": "まず背景から説明するのだ",
+          "emotion": "normal",
+          "audioFile": "voices/0003_zundamon.wav",
+          "audioDuration": 2.219,
+          "frameCount": 71
+        }
+      ],
+      "visuals": [
+        {
+          "type": "chart",
+          "chartType": "line",
+          "data": "tsmc-revenue",
+          "at": 10
+        },
+        {
+          "type": "keyword",
+          "text": "半導体規制",
+          "at": 30
+        }
+      ]
+    },
+    {
+      "type": "analysis",
+      "duration": 180,
+      "lines": [
+        {
+          "speaker": "zundamon",
+          "text": "ここからが僕の独自分析なのだ",
+          "emotion": "thinking",
+          "audioFile": "voices/0004_zundamon.wav",
+          "audioDuration": 2.475,
+          "frameCount": 79
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "duration": 60,
+      "lines": [
+        {
+          "speaker": "zundamon",
+          "text": "まとめると、こういうことなのだ",
+          "emotion": "happy",
+          "audioFile": "voices/0005_zundamon.wav",
+          "audioDuration": 2.347,
+          "frameCount": 75
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "zundamon",
+          "text": "チャンネル登録と高評価をよろしくなのだ！",
+          "emotion": "happy",
+          "audioFile": "voices/0006_zundamon.wav",
+          "audioDuration": 2.869,
+          "frameCount": 91
+        },
+        {
+          "speaker": "metan",
+          "text": "次回もお楽しみに！",
+          "emotion": "happy",
+          "audioFile": "voices/0007_metan.wav",
+          "audioDuration": 1.28,
+          "frameCount": 43
+        }
+      ]
+    }
+  ],
+  "chartData": {
+    "tsmc-revenue": [
+      {
+        "label": "2020",
+        "value": 47
+      },
+      {
+        "label": "2021",
+        "value": 57
+      },
+      {
+        "label": "2022",
+        "value": 76
+      },
+      {
+        "label": "2023",
+        "value": 69
+      },
+      {
+        "label": "2024",
+        "value": 88
+      },
+      {
+        "label": "2025",
+        "value": 105
+      }
+    ]
+  }
+}
