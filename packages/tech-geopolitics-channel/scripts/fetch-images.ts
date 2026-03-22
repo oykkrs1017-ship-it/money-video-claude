@@ -209,7 +209,7 @@ async function fetchMapImage(key: string, destPath: string): Promise<void> {
   }
 
   const { lon, lat, zoom, width, height } = coords;
-  const url = `https://api.mapbox.com/styles/v1/mapbox/dark-v11/static/${lon},${lat},${zoom}/${width}x${height}@2x?access_token=${token}`;
+  const url = `https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v12/static/${lon},${lat},${zoom}/${width}x${height}@2x?access_token=${token}`;
   await downloadFile(url, destPath);
 }
 

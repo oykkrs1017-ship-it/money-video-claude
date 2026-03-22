@@ -117,8 +117,8 @@ export const ImageOverlay: React.FC<ImageOverlayProps> = ({
         style={{
           borderRadius: 10,
           overflow: 'hidden',
-          border: `2px solid ${accentColor}55`,
-          boxShadow: '0 6px 32px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.08)',
+          border: `2px solid rgba(255,255,255,0.45)`,
+          boxShadow: `0 8px 36px rgba(0,0,0,0.7), 0 0 0 1px ${accentColor}66, 0 0 20px ${accentColor}33`,
         }}
       >
         <Img
@@ -129,6 +129,7 @@ export const ImageOverlay: React.FC<ImageOverlayProps> = ({
             height: 'auto',
             display: 'block',
             objectFit: 'cover',
+            filter: 'brightness(1.25) contrast(1.08) saturate(1.1)',
           }}
         />
       </div>

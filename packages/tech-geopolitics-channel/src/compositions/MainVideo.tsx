@@ -97,9 +97,9 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
     return (
       <>
         <MetanStage emotion={currentLine?.speaker === 'metan' ? currentLine.emotion : 'normal'}
-          isSpeaking={isSpeakingMetan} startFrame={0} position="left" height={height * 0.38} />
+          isSpeaking={isSpeakingMetan} startFrame={0} position="left" height={height * 0.52} />
         <ZundamonStage emotion={currentLine?.speaker === 'zundamon' ? currentLine.emotion : 'normal'}
-          isSpeaking={isSpeakingZunda} startFrame={0} position="right" height={height * 0.38} />
+          isSpeaking={isSpeakingZunda} startFrame={0} position="right" height={height * 0.52} />
       </>
     );
   };
@@ -123,17 +123,18 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
       }}>
         <div style={{
           display: 'inline-block',
-          backgroundColor: variation.subtitleStyle === 'bottom-bar'
-            ? 'rgba(0,0,0,0.75)' : 'transparent',
-          padding: '8px 24px',
-          borderRadius: 8,
-          borderLeft: variation.subtitleStyle === 'cinematic' ? `4px solid ${speakerColor}` : 'none',
+          backgroundColor: 'rgba(0,0,0,0.82)',
+          padding: '12px 32px',
+          borderRadius: 10,
+          borderLeft: `5px solid ${speakerColor}`,
         }}>
           <span style={{
-            color: theme.text,
-            fontSize: 36,
+            color: '#ffffff',
+            fontSize: 42,
             fontWeight: 700,
-            textShadow: '-2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000',
+            lineHeight: 1.5,
+            letterSpacing: '0.02em',
+            textShadow: '0 2px 8px rgba(0,0,0,0.8)',
           }}>
             {currentLine.text}
           </span>
@@ -340,15 +341,48 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
       {/* 背景 */}
       <BackgroundRenderer type={variation.background} theme={theme} />
 
-      {/* タイトル（冒頭） */}
+      {/* タイトルカード（冒頭2秒） */}
       {showTitle && (
-        <TitleAnimation
-          title={scriptInput.title}
-          style={variation.titleStyle}
-          startFrame={0}
-          color={theme.text}
-          fontSize={Math.floor(width * 0.04)}
-        />
+        <>
+          {/* 暗幕オーバーレイ */}
+          <div style={{
+            position: 'absolute', inset: 0,
+            background: 'linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 50%, rgba(0,0,0,0.65) 100%)',
+            zIndex: 15,
+          }} />
+          {/* チャンネル名バッジ */}
+          <div style={{
+            position: 'absolute', top: '28%', left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 21,
+            backgroundColor: 'rgba(255,255,255,0.12)',
+            border: '1px solid rgba(255,255,255,0.3)',
+            borderRadius: 999,
+            padding: '6px 28px',
+          }}>
+            <span style={{ color: 'rgba(255,255,255,0.85)', fontSize: 26, fontWeight: 600, letterSpacing: '0.15em' }}>
+              テクノロジー投資 × 地政学
+            </span>
+          </div>
+          {/* メインタイトル */}
+          <TitleAnimation
+            title={scriptInput.title}
+            style={variation.titleStyle}
+            startFrame={0}
+            color="#ffffff"
+            fontSize={Math.floor(width * 0.055)}
+          />
+          {/* 下部アクセントライン */}
+          <div style={{
+            position: 'absolute', bottom: '30%', left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 21,
+            width: interpolate(frame, [0, fps * 1.5], [0, 320], { extrapolateRight: 'clamp' }),
+            height: 3,
+            backgroundColor: theme.accent !== theme.background ? theme.accent : '#4a9eff',
+            borderRadius: 2,
+          }} />
+        </>
       )}
 
       {/* キャラクター */}

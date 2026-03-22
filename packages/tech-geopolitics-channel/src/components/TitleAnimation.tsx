@@ -51,11 +51,17 @@ export const TitleAnimation: React.FC<TitleAnimationProps> = ({
 
       // ---- typewriter: 1文字ずつ表示 ----
       case 'typewriter': {
-        const chars = Math.floor(interpolate(localFrame, [0, title.length * 3], [0, title.length], { extrapolateRight: 'clamp' }));
-        const displayText = title.slice(0, chars);
+        // 最初の3フレームで冒頭3文字を表示し、その後1文字ずつ追加
+        const minChars = 3;
+        const chars = Math.max(
+          minChars,
+          Math.floor(interpolate(localFrame, [0, title.length * 3], [0, title.length], { extrapolateRight: 'clamp' }))
+        );
+        const displayText = title.slice(0, Math.min(chars, title.length));
+        const showCursor = chars < title.length;
         return (
           <div style={{ opacity: 1 }}>
-            <TitleText title={displayText + (chars < title.length ? '|' : '')} color={color} fontSize={fontSize} />
+            <TitleText title={displayText + (showCursor ? '|' : '')} color={color} fontSize={fontSize} />
           </div>
         );
       }
