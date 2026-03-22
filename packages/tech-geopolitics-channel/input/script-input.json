@@ -30,6 +30,20 @@
           "audioDuration": 2.933,
           "frameCount": 93
         }
+      ],
+      "visuals": [
+        {
+          "type": "image",
+          "at": 3,
+          "imageData": {
+            "src": "content/map_usachina.svg",
+            "caption": "米中半導体戦争",
+            "position": "top-right",
+            "width": 360,
+            "duration": 22,
+            "animation": "slide-left"
+          }
+        }
       ]
     },
     {
@@ -47,15 +61,27 @@
       ],
       "visuals": [
         {
+          "type": "image",
+          "at": 5,
+          "imageData": {
+            "src": "content/logo_tsmc.svg",
+            "caption": "TSMC（台湾積体電路製造）",
+            "position": "top-right",
+            "width": 300,
+            "duration": 18,
+            "animation": "zoom"
+          }
+        },
+        {
           "type": "chart",
           "chartType": "line",
           "data": "tsmc-revenue",
-          "at": 10
+          "at": 25
         },
         {
           "type": "keyword",
           "text": "半導体規制",
-          "at": 30
+          "at": 50
         }
       ]
     },
@@ -70,6 +96,25 @@
           "audioFile": "voices/0004_zundamon.wav",
           "audioDuration": 2.475,
           "frameCount": 79
+        }
+      ],
+      "visuals": [
+        {
+          "type": "image",
+          "at": 2,
+          "imageData": {
+            "src": "content/map_taiwan.svg",
+            "caption": "台湾海峡の地政学的リスク",
+            "position": "top-left",
+            "width": 380,
+            "duration": 20,
+            "animation": "slide-right"
+          }
+        },
+        {
+          "type": "keyword",
+          "text": "投資機会",
+          "at": 25
         }
       ]
     },

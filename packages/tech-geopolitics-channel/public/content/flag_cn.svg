@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <rect width="300" height="200" fill="#de2910" rx="8"/>
+  <rect x="1" y="1" width="298" height="198" fill="none" stroke="#4a9eff" stroke-width="2" rx="7" stroke-dasharray="8 4"/>
+  <text x="150" y="84" font-family="sans-serif" font-size="18" fill="#4a9eff" text-anchor="middle" font-weight="bold">🇨🇳 中国国旗</text>
+  <text x="150" y="112" font-family="sans-serif" font-size="13" fill="#88aacc" text-anchor="middle">public/content/ に実画像を配置してください</text>
+  <text x="150" y="134" font-family="sans-serif" font-size="12" fill="#668899" text-anchor="middle">300 × 200px 推奨</text>
+</svg>

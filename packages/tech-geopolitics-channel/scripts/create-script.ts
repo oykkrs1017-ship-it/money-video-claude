@@ -54,6 +54,19 @@ ${topic}
       "lines": [
         { "speaker": "zundamon", "text": "セリフ（ずんだもん語尾「〜のだ」）", "emotion": "serious" },
         { "speaker": "metan", "text": "セリフ", "emotion": "surprised" }
+      ],
+      "visuals": [
+        {
+          "type": "image",
+          "at": 2,
+          "imageData": {
+            "src": "content/map_usachina.png",
+            "caption": "米中対立の構図",
+            "position": "top-right",
+            "width": 340,
+            "duration": 25
+          }
+        }
       ]
     },
     {
@@ -64,7 +77,19 @@ ${topic}
         { "speaker": "metan", "text": "セリフ", "emotion": "normal" }
       ],
       "visuals": [
-        { "type": "keyword", "text": "キーワード", "at": 10 }
+        { "type": "keyword", "text": "キーワード", "at": 10 },
+        {
+          "type": "image",
+          "at": 20,
+          "imageData": {
+            "src": "content/logo_tsmc.png",
+            "caption": "TSMC（台湾積体電路製造）",
+            "position": "top-right",
+            "width": 280,
+            "duration": 15,
+            "animation": "zoom"
+          }
+        }
       ]
     },
     {
@@ -74,7 +99,19 @@ ${topic}
         { "speaker": "zundamon", "text": "独自分析セリフ", "emotion": "thinking" }
       ],
       "visuals": [
-        { "type": "keyword", "text": "分析ポイント", "at": 5 }
+        { "type": "keyword", "text": "分析ポイント", "at": 5 },
+        {
+          "type": "image",
+          "at": 15,
+          "imageData": {
+            "src": "content/map_taiwan.png",
+            "caption": "台湾海峡の地政学的位置",
+            "position": "top-left",
+            "width": 360,
+            "duration": 20,
+            "animation": "slide-right"
+          }
+        }
       ]
     },
     {
@@ -97,6 +134,27 @@ ${topic}
   "chartData": {}
 }
 
+## imageData の画像ファイル命名規則（public/content/ に配置）
+地図: map_taiwan.png / map_china.png / map_usachina.png / map_japan.png / map_asia.png / map_world.png
+企業ロゴ: logo_tsmc.png / logo_nvidia.png / logo_samsung.png / logo_intel.png / logo_apple.png / logo_softbank.png
+国旗: flag_jp.png / flag_us.png / flag_cn.png / flag_tw.png / flag_kr.png
+その他: img_semiconductor.png / img_ai_chip.png / img_supply_chain.png / img_datacenter.png
+
+## imageData の各フィールド
+- src: "content/ファイル名.png"（public/content/ 以下）
+- caption: 画像下に表示する短い説明文（10〜20文字）
+- position: "top-right"（デフォルト）/ "top-left" / "top-center" / "center-right" / "center"
+- width: 表示幅px（地図: 340〜400 / ロゴ: 240〜300 / 写真: 360〜420）
+- duration: 表示秒数（6〜25秒、セリフ数に応じて調整）
+- animation: "fade" / "slide-right" / "slide-left" / "zoom"（省略可）
+
+## ビジュアル配置の使い分け
+- 数値データ → chart（DataChart コンポーネントでSVGグラフ表示）
+- 地名・概念の強調 → keyword（KeywordFloat でフロート表示）
+- 地図・企業ロゴ・写真 → image（ImageOverlay でアニメーション表示）
+- 2項目の比較 → split（SplitCompare）
+- 歴史年表 → timeline（TimelineScroll）
+
 ## 制約（必ず守ること）
 - ずんだもんは語尾に「〜のだ」「〜なのだ」を使う
 - めたんは聞き役・ツッコミ役（「え、本当に？」「それってどういうこと？」など）
@@ -104,7 +162,8 @@ ${topic}
 - 「独自分析」パートを必ず含める（他チャンネルとの差別化）
 - 各セリフは1文で完結させる（長すぎない）
 - emotionは normal/happy/surprised/thinking/serious/sad のいずれか
-- visuals の type は keyword/chart/split/timeline のいずれか
+- visuals は各チャプターに1〜3個。image と chart/keyword を組み合わせて使う
+- image ビジュアルは各動画で2〜4個使用する（要所に厳選）
 - chartData は空オブジェクト {} でOK（後から追加）
 - seedは英数字とハイフンのみ（例: "semiconductor-2024"）
 - JSONのみ出力（説明文・コードブロック不要）`;

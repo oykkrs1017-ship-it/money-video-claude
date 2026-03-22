@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280">
+  <rect width="400" height="280" fill="#0a0a1a" rx="8"/>
+  <rect x="1" y="1" width="398" height="278" fill="none" stroke="#4a9eff" stroke-width="2" rx="7" stroke-dasharray="8 4"/>
+  <text x="200" y="124" font-family="sans-serif" font-size="18" fill="#4a9eff" text-anchor="middle" font-weight="bold">💾 半導体チップ</text>
+  <text x="200" y="152" font-family="sans-serif" font-size="13" fill="#88aacc" text-anchor="middle">public/content/ に実画像を配置してください</text>
+  <text x="200" y="174" font-family="sans-serif" font-size="12" fill="#668899" text-anchor="middle">400 × 280px 推奨</text>
+</svg>

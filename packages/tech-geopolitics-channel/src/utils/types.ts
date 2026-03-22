@@ -4,7 +4,7 @@ export type SpeakerType = 'zundamon' | 'metan';
 export type EmotionType = 'normal' | 'happy' | 'surprised' | 'thinking' | 'serious' | 'sad';
 export type ChapterType = 'hook' | 'explanation' | 'analysis' | 'summary' | 'cta';
 export type ChartType = 'line' | 'bar' | 'pie' | 'area';
-export type VisualType = 'chart' | 'keyword' | 'splitCompare' | 'timeline' | 'split';
+export type VisualType = 'chart' | 'keyword' | 'splitCompare' | 'timeline' | 'split' | 'image';
 
 export interface ScriptLine {
   speaker: SpeakerType;
@@ -45,6 +45,26 @@ export interface TimelineData {
   scrollSpeed?: number;
 }
 
+/** 静止画ビジュアルのデータ（type='image'の場合） */
+export interface ImageData {
+  /** public/ からの相対パス（例: "content/map_taiwan.png"） */
+  src: string;
+  alt?: string;
+  /** 画像下部に表示するキャプション */
+  caption?: string;
+  /**
+   * 画面内の配置位置 デフォルト: top-right
+   * top-left / top-right / top-center / center-right / center
+   */
+  position?: 'top-left' | 'top-right' | 'top-center' | 'center-right' | 'center';
+  /** 表示幅 (px) デフォルト: 340 */
+  width?: number;
+  /** 表示秒数 デフォルト: 8 */
+  duration?: number;
+  /** 登場アニメーション（省略時は position に応じて自動選択） */
+  animation?: 'fade' | 'slide-right' | 'slide-left' | 'zoom';
+}
+
 export interface Visual {
   type: VisualType;
   /** チャートタイプ（type='chart'の場合） */
@@ -57,6 +77,8 @@ export interface Visual {
   splitData?: SplitCompareData;
   /** タイムラインデータ（type='timeline'の場合） */
   timelineData?: TimelineData;
+  /** 静止画データ（type='image'の場合） */
+  imageData?: ImageData;
   /** このビジュアルを表示し始める秒数（チャプター先頭からの相対秒） */
   at: number;
 }

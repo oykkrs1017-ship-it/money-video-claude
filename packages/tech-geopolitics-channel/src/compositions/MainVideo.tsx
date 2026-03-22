@@ -12,6 +12,7 @@ import { TitleAnimation } from '../components/TitleAnimation';
 import { BackgroundRenderer } from '../components/BackgroundRenderer';
 import { SplitCompare } from '../components/SplitCompare';
 import { TimelineScroll } from '../components/TimelineScroll';
+import { ImageOverlay } from '../components/ImageOverlay';
 
 export interface MainVideoProps {
   scriptInput: ScriptInput;
@@ -221,6 +222,20 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
               height={height * 0.22}
             />
           </div>
+        );
+      }
+      if (visual.type === 'image' && visual.imageData) {
+        const imgDuration = visual.imageData.duration ?? 8;
+        const visualEnd = Math.floor(visualStart + imgDuration * fps);
+        if (frame > visualEnd) return null;
+        return (
+          <ImageOverlay
+            key={vi}
+            imageData={visual.imageData}
+            startFrame={visualStart}
+            endFrame={visualEnd}
+            accentColor={theme.accent !== theme.background ? theme.accent : '#4a9eff'}
+          />
         );
       }
       return null;
