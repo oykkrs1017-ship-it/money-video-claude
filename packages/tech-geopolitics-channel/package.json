@@ -17,7 +17,8 @@
     "editor:install": "cd editor && npm install",
     "editor:build": "cd editor && npm run build",
     "generate": "npx ts-node scripts/generate-video.ts",
-    "create-script": "npx ts-node scripts/create-script.ts"
+    "create-script": "npx ts-node scripts/create-script.ts",
+    "fetch-images": "npx ts-node scripts/fetch-images.ts"
   },
   "dependencies": {
     "@remotion/bundler": "^4.0.0",
