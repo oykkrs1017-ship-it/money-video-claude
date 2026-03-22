@@ -100,6 +100,14 @@ export interface ScriptInput {
   tags: string[];
   chapters: Chapter[];
   chartData: Record<string, ChartDataPoint[]>;
+  /**
+   * BGMファイルパス（public/ からの相対パス）
+   * 例: "bgm/なんということはない日常.mp3"
+   * 省略時はBGMなし
+   */
+  bgm?: string;
+  /** BGM音量 0.0〜1.0 デフォルト: 0.12 */
+  bgmVolume?: number;
 }
 
 // VariationEngine の型定義

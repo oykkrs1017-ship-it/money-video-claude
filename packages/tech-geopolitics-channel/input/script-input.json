@@ -36,7 +36,7 @@
           "type": "image",
           "at": 3,
           "imageData": {
-            "src": "content/map_usachina.svg",
+            "src": "content/map_usachina.png",
             "caption": "米中半導体戦争",
             "position": "top-right",
             "width": 360,
@@ -64,7 +64,7 @@
           "type": "image",
           "at": 5,
           "imageData": {
-            "src": "content/logo_tsmc.svg",
+            "src": "content/logo_tsmc.png",
             "caption": "TSMC（台湾積体電路製造）",
             "position": "top-right",
             "width": 300,
@@ -103,7 +103,7 @@
           "type": "image",
           "at": 2,
           "imageData": {
-            "src": "content/map_taiwan.svg",
+            "src": "content/map_taiwan.png",
             "caption": "台湾海峡の地政学的リスク",
             "position": "top-left",
             "width": 380,
@@ -155,6 +155,8 @@
       ]
     }
   ],
+  "bgm": "bgm/なんということはない日常.mp3",
+  "bgmVolume": 0.12,
   "chartData": {
     "tsmc-revenue": [
       {

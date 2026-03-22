@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCurrentFrame, useVideoConfig, Audio, interpolate, spring } from 'remotion';
+import { useCurrentFrame, useVideoConfig, Audio, interpolate, spring, staticFile } from 'remotion';
 import { ScriptInput, VariationConfig, Chapter, ScriptLine } from '../utils/types';
 import { getVariation } from '../components/VariationEngine';
 import { THEMES } from '../styles/themes';
@@ -242,7 +242,7 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
     });
   };
 
-  // ---- 音声 ----
+  // ---- 音声（セリフ） ----
   const renderAudio = () => {
     return timeline.map((entry, i) => {
       if (!entry.line.audioFile) return null;
@@ -258,11 +258,35 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
     });
   };
 
+  // ---- BGM ----
+  const renderBgm = () => {
+    if (!scriptInput.bgm) return null;
+    const bgmVolume = scriptInput.bgmVolume ?? 0.12;
+    const fadeFrames = fps * 2; // フェードイン/アウト: 2秒
+
+    return (
+      <Audio
+        src={staticFile(scriptInput.bgm)}
+        loop
+        volume={(f) => {
+          // フェードイン
+          const fadeIn = Math.min(f / fadeFrames, 1);
+          // フェードアウト（動画末尾）
+          const fadeOut = Math.min((totalFrames - f) / fadeFrames, 1);
+          return Math.min(fadeIn, fadeOut) * bgmVolume;
+        }}
+      />
+    );
+  };
+
   // タイトル表示（冒頭2秒）
   const showTitle = frame < fps * 2;
 
   return (
     <div style={{ width, height, position: 'relative', overflow: 'hidden' }}>
+      {/* BGM（ループ・フェードイン/アウト） */}
+      {renderBgm()}
+
       {/* 背景 */}
       <BackgroundRenderer type={variation.background} theme={theme} />
 

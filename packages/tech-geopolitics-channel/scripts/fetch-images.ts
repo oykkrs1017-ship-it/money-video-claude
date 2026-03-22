@@ -23,7 +23,7 @@ import { URL } from 'url';
 
 const MAP_COORDS: Record<string, { lon: number; lat: number; zoom: number; width: number; height: number }> = {
   'map_taiwan':   { lon: 121.0, lat: 23.5,  zoom: 6,  width: 600, height: 400 },
-  'map_usachina': { lon: 160.0, lat: 35.0,  zoom: 3,  width: 700, height: 420 },
+  'map_usachina': { lon: 128.0, lat: 30.0,  zoom: 3,  width: 700, height: 420 },
   'map_japan':    { lon: 137.0, lat: 37.5,  zoom: 5,  width: 500, height: 600 },
   'map_china':    { lon: 105.0, lat: 35.0,  zoom: 4,  width: 640, height: 480 },
   'map_asia':     { lon: 110.0, lat: 30.0,  zoom: 3,  width: 700, height: 500 },
