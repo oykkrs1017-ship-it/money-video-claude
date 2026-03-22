@@ -33,7 +33,7 @@ if (!apiKey) {
 // ---- プロンプト生成 ----
 function buildPrompt(topic: string): string {
   return `あなたはYouTubeチャンネル「テクノロジー投資×地政学」の台本ライターです。
-以下のトピックについて、ずんだもん（解説役）とめたん（聞き役・ツッコミ役）の掛け合い形式で台本JSONを生成してください。
+以下のトピックについて、まろくん（解説役）とぽんちゃん（聞き役・ツッコミ役）の掛け合い形式で台本JSONを生成してください。
 
 ## トピック
 ${topic}
@@ -52,8 +52,8 @@ ${topic}
       "type": "hook",
       "duration": 30,
       "lines": [
-        { "speaker": "zundamon", "text": "セリフ（ずんだもん語尾「〜のだ」）", "emotion": "serious" },
-        { "speaker": "metan", "text": "セリフ", "emotion": "surprised" }
+        { "speaker": "maro", "text": "セリフ（まろくん語尾「〜のだ」）", "emotion": "serious" },
+        { "speaker": "ponchan", "text": "セリフ", "emotion": "surprised" }
       ],
       "visuals": [
         {
@@ -73,8 +73,8 @@ ${topic}
       "type": "explanation",
       "duration": 180,
       "lines": [
-        { "speaker": "zundamon", "text": "セリフ", "emotion": "normal" },
-        { "speaker": "metan", "text": "セリフ", "emotion": "normal" }
+        { "speaker": "maro", "text": "セリフ", "emotion": "normal" },
+        { "speaker": "ponchan", "text": "セリフ", "emotion": "normal" }
       ],
       "visuals": [
         { "type": "keyword", "text": "キーワード", "at": 10 },
@@ -96,7 +96,7 @@ ${topic}
       "type": "analysis",
       "duration": 180,
       "lines": [
-        { "speaker": "zundamon", "text": "独自分析セリフ", "emotion": "thinking" }
+        { "speaker": "maro", "text": "独自分析セリフ", "emotion": "thinking" }
       ],
       "visuals": [
         { "type": "keyword", "text": "分析ポイント", "at": 5 },
@@ -118,16 +118,16 @@ ${topic}
       "type": "summary",
       "duration": 60,
       "lines": [
-        { "speaker": "zundamon", "text": "まとめセリフ", "emotion": "happy" },
-        { "speaker": "metan", "text": "まとめへの反応", "emotion": "happy" }
+        { "speaker": "maro", "text": "まとめセリフ", "emotion": "happy" },
+        { "speaker": "ponchan", "text": "まとめへの反応", "emotion": "happy" }
       ]
     },
     {
       "type": "cta",
       "duration": 30,
       "lines": [
-        { "speaker": "zundamon", "text": "チャンネル登録と高評価をよろしくなのだ！", "emotion": "happy" },
-        { "speaker": "metan", "text": "次回もお楽しみに！", "emotion": "happy" }
+        { "speaker": "maro", "text": "チャンネル登録と高評価をよろしくなのだ！", "emotion": "happy" },
+        { "speaker": "ponchan", "text": "次回もお楽しみに！", "emotion": "happy" }
       ]
     }
   ],
@@ -165,8 +165,8 @@ ${topic}
 - 歴史年表 → timeline（TimelineScroll）
 
 ## 制約（必ず守ること）
-- ずんだもんは語尾に「〜のだ」「〜なのだ」を使う
-- めたんは聞き役・ツッコミ役（「え、本当に？」「それってどういうこと？」など）
+- まろくんは語尾に「〜のだ」「〜なのだ」を使う
+- ぽんちゃんは聞き役・ツッコミ役（「え、本当に？」「それってどういうこと？」など）
 - explanationとanalysisには各5〜8セリフ含める
 - 「独自分析」パートを必ず含める（他チャンネルとの差別化）
 - 各セリフは1文で完結させる（長すぎない）

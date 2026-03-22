@@ -13,6 +13,8 @@ import { BackgroundRenderer } from '../components/BackgroundRenderer';
 import { SplitCompare } from '../components/SplitCompare';
 import { TimelineScroll } from '../components/TimelineScroll';
 import { ImageOverlay } from '../components/ImageOverlay';
+import { TopicBadge } from '../components/TopicBadge';
+import { StatCard } from '../components/StatCard';
 
 export interface MainVideoProps {
   scriptInput: ScriptInput;
@@ -70,15 +72,15 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
   // ---- キャラクター配置 ----
   const renderCharacters = () => {
     const layout = variation.characterLayout;
-    const isSpeakingZunda = currentLine?.speaker === 'zundamon';
-    const isSpeakingMetan = currentLine?.speaker === 'metan';
+    const isSpeakingZunda = currentLine?.speaker === 'maro';
+    const isSpeakingMetan = currentLine?.speaker === 'ponchan';
 
     if (layout === 'left-right') {
       return (
         <>
-          <MetanStage emotion={currentLine?.speaker === 'metan' ? currentLine.emotion : 'normal'}
+          <MetanStage emotion={currentLine?.speaker === 'ponchan' ? currentLine.emotion : 'normal'}
             isSpeaking={isSpeakingMetan} startFrame={0} position="left" height={height * 0.38} />
-          <ZundamonStage emotion={currentLine?.speaker === 'zundamon' ? currentLine.emotion : 'normal'}
+          <ZundamonStage emotion={currentLine?.speaker === 'maro' ? currentLine.emotion : 'normal'}
             isSpeaking={isSpeakingZunda} startFrame={0} position="right" height={height * 0.38} />
         </>
       );
@@ -86,9 +88,9 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
     if (layout === 'bottom-center') {
       return (
         <>
-          <MetanStage emotion={currentLine?.speaker === 'metan' ? currentLine.emotion : 'normal'}
+          <MetanStage emotion={currentLine?.speaker === 'ponchan' ? currentLine.emotion : 'normal'}
             isSpeaking={isSpeakingMetan} startFrame={0} position="left" height={height * 0.35} />
-          <ZundamonStage emotion={currentLine?.speaker === 'zundamon' ? currentLine.emotion : 'normal'}
+          <ZundamonStage emotion={currentLine?.speaker === 'maro' ? currentLine.emotion : 'normal'}
             isSpeaking={isSpeakingZunda} startFrame={0} position="right" height={height * 0.35} />
         </>
       );
@@ -96,10 +98,10 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
     // その他のレイアウトも left-right で代替
     return (
       <>
-        <MetanStage emotion={currentLine?.speaker === 'metan' ? currentLine.emotion : 'normal'}
-          isSpeaking={isSpeakingMetan} startFrame={0} position="left" height={height * 0.52} />
-        <ZundamonStage emotion={currentLine?.speaker === 'zundamon' ? currentLine.emotion : 'normal'}
-          isSpeaking={isSpeakingZunda} startFrame={0} position="right" height={height * 0.52} />
+        <MetanStage emotion={currentLine?.speaker === 'ponchan' ? currentLine.emotion : 'normal'}
+          isSpeaking={isSpeakingMetan} startFrame={0} position="left" height={height * 0.42} />
+        <ZundamonStage emotion={currentLine?.speaker === 'maro' ? currentLine.emotion : 'normal'}
+          isSpeaking={isSpeakingZunda} startFrame={0} position="right" height={height * 0.42} />
       </>
     );
   };
@@ -109,13 +111,13 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
     if (!currentLine) return null;
     const localFrame = frame - (currentEntry?.startFrame ?? 0);
     const fadeIn = spring({ frame: localFrame, fps, config: { damping: 25, stiffness: 200 } });
-    const speakerColor = currentLine.speaker === 'zundamon' ? '#228B22' : '#FF1493';
+    const speakerColor = currentLine.speaker === 'maro' ? '#228B22' : '#FF1493';
 
     return (
       <div style={{
         position: 'absolute',
-        bottom: variation.subtitleStyle === 'cinematic' ? '15%' : '6%',
-        left: '22%', right: '22%',
+        bottom: variation.subtitleStyle === 'cinematic' ? '18%' : '10%',
+        left: '24%', right: '24%',
         textAlign: 'center',
         opacity: fadeIn,
         transform: `translateY(${interpolate(fadeIn, [0, 1], [20, 0])}px)`,
@@ -166,19 +168,38 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
       if (visual.type === 'chart' && visual.data) {
         const chartData = scriptInput.chartData[visual.data];
         if (!chartData) return null;
+        const chartW = Math.round(width * 0.54); // 画像と同サイズ感（~1040px）
+        const chartH = Math.round(chartW * 0.48);
         return (
           <div key={vi} style={{
-            position: 'absolute', top: '12%', right: '3%',
-            opacity: interpolate(frame - visualStart, [0, 15], [0, 1], { extrapolateRight: 'clamp' }),
+            position: 'absolute',
+            top: '6%',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 40,
+            opacity: interpolate(frame - visualStart, [0, 20], [0, 1], { extrapolateRight: 'clamp' }),
           }}>
             <DataChart
               type={visual.chartType ?? 'line'}
               data={chartData}
               title={visual.data}
               animationStyle="draw"
-              width={480} height={280}
+              width={chartW} height={chartH}
             />
           </div>
+        );
+      }
+      if (visual.type === 'stat' && visual.statData) {
+        const statW = Math.round(width * 0.54);
+        return (
+          <StatCard
+            key={vi}
+            data={visual.statData}
+            startFrame={visualStart}
+            endFrame={visualStart + (visual.statData ? fps * 10 : fps * 8)}
+            accentColor={theme.accent !== theme.background ? theme.accent : '#4a9eff'}
+            width={statW}
+          />
         );
       }
       if (visual.type === 'split' && visual.splitData) {
@@ -390,6 +411,20 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
 
       {/* ビジュアル */}
       {renderVisuals()}
+
+      {/* トピックバッジ（左上・テレビ局風） */}
+      {!showTitle && currentChapter?.topic && (() => {
+        const ci = scriptInput.chapters.indexOf(currentChapter);
+        const chapterStart = timeline.find(e => e.chapterIndex === ci)?.startFrame ?? fps * 2;
+        return (
+          <TopicBadge
+            topic={currentChapter.topic}
+            chapterType={currentChapter.type}
+            startFrame={chapterStart}
+            accentColor={theme.accent !== theme.background ? theme.accent : undefined}
+          />
+        );
+      })()}
 
       {/* 字幕 */}
       {!showTitle && renderSubtitle()}

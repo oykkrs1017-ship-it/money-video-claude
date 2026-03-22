@@ -2,7 +2,7 @@
 
 ## プロジェクト概要
 テクノロジー投資×地政学のYouTubeチャンネル動画を自動生成するパイプライン。
-Remotion + VOICEVOX + ずんだもん＆めたんの掛け合い形式。
+Remotion + VOICEVOX + まろくん＆ぽんちゃんの掛け合い形式。
 
 ## 動画制作フロー
 1. `input/script-input.json` を編集（or 別途Claudeで台本生成）
@@ -23,7 +23,7 @@ Remotion + VOICEVOX + ずんだもん＆めたんの掛け合い形式。
 - チャートやデータは必ずナレーションと同期してアニメーションすること
 
 ## VOICEVOXの設定
-- ずんだもん: speakerId = 3（ノーマル）
-- めたん: speakerId = 2（ノーマル）
+- まろくん (maro): speakerId = 3（ノーマル）
+- ぽんちゃん (ponchan): speakerId = 2（ノーマル）
 - speedScale: 1.15（やや速め）
 - 各セリフの後に0.3秒の無音バッファ

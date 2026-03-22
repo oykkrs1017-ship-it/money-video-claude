@@ -15,15 +15,15 @@
       "type": "hook",
       "lines": [
         {
-          "speaker": "zundamon",
-          "text": "ねえめたん、知ってた？今年の半導体規制で、日本企業の株価が大きく動いたのだ",
+          "speaker": "maro",
+          "text": "ねえぽんちゃん、知ってた？今年の半導体規制で、日本企業の株価が大きく動いたのだ",
           "emotion": "serious",
           "audioFile": "voices/0001_zundamon.wav",
           "audioDuration": 6.773,
           "frameCount": 208
         },
         {
-          "speaker": "metan",
+          "speaker": "ponchan",
           "text": "え、そうなの？詳しく教えて！",
           "emotion": "surprised",
           "audioFile": "voices/0002_metan.wav",
@@ -38,19 +38,20 @@
           "imageData": {
             "src": "content/map_usachina.png",
             "caption": "米中半導体戦争",
-            "position": "top-right",
-            "width": 360,
+            "position": "top-center",
+            "width": 1040,
             "duration": 12,
             "animation": "slide-left"
           }
         }
-      ]
+      ],
+      "topic": "米中半導体戦争が勃発"
     },
     {
       "type": "explanation",
       "lines": [
         {
-          "speaker": "zundamon",
+          "speaker": "maro",
           "text": "まず2022年、アメリカが中国への先端半導体の輸出を全面禁止したのだ",
           "emotion": "serious",
           "audioFile": "voices/0003_zundamon.wav",
@@ -58,7 +59,7 @@
           "frameCount": 196
         },
         {
-          "speaker": "metan",
+          "speaker": "ponchan",
           "text": "でも、日本の企業はどう関係するの？",
           "emotion": "curious",
           "audioFile": "voices/0004_metan.wav",
@@ -66,7 +67,7 @@
           "frameCount": 87
         },
         {
-          "speaker": "zundamon",
+          "speaker": "maro",
           "text": "日本の半導体製造装置メーカーも規制の対象になったのだ",
           "emotion": "serious",
           "audioFile": "voices/0005_zundamon.wav",
@@ -74,7 +75,7 @@
           "frameCount": 141
         },
         {
-          "speaker": "metan",
+          "speaker": "ponchan",
           "text": "東京エレクトロンとかSCREENとか？",
           "emotion": "surprised",
           "audioFile": "voices/0006_metan.wav",
@@ -82,7 +83,7 @@
           "frameCount": 98
         },
         {
-          "speaker": "zundamon",
+          "speaker": "maro",
           "text": "そう！TSMCへの装置輸出には、政府の許可証が必要になったのだ",
           "emotion": "normal",
           "audioFile": "voices/0007_zundamon.wav",
@@ -97,8 +98,8 @@
           "imageData": {
             "src": "content/map_usachina.png",
             "caption": "米中対立の構図",
-            "position": "top-right",
-            "width": 340,
+            "position": "top-center",
+            "width": 1000,
             "duration": 10,
             "animation": "fade"
           }
@@ -114,13 +115,14 @@
           "text": "半導体規制2022",
           "at": 22
         }
-      ]
+      ],
+      "topic": "日本企業への波及ルート"
     },
     {
       "type": "analysis",
       "lines": [
         {
-          "speaker": "zundamon",
+          "speaker": "maro",
           "text": "僕の分析では、この規制は短期ネガティブ、長期ポジティブなのだ",
           "emotion": "thinking",
           "audioFile": "voices/0008_zundamon.wav",
@@ -128,7 +130,7 @@
           "frameCount": 151
         },
         {
-          "speaker": "metan",
+          "speaker": "ponchan",
           "text": "なぜ長期的にポジティブなの？",
           "emotion": "curious",
           "audioFile": "voices/0009_metan.wav",
@@ -136,7 +138,7 @@
           "frameCount": 60
         },
         {
-          "speaker": "zundamon",
+          "speaker": "maro",
           "text": "日本への半導体投資が急増しているからなのだ。TSMCの熊本工場がその象徴なのだ",
           "emotion": "happy",
           "audioFile": "voices/0010_zundamon.wav",
@@ -144,7 +146,7 @@
           "frameCount": 218
         },
         {
-          "speaker": "metan",
+          "speaker": "ponchan",
           "text": "ラピダスも北海道で最先端プロセスを目指してるね",
           "emotion": "normal",
           "audioFile": "voices/0011_metan.wav",
@@ -159,8 +161,8 @@
           "imageData": {
             "src": "content/map_taiwan.png",
             "caption": "台湾海峡の地政学リスク",
-            "position": "top-left",
-            "width": 380,
+            "position": "top-center",
+            "width": 1040,
             "duration": 12,
             "animation": "slide-right"
           }
@@ -169,14 +171,38 @@
           "type": "keyword",
           "text": "熊本TSMC工場",
           "at": 14
+        },
+        {
+          "type": "stat",
+          "at": 8,
+          "statData": {
+            "value": "3.5兆円",
+            "label": "TSMC熊本工場の総投資額",
+            "subtext": "日本政府補助金：1.2兆円",
+            "metrics": [
+              {
+                "key": "雇用創出",
+                "value": "3,400人"
+              },
+              {
+                "key": "稼働開始",
+                "value": "2024年"
+              },
+              {
+                "key": "製造ノード",
+                "value": "12/16nm"
+              }
+            ]
+          }
         }
-      ]
+      ],
+      "topic": "長期投資家の視点"
     },
     {
       "type": "summary",
       "lines": [
         {
-          "speaker": "zundamon",
+          "speaker": "maro",
           "text": "まとめると、半導体規制はリスクでもありチャンスでもあるのだ",
           "emotion": "happy",
           "audioFile": "voices/0012_zundamon.wav",
@@ -184,7 +210,7 @@
           "frameCount": 135
         },
         {
-          "speaker": "metan",
+          "speaker": "ponchan",
           "text": "日本の装置メーカーと新工場への投資が注目ポイントね",
           "emotion": "happy",
           "audioFile": "voices/0013_metan.wav",
@@ -192,20 +218,21 @@
           "frameCount": 117
         },
         {
-          "speaker": "zundamon",
+          "speaker": "maro",
           "text": "地政学リスクは分散投資と情報収集で乗り越えられるのだ",
           "emotion": "happy",
           "audioFile": "voices/0014_zundamon.wav",
           "audioDuration": 4.341,
           "frameCount": 135
         }
-      ]
+      ],
+      "topic": "今回のポイント整理"
     },
     {
       "type": "cta",
       "lines": [
         {
-          "speaker": "zundamon",
+          "speaker": "maro",
           "text": "チャンネル登録と高評価をよろしくなのだ！",
           "emotion": "happy",
           "audioFile": "voices/0015_zundamon.wav",
@@ -213,7 +240,7 @@
           "frameCount": 91
         },
         {
-          "speaker": "metan",
+          "speaker": "ponchan",
           "text": "次回もお楽しみに！",
           "emotion": "happy",
           "audioFile": "voices/0016_metan.wav",

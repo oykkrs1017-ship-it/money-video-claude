@@ -1,10 +1,22 @@
 // script-input.json の型定義
 
-export type SpeakerType = 'zundamon' | 'metan';
+export type SpeakerType = 'maro' | 'ponchan';
 export type EmotionType = 'normal' | 'happy' | 'surprised' | 'thinking' | 'serious' | 'sad';
 export type ChapterType = 'hook' | 'explanation' | 'analysis' | 'summary' | 'cta';
 export type ChartType = 'line' | 'bar' | 'pie' | 'area';
-export type VisualType = 'chart' | 'keyword' | 'splitCompare' | 'timeline' | 'split' | 'image';
+export type VisualType = 'chart' | 'keyword' | 'splitCompare' | 'timeline' | 'split' | 'image' | 'stat';
+
+/** スタットカード（大きな数字を強調表示） */
+export interface StatCardData {
+  /** メインの数値・テキスト（例: "$500B" "3.7兆円" "200+"） */
+  value: string;
+  /** ラベル（例: "TSMCの時価総額"） */
+  label: string;
+  /** 補足説明（例: "2024年時点"） */
+  subtext?: string;
+  /** 追加の指標リスト */
+  metrics?: { key: string; value: string }[];
+}
 
 export interface ScriptLine {
   speaker: SpeakerType;
@@ -79,6 +91,8 @@ export interface Visual {
   timelineData?: TimelineData;
   /** 静止画データ（type='image'の場合） */
   imageData?: ImageData;
+  /** スタットカードデータ（type='stat'の場合） */
+  statData?: StatCardData;
   /** このビジュアルを表示し始める秒数（チャプター先頭からの相対秒） */
   at: number;
 }
@@ -89,6 +103,11 @@ export interface Chapter {
   duration: number;
   lines: ScriptLine[];
   visuals?: Visual[];
+  /**
+   * 左上バッジに常時表示するテーマテキスト（テレビ局風）
+   * 例: "米中半導体戦争とは" / "日本への影響" / "投資家の視点"
+   */
+  topic?: string;
 }
 
 export interface ScriptInput {
