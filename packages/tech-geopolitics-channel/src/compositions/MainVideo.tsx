@@ -1,363 +1,99 @@
 import React from 'react';
-import { useCurrentFrame, useVideoConfig, Audio, Sequence, interpolate, spring, staticFile } from 'remotion';
-import { ScriptInput, VariationConfig, Chapter, ScriptLine } from '../utils/types';
-import { getVariation } from '../components/VariationEngine';
+import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
+import { ScriptInput, ScriptLine } from '../utils/types';
+import { buildTimeline, getVariation } from '@money-video/domain';
 import { THEMES } from '../styles/themes';
-import { ZundamonStage } from '../components/ZundamonStage';
-import { MetanStage } from '../components/MetanStage';
-import { DataChart } from '../components/DataChart';
-import { KeywordFloat } from '../components/KeywordFloat';
 import { ProgressBar } from '../components/ProgressBar';
 import { TitleAnimation } from '../components/TitleAnimation';
 import { BackgroundRenderer } from '../components/BackgroundRenderer';
-import { SplitCompare } from '../components/SplitCompare';
-import { TimelineScroll } from '../components/TimelineScroll';
-import { ImageOverlay } from '../components/ImageOverlay';
 import { TopicBadge } from '../components/TopicBadge';
-import { StatCard } from '../components/StatCard';
+import { AudioTrack } from '../components/AudioTrack';
+import { SubtitleLayer } from '../components/SubtitleLayer';
+import { CharacterLayer } from '../components/CharacterLayer';
+import { VisualLayer } from '../components/VisualLayer';
+import { CinematicLayer } from '../components/CinematicLayer';
+import { ChapterCard } from '../components/ChapterCard';
+import { CounterIntuitionLayer } from '../components/CounterIntuitionLayer';
 
 export interface MainVideoProps {
   scriptInput: ScriptInput;
 }
 
-/** フレームオフセットを計算：チャプター・セリフの開始フレームを解決 */
-function buildTimeline(scriptInput: ScriptInput, fps: number) {
-  const timeline: {
-    chapterIndex: number;
-    lineIndex: number;
-    line: ScriptLine;
-    startFrame: number;
-    endFrame: number;
-  }[] = [];
-
-  let cursor = fps * 2; // 冒頭2秒はタイトル表示
-
-  scriptInput.chapters.forEach((chapter, ci) => {
-    chapter.lines.forEach((line, li) => {
-      const frameDuration = line.frameCount ?? Math.floor((line.audioDuration ?? 3) * fps) + 5;
-      timeline.push({
-        chapterIndex: ci,
-        lineIndex: li,
-        line,
-        startFrame: cursor,
-        endFrame: cursor + frameDuration,
-      });
-      cursor += frameDuration;
-    });
-  });
-
-  return { timeline, totalFrames: cursor + fps * 2 }; // 末尾2秒
-}
+// Phase 1 rewire: buildTimeline の実体は @money-video/domain に移管。
+// ここではそのまま呼び出す。
 
 export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
 
-  const variation: VariationConfig = getVariation(scriptInput.seed);
+  const variation = getVariation(scriptInput.seed);
   const theme = THEMES[variation.theme];
-  const { timeline, totalFrames } = buildTimeline(scriptInput, fps);
+  const { timeline, totalFrames, titleFrames } = buildTimeline(scriptInput, fps);
 
   // 現在フレームに対応するセリフを検索
-  const currentEntry = timeline.find((e) => frame >= e.startFrame && frame < e.endFrame);
-  const currentLine = currentEntry?.line;
+  const currentEntry = timeline.find((e) => frame >= e.startFrame && frame < e.endFrame) ?? null;
+  const currentLine: ScriptLine | null = currentEntry?.line ?? null;
   const currentChapter = currentLine ? scriptInput.chapters[currentEntry!.chapterIndex] : null;
 
-  // チャプター区切りフレーム
+  // チャプター区切りフレーム（プログレスバー用）
   const chapterMarkers = scriptInput.chapters.reduce<number[]>((acc, _, ci) => {
     const firstEntry = timeline.find((e) => e.chapterIndex === ci);
     if (firstEntry) acc.push(firstEntry.startFrame);
     return acc;
   }, []);
 
-  // ---- キャラクター配置 ----
-  const renderCharacters = () => {
-    const layout = variation.characterLayout;
-    const isSpeakingZunda = currentLine?.speaker === 'maro';
-    const isSpeakingMetan = currentLine?.speaker === 'ponchan';
-
-    if (layout === 'left-right') {
-      return (
-        <>
-          <MetanStage emotion={currentLine?.speaker === 'ponchan' ? currentLine.emotion : 'normal'}
-            isSpeaking={isSpeakingMetan} startFrame={0} position="left" height={height * 0.38} />
-          <ZundamonStage emotion={currentLine?.speaker === 'maro' ? currentLine.emotion : 'normal'}
-            isSpeaking={isSpeakingZunda} startFrame={0} position="right" height={height * 0.38} />
-        </>
-      );
-    }
-    if (layout === 'bottom-center') {
-      return (
-        <>
-          <MetanStage emotion={currentLine?.speaker === 'ponchan' ? currentLine.emotion : 'normal'}
-            isSpeaking={isSpeakingMetan} startFrame={0} position="left" height={height * 0.35} />
-          <ZundamonStage emotion={currentLine?.speaker === 'maro' ? currentLine.emotion : 'normal'}
-            isSpeaking={isSpeakingZunda} startFrame={0} position="right" height={height * 0.35} />
-        </>
-      );
-    }
-    // その他のレイアウトも left-right で代替
-    return (
-      <>
-        <MetanStage emotion={currentLine?.speaker === 'ponchan' ? currentLine.emotion : 'normal'}
-          isSpeaking={isSpeakingMetan} startFrame={0} position="left" height={height * 0.42} />
-        <ZundamonStage emotion={currentLine?.speaker === 'maro' ? currentLine.emotion : 'normal'}
-          isSpeaking={isSpeakingZunda} startFrame={0} position="right" height={height * 0.42} />
-      </>
-    );
-  };
-
-  // ---- 字幕 ----
-  const renderSubtitle = () => {
-    if (!currentLine) return null;
-    const localFrame = frame - (currentEntry?.startFrame ?? 0);
-    const fadeIn = spring({ frame: localFrame, fps, config: { damping: 25, stiffness: 200 } });
-    const speakerColor = currentLine.speaker === 'maro' ? '#228B22' : '#FF1493';
-
-    return (
-      <div style={{
-        position: 'absolute',
-        bottom: variation.subtitleStyle === 'cinematic' ? '18%' : '10%',
-        left: '24%', right: '24%',
-        textAlign: 'center',
-        opacity: fadeIn,
-        transform: `translateY(${interpolate(fadeIn, [0, 1], [20, 0])}px)`,
-        zIndex: 50,
-      }}>
-        <div style={{
-          display: 'inline-block',
-          backgroundColor: 'rgba(0,0,0,0.82)',
-          padding: '12px 32px',
-          borderRadius: 10,
-          borderLeft: `5px solid ${speakerColor}`,
-        }}>
-          <span style={{
-            color: '#ffffff',
-            fontSize: 42,
-            fontWeight: 700,
-            lineHeight: 1.5,
-            letterSpacing: '0.02em',
-            textShadow: '0 2px 8px rgba(0,0,0,0.8)',
-          }}>
-            {currentLine.text}
-          </span>
-        </div>
-      </div>
-    );
-  };
-
-  // ---- ビジュアル（チャート・キーワード） ----
-  const renderVisuals = () => {
-    if (!currentChapter || !currentChapter.visuals) return null;
-    const chapterStartFrame = timeline.find((e) => e.chapterIndex === timeline.find(t => t.line === currentLine)?.chapterIndex)?.startFrame ?? 0;
-
-    return currentChapter.visuals.map((visual, vi) => {
-      const visualStart = chapterStartFrame + visual.at * fps;
-      if (frame < visualStart) return null;
-
-      if (visual.type === 'keyword' && visual.text) {
-        return (
-          <KeywordFloat key={vi}
-            text={visual.text}
-            startFrame={visualStart}
-            endFrame={visualStart + fps * 4}
-            x={50} y={30}
-            color={theme.accent !== theme.background ? theme.accent : '#ffdd44'}
-          />
-        );
-      }
-      if (visual.type === 'chart' && visual.data) {
-        const chartData = scriptInput.chartData[visual.data];
-        if (!chartData) return null;
-        const chartW = Math.round(width * 0.54); // 画像と同サイズ感（~1040px）
-        const chartH = Math.round(chartW * 0.48);
-        return (
-          <div key={vi} style={{
-            position: 'absolute',
-            top: '6%',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            zIndex: 40,
-            opacity: interpolate(frame - visualStart, [0, 20], [0, 1], { extrapolateRight: 'clamp' }),
-          }}>
-            <DataChart
-              type={visual.chartType ?? 'line'}
-              data={chartData}
-              title={visual.data}
-              animationStyle="draw"
-              width={chartW} height={chartH}
-            />
-          </div>
-        );
-      }
-      if (visual.type === 'stat' && visual.statData) {
-        const statW = Math.round(width * 0.54);
-        return (
-          <StatCard
-            key={vi}
-            data={visual.statData}
-            startFrame={visualStart}
-            endFrame={visualStart + (visual.statData ? fps * 10 : fps * 8)}
-            accentColor={theme.accent !== theme.background ? theme.accent : '#4a9eff'}
-            width={statW}
-          />
-        );
-      }
-      if (visual.type === 'split' && visual.splitData) {
-        return (
-          <div key={vi} style={{
-            position: 'absolute',
-            top: '15%', left: '50%',
-            transform: 'translateX(-50%)',
-            width: width * 0.75,
-            zIndex: 30,
-          }}>
-            <SplitCompare
-              left={visual.splitData.left}
-              right={visual.splitData.right}
-              title={visual.splitData.title}
-              startFrame={visualStart}
-              width={width * 0.75}
-              height={height * 0.38}
-            />
-          </div>
-        );
-      }
-      if (visual.type === 'timeline' && visual.timelineData) {
-        return (
-          <div key={vi} style={{
-            position: 'absolute',
-            bottom: '18%',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            width: width * 0.9,
-            zIndex: 30,
-          }}>
-            <TimelineScroll
-              events={visual.timelineData.events}
-              title={visual.timelineData.title}
-              startFrame={visualStart}
-              scrollSpeed={visual.timelineData.scrollSpeed ?? 1.2}
-              activeIndex={visual.timelineData.activeIndex}
-              accentColor={theme.accent !== theme.background ? theme.accent : '#4a9eff'}
-              textColor={theme.text}
-              width={width * 0.9}
-              height={height * 0.22}
-            />
-          </div>
-        );
-      }
-      if (visual.type === 'image' && visual.imageData) {
-        const imgDuration = visual.imageData.duration ?? 8;
-        const visualEnd = Math.floor(visualStart + imgDuration * fps);
-        if (frame > visualEnd) return null;
-        return (
-          <ImageOverlay
-            key={vi}
-            imageData={visual.imageData}
-            startFrame={visualStart}
-            endFrame={visualEnd}
-            accentColor={theme.accent !== theme.background ? theme.accent : '#4a9eff'}
-          />
-        );
-      }
-      return null;
-    });
-  };
-
-  // ---- 音声（セリフ） ----
-  const renderAudio = () => {
-    return timeline.map((entry, i) => {
-      if (!entry.line.audioFile) return null;
-      return (
-        <Audio
-          key={i}
-          src={`/public/${entry.line.audioFile}`}
-          startFrom={0}
-          endAt={entry.line.frameCount}
-          // Remotionでは AbsoluteFill 内の Audio は startFrom で絶対フレームを使う
-        />
-      );
-    });
-  };
-
-  // ---- BGM（チャプター別切り替え） ----
-  const renderBgm = () => {
-    const baseVolume = scriptInput.bgmVolume ?? 0.12;
-    const crossFade = fps * 1; // クロスフェード: 1秒
-
-    // bgmMap がある場合はチャプター別に切り替え
-    if (scriptInput.bgmMap) {
-      const map = scriptInput.bgmMap;
-
-      // チャプターごとのフレーム範囲を計算
-      type BgmSegment = { src: string; start: number; end: number };
-      const segments: BgmSegment[] = [];
-
-      scriptInput.chapters.forEach((chapter, ci) => {
-        const src = map[chapter.type as keyof typeof map];
-        if (!src) return;
-        const firstEntry = timeline.find((e) => e.chapterIndex === ci);
-        const lastEntry = [...timeline].reverse().find((e) => e.chapterIndex === ci);
-        if (!firstEntry || !lastEntry) return;
-        segments.push({ src, start: firstEntry.startFrame, end: lastEntry.endFrame });
-      });
-
-      // 同じBGMが連続する場合は結合（章をまたいでもループが途切れない）
-      const merged: BgmSegment[] = [];
-      for (const seg of segments) {
-        const prev = merged[merged.length - 1];
-        if (prev && prev.src === seg.src) {
-          prev.end = seg.end;
-        } else {
-          merged.push({ ...seg });
-        }
-      }
-
-      return merged.map((seg, i) => {
-        const duration = seg.end - seg.start;
-        return (
-          <Sequence key={i} from={seg.start} durationInFrames={duration}>
-            <Audio
-              src={staticFile(seg.src)}
-              loop
-              volume={(f) => {
-                // チャプター先頭でフェードイン
-                const fadeIn = Math.min(f / crossFade, 1);
-                // チャプター末尾でフェードアウト
-                const fadeOut = Math.min((duration - f) / crossFade, 1);
-                // 動画全体の末尾でもフェードアウト
-                const globalFadeOut = Math.min((totalFrames - (seg.start + f)) / crossFade, 1);
-                return Math.min(fadeIn, fadeOut, globalFadeOut) * baseVolume;
-              }}
-            />
-          </Sequence>
-        );
-      });
-    }
-
-    // bgmMap なし → 全編共通BGM（後方互換）
-    if (!scriptInput.bgm) return null;
-    const fadeFrames = fps * 2;
-    return (
-      <Audio
-        src={staticFile(scriptInput.bgm)}
-        loop
-        volume={(f) => {
-          const fadeIn = Math.min(f / fadeFrames, 1);
-          const fadeOut = Math.min((totalFrames - f) / fadeFrames, 1);
-          return Math.min(fadeIn, fadeOut) * baseVolume;
-        }}
-      />
-    );
-  };
+  // チャプタータイムライン（AudioTrack に渡す chapterTimeline を構築）
+  const chapterTimeline = timeline.map(({ chapterIndex, startFrame, endFrame }) => ({
+    chapterIndex,
+    startFrame,
+    endFrame,
+  }));
 
   // タイトル表示（冒頭2秒）
-  const showTitle = frame < fps * 2;
+  const showTitle = frame < titleFrames;
+
+  // H-05: 逆説層（冒頭15秒）- scriptInputにcounterIntuitionフラグがある場合のみ有効
+  const isCounterIntuitionActive = !!(scriptInput as { counterIntuition?: boolean }).counterIntuition;
+
+  const accentColor = theme.accent !== theme.background ? theme.accent : '#4a9eff';
+
+  // チャプター境界フェードオーバーレイ（黒フェードイン/アウト）
+  const FADE_FRAMES = 10;
+  const chapterBoundaries = chapterMarkers.slice(1);
+  let fadeOverlayOpacity = 0;
+  for (const boundary of chapterBoundaries) {
+    if (frame >= boundary - FADE_FRAMES && frame < boundary) {
+      fadeOverlayOpacity = interpolate(frame, [boundary - FADE_FRAMES, boundary], [0, 1], { extrapolateRight: 'clamp' });
+      break;
+    }
+    if (frame >= boundary && frame < boundary + FADE_FRAMES) {
+      fadeOverlayOpacity = interpolate(frame, [boundary, boundary + FADE_FRAMES], [1, 0], { extrapolateRight: 'clamp' });
+      break;
+    }
+  }
+
+  // stat / chart ビジュアル表示中はキャラクターを控えめにしてビジュアルを前面に出す
+  const visualType = currentLine?.visual?.type;
+  const isFullScreenVisual = visualType === 'stat' || visualType === 'chart';
+  // interpolate でフェード（0〜20フレームで変化）
+  const relativeFrame = currentEntry ? frame - currentEntry.startFrame : 0;
+  const charOpacity = isFullScreenVisual
+    ? interpolate(relativeFrame, [0, 20], [1, 0.45], { extrapolateRight: 'clamp' })
+    : 1;
 
   return (
-    <div style={{ width, height, position: 'relative', overflow: 'hidden' }}>
-      {/* BGM（ループ・フェードイン/アウト） */}
-      {renderBgm()}
+    <div style={{ width, height, position: 'relative', overflow: 'hidden', fontFamily: theme.fontFamily ?? 'inherit' }}>
+      {/* 音声（BGM + セリフ） */}
+      <AudioTrack
+        timeline={timeline}
+        bgm={scriptInput.bgm}
+        bgmMap={scriptInput.bgmMap}
+        bgmVolume={scriptInput.bgmVolume}
+        seVolume={scriptInput.seVolume}
+        totalFrames={totalFrames}
+        chapters={scriptInput.chapters}
+        chapterTimeline={chapterTimeline}
+      />
 
       {/* 背景 */}
       <BackgroundRenderer type={variation.background} theme={theme} />
@@ -400,34 +136,75 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
             zIndex: 21,
             width: interpolate(frame, [0, fps * 1.5], [0, 320], { extrapolateRight: 'clamp' }),
             height: 3,
-            backgroundColor: theme.accent !== theme.background ? theme.accent : '#4a9eff',
+            backgroundColor: accentColor,
             borderRadius: 2,
           }} />
         </>
       )}
 
-      {/* キャラクター */}
-      {!showTitle && renderCharacters()}
+      {/* キャラクター（stat/chart ビジュアル時は透明度を下げてビジュアルを前面に出す） */}
+      {!showTitle && (
+        <div style={{ position: 'absolute', inset: 0, zIndex: 70, pointerEvents: 'none', opacity: charOpacity }}>
+          <CharacterLayer
+            currentLine={currentLine}
+            characterLayout={variation.characterLayout}
+            height={height}
+          />
+        </div>
+      )}
 
-      {/* ビジュアル */}
-      {renderVisuals()}
+      {/* ビジュアル（チャート・キーワード・画像など） */}
+      <VisualLayer
+        currentChapter={currentChapter}
+        currentLine={currentLine}
+        currentEntry={currentEntry}
+        timeline={timeline}
+        scriptInput={scriptInput}
+        theme={theme}
+        showTitle={showTitle}
+        width={width}
+        height={height}
+      />
+
+      {/* シネマティック演出（ヴィネット・フラッシュ・レターボックス） */}
+      <CinematicLayer
+        currentLine={currentLine}
+        currentEntry={currentEntry}
+        chapterType={currentChapter?.type ?? null}
+      />
 
       {/* トピックバッジ（左上・テレビ局風） */}
       {!showTitle && currentChapter?.topic && (() => {
         const ci = scriptInput.chapters.indexOf(currentChapter);
-        const chapterStart = timeline.find(e => e.chapterIndex === ci)?.startFrame ?? fps * 2;
+        const chapterStart = timeline.find((e) => e.chapterIndex === ci)?.startFrame ?? fps * 2;
         return (
           <TopicBadge
             topic={currentChapter.topic}
             chapterType={currentChapter.type}
             startFrame={chapterStart}
-            accentColor={theme.accent !== theme.background ? theme.accent : undefined}
+            accentColor={accentColor}
           />
         );
       })()}
 
       {/* 字幕 */}
-      {!showTitle && renderSubtitle()}
+      {!showTitle && (
+        <SubtitleLayer
+          currentLine={currentLine}
+          currentEntry={currentEntry}
+          subtitleStyle={variation.subtitleStyle}
+        />
+      )}
+
+      {/* チャプターカード: 削除（メタ情報が透けるため） */}
+
+      {/* H-05: 逆説層 CounterIntuitionLayer（Hook冒頭15秒・isActive=trueのepのみ） */}
+      <CounterIntuitionLayer
+        startFrame={0}
+        endFrame={fps * 15}
+        accentColor={accentColor}
+        isActive={isCounterIntuitionActive}
+      />
 
       {/* プログレスバー */}
       <ProgressBar
@@ -436,6 +213,19 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
         chapterMarkers={chapterMarkers}
         position="bottom"
       />
+
+      {/* チャプタートランジション（blur + cinematic fade） */}
+      {fadeOverlayOpacity > 0 && (
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'radial-gradient(ellipse at 50% 50%, rgba(10,12,30,0.92) 0%, rgba(0,0,0,1) 100%)',
+          opacity: fadeOverlayOpacity,
+          backdropFilter: `blur(${(fadeOverlayOpacity * 7).toFixed(1)}px)`,
+          WebkitBackdropFilter: `blur(${(fadeOverlayOpacity * 7).toFixed(1)}px)`,
+          zIndex: 200,
+          pointerEvents: 'none',
+        }} />
+      )}
     </div>
   );
 };

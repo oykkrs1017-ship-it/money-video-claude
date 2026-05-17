@@ -1,0 +1,83 @@
+# knowledge/directive.yaml
+# パイプラインの制作方針ファイル（autoagent の program.md 相当）
+# このファイルを編集して方針を変えると次回の台本生成に自動反映される
+version: 1
+updated: "2026-04-26"
+
+# ─── テクノロジー投資×地政学チャンネル ─────────────────────────────────────────
+tech_geopolitics:
+  focus_theme: "米中半導体戦争の投資インパクト"
+
+  # ─── テーマ選定フィルター（2重チェック必須） ───────────────────────────────
+  # テーマを選ぶ前に以下を両方満たすか確認すること
+  topic_selection_criteria:
+    # フィルター①: 生活直結テスト（いずれか1つ以上に当てはまること）
+    life_relevance_checklist:
+      - "財布に影響する（食料品・光熱費・税金・給与・円安）"
+      - "持っている資産に影響する（株・不動産・円預金・NISA）"
+      - "仕事・雇用に影響する（AI・製造業空洞化・円安）"
+      - "子どもや老後に影響する（年金・教育費・インフレ）"
+    # フィルター②: サムネ自分ごとテスト
+    thumbnail_self_relevance_test: "30代投資家がサムネを見た瞬間に『これ俺の話だ』と感じられるか"
+
+  # 推奨テーマ例（生活直結＋話題性を両立したもの）
+  recommended_topic_angles:
+    - "円安が止まらない構造 → スーパーの値段が上がり続ける理由"
+    - "米中関税戦争 → iPhoneや家電が来年○万円値上がりする話"
+    - "日本の電気代が世界最高水準になった理由 → 毎月の光熱費"
+    - "NISA枠と地政学リスク → 持っている米国株が今危ない？"
+    - "半導体不足と車の値段 → マイカー購入タイミングに直結"
+
+  avoid:
+    - "ETF選び方（飽和）"
+    - "仮想通貨（BANリスク高）"
+    - "生活に直結しない企業・技術の単体紹介（Terafab等。話題でも自分ごと化されない）"
+    - "サムネとタイトルで何が起きるか想像できないニッチ技術テーマ"
+
+  tone: "serious"               # serious | educational | alarming
+  target_duration_min: 9        # 目標尺（分）
+  hook_style: "逆説問い+数字"    # 逆説問い+数字 | 数字で始める | 問いかけ | 衝撃ファクト
+
+  # 実験中の仮説（今回試す設定）
+  current_hypothesis:
+    id: null
+    description: null
+    param: null
+    seed: 13                    # VariationEngine シード
+
+  # 学習した教訓（lessons.yaml から自動転記）
+  active_lessons:
+    - "hookの最初のセリフで数字を明示する"
+    - "analysis チャプターでグラフを使う際は台詞と同期させる"
+    - "テーマ選定は『話題性』と『生活直結』の両方を満たすものだけに絞る（2026-04-26）"
+    - "why_question_title: タイトルは「なぜ〇〇は〇〇なのか【学術分野1×学術分野2】」型を最優先に使う（2026-05-17）"
+    - "counter_intuition_hook_15s: Hookの先頭15秒で逆説的な問いか信じられない数値を必ず提示する（H-05ルール）（2026-05-17）"
+    - "personal_relevance: 地政学・銘柄を視聴者の資産・キャリア・将来にどう関係するかで語る（自分ごと化アングル）（2026-05-17）"
+
+# ─── AI マネー研究所 Shorts ──────────────────────────────────────────────────
+ai_money_shorts:
+  focus_theme: "新NISAと高配当株"
+  template_experiment:
+    active: false
+    current: "TypeA"            # TypeA-E のどれか
+    history: {}
+  avoid:
+    - "仮想通貨"
+    - "FX"
+  tone: "pop"                   # pop | educational | alarming
+
+# ─── リサーチ設定 ────────────────────────────────────────────────────────────
+research:
+  enabled: true
+  competitor_channels_file: "knowledge/competitor-channels.yaml"
+  output_file: "knowledge/topic-research.json"
+  proposals_dir: "knowledge/proposals"
+  news_lookback_days: 7
+  max_competitor_videos_per_channel: 10
+
+# ─── 共通制約 ────────────────────────────────────────────────────────────────
+global:
+  max_api_cost_usd_per_day: 5.0
+  require_review_before_upload: true
+  auto_loop_enabled: false      # true にすると autonomous-loop.ts が起動可能になる
+  max_episodes_per_loop: 3      # 自律ループ時の1日あたり上限
