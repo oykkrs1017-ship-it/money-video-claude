@@ -1,0 +1,23 @@
+{
+  "name": "money-video-claude-root",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/domain",
+    "packages/shared-ts",
+    "packages/shared",
+    "packages/adapters",
+    "packages/usecases",
+    "packages/tech-geopolitics-channel"
+  ],
+  "scripts": {
+    "studio": "cd packages/tech-geopolitics-channel && npm run sync && npx remotion studio src/index.ts",
+    "test": "npm --workspaces run test --if-present",
+    "typecheck": "npm --workspaces run typecheck --if-present",
+    "update-patterns": "npx ts-node --transpile-only scripts/update-patterns.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
+}
