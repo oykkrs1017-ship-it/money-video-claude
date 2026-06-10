@@ -1,0 +1,51 @@
+# Claude Code 個人設定
+CLAUDE.local.md
+
+# Claude Code 運用ファイル
+.claude/logs/
+.claude/worktrees/
+.claude/scheduled_tasks.lock
+.claude/settings.local.json
+
+# バックアップ
+.claude.bak*/
+
+# 依存関係
+node_modules/
+
+# ビルド出力
+dist/
+build/
+
+# 音声 content hash キャッシュ・ビルド manifest（生成物）
+cache/
+
+# 環境変数
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/
+.idea/
+*.swp
+*~
+
+# 生成物（再生成可能: レンダリング出力・VOICEVOX音声・HTMLスライド画像）
+**/output/
+**/public/voices/
+**/public/html-slides/
+**/.pipeline-state.json
+*.seo-bak
+
+# 認証情報
+**/.credentials/
+**/youtube-token.json
+
+# アーカイブ済みパッケージのメディア・生成物
+packages/_archived/*/out/
+packages/_archived/*/public/
