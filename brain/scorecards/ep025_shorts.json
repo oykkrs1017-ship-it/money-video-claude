@@ -1,0 +1,17 @@
+{
+  "episodeId": "ep025_shorts",
+  "channel": "tech-geopolitics",
+  "recordedAt": "2026-06-06T01:59:53.166Z",
+  "videoId": "qv4gxfvVKvE",
+  "directiveHash": "e59e3fa88ac0",
+  "hypothesisId": null,
+  "production": {
+    "scriptReviewLoops": 0,
+    "reviewIssueCount": 0,
+    "voiceSynthSuccessRate": 1,
+    "renderDurationSec": 0,
+    "costUsdEstimate": 0
+  },
+  "verdict": "PENDING",
+  "lessonIds": []
+}

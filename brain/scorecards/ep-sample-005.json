@@ -1,0 +1,17 @@
+{
+  "episodeId": "ep-sample-005",
+  "channel": "ai-money-shorts",
+  "recordedAt": "2026-04-08T14:13:43.518Z",
+  "directiveHash": "unknown",
+  "hypothesisId": null,
+  "templateType": "TypeE-Story",
+  "production": {
+    "scriptReviewLoops": 1,
+    "reviewIssueCount": 0,
+    "voiceSynthSuccessRate": 1,
+    "renderDurationSec": 193,
+    "costUsdEstimate": 0.07
+  },
+  "verdict": "PENDING",
+  "lessonIds": []
+}

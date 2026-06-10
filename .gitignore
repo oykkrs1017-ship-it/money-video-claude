@@ -49,3 +49,10 @@ Thumbs.db
 # アーカイブ済みパッケージのメディア・生成物
 packages/_archived/*/out/
 packages/_archived/*/public/
+
+# Python キャッシュ（撤去残骸）
+__pycache__/
+*.pyc
+
+# ローカル退避場（実験・旧版の墓場。約700MBのため非追跡）
+archive/

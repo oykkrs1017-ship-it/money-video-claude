@@ -1,29 +1,37 @@
-# CLAUDE.md - プロジェクト作業ルール
+# CLAUDE.md - tech-geopolitics-channel パッケージ固有ルール
 
-## プロジェクト概要
-テクノロジー投資×地政学のYouTubeチャンネル動画を自動生成するパイプライン。
-Remotion + VOICEVOX + まろくん＆ぽんちゃんの掛け合い形式。
+> 共通ルール・12行動規範・コマンド一覧はリポジトリルートの CLAUDE.md を参照。
 
-## 動画制作フロー
-1. `input/script-input.json` を編集（or 別途Claudeで台本生成）
-2. `npm run generate -- --input ./input/script-input.json` を実行
-3. `output/` に完成MP4が出力される
+## スライド先行ワークフロー（ep019〜）
 
-## コーディングルール
-- Remotion best-practicesに従う（Agent Skillsを参照）
-- アニメーションは必ず `frame / fps` ベースで計算（elapsedTime禁止）
-- spring() と interpolate() を積極活用
-- 音声durationの計算にはWAVヘッダーから直接読み取る（Python不要）
-- フレーム数は Math.floor() で必ず整数化し、+5フレームのバッファを追加
+ビジュアルを先に設計し、スライドに合わせた台本を生成する新フロー。
 
-## BAN回避ルール（最重要）
-- VariationEngineを必ず通す。seed値が異なれば全て異なる見た目になること
-- 静止画スライドショーにしない。全ての画面要素に最低1つのアニメーションを付ける
-- キャラクターは常にアイドルアニメーション（呼吸）をしていること
-- チャートやデータは必ずナレーションと同期してアニメーションすること
+```bash
+# Step 1: スライド構造 JSON を生成（Claude Design 向け）
+npx ts-node --transpile-only scripts/generate-slide-structure.ts \
+  --topic "トピック名" --ep ep019 [--with-exa]
+# → input/ep019-slides.json を出力
 
-## VOICEVOXの設定
-- まろくん (maro): speakerId = 3（ノーマル）
-- ぽんちゃん (ponchan): speakerId = 2（ノーマル）
-- speedScale: 1.15（やや速め）
-- 各セリフの後に0.3秒の無音バッファ
+# Step 2: input/ep019-slides.json を Claude Design に渡してスライド作成（ユーザー担当）
+# → 各スライドを JPEG で export し public/images/ep019/slide-01.jpg〜 に配置
+
+# Step 3: スライドに合わせた台本を生成
+npx ts-node --transpile-only scripts/generate-script.ts \
+  --topic "トピック名" --ep ep019 \
+  --from-slides input/ep019-slides.json
+# → input/ep019.yaml を出力（各 line の visual = image タイプ / animation: fade）
+
+# Step 4 以降は従来通り（yaml-to-json → 音声生成 → Still確認 → レンダリング）
+```
+
+**スライド画像の配置ルール**:
+- 保存先: `public/images/{epId}/slide-01.jpg`, `slide-02.jpg`, ...（ゼロ埋め 2 桁）
+- フォーマット: JPEG 推奨（PNG も可）
+- Remotion での参照: `src: "images/{epId}/slide-XX.jpg"` + `animation: fade`
+
+## Remotion コーディングルール
+- アニメーションは必ず `frame / fps` ベースで計算（`elapsedTime` 禁止）
+- `spring()` と `interpolate()` を積極活用
+- フレーム数は `Math.floor()` で必ず整数化し、+5フレームのバッファを追加
+- 音声 duration は WAVヘッダーから直接読み取る（Python 不要）
+- BAN回避・VOICEVOX設定: `.claude/rules/ban-avoidance.md` / `.claude/rules/voicevox.md` 参照

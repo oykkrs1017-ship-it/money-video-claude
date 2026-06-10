@@ -28,3 +28,8 @@ npm-debug.log*
 
 # Generated voices (optional - uncomment if you don't want to track)
 # public/voices/
+.credentials/
+
+# NotebookLM authentication (contains Google session cookies)
+.notebooklm/
+input/*_notebook_id.txt

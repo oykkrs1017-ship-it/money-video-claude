@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "remotion-studio",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "start"],
+      "runtimeExecutable": "node_modules/.bin/remotion",
+      "runtimeArgs": ["studio", "src/index.ts"],
       "port": 3000
     }
   ]

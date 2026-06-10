@@ -1,0 +1,42 @@
+videoId: ep-test-001
+seed: ep-test-001
+title: テスト用エピソード
+description: yaml-to-json スモークテスト用フィクスチャ
+tags:
+  - test
+  - smoke
+
+chartData:
+  gdp:
+    title: GDP比較
+    type: bar
+    data:
+      - label: 米国
+        value: 25000
+      - label: 中国
+        value: 18000
+
+chapters:
+  - type: hook
+    duration: 15
+    lines:
+      - maro: こんにちは。今日は半導体の話です。
+        emotion: normal
+      - ponchan: 半導体が世界を動かしているんですよね。
+        emotion: happy
+        show:
+          type: stat
+          value: "60%"
+          label: 世界シェア
+
+  - type: explanation
+    duration: 30
+    lines:
+      - maro: TSMCが世界の60%を製造しています。
+        emotion: serious
+        show:
+          type: chart
+          key: gdp
+          chartType: bar
+      - ponchan: すごい数字ですね。
+        emotion: surprised

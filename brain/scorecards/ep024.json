@@ -1,0 +1,17 @@
+{
+  "episodeId": "ep024",
+  "channel": "tech-geopolitics",
+  "recordedAt": "2026-06-03T11:47:14.770Z",
+  "videoId": "qS48o7RdwYM",
+  "directiveHash": "e59e3fa88ac0",
+  "hypothesisId": null,
+  "production": {
+    "scriptReviewLoops": 0,
+    "reviewIssueCount": 0,
+    "voiceSynthSuccessRate": 1,
+    "renderDurationSec": 0,
+    "costUsdEstimate": 0
+  },
+  "verdict": "PENDING",
+  "lessonIds": []
+}

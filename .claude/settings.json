@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "statusLine": "branch context% cost",
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npx tsc *)",
+      "Bash(npx remotion *)",
+      "Bash(npx ts-node *)",
+      "Bash(node -e *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(ls *)",
+      "Bash(curl -s http://localhost:50021/*)",
+      "Bash(ffprobe *)",
+      "Bash(ffmpeg *)",
+      "Bash(diff *)",
+      "Bash(wc *)",
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep",
+      "WebSearch"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "Bash(gh *)",
+      "Bash(rm *)",
+      "Bash(npx ts-node * upload-youtube*)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(./secrets/**)",
+      "Read(./**/*.key)"
+    ]
+  },
+  "skillOverrides": {
+    "agent-harness-construction": "name-only",
+    "agentic-engineering": "name-only",
+    "ai-first-engineering": "name-only",
+    "ai-regression-testing": "name-only",
+    "api-design": "name-only",
+    "article-writing": "name-only",
+    "autonomous-loops": "name-only",
+    "backend-patterns": "name-only",
+    "best-practice": "name-only",
+    "blueprint": "name-only",
+    "caveman": "name-only",
+    "caveman-commit": "name-only",
+    "caveman-compress": "name-only",
+    "caveman-help": "name-only",
+    "caveman-review": "name-only",
+    "claude-devfleet": "name-only",
+    "coding-standards": "name-only",
+    "configure-ecc": "name-only",
+    "content-engine": "name-only",
+    "content-hash-cache-pattern": "name-only",
+    "continuous-agent-loop": "name-only",
+    "continuous-learning-v2": "name-only",
+    "cost-aware-llm-pipeline": "name-only",
+    "data-scraper-agent": "name-only",
+    "database-migrations": "name-only",
+    "deep-research": "name-only",
+    "deployment-patterns": "name-only",
+    "dispatching-parallel-agents": "name-only",
+    "docker-patterns": "name-only",
+    "e2e-testing": "name-only",
+    "enterprise-agent-ops": "name-only",
+    "eval-harness": "name-only",
+    "exa-search": "name-only",
+    "executing-plans": "name-only",
+    "fal-ai-media": "name-only",
+    "finishing-a-development-branch": "name-only",
+    "frontend-patterns": "name-only",
+    "frontend-slides": "name-only",
+    "git-guardrails-claude-code": "name-only",
+    "grill-me": "name-only",
+    "iterative-retrieval": "name-only",
+    "json-canvas": "name-only",
+    "last30days": "name-only",
+    "market-research": "name-only",
+    "mcp-server-patterns": "name-only",
+    "notebooklm-best-practices": "name-only",
+    "notebooklm-dbs-for-video": "name-only",
+    "notebooklm-workflow": "name-only",
+    "obsidian-bases": "name-only",
+    "obsidian-cli": "name-only",
+    "obsidian-markdown": "name-only",
+    "postgres-patterns": "name-only",
+    "project-guidelines-example": "name-only",
+    "prompt-optimizer": "name-only",
+    "python-patterns": "name-only",
+    "python-testing": "name-only",
+    "qa-mattpocock": "name-only",
+    "receiving-code-review": "name-only",
+    "regex-vs-llm-structured-text": "name-only",
+    "requesting-code-review": "name-only",
+    "search-first": "name-only",
+    "security-review": "name-only",
+    "security-scan": "name-only",
+    "skill-stocktake": "name-only",
+    "smart-explore": "name-only",
+    "strategic-compact": "name-only",
+    "subagent-driven-development": "name-only",
+    "systematic-debugging": "name-only",
+    "tdd-workflow": "name-only",
+    "team-builder": "name-only",
+    "test-driven-development": "name-only",
+    "using-git-worktrees": "name-only",
+    "using-superpowers": "name-only",
+    "verification-before-completion": "name-only",
+    "verification-loop": "name-only",
+    "video-editing": "name-only",
+    "write-a-skill": "name-only",
+    "writing-plans": "name-only",
+    "writing-skills": "name-only"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/pre-bash-delete-check.js\"",
+            "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/git-pre-commit-qa.js\"",
+            "if": "Bash(git commit*)",
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/script-input-sync-check.js\"",
+            "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/pre-render-preflight.js\"",
+            "if": "Bash(*remotion render*)",
+            "timeout": 15
+          },
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/pre-voicevox-health.js\"",
+            "if": "Bash(*generate-voices*)",
+            "timeout": 8
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/auto-sync-script-input.js\"",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/ts-typecheck.js\"",
+            "timeout": 35
+          }
+        ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/yaml-syntax-check.js\"",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/prettier-format.js\"",
+            "timeout": 15
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/post-upload-cleanup.js\"",
+            "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/post-upload-schedule-analytics.js\"",
+            "timeout": 8
+          },
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/audio-duration-validator.js\"",
+            "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/post-render-report.js\"",
+            "timeout": 15
+          }
+        ]
+      },
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/post-script-cta-check.js\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

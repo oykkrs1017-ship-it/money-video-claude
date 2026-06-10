@@ -1,0 +1,38 @@
+{
+  "name": "@money-video/adapters",
+  "version": "0.1.0",
+  "private": true,
+  "description": "External I/O adapters: TTS (VOICEVOX), LLM, YouTube, research sources",
+  "type": "commonjs",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./tts": "./src/tts/index.ts",
+    "./storage": "./src/storage/index.ts",
+    "./llm": "./src/llm/index.ts",
+    "./knowledge": "./src/knowledge/index.ts",
+    "./youtube": "./src/youtube/index.ts",
+    "./research": "./src/research/index.ts",
+    "./brain": "./src/brain/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@money-video/domain": "*",
+    "@money-video/shared-ts": "*",
+    "exa-js": "^2.12.1",
+    "googleapis": "^171.4.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "episodeId": "ep014",
+  "channel": "tech-geopolitics",
+  "recordedAt": "2026-05-06T06:38:58.213Z",
+  "videoId": "guIocAB38aw",
+  "directiveHash": "775176792245",
+  "hypothesisId": null,
+  "production": {
+    "scriptReviewLoops": 0,
+    "reviewIssueCount": 0,
+    "voiceSynthSuccessRate": 1,
+    "renderDurationSec": 0,
+    "costUsdEstimate": 0
+  },
+  "verdict": "PENDING",
+  "lessonIds": [],
+  "engagement": {
+    "collectedAt": "2026-06-06T09:21:53.913Z",
+    "views7d": 24,
+    "likes7d": 0,
+    "comments7d": 0,
+    "avgViewDurationSec": 80,
+    "retentionRate": 11.08,
+    "ctr": 0
+  }
+}

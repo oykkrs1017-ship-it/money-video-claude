@@ -1,0 +1,17 @@
+{
+  "episodeId": "ep-visual-test",
+  "channel": "ai-money-shorts",
+  "recordedAt": "2026-04-11T11:32:59.087Z",
+  "directiveHash": "unknown",
+  "hypothesisId": null,
+  "templateType": "TypeA-Mystery",
+  "production": {
+    "scriptReviewLoops": 1,
+    "reviewIssueCount": 0,
+    "voiceSynthSuccessRate": 1,
+    "renderDurationSec": 36,
+    "costUsdEstimate": 0.07
+  },
+  "verdict": "PENDING",
+  "lessonIds": []
+}
