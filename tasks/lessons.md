@@ -121,7 +121,7 @@
 - Shorts: `new-episode.ts --render` の Step6 に `render-shorts.ts` を配線（新規発見の最大入口を復活）
 - サムネ: `generate-thumbnail-brief.ts` のキャラ版E（「最高CTR推奨」）を封印しキャラなしA/D推奨に統一（MEMORY「キャラ禁止2026-05-26」と整合）
 
-**未解決（要対応）**: `prompt.ts` の自己矛盾 — SYSTEM_PROMPT「rich-panelは最終手段・図解優先」 vs buildUserPrompt「rich-panel 60%以上」。テスト `prompt.test.ts` の `60%以上 in SYSTEM_PROMPT` が既存failで残存。
+**✅ 解決済み（2026-06-07 b1c0334「図解比率 SoT 修正」）**: `prompt.ts` の自己矛盾は解消。現在は SYSTEM_PROMPT / buildUserPrompt とも「図解系を60%以上・rich-panelは最終手段」で統一され、`prompt.test.ts` 含む全テスト PASS（2026-06-10 監査で実行確認）。
 
 ---
 
