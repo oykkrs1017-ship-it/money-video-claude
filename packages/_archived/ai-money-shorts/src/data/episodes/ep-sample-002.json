@@ -1,0 +1,318 @@
+{
+  "id": "ep-sample-002",
+  "title": "【2026年版】新NISAで買われてる投資信託TOP3！1位は意外なアレ",
+  "description": "新NISAで最も積み立てられている投資信託TOP3を発表！3位から順番に解説、1位は意外な結果に。ポンちゃんとまろくんが人気ランキングの理由を徹底解明します。",
+  "tags": [
+    "新NISA",
+    "投資信託",
+    "積立投資",
+    "インデックス投資",
+    "AIマネー研究所"
+  ],
+  "compositionType": "TypeB-Ranking",
+  "topic": "新NISA積立ランキングTOP3",
+  "sections": [
+    {
+      "id": "section-01",
+      "name": "hook",
+      "backgroundColor": "#0A0E27",
+      "lines": [
+        {
+          "id": "line-001",
+          "character": "pon",
+          "text": "新NISAで最も選ばれてる投信TOP3を発表するのだ！",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-002",
+          "character": "maro",
+          "text": "2026年版のランキング、気になる！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-003",
+          "character": "pon",
+          "text": "1位はちょっと意外な結果なのだ。最後まで見てほしいのだ！",
+          "expression": "smug",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "新NISA人気投信 TOP3 発表！",
+          "position": "top",
+          "animation": "scale-up"
+        }
+      ]
+    },
+    {
+      "id": "section-02",
+      "name": "rank3",
+      "backgroundColor": "#0D1B2A",
+      "lines": [
+        {
+          "id": "line-004",
+          "character": "pon",
+          "text": "第3位は「eMAXIS Slim 先進国株式インデックス」なのだ！",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-005",
+          "character": "maro",
+          "text": "先進国株式か！欧米の大企業に分散投資できるやつだね",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-006",
+          "character": "pon",
+          "text": "信託報酬0.09%台で過去5年のリターンは年平均17.3%なのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-007",
+          "character": "maro",
+          "text": "17%って相当すごいじゃないか！",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "ranking-item",
+          "content": "第3位: eMAXIS Slim 先進国株式",
+          "position": "center",
+          "animation": "slide-left"
+        },
+        {
+          "type": "data-card",
+          "content": "信託報酬: 0.09%台 / 5年リターン: +17.3%/年",
+          "position": "bottom",
+          "animation": "fade-in"
+        }
+      ]
+    },
+    {
+      "id": "section-03",
+      "name": "rank2",
+      "backgroundColor": "#1A0A2E",
+      "lines": [
+        {
+          "id": "line-008",
+          "character": "pon",
+          "text": "第2位は「SBI・V・S&P500インデックス・ファンド」なのだ！",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-009",
+          "character": "maro",
+          "text": "S&P500！アメリカの500社に投資するやつだね",
+          "expression": "happy",
+          "emotion": "neutral",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-010",
+          "character": "pon",
+          "text": "信託報酬は驚きの0.0638%。業界最安水準なのだ",
+          "expression": "smug",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-011",
+          "character": "maro",
+          "text": "それは安い！コストが低いと長期では大きな差になるよね",
+          "expression": "thinking",
+          "emotion": "calm",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "ranking-item",
+          "content": "第2位: SBI・V・S&P500インデックス",
+          "position": "center",
+          "animation": "slide-left"
+        },
+        {
+          "type": "graph",
+          "content": "コスト比較",
+          "animation": "fade-in",
+          "graphType": "bar",
+          "graphData": [
+            {
+              "label": "SBI・V・S&P500",
+              "value": 0.0638,
+              "color": "#00E5FF"
+            },
+            {
+              "label": "業界平均",
+              "value": 0.5,
+              "color": "#FF6B9D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-04",
+      "name": "rank1",
+      "backgroundColor": "#0A1A0A",
+      "lines": [
+        {
+          "id": "line-012",
+          "character": "pon",
+          "text": "そしてついに第1位！「eMAXIS Slim 全世界株式（オール・カントリー）」なのだ！",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-013",
+          "character": "maro",
+          "text": "オルカン！ガチで人気だよね〜",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-014",
+          "character": "pon",
+          "text": "47カ国・約3000銘柄に分散！信託報酬0.05773%で純資産5兆円超えなのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-015",
+          "character": "maro",
+          "text": "5兆円！？もはや国民的投信じゃないか",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-016",
+          "character": "pon",
+          "text": "1本でほぼ全世界に投資できる。シンプルさが最大の強みなのだ",
+          "expression": "smug",
+          "emotion": "calm",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "ranking-item",
+          "content": "第1位: eMAXIS Slim 全世界株式（オルカン）",
+          "position": "top",
+          "animation": "scale-up"
+        },
+        {
+          "type": "data-card",
+          "content": "純資産 5兆円超 / 47カ国 約3000銘柄 / 信託報酬 0.05773%",
+          "position": "center",
+          "animation": "slide-up"
+        }
+      ]
+    },
+    {
+      "id": "section-05",
+      "name": "cta",
+      "backgroundColor": "#0A0E27",
+      "lines": [
+        {
+          "id": "line-017",
+          "character": "pon",
+          "text": "まとめると、オルカン・S&P500・先進国の3強なのだ",
+          "expression": "normal",
+          "emotion": "calm",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-018",
+          "character": "maro",
+          "text": "どれも低コストで分散が効いてる。共通点があるね",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-019",
+          "character": "pon",
+          "text": "フォローしてくれると次回の動画も見逃さないのだ！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "チャンネル登録・フォローお願いします！",
+          "position": "bottom",
+          "animation": "slide-up"
+        }
+      ]
+    }
+  ],
+  "totalDurationMs": 42000,
+  "totalDurationFrames": 1260,
+  "metadata": {
+    "createdAt": "2026-04-06T00:00:00.000Z",
+    "scriptVersion": 1,
+    "aiDisclosure": "この動画はAIが台本を生成し、AIボイスを使用しています。投資は自己責任でお願いします。"
+  }
+}

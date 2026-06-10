@@ -119,9 +119,10 @@ function getNextNineteenJST(): string {
     10, 0, 0, 0
   ));
 
-  const jstHour = jstDate.getUTCHours();
-  const jstMin  = jstDate.getUTCMinutes();
-  const isPast  = jstHour > 19 || (jstHour === 19 && jstMin > 0);
+  // 秒単位まで含めて比較する（19:00:00–19:00:59 JST での過去時刻スケジュールを防ぐ）。
+  // 安全マージン 60 秒を加え、ネットワーク遅延で publishAt が過去に転落するのも防ぐ。
+  const SAFETY_MARGIN_MS = 60_000;
+  const isPast = todayAt19Utc.getTime() <= Date.now() + SAFETY_MARGIN_MS;
 
   if (isPast) {
     return new Date(todayAt19Utc.getTime() + 24 * 60 * 60 * 1000).toISOString();
@@ -251,10 +252,10 @@ async function authorizeWithBrowser(oauth2Client: OAuth2Client): Promise<OAuth2C
   saveToken(tokens);
   console.log('✅ 認証トークンを保存しました:', TOKEN_PATH);
 
-  // refresh_token を .env への記載案内
+  // refresh_token を .env への記載案内（トークン値は出力しない — 保存先ファイルから転記すること）
   if (tokens.refresh_token) {
-    console.log('\n💡 次回以降は .env に以下を追加すると自動認証されます:');
-    console.log(`   YOUTUBE_REFRESH_TOKEN=${tokens.refresh_token}`);
+    console.log('\n💡 次回以降は .env に YOUTUBE_REFRESH_TOKEN を追加すると自動認証されます。');
+    console.log(`   値は ${TOKEN_PATH} 内の refresh_token を参照してください（画面には表示しません）。`);
   }
 
   return oauth2Client;
@@ -399,9 +400,9 @@ function saveResult(
   episodeId: string,
   videoId: string,
   episode: Episode,
-  privacyStatus: string
+  privacyStatus: string,
+  outDir: string,
 ): void {
-  const outDir = path.join(__dirname, '../out');
   fs.mkdirSync(outDir, { recursive: true });
   const resultPath = path.join(outDir, `${episodeId}_upload_result.json`);
 
@@ -437,7 +438,7 @@ async function main(): Promise<void> {
 
   const auth = await authorize();
   const videoId = await uploadWithRetry(auth, videoPath, episode, privacyStatus, publishAt);
-  saveResult(episodeId, videoId, episode, isSchedule ? `scheduled:${publishAt}` : privacyStatus);
+  saveResult(episodeId, videoId, episode, isSchedule ? `scheduled:${publishAt}` : privacyStatus, outDir);
 }
 
 main().catch((err: unknown) => {

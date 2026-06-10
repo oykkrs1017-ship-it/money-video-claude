@@ -1,0 +1,354 @@
+{
+  "id": "ep-sample-005",
+  "title": "【仮定の話】20歳から月1万円積み立てた人と40歳から始めた人の差が衝撃",
+  "description": "もし20歳のあの日、積み立て投資を始めていたら？20歳スタートと40歳スタートの資産格差をストーリー形式で描きます。時間の力を実感してください。",
+  "tags": [
+    "積立投資",
+    "複利",
+    "新NISA",
+    "長期投資",
+    "時間と投資",
+    "AIマネー研究所"
+  ],
+  "compositionType": "TypeE-Story",
+  "topic": "もし20歳から月1万円積み立てていたら",
+  "sections": [
+    {
+      "id": "section-01",
+      "name": "setup",
+      "backgroundColor": "#0A0E27",
+      "lines": [
+        {
+          "id": "line-001",
+          "character": "pon",
+          "text": "もし20歳のあの日、月1万円の積み立てを始めていたら…",
+          "expression": "thinking",
+          "emotion": "calm",
+          "audioDurationMs": 4160,
+          "durationFrames": 134,
+          "audioFile": "voices/ep-sample-005/line-001.wav"
+        },
+        {
+          "id": "line-002",
+          "character": "maro",
+          "text": "2人の人物の話をしようか。AさんとBさん",
+          "expression": "normal",
+          "emotion": "neutral",
+          "audioDurationMs": 4053,
+          "durationFrames": 131,
+          "audioFile": "voices/ep-sample-005/line-002.wav"
+        },
+        {
+          "id": "line-003",
+          "character": "pon",
+          "text": "2人の差は…始めた年齢だけなのだ。それが後に衝撃的な差を生むのだ",
+          "expression": "serious",
+          "emotion": "serious",
+          "audioDurationMs": 4821,
+          "durationFrames": 154,
+          "audioFile": "voices/ep-sample-005/line-003.wav"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "月1万円・年利5%・違いは開始年齢だけ",
+          "animation": "fade-in"
+        }
+      ]
+    },
+    {
+      "id": "section-02",
+      "name": "story1",
+      "backgroundColor": "#1A1A0A",
+      "lines": [
+        {
+          "id": "line-004",
+          "character": "maro",
+          "text": "Aさんは20歳から月1万円、年利5%で積み立てを開始した",
+          "expression": "normal",
+          "emotion": "calm",
+          "audioDurationMs": 6197,
+          "durationFrames": 195,
+          "audioFile": "voices/ep-sample-005/line-004.wav"
+        },
+        {
+          "id": "line-005",
+          "character": "maro",
+          "text": "毎月たった1万円。コーヒーを少し我慢する程度の金額だよ",
+          "expression": "thinking",
+          "emotion": "calm",
+          "audioDurationMs": 5589,
+          "durationFrames": 177,
+          "audioFile": "voices/ep-sample-005/line-005.wav"
+        },
+        {
+          "id": "line-006",
+          "character": "pon",
+          "text": "40年後、Aさんが60歳になったとき資産はどうなっていたか…",
+          "expression": "serious",
+          "emotion": "serious",
+          "audioDurationMs": 4256,
+          "durationFrames": 137,
+          "audioFile": "voices/ep-sample-005/line-006.wav"
+        },
+        {
+          "id": "line-007",
+          "character": "maro",
+          "text": "元本480万円が、なんと約2640万円になっていたんだ！",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioDurationMs": 6016,
+          "durationFrames": 190,
+          "audioFile": "voices/ep-sample-005/line-007.wav"
+        },
+        {
+          "id": "line-008",
+          "character": "pon",
+          "text": "40年という時間が元本の5倍以上に育てたのだ！",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioDurationMs": 3349,
+          "durationFrames": 110,
+          "audioFile": "voices/ep-sample-005/line-008.wav"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "infographic",
+          "headline": {
+            "label": "Aさん 60歳時の資産（20歳スタート・40年）",
+            "value": "2,640",
+            "unit": "万円"
+          },
+          "points": [
+            { "icon": "💴", "text": "元本480万円が5.5倍に成長", "highlight": "5.5倍" },
+            { "icon": "📈", "text": "運用益だけで2,160万円（元本の4.5倍）", "highlight": "2,160万円" },
+            { "icon": "⏳", "text": "40年間、毎月1万円を積み立てただけ", "highlight": "1万円" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-03",
+      "name": "story2",
+      "backgroundColor": "#0A0A1A",
+      "lines": [
+        {
+          "id": "line-009",
+          "character": "pon",
+          "text": "一方Bさんは40歳になってから「そろそろ老後を考えないと」と始めたのだ",
+          "expression": "normal",
+          "emotion": "calm",
+          "audioDurationMs": 5621,
+          "durationFrames": 178,
+          "audioFile": "voices/ep-sample-005/line-009.wav"
+        },
+        {
+          "id": "line-010",
+          "character": "maro",
+          "text": "Bさんも同じ月1万円、同じ年利5%で頑張ったんだよね",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioDurationMs": 5696,
+          "durationFrames": 180,
+          "audioFile": "voices/ep-sample-005/line-010.wav"
+        },
+        {
+          "id": "line-011",
+          "character": "pon",
+          "text": "20年後、Bさんが60歳になったとき…元本240万が約820万円になったのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": 6805,
+          "durationFrames": 214,
+          "audioFile": "voices/ep-sample-005/line-011.wav"
+        },
+        {
+          "id": "line-012",
+          "character": "maro",
+          "text": "820万円も立派だけど、Aさんの2640万円と比べると…",
+          "expression": "sad",
+          "emotion": "calm",
+          "audioDurationMs": 6464,
+          "durationFrames": 203,
+          "audioFile": "voices/ep-sample-005/line-012.wav"
+        },
+        {
+          "id": "line-013",
+          "character": "pon",
+          "text": "約1820万円もの差が生まれてしまったのだ。たった20年の差で！",
+          "expression": "serious",
+          "emotion": "serious",
+          "audioDurationMs": 4789,
+          "durationFrames": 153,
+          "audioFile": "voices/ep-sample-005/line-013.wav"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "graph",
+          "title": "60歳時点の資産比較",
+          "graphType": "comparison",
+          "graphData": [
+            { "label": "Aさん（20歳スタート）", "value": 2640, "unit": "万円", "color": "#00E5FF" },
+            { "label": "Bさん（40歳スタート）", "value": 820, "unit": "万円", "color": "#FF6B9D" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-04",
+      "name": "reveal",
+      "backgroundColor": "#1A0A0A",
+      "lines": [
+        {
+          "id": "line-014",
+          "character": "maro",
+          "text": "グラフで見ると差がよくわかるよ。Aさんは後半に急激に伸びていく",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioDurationMs": 5141,
+          "durationFrames": 164,
+          "audioFile": "voices/ep-sample-005/line-014.wav"
+        },
+        {
+          "id": "line-015",
+          "character": "pon",
+          "text": "これが複利曲線の魔法なのだ。後半ほど加速度的に増えるのだ",
+          "expression": "smug",
+          "emotion": "excited",
+          "audioDurationMs": 4053,
+          "durationFrames": 131,
+          "audioFile": "voices/ep-sample-005/line-015.wav"
+        },
+        {
+          "id": "line-016",
+          "character": "maro",
+          "text": "月1万円の差は一切ないのに、開始時期だけで1820万円の差…",
+          "expression": "thinking",
+          "emotion": "serious",
+          "audioDurationMs": 6005,
+          "durationFrames": 190,
+          "audioFile": "voices/ep-sample-005/line-016.wav"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "graph",
+          "title": "Aさんの複利カーブ（後半ほど急加速）",
+          "graphType": "line",
+          "graphData": [
+            { "label": "20歳", "value": 0, "unit": "万" },
+            { "label": "30歳", "value": 155, "unit": "万" },
+            { "label": "40歳", "value": 411, "unit": "万" },
+            { "label": "50歳", "value": 838, "unit": "万" },
+            { "label": "60歳", "value": 2640, "unit": "万" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-05",
+      "name": "lesson",
+      "backgroundColor": "#0A1A0A",
+      "lines": [
+        {
+          "id": "line-017",
+          "character": "pon",
+          "text": "教訓はシンプルなのだ。時間こそが最大の武器なのだ！",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioDurationMs": 3456,
+          "durationFrames": 113,
+          "audioFile": "voices/ep-sample-005/line-017.wav"
+        },
+        {
+          "id": "line-018",
+          "character": "maro",
+          "text": "いくら大きな金額を投資するより、早く始める方が効果的なんだよね",
+          "expression": "thinking",
+          "emotion": "calm",
+          "audioDurationMs": 5995,
+          "durationFrames": 189,
+          "audioFile": "voices/ep-sample-005/line-018.wav"
+        },
+        {
+          "id": "line-019",
+          "character": "pon",
+          "text": "アインシュタインは複利を「世界第8の不思議」と呼んだのだ",
+          "expression": "smug",
+          "emotion": "calm",
+          "audioDurationMs": 4235,
+          "durationFrames": 137,
+          "audioFile": "voices/ep-sample-005/line-019.wav"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "rich-panel",
+          "title": "複利・時間の3つの真実",
+          "body": "時間こそが最強の投資ツール",
+          "icon": "⚡",
+          "points": [
+            "早く始めるほど効果は指数関数的に大きくなる",
+            "月額より開始年齢の方が最終資産を決める",
+            "アインシュタインが「世界第8の不思議」と称した"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-06",
+      "name": "cta",
+      "backgroundColor": "#0A0E27",
+      "lines": [
+        {
+          "id": "line-020",
+          "character": "maro",
+          "text": "今日が人生で一番若い日。今すぐ始めるのが最善の日だよ！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": 4992,
+          "durationFrames": 159,
+          "audioFile": "voices/ep-sample-005/line-020.wav"
+        },
+        {
+          "id": "line-021",
+          "character": "pon",
+          "text": "月1万円から。まず1歩を踏み出してほしいのだ！",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioDurationMs": 3189,
+          "durationFrames": 105,
+          "audioFile": "voices/ep-sample-005/line-021.wav"
+        },
+        {
+          "id": "line-022",
+          "character": "maro",
+          "text": "チャンネル登録して、一緒に学んでいこう！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": 3307,
+          "durationFrames": 109,
+          "audioFile": "voices/ep-sample-005/line-022.wav"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "今すぐ始めるのが最善の日！",
+          "position": "bottom",
+          "animation": "bounce"
+        }
+      ]
+    }
+  ],
+  "totalDurationMs": 119600,
+  "totalDurationFrames": 3588,
+  "metadata": {
+    "createdAt": "2026-04-06T00:00:00.000Z",
+    "scriptVersion": 1,
+    "aiDisclosure": "この動画はAIが台本を生成し、AIボイスを使用しています。投資は自己責任でお願いします。"
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "id": "ep-20260408-880",
+  "title": "月1万円で億万長者？新ニーサの積み立て戦略が凄すぎた",
+  "description": "月1万円の積み立てが30年後にどう化けるのか、新ニーサの最強戦略を徹底解説！複利の魔法と非課税メリットを組み合わせると、普通の会社員でも驚きの結果に。\n\n📌 データ出典\n・金融庁「資産運用シミュレーション」公式ツール\n・総務省「家計調査報告」2024年版\n・新ニーサ制度概要（金融庁公式サイト）\n\n⚠️ 本動画は情報提供を目的としており、特定の金融商品の購入を推奨するものではありません。投資は自己責任でお願いします。\n\n🤖 この動画はAIが台本を生成し、AIボイスを使用しています。",
+  "tags": [
+    "新NISA",
+    "積み立て投資",
+    "資産形成",
+    "複利",
+    "インデックス投資",
+    "月1万円",
+    "長期投資",
+    "お金の勉強"
+  ],
+  "compositionType": "TypeA-Mystery",
+  "topic": "新ニーサ、月1万円から始める最強の積み立て戦略",
+  "sections": [
+    {
+      "id": "section-01",
+      "name": "hook",
+      "lines": [
+        {
+          "id": "line-001",
+          "character": "pon",
+          "text": "月1万円を30年積み立てると、360万円になると思ってない？",
+          "expression": "smug",
+          "emotion": "playful"
+        },
+        {
+          "id": "line-002",
+          "character": "maro",
+          "text": "え、そうじゃないの？1万×12ヶ月×30年だから360万でしょ？",
+          "expression": "normal",
+          "emotion": "neutral"
+        },
+        {
+          "id": "line-003",
+          "character": "pon",
+          "text": "新ニーサで積み立てると、最大で約2000万円になる可能性があるのだ！",
+          "expression": "happy",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-004",
+          "character": "maro",
+          "text": "え、そうなの？！360万が2000万って、どういうこと？！",
+          "expression": "surprised",
+          "emotion": "excited"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "stat",
+          "value": "約2,000万円",
+          "label": "月1万円×30年の到達点",
+          "subtext": "新NISA積み立て投資シミュレーション（年利7%想定）"
+        }
+      ],
+      "backgroundColor": "#0A0E27"
+    },
+    {
+      "id": "section-02",
+      "name": "mystery-reveal",
+      "lines": [
+        {
+          "id": "line-005",
+          "character": "pon",
+          "text": "これが「複利」の力なのだ。運用益がさらに運用されて、雪だるま式に増えていくのだよ。",
+          "expression": "thinking",
+          "emotion": "calm"
+        },
+        {
+          "id": "line-006",
+          "character": "maro",
+          "text": "でも税金で結構持っていかれるんじゃないの？",
+          "expression": "thinking",
+          "emotion": "serious"
+        },
+        {
+          "id": "line-007",
+          "character": "pon",
+          "text": "そこが新ニーサの最大の強みなのだ！通常は運用益に約20%の税金がかかる。",
+          "expression": "normal",
+          "emotion": "serious"
+        },
+        {
+          "id": "line-008",
+          "character": "pon",
+          "text": "でも新ニーサなら、利益が何百万円になっても税金ゼロなのだ！",
+          "expression": "happy",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-009",
+          "character": "maro",
+          "text": "なるほど〜！非課税ってそんなにデカいんだ！",
+          "expression": "excited",
+          "emotion": "excited"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "graph",
+          "title": "30年後の資産額比較（月1万円・年利7%）",
+          "graphType": "comparison",
+          "graphData": [
+            {
+              "label": "タンス預金",
+              "value": 360
+            },
+            {
+              "label": "通常口座で運用",
+              "value": 1900
+            },
+            {
+              "label": "新NISA口座で運用",
+              "value": 2400
+            }
+          ]
+        }
+      ],
+      "backgroundColor": "#0D1B4B"
+    },
+    {
+      "id": "section-03",
+      "name": "deep-dive",
+      "lines": [
+        {
+          "id": "line-010",
+          "character": "pon",
+          "text": "具体的に新ニーサで月1万円を積み立てる最強の戦略を教えるのだ。",
+          "expression": "smug",
+          "emotion": "playful"
+        },
+        {
+          "id": "line-011",
+          "character": "pon",
+          "text": "ポイントは3つ。「早く始める」「分散する」「売らずに持ち続ける」のだ。",
+          "expression": "normal",
+          "emotion": "calm"
+        },
+        {
+          "id": "line-012",
+          "character": "maro",
+          "text": "早く始めるのはなんとなくわかるけど、どのくらい差がでるの？",
+          "expression": "thinking",
+          "emotion": "neutral"
+        },
+        {
+          "id": "line-013",
+          "character": "pon",
+          "text": "25歳スタートと35歳スタートだと、65歳時点で約1000万円以上の差が出るのだ！",
+          "expression": "surprised",
+          "emotion": "serious"
+        },
+        {
+          "id": "line-014",
+          "character": "maro",
+          "text": "たった10年の差でそんなに変わるの？！",
+          "expression": "surprised",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-015",
+          "character": "pon",
+          "text": "複利は時間が長いほど加速するから、10年の差は想像以上に大きいのだよ。",
+          "expression": "thinking",
+          "emotion": "serious"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "graph",
+          "title": "積み立て開始年齢別・65歳時点の資産額（月1万円・年利7%）",
+          "graphType": "bar",
+          "graphData": [
+            {
+              "label": "25歳スタート",
+              "value": 2600
+            },
+            {
+              "label": "30歳スタート",
+              "value": 1820
+            },
+            {
+              "label": "35歳スタート",
+              "value": 1240
+            },
+            {
+              "label": "40歳スタート",
+              "value": 810
+            }
+          ]
+        }
+      ],
+      "backgroundColor": "#0D1B4B"
+    },
+    {
+      "id": "section-04",
+      "name": "strategy-detail",
+      "lines": [
+        {
+          "id": "line-016",
+          "character": "pon",
+          "text": "次に「分散」について。全世界株式や広範なインデックスファンドが基本なのだ。",
+          "expression": "normal",
+          "emotion": "calm"
+        },
+        {
+          "id": "line-017",
+          "character": "maro",
+          "text": "個別株じゃだめなの？",
+          "expression": "thinking",
+          "emotion": "neutral"
+        },
+        {
+          "id": "line-018",
+          "character": "pon",
+          "text": "個別株は1社の業績に依存するけど、インデックスなら数千社に分散できるのだ。",
+          "expression": "normal",
+          "emotion": "serious"
+        },
+        {
+          "id": "line-019",
+          "character": "pon",
+          "text": "暴落が来ても一部の損失で済むし、むしろ安く買い増せるチャンスになるのだ！",
+          "expression": "happy",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-020",
+          "character": "maro",
+          "text": "なるほど〜！下がっても慌てないってことか！",
+          "expression": "happy",
+          "emotion": "excited"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "rich-panel",
+          "title": "新ニーサ最強積み立て3原則",
+          "body": "長期・分散・継続が資産形成の黄金ルール",
+          "icon": "💡",
+          "points": [
+            "① 早く始める：1日でも早くスタート",
+            "② 分散する：インデックスファンドで数千社に投資",
+            "③ 売らずに持ち続ける：暴落でも積み立て継続"
+          ]
+        }
+      ],
+      "backgroundColor": "#1A0A3D"
+    },
+    {
+      "id": "section-05",
+      "name": "summary-cta",
+      "lines": [
+        {
+          "id": "line-021",
+          "character": "pon",
+          "text": "まとめると、新ニーサで月1万円を長期積み立てすると複利と非課税のダブル効果で資産が大きく育つのだ。",
+          "expression": "normal",
+          "emotion": "calm"
+        },
+        {
+          "id": "line-022",
+          "character": "maro",
+          "text": "今日から始めないと損ってことだね！",
+          "expression": "excited",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-023",
+          "character": "pon",
+          "text": "そのとおり！口座開設は無料だから、まず動くことが最大の戦略なのだ！",
+          "expression": "happy",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-024",
+          "character": "maro",
+          "text": "「もう始めてる」か「これから始める」か、コメントで教えてください！",
+          "expression": "happy",
+          "emotion": "playful"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "新NISAで月1万円 → 30年後に最大約2,000万円の可能性！",
+          "animation": "slide-up"
+        }
+      ],
+      "backgroundColor": "#0A1A0A"
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-04-08T14:07:52.367Z",
+    "scriptVersion": 1,
+    "aiDisclosure": "この動画はAIが台本を生成し、AIボイスを使用しています。"
+  }
+}

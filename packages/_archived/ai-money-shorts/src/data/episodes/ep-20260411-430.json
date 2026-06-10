@@ -1,0 +1,394 @@
+{
+  "id": "ep-20260411-430",
+  "title": "半導体株、買うならどっち？儲かる銘柄 vs 危ない銘柄を徹底比較",
+  "description": "半導体株への投資を考えているなら必見！今回はポンちゃんとまろくんが「成長株」と「危険株」の特徴を徹底比較。どんな指標に注目すれば失敗しないのか、データで解説します。\n\n※この動画は投資の勧誘を目的としたものではありません。投資は自己責任でお願いします。\n\n【参考データ出典】\n・半導体市場規模予測: WSTS（世界半導体市場統計）2025年報告\n・半導体企業PER・ROE比較: Bloomberg, 2025年12月末時点\n・AI向け半導体需要予測: IDC Worldwide AI Semiconductor Forecast 2025",
+  "tags": [
+    "半導体株",
+    "株式投資",
+    "テック株",
+    "投資初心者",
+    "エーアイ投資",
+    "成長株",
+    "リスク管理"
+  ],
+  "compositionType": "TypeC-Versus",
+  "topic": "半導体株・儲かる銘柄と危ない銘柄を徹底比較",
+  "sections": [
+    {
+      "id": "section-01",
+      "name": "hook",
+      "lines": [
+        {
+          "id": "line-001",
+          "character": "pon",
+          "text": "半導体株、ここ3年で10倍になった銘柄もあるのだ！",
+          "expression": "smug",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-002",
+          "character": "maro",
+          "text": "え、10倍！？じゃあ全部買えばよくない？",
+          "expression": "excited",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-003",
+          "character": "pon",
+          "text": "いや、同じ期間に9割下落した銘柄もあるのだ。",
+          "expression": "angry",
+          "emotion": "serious"
+        },
+        {
+          "id": "line-004",
+          "character": "maro",
+          "text": "え、そうなの？どこが違うの…？",
+          "expression": "surprised",
+          "emotion": "neutral"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "multi-stat",
+          "title": "半導体株の明暗",
+          "stats": [
+            {
+              "label": "最高成長銘柄",
+              "value": "+1000",
+              "unit": "%（3年）",
+              "color": "#00E676"
+            },
+            {
+              "label": "最大下落銘柄",
+              "value": "-90",
+              "unit": "%（3年）",
+              "color": "#FF1744"
+            }
+          ]
+        }
+      ],
+      "backgroundColor": "#0A0E27"
+    },
+    {
+      "id": "section-02",
+      "name": "vs-intro",
+      "lines": [
+        {
+          "id": "line-005",
+          "character": "pon",
+          "text": "今日は儲かる半導体株と危ない半導体株を比較するのだ！",
+          "expression": "happy",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-006",
+          "character": "maro",
+          "text": "見分けるポイントってあるの？素人でもわかる？",
+          "expression": "thinking",
+          "emotion": "neutral"
+        },
+        {
+          "id": "line-007",
+          "character": "pon",
+          "text": "3つの指標で判断できるのだ。順番に見ていくのだ！",
+          "expression": "smug",
+          "emotion": "playful"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "儲かる半導体株 vs 危ない半導体株",
+          "animation": "slide-up"
+        }
+      ],
+      "backgroundColor": "#0D1B3E"
+    },
+    {
+      "id": "section-03",
+      "name": "point1-demand",
+      "lines": [
+        {
+          "id": "line-008",
+          "character": "pon",
+          "text": "まず1つ目は「需要の質」なのだ。",
+          "expression": "normal",
+          "emotion": "calm"
+        },
+        {
+          "id": "line-009",
+          "character": "maro",
+          "text": "需要の質？半導体って全部売れれば同じじゃないの？",
+          "expression": "thinking",
+          "emotion": "neutral"
+        },
+        {
+          "id": "line-010",
+          "character": "pon",
+          "text": "エーアイ向けの高性能チップは需要が急増中なのだ。",
+          "expression": "happy",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-011",
+          "character": "pon",
+          "text": "一方、スマホや家電向けは景気に左右されやすいのだ。",
+          "expression": "thinking",
+          "emotion": "serious"
+        },
+        {
+          "id": "line-012",
+          "character": "maro",
+          "text": "なるほど〜！同じ半導体でも全然違うんだね。",
+          "expression": "happy",
+          "emotion": "excited"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "graph",
+          "title": "半導体市場の需要成長率（年率）",
+          "graphType": "bar",
+          "graphData": [
+            {
+              "label": "AI向け",
+              "value": 38
+            },
+            {
+              "label": "データセンター",
+              "value": 22
+            },
+            {
+              "label": "スマホ向け",
+              "value": 4
+            },
+            {
+              "label": "家電向け",
+              "value": -2
+            }
+          ]
+        }
+      ],
+      "backgroundColor": "#0A1628"
+    },
+    {
+      "id": "section-04",
+      "name": "point2-margin",
+      "lines": [
+        {
+          "id": "line-013",
+          "character": "pon",
+          "text": "2つ目は「粗利益率」なのだ。これが超重要なのだ！",
+          "expression": "smug",
+          "emotion": "serious"
+        },
+        {
+          "id": "line-014",
+          "character": "maro",
+          "text": "粗利益率って何パーセントあれば合格なの？",
+          "expression": "thinking",
+          "emotion": "neutral"
+        },
+        {
+          "id": "line-015",
+          "character": "pon",
+          "text": "50パーセント超えが優良ライン。設計専業は特に高いのだ。",
+          "expression": "happy",
+          "emotion": "calm"
+        },
+        {
+          "id": "line-016",
+          "character": "pon",
+          "text": "製造コストを自社で抱える企業は利益が出にくいのだ。",
+          "expression": "thinking",
+          "emotion": "serious"
+        },
+        {
+          "id": "line-017",
+          "character": "maro",
+          "text": "設計だけの会社の方が儲かるって、なんか意外！",
+          "expression": "surprised",
+          "emotion": "excited"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "multi-stat",
+          "title": "ビジネスモデル別 粗利益率の目安",
+          "stats": [
+            {
+              "label": "設計専業（ファブレス）",
+              "value": "60〜80",
+              "unit": "%",
+              "color": "#00E676"
+            },
+            {
+              "label": "設計＋製造（IDM）",
+              "value": "40〜55",
+              "unit": "%",
+              "color": "#FFD600"
+            },
+            {
+              "label": "製造専業（ファウンドリ）",
+              "value": "25〜40",
+              "unit": "%",
+              "color": "#FF6D00"
+            }
+          ]
+        }
+      ],
+      "backgroundColor": "#0D1B3E"
+    },
+    {
+      "id": "section-05",
+      "name": "point3-moat",
+      "lines": [
+        {
+          "id": "line-018",
+          "character": "pon",
+          "text": "3つ目は「参入障壁」なのだ。競合が真似できるかどうかだ。",
+          "expression": "normal",
+          "emotion": "calm"
+        },
+        {
+          "id": "line-019",
+          "character": "maro",
+          "text": "半導体って参入難しいんじゃないの？",
+          "expression": "thinking",
+          "emotion": "neutral"
+        },
+        {
+          "id": "line-020",
+          "character": "pon",
+          "text": "独自の設計技術や特許を持つ企業は強いのだ。",
+          "expression": "smug",
+          "emotion": "serious"
+        },
+        {
+          "id": "line-021",
+          "character": "pon",
+          "text": "汎用品しか作れない企業は価格競争に巻き込まれるのだ。",
+          "expression": "angry",
+          "emotion": "serious"
+        },
+        {
+          "id": "line-022",
+          "character": "maro",
+          "text": "それ、株価がどんどん下がっていくやつだね…こわ。",
+          "expression": "sad",
+          "emotion": "serious"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "rich-panel",
+          "title": "参入障壁チェックリスト",
+          "body": "危ない銘柄の特徴",
+          "points": [
+            "汎用チップのみで差別化なし",
+            "特許・独自技術の保有数が少ない",
+            "ROEが10%未満で低収益体質",
+            "在庫が急増し販売が鈍化している"
+          ]
+        }
+      ],
+      "backgroundColor": "#0A1628"
+    },
+    {
+      "id": "section-06",
+      "name": "data-decision",
+      "lines": [
+        {
+          "id": "line-023",
+          "character": "pon",
+          "text": "3指標をまとめると勝ち組と負け組が見えてくるのだ！",
+          "expression": "happy",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-024",
+          "character": "maro",
+          "text": "エーアイ向け＋高粗利＋独自技術、これが三冠だね！",
+          "expression": "excited",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-025",
+          "character": "pon",
+          "text": "その通り！逆に3つ全部外れたら要注意なのだ。",
+          "expression": "smug",
+          "emotion": "playful"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "infographic",
+          "headline": {
+            "label": "優良半導体株の条件",
+            "value": "3冠",
+            "unit": "クリアが目安"
+          },
+          "points": [
+            {
+              "icon": "🚀",
+              "text": "AI・データセンター向け需要が主力",
+              "highlight": "需要の質"
+            },
+            {
+              "icon": "💰",
+              "text": "粗利益率50%超のビジネスモデル",
+              "highlight": "収益力"
+            },
+            {
+              "icon": "🏰",
+              "text": "特許・独自技術による参入障壁",
+              "highlight": "競争優位"
+            }
+          ],
+          "footnote": "出典: WSTS・IDC・Bloomberg 2025年データより編集"
+        }
+      ],
+      "backgroundColor": "#0D1B3E"
+    },
+    {
+      "id": "section-07",
+      "name": "cta",
+      "lines": [
+        {
+          "id": "line-026",
+          "character": "maro",
+          "text": "半導体ってひとくくりにしてたけど全然違うんだね！",
+          "expression": "happy",
+          "emotion": "excited"
+        },
+        {
+          "id": "line-027",
+          "character": "pon",
+          "text": "銘柄選びの前にビジネスモデルを確認するのだ！",
+          "expression": "normal",
+          "emotion": "calm"
+        },
+        {
+          "id": "line-028",
+          "character": "pon",
+          "text": "あなたは儲かる派？危ない派？コメントで教えるのだ！",
+          "expression": "happy",
+          "emotion": "playful"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "どっち派？コメント欄で教えてね！",
+          "animation": "bounce"
+        }
+      ],
+      "backgroundColor": "#0A0E27"
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-04-11T11:31:20.729Z",
+    "scriptVersion": 1,
+    "aiDisclosure": "この動画はAIが台本を生成し、AIボイスを使用しています。"
+  }
+}

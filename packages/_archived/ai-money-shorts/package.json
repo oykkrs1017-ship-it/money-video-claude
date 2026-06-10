@@ -1,0 +1,50 @@
+{
+  "name": "ai-money-shorts",
+  "version": "1.0.0",
+  "description": "AIマネー研究所 YouTube Shorts 自動生成パイプライン",
+  "scripts": {
+    "dev": "remotion studio",
+    "start": "remotion studio",
+    "build": "remotion render",
+    "render": "ts-node --transpile-only scripts/render-video.ts",
+    "generate:script": "ts-node --transpile-only scripts/generate-script.ts",
+    "generate:voice": "ts-node --transpile-only scripts/generate-voice.ts",
+    "build:episode": "ts-node --transpile-only scripts/build-episode.ts",
+    "upload": "ts-node --transpile-only scripts/upload-youtube.ts",
+    "pipeline": "ts-node --transpile-only scripts/pipeline.ts",
+    "pipeline:batch": "ts-node --transpile-only scripts/pipeline.ts --batch 5",
+    "fetch:images": "ts-node --transpile-only scripts/fetch-images.ts",
+    "gen:placeholder": "ts-node --transpile-only scripts/gen-placeholder-images.ts",
+    "ab-render": "ts-node --transpile-only scripts/ab-render.ts",
+    "qc": "ts-node --transpile-only scripts/qc-still.ts",
+    "collect-analytics": "ts-node --transpile-only scripts/collect-analytics.ts",
+    "sync-settings": "ts-node --transpile-only scripts/sync-settings.ts",
+    "verdict": "ts-node --transpile-only scripts/verdict.ts --all",
+    "verdict:ep": "ts-node --transpile-only scripts/verdict.ts"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.445",
+    "@remotion/cli": "4.0.445",
+    "@remotion/google-fonts": "4.0.445",
+    "@remotion/renderer": "4.0.445",
+    "axios": "^1.6.0",
+    "date-fns": "^3.3.0",
+    "dotenv": "^16.4.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remotion": "4.0.445",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "googleapis": "^171.4.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "remotion": {
+    "entryPoint": "./src/index.ts"
+  }
+}

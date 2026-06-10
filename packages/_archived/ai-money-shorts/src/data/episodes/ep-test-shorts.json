@@ -1,0 +1,328 @@
+{
+  "id": "ep-test-shorts",
+  "title": "米中半導体戦争で投資マネーが大移動する理由",
+  "description": "米中半導体戦争が激化する中、TSMC・NVIDIA・SMICなど主要銘柄への投資インパクトを地政学の観点から解説。投資マネーが今どこへ動くのかを徹底分析します。",
+  "tags": [
+    "米中半導体戦争",
+    "半導体投資",
+    "TSMC",
+    "NVIDIA",
+    "地政学リスク",
+    "半導体ETF",
+    "CHIPS法",
+    "AI半導体",
+    "投資",
+    "株式投資",
+    "半導体株",
+    "SMIC",
+    "ASML",
+    "地政学",
+    "米国株",
+    "中国株",
+    "テック株",
+    "半導体",
+    "経済安全保障",
+    "東京エレクトロン",
+    "エヌビディア",
+    "台湾",
+    "貿易戦争",
+    "輸出規制",
+    "GPU",
+    "AI投資",
+    "人工知能",
+    "半導体産業",
+    "ファウンドリ",
+    "米中対立",
+    "技術覇権",
+    "制裁",
+    "Shorts",
+    "サプライチェーン",
+    "資産運用",
+    "株式"
+  ],
+  "compositionType": "TypeC-Versus",
+  "topic": "米中半導体戦争と投資マネーの動向",
+  "topicCategory": "ai-tech",
+  "variationSeed": "ep-test-shorts-v1",
+  "sections": [
+    {
+      "id": "section-01",
+      "name": "hook",
+      "role": "hook",
+      "backgroundColor": "#0A0E1A",
+      "lines": [
+        {
+          "id": "line-001",
+          "character": "pon",
+          "text": "米中の半導体戦争、今すごいことになってるのだ！",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioFile": "voices/ep-test-shorts/line-001.wav",
+          "audioDurationMs": 3509,
+          "durationFrames": 115
+        },
+        {
+          "id": "line-002",
+          "character": "maro",
+          "text": "投資マネーが大移動してるって本当？",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioFile": "voices/ep-test-shorts/line-002.wav",
+          "audioDurationMs": 3083,
+          "durationFrames": 102
+        },
+        {
+          "id": "line-003",
+          "character": "pon",
+          "text": "そうなのだ！アメリカと中国、勝つのはどっちかのだ？",
+          "expression": "serious",
+          "emotion": "serious",
+          "audioFile": "voices/ep-test-shorts/line-003.wav",
+          "audioDurationMs": 3648,
+          "durationFrames": 119
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "米VS中 半導体覇権戦争！",
+          "position": "top",
+          "animation": "scale-up"
+        }
+      ]
+    },
+    {
+      "id": "section-02",
+      "name": "versus対決",
+      "role": "explanation",
+      "backgroundColor": "#0D1A2E",
+      "lines": [
+        {
+          "id": "line-004",
+          "character": "maro",
+          "text": "まずアメリカ側の戦力を教えて！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioFile": "voices/ep-test-shorts/line-004.wav",
+          "audioDurationMs": 2635,
+          "durationFrames": 89
+        },
+        {
+          "id": "line-005",
+          "character": "pon",
+          "text": "アメリカはNVIDIA・TSMC・ASMLで最先端チップを独占してるのだ",
+          "expression": "smug",
+          "emotion": "serious",
+          "audioFile": "voices/ep-test-shorts/line-005.wav",
+          "audioDurationMs": 5941,
+          "durationFrames": 188
+        },
+        {
+          "id": "line-006",
+          "character": "maro",
+          "text": "中国はどうなの？",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioFile": "voices/ep-test-shorts/line-006.wav",
+          "audioDurationMs": 1803,
+          "durationFrames": 64
+        },
+        {
+          "id": "line-007",
+          "character": "pon",
+          "text": "中国はSMICで7ナノまで来たけどまだ2〜3世代の差があるのだ",
+          "expression": "normal",
+          "emotion": "calm",
+          "audioFile": "voices/ep-test-shorts/line-007.wav",
+          "audioDurationMs": 5045,
+          "durationFrames": 161
+        }
+      ],
+      "visuals": [
+        {
+          "type": "versus-card",
+          "title": "🔥 半導体覇権バトル",
+          "left": {
+            "label": "🇺🇸 米国陣営",
+            "color": "#4A9EFF",
+            "score": 82,
+            "items": [
+              { "name": "NVIDIA", "detail": "AI GPU 世界シェア80%+", "score": 95 },
+              { "name": "TSMC", "detail": "3nm 最先端プロセス", "score": 90 },
+              { "name": "ASML", "detail": "EUV露光装置を独占", "score": 88 }
+            ]
+          },
+          "right": {
+            "label": "🇨🇳 中国陣営",
+            "color": "#FF4A4A",
+            "score": 54,
+            "items": [
+              { "name": "SMIC", "detail": "7nm 国産ファウンドリ", "score": 60 },
+              { "name": "華為HiSilicon", "detail": "自前設計で制裁を突破", "score": 55 },
+              { "name": "国家基金", "detail": "1500億ドル投入中", "score": 70 }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "section-03",
+      "name": "data",
+      "role": "data",
+      "backgroundColor": "#0A1628",
+      "lines": [
+        {
+          "id": "line-008",
+          "character": "pon",
+          "text": "CHIPS法で米国は527億ドルを半導体国内生産に投資してるのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioFile": "voices/ep-test-shorts/line-008.wav",
+          "audioDurationMs": 6080,
+          "durationFrames": 192
+        },
+        {
+          "id": "line-009",
+          "character": "maro",
+          "text": "527億ドル！？すごい金額だね",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioFile": "voices/ep-test-shorts/line-009.wav",
+          "audioDurationMs": 3477,
+          "durationFrames": 114
+        },
+        {
+          "id": "line-010",
+          "character": "pon",
+          "text": "中国も1500億ドルの半導体基金で対抗してるのだ",
+          "expression": "thinking",
+          "emotion": "serious",
+          "audioFile": "voices/ep-test-shorts/line-010.wav",
+          "audioDurationMs": 3765,
+          "durationFrames": 122
+        },
+        {
+          "id": "line-011",
+          "character": "maro",
+          "text": "両国とも本気で投資してるんだね！",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioFile": "voices/ep-test-shorts/line-011.wav",
+          "audioDurationMs": 2720,
+          "durationFrames": 91
+        }
+      ],
+      "visuals": [
+        {
+          "type": "graph",
+          "title": "米中 半導体投資額比較（億ドル）",
+          "graphType": "comparison",
+          "graphData": [
+            {
+              "label": "米国 CHIPS法",
+              "value": 527,
+              "color": "#4A9EFF"
+            },
+            {
+              "label": "中国 半導体基金",
+              "value": 1500,
+              "color": "#FF4A4A"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-04",
+      "name": "conclusion",
+      "role": "conclusion",
+      "backgroundColor": "#0A0E1A",
+      "lines": [
+        {
+          "id": "line-012",
+          "character": "pon",
+          "text": "投資家が注目すべきはNVIDIA・TSMC・東京エレクトロンなのだ",
+          "expression": "smug",
+          "emotion": "serious",
+          "audioFile": "voices/ep-test-shorts/line-012.wav",
+          "audioDurationMs": 5173,
+          "durationFrames": 165
+        },
+        {
+          "id": "line-013",
+          "character": "maro",
+          "text": "日本企業も関係あるんだ！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioFile": "voices/ep-test-shorts/line-013.wav",
+          "audioDurationMs": 2293,
+          "durationFrames": 78
+        },
+        {
+          "id": "line-014",
+          "character": "pon",
+          "text": "サプライチェーン再編で恩恵を受ける銘柄に注目なのだ！",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioFile": "voices/ep-test-shorts/line-014.wav",
+          "audioDurationMs": 3509,
+          "durationFrames": 115
+        }
+      ],
+      "visuals": [
+        {
+          "type": "rich-panel",
+          "title": "注目銘柄 3選",
+          "body": "半導体戦争で恩恵を受ける企業",
+          "icon": "star",
+          "points": [
+            "NVIDIA — AI半導体で圧倒的シェア",
+            "TSMC — 世界最先端ファウンドリ",
+            "東京エレクトロン — 製造装置で日本代表"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-05",
+      "name": "cta",
+      "role": "cta",
+      "backgroundColor": "#0A0E1A",
+      "lines": [
+        {
+          "id": "line-015",
+          "character": "pon",
+          "text": "チャンネル登録して次の分析も見てほしいのだ！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioFile": "voices/ep-test-shorts/line-015.wav",
+          "audioDurationMs": 2827,
+          "durationFrames": 94
+        },
+        {
+          "id": "line-016",
+          "character": "maro",
+          "text": "いいね！フォローもよろしくね！",
+          "expression": "happy",
+          "emotion": "playful",
+          "audioFile": "voices/ep-test-shorts/line-016.wav",
+          "audioDurationMs": 2379,
+          "durationFrames": 81
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "チャンネル登録でいち早く情報をゲット！",
+          "position": "center",
+          "animation": "bounce"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-04-12T00:00:00.000Z",
+    "scriptVersion": 1,
+    "aiDisclosure": "この動画はAIが台本を生成し、AIボイスを使用しています。投資は自己責任でお願いします。"
+  }
+}

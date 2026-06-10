@@ -1,0 +1,76 @@
+# このファイルを編集後、npm run sync-settings を実行して settings.generated.ts を再生成してください
+
+video:
+  width: 1080
+  height: 1920
+  fps: 30
+
+font:
+  family: "Noto Sans JP"
+  numberFamily: "Montserrat"
+  headingSize: 52
+  bodySize: 40
+  weight: "900"
+  color: "#ffffff"
+
+subtitle:
+  bottomOffset: 430   # YouTube Shorts セーフゾーン下部393px + 余裕37px
+  maxWidthPercent: 88
+  fontSize: 40
+  fontWeight: "700"
+  lineHeight: 1.4
+
+# YouTube Shorts セーフティゾーン（1080x1920）
+# 参考: https://izm-pro.com/media/0357d987-dab8-4c9c-9424-5345cc4b203a
+safeZone:
+  top: 205       # 上部UIオーバーレイ（チャンネル名・タイトル）
+  bottom: 393    # 下部UIオーバーレイ（いいね・コメント・シェア）
+  left: 50       # 左マージン
+  right: 50      # 右マージン
+  commentUiRight: 186   # 右端から高評価/コメントUIの幅
+  commentUiHeight: 1020 # 高評価/コメントUIの縦幅
+
+character:
+  height: 600
+  useImages: true
+  imagesBasePath: "images"
+
+colors:
+  primaryBg: "#0A0E27"
+  secondaryBg: "#1A1F3A"
+  accentGold: "#FFD700"
+  accentCyan: "#00E5FF"
+  textWhite: "#FFFFFF"
+  textGray: "#B0B8D1"
+
+characters:
+  pon:
+    name: "ポンちゃん"
+    role: "解説役"
+    voicevoxSpeakerId: 2
+    defaultSpeedScale: 1.15
+    defaultPitchScale: 0.0
+    color: "#4CAF50"
+    position: "left"
+    expressions:
+      - normal
+      - happy
+      - surprised
+      - thinking
+      - angry
+      - smug
+  maro:
+    name: "まろくん"
+    role: "質問役"
+    voicevoxSpeakerId: 3
+    defaultSpeedScale: 1.10
+    defaultPitchScale: 0.0
+    color: "#E91E63"
+    position: "right"
+    expressions:
+      - normal
+      - happy
+      - surprised
+      - thinking
+      - sad
+      - excited

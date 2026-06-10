@@ -1,0 +1,191 @@
+{
+  "id": "ep-sample-001",
+  "title": "新NISAの成長投資枠、90%の人が損している使い方とは？",
+  "description": "新NISAの成長投資枠を正しく使えていますか？実は9割の人が非効率な使い方をしています。ポン先生とマロちゃんが正しい活用法を徹底解説！",
+  "tags": [
+    "新NISA",
+    "投資",
+    "ETF",
+    "積立投資",
+    "資産運用",
+    "AIマネー研究所"
+  ],
+  "compositionType": "TypeA-Mystery",
+  "topic": "新NISAの成長投資枠の正しい使い方",
+  "sections": [
+    {
+      "id": "section-01",
+      "name": "hook",
+      "backgroundColor": "#0A0E27",
+      "lines": [
+        {
+          "id": "line-001",
+          "character": "pon",
+          "text": "新NISAの成長投資枠、9割の人が損してるのだ！",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioDurationMs": 4256,
+          "durationFrames": 143,
+          "audioFile": "voices/ep-sample-001/line-001.wav"
+        },
+        {
+          "id": "line-002",
+          "character": "maro",
+          "text": "え！？私も使ってるけど大丈夫かな…",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioDurationMs": 3637,
+          "durationFrames": 125,
+          "audioFile": "voices/ep-sample-001/line-002.wav"
+        },
+        {
+          "id": "line-003",
+          "character": "pon",
+          "text": "年240万円も枠があるのに、みんなもったいない使い方をしてるのだ",
+          "expression": "thinking",
+          "emotion": "serious",
+          "audioDurationMs": 4864,
+          "durationFrames": 161,
+          "audioFile": "voices/ep-sample-001/line-003.wav"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "衝撃の事実！",
+          "position": "top",
+          "animation": "scale-up"
+        }
+      ]
+    },
+    {
+      "id": "section-02",
+      "name": "explanation",
+      "backgroundColor": "#1A1F3A",
+      "lines": [
+        {
+          "id": "line-004",
+          "character": "maro",
+          "text": "どんな使い方が多いの？",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioDurationMs": 2187,
+          "durationFrames": 81,
+          "audioFile": "voices/ep-sample-001/line-004.wav"
+        },
+        {
+          "id": "line-005",
+          "character": "pon",
+          "text": "個別株を買ってる人が全体の62%もいるのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": 3691,
+          "durationFrames": 126,
+          "audioFile": "voices/ep-sample-001/line-005.wav"
+        },
+        {
+          "id": "line-006",
+          "character": "maro",
+          "text": "個別株だとダメなの？",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioDurationMs": 2016,
+          "durationFrames": 76,
+          "audioFile": "voices/ep-sample-001/line-006.wav"
+        },
+        {
+          "id": "line-007",
+          "character": "pon",
+          "text": "分散効果が低くてリスクが高いのだ。全世界株ETFと比べると5年リターンが平均38%も違うのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": 7744,
+          "durationFrames": 248,
+          "audioFile": "voices/ep-sample-001/line-007.wav"
+        },
+        {
+          "id": "line-008",
+          "character": "maro",
+          "text": "38%！？それは大きいね",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioDurationMs": 3328,
+          "durationFrames": 115,
+          "audioFile": "voices/ep-sample-001/line-008.wav"
+        },
+        {
+          "id": "line-009",
+          "character": "pon",
+          "text": "成長投資枠は低コストの全世界型ETFが最も効率的なのだ",
+          "expression": "smug",
+          "emotion": "calm",
+          "audioDurationMs": 5099,
+          "durationFrames": 168,
+          "audioFile": "voices/ep-sample-001/line-009.wav"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "graph",
+          "content": "成長投資枠の使い方比較",
+          "animation": "fade-in",
+          "graphType": "bar",
+          "graphData": [
+            {
+              "label": "個別株",
+              "value": 62,
+              "color": "#FF6B9D"
+            },
+            {
+              "label": "国内ETF",
+              "value": 21,
+              "color": "#B0B8D1"
+            },
+            {
+              "label": "全世界ETF",
+              "value": 11,
+              "color": "#00E5FF"
+            },
+            {
+              "label": "その他",
+              "value": 6,
+              "color": "#FFD700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-03",
+      "name": "conclusion",
+      "backgroundColor": "#0A0E27",
+      "lines": [
+        {
+          "id": "line-010",
+          "character": "maro",
+          "text": "なるほど〜！全世界ETFを使えばいいんだね！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": 3872,
+          "durationFrames": 132,
+          "audioFile": "voices/ep-sample-001/line-010.wav"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "成長投資枠は\n全世界ETFが最強！",
+          "position": "center",
+          "animation": "slide-up"
+        }
+      ]
+    }
+  ],
+  "totalDurationMs": 26300,
+  "totalDurationFrames": 939,
+  "metadata": {
+    "createdAt": "2026-03-30T00:00:00.000Z",
+    "scriptVersion": 1,
+    "aiDisclosure": "この動画はAIが台本を生成し、AIボイスを使用しています。投資は自己責任でお願いします。"
+  }
+}

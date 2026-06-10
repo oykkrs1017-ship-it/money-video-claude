@@ -1,0 +1,334 @@
+{
+  "id": "ep-sample-004",
+  "title": "【クイズ】100万円を年利5%で20年運用すると何万円？正解率10%の難問",
+  "description": "複利の法則を体感するクイズ動画！100万円を年利5%で20年運用すると何万円になる？意外と知らない複利の力をポンちゃんとまろくんが解説します。",
+  "tags": [
+    "複利",
+    "クイズ",
+    "資産運用",
+    "新NISA",
+    "投資入門",
+    "AIマネー研究所"
+  ],
+  "compositionType": "TypeD-Quiz",
+  "topic": "複利の法則クイズ",
+  "sections": [
+    {
+      "id": "section-01",
+      "name": "quiz",
+      "backgroundColor": "#0A0E27",
+      "lines": [
+        {
+          "id": "line-001",
+          "character": "pon",
+          "text": "クイズなのだ！正解率なんと10%の難問に挑戦してほしいのだ",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-002",
+          "character": "maro",
+          "text": "10%！？それはめちゃくちゃ難しそうだ",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-003",
+          "character": "pon",
+          "text": "問題。100万円を年利5%で20年間運用すると何万円になる？",
+          "expression": "serious",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-004",
+          "character": "maro",
+          "text": "複利で考えるのか…うーん",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "クイズ！100万円を年利5%×20年で運用したら？",
+          "position": "top",
+          "animation": "typewriter"
+        }
+      ]
+    },
+    {
+      "id": "section-02",
+      "name": "choices",
+      "backgroundColor": "#0D1B2A",
+      "lines": [
+        {
+          "id": "line-005",
+          "character": "pon",
+          "text": "選択肢を発表するのだ！3択で考えてほしいのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-006",
+          "character": "maro",
+          "text": "A・B・Cどれかな。ちゃんと考えてみよう！",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "quiz-choice",
+          "content": "A: 約200万円（単利計算）",
+          "position": "top",
+          "animation": "slide-left"
+        },
+        {
+          "type": "quiz-choice",
+          "content": "B: 約265万円（複利計算）",
+          "position": "center",
+          "animation": "slide-left"
+        },
+        {
+          "type": "quiz-choice",
+          "content": "C: 約300万円（高めに見積もり）",
+          "position": "bottom",
+          "animation": "slide-left"
+        }
+      ]
+    },
+    {
+      "id": "section-03",
+      "name": "thinking",
+      "backgroundColor": "#1A0D0A",
+      "lines": [
+        {
+          "id": "line-007",
+          "character": "pon",
+          "text": "さあ3秒考えてみてほしいのだ！",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-008",
+          "character": "maro",
+          "text": "3…2…1…答えは決まった？",
+          "expression": "smug",
+          "emotion": "playful",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "3秒でシンキング！",
+          "position": "center",
+          "animation": "scale-up"
+        }
+      ]
+    },
+    {
+      "id": "section-04",
+      "name": "answer",
+      "backgroundColor": "#0A1A1A",
+      "lines": [
+        {
+          "id": "line-009",
+          "character": "pon",
+          "text": "正解は…B！約265万円なのだ！",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-010",
+          "character": "maro",
+          "text": "へえ！100万が265万になるのか。2.65倍だ",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-011",
+          "character": "pon",
+          "text": "計算式は 100万 × (1.05)の20乗 ≒ 265万なのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-012",
+          "character": "maro",
+          "text": "単利なら200万だから、複利で65万も多くなるんだね！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-013",
+          "character": "pon",
+          "text": "これが複利の魔法なのだ。時間が長いほど効果が大きくなるのだ",
+          "expression": "smug",
+          "emotion": "calm",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "正解：B 約265万円！",
+          "position": "top",
+          "animation": "scale-up"
+        },
+        {
+          "type": "data-card",
+          "content": "100万 × (1.05)²⁰ ≒ 265万円",
+          "position": "center",
+          "animation": "fade-in"
+        }
+      ]
+    },
+    {
+      "id": "section-05",
+      "name": "bonus",
+      "backgroundColor": "#1A0A1A",
+      "lines": [
+        {
+          "id": "line-014",
+          "character": "pon",
+          "text": "ボーナス問題なのだ！毎月3万円を年利5%で20年積み立てると？",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-015",
+          "character": "maro",
+          "text": "元本は720万円か…2倍にはなる感じ？",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-016",
+          "character": "pon",
+          "text": "なんと約1230万円！元本720万が1.7倍以上になるのだ",
+          "expression": "surprised",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-017",
+          "character": "maro",
+          "text": "積立の力と複利が合わさると本当にすごいんだね！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "graph",
+          "content": "毎月3万×20年の積立シミュレーション",
+          "animation": "slide-up",
+          "graphType": "line",
+          "graphData": [
+            {
+              "label": "元本",
+              "value": 720,
+              "color": "#B0B8D1"
+            },
+            {
+              "label": "運用後（年利5%）",
+              "value": 1230,
+              "color": "#00E5FF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-06",
+      "name": "cta",
+      "backgroundColor": "#0A0E27",
+      "lines": [
+        {
+          "id": "line-018",
+          "character": "pon",
+          "text": "正解できた人はコメントで教えてほしいのだ！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-019",
+          "character": "maro",
+          "text": "他のクイズ動画も見てね！チャンネル登録もお願いします！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "チャンネル登録でもっと学べる！",
+          "position": "bottom",
+          "animation": "bounce"
+        }
+      ]
+    }
+  ],
+  "totalDurationMs": 42500,
+  "totalDurationFrames": 1275,
+  "metadata": {
+    "createdAt": "2026-04-06T00:00:00.000Z",
+    "scriptVersion": 1,
+    "aiDisclosure": "この動画はAIが台本を生成し、AIボイスを使用しています。投資は自己責任でお願いします。"
+  }
+}

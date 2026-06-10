@@ -1,0 +1,310 @@
+{
+  "id": "ep-sample-003",
+  "title": "【決着】インデックス vs 高配当株、どっちが正解か数字で語る",
+  "description": "インデックス投資と高配当株投資、どちらが優れているのか？まろくんとポンちゃんがそれぞれの立場から主張し、最終的にデータで決着をつけます。",
+  "tags": [
+    "インデックス投資",
+    "高配当株",
+    "新NISA",
+    "資産運用",
+    "AIマネー研究所"
+  ],
+  "compositionType": "TypeC-Versus",
+  "topic": "インデックス投資 vs 高配当株投資",
+  "sections": [
+    {
+      "id": "section-01",
+      "name": "hook",
+      "backgroundColor": "#0A0E27",
+      "lines": [
+        {
+          "id": "line-001",
+          "character": "pon",
+          "text": "10年後に差がつく、どっちが本当に得なのだ？",
+          "expression": "serious",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-002",
+          "character": "maro",
+          "text": "インデックスか高配当か、投資家永遠の議論だよね",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-003",
+          "character": "pon",
+          "text": "今日は数字で決着をつけるのだ！最後まで見てほしいのだ",
+          "expression": "smug",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "インデックス VS 高配当株",
+          "position": "center",
+          "animation": "scale-up"
+        }
+      ]
+    },
+    {
+      "id": "section-02",
+      "name": "sideA",
+      "backgroundColor": "#1A0A0E",
+      "lines": [
+        {
+          "id": "line-004",
+          "character": "maro",
+          "text": "僕はインデックス派！理由は3つあるよ",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-005",
+          "character": "maro",
+          "text": "1つ目、ほったらかしでOK。銘柄選びが不要なのが最高",
+          "expression": "happy",
+          "emotion": "calm",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-006",
+          "character": "maro",
+          "text": "2つ目、過去20年のS&P500平均リターンは年約10%。実績が圧倒的",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-007",
+          "character": "maro",
+          "text": "3つ目、信託報酬0.1%以下。コストが安い分だけ長期で有利だよ",
+          "expression": "thinking",
+          "emotion": "calm",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-008",
+          "character": "pon",
+          "text": "なるほど、まろくんの言い分もわかるのだ",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "data-card",
+          "content": "インデックス派の主張\n①ほったらかしOK ②年利10% ③超低コスト",
+          "position": "center",
+          "animation": "slide-up"
+        }
+      ]
+    },
+    {
+      "id": "section-03",
+      "name": "sideB",
+      "backgroundColor": "#0A1A0E",
+      "lines": [
+        {
+          "id": "line-009",
+          "character": "pon",
+          "text": "でも高配当株にも負けない魅力があるのだ！",
+          "expression": "smug",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-010",
+          "character": "pon",
+          "text": "まず配当金が毎年入ってくる。不況でも現金をもらえる安心感なのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-011",
+          "character": "pon",
+          "text": "高配当ETFの平均配当利回りは3〜4%。インデックスの約0.5%より圧倒的なのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-012",
+          "character": "pon",
+          "text": "精神的な安定感が違う。暴落時も配当が支えになるのだ",
+          "expression": "thinking",
+          "emotion": "calm",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-013",
+          "character": "maro",
+          "text": "確かに、配当金はモチベ維持に繋がるよね",
+          "expression": "thinking",
+          "emotion": "neutral",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "data-card",
+          "content": "高配当株派の主張\n①配当金で安心感 ②利回り3〜4% ③暴落耐性",
+          "position": "center",
+          "animation": "slide-up"
+        }
+      ]
+    },
+    {
+      "id": "section-04",
+      "name": "verdict",
+      "backgroundColor": "#1A1A0A",
+      "lines": [
+        {
+          "id": "line-014",
+          "character": "maro",
+          "text": "じゃあ実際10年後はどうなるの？データで見せて！",
+          "expression": "excited",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-015",
+          "character": "pon",
+          "text": "100万円を10年運用した場合、インデックスは約259万円なのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-016",
+          "character": "pon",
+          "text": "高配当株（配当再投資）は約185万円。資産成長はインデックスが上なのだ",
+          "expression": "normal",
+          "emotion": "serious",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-017",
+          "character": "maro",
+          "text": "でも高配当株は途中で配当金を使いたい人に向いてるよね",
+          "expression": "thinking",
+          "emotion": "calm",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-018",
+          "character": "pon",
+          "text": "正解は両方なのだ！成長期はインデックス、運用期は高配当株の配分が賢いのだ",
+          "expression": "smug",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "graph",
+          "content": "10年後の資産比較",
+          "animation": "slide-up",
+          "graphType": "comparison",
+          "graphData": [
+            {
+              "label": "インデックス（10年後）",
+              "value": 259,
+              "color": "#00E5FF"
+            },
+            {
+              "label": "高配当株（10年後）",
+              "value": 185,
+              "color": "#FFD700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-05",
+      "name": "cta",
+      "backgroundColor": "#0A0E27",
+      "lines": [
+        {
+          "id": "line-019",
+          "character": "pon",
+          "text": "あなたはインデックス派？高配当派？コメントで教えてほしいのだ！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        },
+        {
+          "id": "line-020",
+          "character": "maro",
+          "text": "どちらを選ぶかはライフスタイルと目的次第だよ。参考になったら高評価お願いします！",
+          "expression": "happy",
+          "emotion": "excited",
+          "audioDurationMs": null,
+          "durationFrames": 60,
+          "audioFile": null
+        }
+      ],
+      "visuals": [
+        {
+          "type": "telop",
+          "content": "あなたはどっち派？コメントで教えて！",
+          "position": "bottom",
+          "animation": "bounce"
+        }
+      ]
+    }
+  ],
+  "totalDurationMs": 44000,
+  "totalDurationFrames": 1320,
+  "metadata": {
+    "createdAt": "2026-04-06T00:00:00.000Z",
+    "scriptVersion": 1,
+    "aiDisclosure": "この動画はAIが台本を生成し、AIボイスを使用しています。投資は自己責任でお願いします。"
+  }
+}
