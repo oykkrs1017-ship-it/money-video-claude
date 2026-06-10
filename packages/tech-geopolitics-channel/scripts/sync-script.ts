@@ -110,7 +110,8 @@ function main() {
   });
 
   // Generate TypeScript content
-  const tsContent = `import { CharacterId } from "../config";
+  const tsContent = `// キャラクターID（config/characters.yaml から自動生成 — 旧 src/config.ts は廃止済み）
+export type CharacterId = ${characterIdType};
 
 // アニメーションの型定義
 export type AnimationType = "none" | "fadeIn" | "slideUp" | "slideLeft" | "zoomIn" | "bounce";

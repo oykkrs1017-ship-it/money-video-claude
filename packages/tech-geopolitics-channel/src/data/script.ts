@@ -1,4 +1,5 @@
-import { CharacterId } from "../config";
+// キャラクターID（config/characters.yaml から自動生成 — 旧 src/config.ts は廃止済み）
+export type CharacterId = "zundamon" | "metan" | "kuro_zunda";
 
 // アニメーションの型定義
 export type AnimationType = "none" | "fadeIn" | "slideUp" | "slideLeft" | "zoomIn" | "bounce";
