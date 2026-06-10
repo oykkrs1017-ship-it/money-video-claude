@@ -1,0 +1,435 @@
+videoId: "ep003"
+seed: "ep003"
+title: "日本の石油95%が止まる？ホルムズ海峡危機"
+description: "米国・イスラエルのイラン攻撃でホルムズ海峡が封鎖。日本は原油の95%を中東に依存し、備蓄放出で時間を稼いでいるが、封鎖が長期化すれば深刻な影響は避けられない。投資家が今見るべきシナリオと注目セクターを解説。"
+tags: [
+  "ホルムズ海峡","イラン戦争","原油価格","エネルギー安全保障","日本経済",
+  "ホルムズ","イラン","中東危機","石油危機","エネルギー危機",
+  "地政学リスク","地政学","投資","株式投資","資源株",
+  "エネルギー株","石油備蓄","原油相場","日本の石油","石油輸入",
+  "原油高","エネルギー政策","安全保障","中東","イスラエル",
+  "石油","ホルムズ海峡封鎖","石油ショック","原油先物","エネルギー関連株",
+  "備蓄放出","IEA","産油国","UAE","LNG",
+  "天然ガス","貿易赤字","円安","インフレ","投資解説",
+  "経済解説","ニュース解説","資産運用","株","原油ETF",
+  "商社株","三菱商事","三井物産","INPEX","電力株",
+  "防衛株","有事","戦争リスク","地政学投資","中東情勢",
+  "原油輸入","政治リスク","原油需給","石油メジャー","OPEC",
+  "ロシア制裁","脱炭素","国際情勢","投資戦略","金融","景気後退",
+  "トランプ","高市首相","ペルシャ湾","リスクヘッジ","分散投資",
+  "ポートフォリオ","スタグフレーション","ドル円","国際政治","省エネ"
+]
+bgmVolume: 0.12
+bgmMap:
+  hook: "bgm/news.mp3"
+  explanation: "bgm/main_lofi.mp3"
+  analysis: "bgm/main_lofi.mp3"
+  summary: "bgm/uplifting_piano.mp3"
+  cta: "bgm/uplifting_piano.mp3"
+
+# ─── チャートデータ（タイトル・デフォルト種別付き）────────────────────────
+chartData:
+  oil-dependency:
+    title: "日本の原油輸入先（2024年度）"
+    type: pie
+    data:
+      - label: "中東"
+        value: 95.9
+      - label: "その他"
+        value: 4.1
+
+  oil-price-timeline:
+    title: "ブレント原油価格の急騰（$/バレル）"
+    type: line
+    data:
+      - label: "2月27日"
+        value: 72
+      - label: "3月2日"
+        value: 82
+      - label: "3月9日"
+        value: 103
+      - label: "3月14日"
+        value: 108
+      - label: "3月20日"
+        value: 112
+
+  reserve-breakdown:
+    title: "日本の石油備蓄内訳（日数）"
+    type: bar
+    data:
+      - label: "国家備蓄"
+        value: 146
+      - label: "民間備蓄"
+        value: 101
+      - label: "産油国共同"
+        value: 7
+
+  bypass-capacity:
+    title: "代替ルートのカバー率（万バレル/日）"
+    type: bar
+    data:
+      - label: "ホルムズ通過量"
+        value: 2020
+      - label: "迂回能力"
+        value: 180
+
+  scenario-oil-price:
+    title: "シナリオ別 原油価格見通し（$/バレル）"
+    type: bar
+    data:
+      - label: "楽観(4月再開)"
+        value: 80
+      - label: "基本(3-6ヶ月)"
+        value: 115
+      - label: "悲観(6ヶ月超)"
+        value: 150
+
+  japan-energy-mix:
+    title: "日本の一次エネルギー構成比（%）"
+    type: bar
+    data:
+      - label: "石油"
+        value: 34.8
+      - label: "石炭"
+        value: 24.4
+      - label: "天然ガス"
+        value: 20.8
+      - label: "原子力"
+        value: 8.5
+      - label: "再エネ他"
+        value: 11.5
+
+  lng-source:
+    title: "日本のLNG輸入先（%）"
+    type: bar
+    data:
+      - label: "豪州"
+        value: 39.7
+      - label: "マレーシア"
+        value: 14.8
+      - label: "ロシア"
+        value: 8.9
+      - label: "中東(ホルムズ経由)"
+        value: 6.3
+      - label: "その他"
+        value: 30.3
+
+# ─── チャプター ─────────────────────────────────────────────────────────
+chapters:
+  - type: hook
+    topic: "最後のタンカーが到着"
+    duration: 40
+    lines:
+      - ponchan: "今日3月22日、中東からの原油を積んだ最後のタンカーが千葉に入港したよ。これ以降、日本に届く中東産の原油は、当面ゼロになる。"
+        emotion: serious
+        show:
+          type: keyword
+          text: "中東産原油の到着がゼロに"
+
+      - maro: "えっ、ゼロ！？日本ってたしか原油のほとんどを中東から買ってるよね？それが止まるってどういうことなのだ？"
+        emotion: surprised
+        show:
+          type: image
+          src: "content/web_171522cf.jpg"
+          caption: "ホルムズ海峡（ペルシャ湾の出口）"
+          position: top-center
+          width: 520
+          duration: 6
+
+      - ponchan: "そう、日本の原油輸入の95.9%が中東産。そしてその大半が通るホルムズ海峡が、いま事実上封鎖されている。今日はこの危機の全体像と、投資家として何を考えるべきかを解説するよ。"
+        emotion: serious
+        show:
+          type: stat
+          value: "95.9%"
+          label: "中東依存度"
+          subtext: "日本の原油輸入・2024年度"
+
+  - type: explanation
+    topic: "何が起きているのか"
+    duration: 180
+    lines:
+      - maro: "そもそも、なんでホルムズ海峡が封鎖されてるのだ？最初から教えてほしい。"
+        emotion: thinking
+
+      - ponchan: "発端は2月28日。米国とイスラエルがイランに大規模な軍事攻撃を行い、最高指導者ハメネイ師が死亡した。イランは報復として、3月2日にホルムズ海峡の事実上の封鎖を宣言したんだ。"
+        emotion: serious
+        show:
+          type: timeline
+          title: "ホルムズ海峡危機の経緯"
+          events:
+            - year: "2/28"
+              label: "米・イスラエルがイラン攻撃"
+              highlight: true
+            - year: "3/2"
+              label: "イランがホルムズ海峡封鎖を宣言"
+              highlight: true
+            - year: "3/11"
+              label: "高市首相が備蓄放出を表明"
+              highlight: false
+            - year: "3/16"
+              label: "IEA史上最大の協調備蓄放出"
+              highlight: false
+            - year: "3/22"
+              label: "最後の中東産タンカーが日本到着"
+              highlight: true
+
+      - maro: "ホルムズ海峡ってどれくらい大事な場所なのだ？"
+        emotion: thinking
+
+      - ponchan: "ホルムズ海峡はペルシャ湾と外洋を結ぶ唯一の出口で、最も狭い部分はわずか33キロ。ここを世界の石油消費量の約20%、1日あたり2020万バレルが通過しているんだ。"
+        emotion: normal
+        show:
+          type: stat
+          value: "2020万"
+          label: "バレル/日"
+          subtext: "ホルムズ海峡通過量"
+
+      - maro: "世界の石油の5分の1が通る場所が塞がれたってことか！それで原油価格はどうなったのだ？"
+        emotion: surprised
+
+      - ponchan: "攻撃前のブレント原油は72ドルだったけど、3週間で112ドルまで急騰した。約56%の上昇だよ。IEAのトップはこれを『史上最大のエネルギー安全保障上の危機』と表現している。"
+        emotion: serious
+        show:
+          type: chart
+          key: oil-price-timeline
+
+      - maro: "56%の急騰はすごいのだ…。で、トランプ大統領は何て言ってるの？終わりそうなの？"
+        emotion: thinking
+
+      - ponchan: "3月20日にトランプ大統領は『作戦の縮小を検討中』と投稿した。でも同じ日に『停戦はしない。相手を完全に叩いてる最中に停戦なんてしない』とも言っている。しかもイラン側も停戦を拒否していて、先行きは非常に不透明なんだ。"
+        emotion: serious
+        show:
+          type: keyword
+          text: "米・イラン双方が停戦を拒否"
+
+      - maro: "両方とも停戦する気がないのか…。これは長引きそうなのだ。"
+        emotion: sad
+
+  - type: explanation
+    topic: "日本の脆弱性"
+    duration: 150
+    lines:
+      - ponchan: "ここからが本題。なぜ日本は特にこの危機に弱いのか。ポイントは3つあるよ。まず第1に、中東依存度の異常な高さ。2024年度の日本の原油輸入における中東依存度は95.9%で、過去最高を記録しているんだ。"
+        emotion: serious
+        show:
+          type: chart
+          key: oil-dependency
+
+      - maro: "95.9%！？ほぼ全部じゃないか。昔から分散しようって言ってなかったっけ？"
+        emotion: surprised
+
+      - ponchan: "皮肉なことに、ロシア・ウクライナ戦争の後にロシア産原油の輸入を減らした結果、中東依存度がかえって上がってしまったんだ。1973年の第一次オイルショックの時でさえ、中東依存度は約80%だった。今はそれより高い。"
+        emotion: normal
+        show:
+          type: keyword
+          text: "脱ロシアで中東依存度が過去最高に"
+
+      - maro: "分散しようとして逆に集中しちゃったのか。じゃあ第2のポイントは？"
+        emotion: thinking
+
+      - ponchan: "第2は備蓄の実態。日本には官民合わせて254日分の石油備蓄がある。国家備蓄146日分、民間101日分、産油国共同7日分。一見すると充実してるように見える。"
+        emotion: normal
+        show:
+          type: chart
+          key: reserve-breakdown
+
+      - maro: "254日分あればだいぶ安心じゃないのだ？"
+        emotion: thinking
+
+      - ponchan: "実はここが最大の落とし穴。今回放出したのは45日分、8000万バレル。でもこれは『時間稼ぎ』であって『解決策』じゃない。1990年の湾岸危機との決定的な違いは、当時はホルムズ海峡自体は閉まっていなかったこと。備蓄を使いながら補充もできた。"
+        emotion: serious
+        show:
+          type: stat
+          value: "45日分"
+          label: "今回の備蓄放出量"
+          subtext: "8000万バレル"
+
+      - maro: "あ、そうか！今回は海峡が閉まってるから、使った分を補充できないってことか！"
+        emotion: surprised
+
+      - ponchan: "その通り。使えば使うほど手元の在庫が一方的に減っていく。12月初旬までに封鎖が解除されれば供給途絶は避けられるという試算もあるけど、それ以上長引けば非常に厳しい。"
+        emotion: serious
+
+      - maro: "代わりの輸送ルートはないのだ？第3のポイントがそれ？"
+        emotion: thinking
+
+      - ponchan: "そう、第3は代替ルートの限界。最も現実的なのはUAEのフジャイラ経由パイプラインだけど、輸送能力は1日180万バレル。ホルムズ海峡の通過量2020万バレルのわずか9%にすぎない。"
+        emotion: normal
+        show:
+          type: chart
+          key: bypass-capacity
+
+      - maro: "9%しかカバーできないのか…。『代替ルートがある』って聞くと安心しちゃうけど、全然足りないんだな。"
+        emotion: sad
+        show:
+          type: slide
+          title: "なぜ日本だけ特に危険なのか"
+          layout: bullets
+          bullets:
+            - "① 中東依存度 95.9%（過去最高）"
+            - "② 備蓄254日分は補充できない"
+            - "③ 代替ルートは9%しかカバー不可"
+
+  - type: analysis
+    topic: "経済と生活への影響"
+    duration: 180
+    lines:
+      - maro: "この危機が続くと、日本の生活にはどう影響するのだ？"
+        emotion: thinking
+
+      - ponchan: "まずガソリン価格。2月末から既に上昇が始まっていて、政府は3月19日にリッター170円を上限とするガソリン補助金を再導入した。ただし封鎖が長引けば財政負担がどんどん膨らむ。"
+        emotion: normal
+        show:
+          type: stat
+          value: "170円/L"
+          label: "ガソリン補助金上限"
+          subtext: "3月19日再導入"
+
+      - maro: "電気代やガス代はどうなるのだ？"
+        emotion: thinking
+
+      - ponchan: "日本には燃料費調整制度があって、原油やLNGの価格上昇が約2ヶ月のタイムラグで電気・ガス料金に反映される。だから5月以降の請求書に注意が必要だよ。"
+        emotion: normal
+        show:
+          type: keyword
+          text: "5月以降の電気・ガス代に要注意"
+
+      - maro: "ちょっと待って、LNGの方は大丈夫って話もあったよね？"
+        emotion: thinking
+
+      - ponchan: "いい質問。日本のLNG輸入のうち、ホルムズ海峡を通るのは実は6.3%だけ。最大の輸入先はオーストラリアの39.7%で、これはホルムズを経由しない。だから電力は原油ほど直接的な打撃は受けにくい。"
+        emotion: normal
+        show:
+          type: chart
+          key: lng-source
+
+      - maro: "おお、それはちょっと安心なのだ。でも食品とかはどうなの？"
+        emotion: thinking
+        show:
+          type: slide
+          title: "生活・経済への波及ルート"
+          layout: bullets
+          bullets:
+            - "ガソリン: 補助金上限170円/L（財政負担増）"
+            - "電気・ガス: 2ヶ月遅れで5月以降に値上げ"
+            - "食品: 燃料・肥料・物流コストが全上昇"
+
+      - ponchan: "食品は厳しい。農業用の燃料、肥料、農薬はすべて石油由来だし、物流コストも上がる。スーパーの食品価格は全般的に上昇圧力がかかるよ。1973年のオイルショックではトイレットペーパーの買い占めパニックが起きたのは有名な話だよね。"
+        emotion: serious
+
+      - maro: "うわぁ、生活のあらゆるところに影響するのか。日本経済全体ではどれくらいのダメージなのだ？"
+        emotion: sad
+
+      - ponchan: "野村総合研究所のシナリオでは、原油が130ドルに達するとGDPが0.65ポイント低下、インフレが1.14%上昇する可能性がある。しかも日銀にとっては最悪のジレンマ。コストプッシュのインフレに利上げで対応すれば景気を冷やすし、据え置けばインフレが止まらない。"
+        emotion: serious
+        show:
+          type: stat
+          value: "▲0.65%"
+          label: "GDP影響(130ドル時)"
+          subtext: "野村総研シナリオ"
+
+      - maro: "金利を上げても地獄、上げなくても地獄ってやつか…。投資家としてはどう考えればいいのだ？"
+        emotion: thinking
+
+  - type: analysis
+    topic: "投資シナリオと注目セクター"
+    duration: 180
+    lines:
+      - ponchan: "投資家が考えるべきは、3つのシナリオだよ。楽観シナリオは4月中に海峡再開で原油80ドル台に回帰。基本シナリオは封鎖3〜6ヶ月で原油100〜130ドル。悲観シナリオは封鎖6ヶ月超で130ドルを大きく超える展開。"
+        emotion: normal
+        show:
+          type: chart
+          key: scenario-oil-price
+
+      - maro: "トランプ大統領もイランも停戦を拒否してるから、楽観シナリオはちょっと厳しいかもしれないのだ。"
+        emotion: thinking
+
+      - ponchan: "その見方は妥当かもしれない。ゴールドマン・サックスは原油高が2027年まで続く可能性を示唆しているしね。ただ予測はあくまで予測だから、シナリオ別に備えることが大事。"
+        emotion: normal
+        show:
+          type: keyword
+          text: "予測ではなく備えが大事"
+
+      - maro: "具体的にどのセクターに注目すればいいのだ？"
+        emotion: thinking
+
+      - ponchan: "まず恩恵を受ける可能性があるのは資源・エネルギー系。INPEXや商社の三菱商事・三井物産は原油高の恩恵を直接受けやすい。ENEOSなどの元売りも利益が拡大する構造にある。"
+        emotion: normal
+        show:
+          type: slide
+          title: "注目セクター：恩恵 vs 逆風"
+          layout: bullets
+          bullets:
+            - "恩恵: INPEX・三菱商事・三井物産・ENEOS"
+            - "追い風: 原発再稼働・再生エネルギー関連"
+            - "逆風: 海運・石化・航空・外食・小売"
+
+      - maro: "原発とか再エネはどうなのだ？"
+        emotion: thinking
+
+      - ponchan: "今注目すべきテーマだね。日本は現在15基の原子炉が稼働中で、エネルギー安全保障の観点から再稼働加速の議論が一気に盛り上がっている。再生エネルギーも『エネルギー自給率向上＝国の安全保障』という文脈で政策の追い風が吹く可能性がある。"
+        emotion: normal
+        show:
+          type: stat
+          value: "15基"
+          label: "稼働中の原子炉"
+          subtext: "2026年3月時点"
+
+      - maro: "逆にダメージを受けるのはどこなのだ？"
+        emotion: thinking
+
+      - ponchan: "日本郵船や川崎汽船はホルムズ海峡の通行をすでに停止していて、海運セクターは直撃。石油化学はナフサ在庫の枯渇懸念があるし、航空は燃料コスト急騰、外食や小売はコスト転嫁と消費の冷え込みのダブルパンチになりやすい。"
+        emotion: serious
+        show:
+          type: keyword
+          text: "海運・石化・航空・小売に逆風"
+
+      - maro: "あと個人的に気になるのが、AIとかテック株への影響なのだ。関係あるの？"
+        emotion: thinking
+
+      - ponchan: "実は大いにある。AIデータセンターは通常の3〜5倍の電力を消費する。原油高でエネルギーコストが跳ね上がると、ハイパースケーラーの設備投資計画が遅延するリスクがある。半導体メモリの需要にも波及するから、テック投資家も他人事じゃないんだよ。"
+        emotion: serious
+        show:
+          type: keyword
+          text: "原油高はAIデータセンター投資にも波及"
+
+  - type: summary
+    topic: "まとめと投資家への示唆"
+    duration: 80
+    lines:
+      - ponchan: "今日のまとめ。ポイントは3つ。第1に、ホルムズ海峡の封鎖は『時間との戦い』。備蓄放出はあくまで45日分の時間稼ぎで、封鎖中は補充ができないという構造的な問題がある。"
+        emotion: serious
+        show:
+          type: keyword
+          text: "①封鎖は時間との戦い"
+
+      - maro: "使えば減る一方ってことだったよね。"
+        emotion: normal
+
+      - ponchan: "第2に、日本のエネルギー構造の脆弱性が改めて露呈した。中東依存95.9%という数字は、1973年のオイルショック時すら超えている。原発再稼働や再エネ拡大は、もはや環境問題ではなく安全保障の問題として議論が加速するだろう。"
+        emotion: normal
+        show:
+          type: keyword
+          text: "②エネルギー問題は安全保障問題"
+
+      - ponchan: "そして第3に、投資家は予測ではなく備えを。楽観・基本・悲観の3シナリオを頭に入れて、自分のポートフォリオにどう影響するかを今すぐ点検してほしい。エネルギー、金融政策、為替の3つの軸で考えるのがおすすめだよ。"
+        emotion: normal
+        show:
+          type: keyword
+          text: "③3シナリオでポートフォリオ点検"
+
+      - maro: "予測は当たらないけど、備えは必ず役に立つってことだな。今日の話はめちゃくちゃ勉強になったのだ。"
+        emotion: happy
+
+  - type: cta
+    topic: "次回予告"
+    duration: 35
+    lines:
+      - ponchan: "このチャンネルでは、テクノロジーと地政学の交差点にある出来事を投資家目線で解説しています。中東情勢は引き続きウォッチしていくので、見逃さないようチャンネル登録をお願いします。"
+        emotion: happy
+
+      - maro: "次回は、この原油高がAIデータセンター投資にどう影響するかを深掘りする予定なのだ。エネルギーとテックの意外なつながり、お楽しみに！"
+        emotion: happy
+        show:
+          type: keyword
+          text: "次回：原油高×AIデータセンター"

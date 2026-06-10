@@ -1,0 +1,839 @@
+{
+  "videoId": "ep004",
+  "seed": "ep004",
+  "title": "南鳥島レアアース争奪戦！中国空母が妨害？",
+  "description": "南鳥島沖の水深6000mに眠るレアアース泥の採掘に日本が成功。しかし中国空母がEEZに進入し妨害行動を繰り返す。世界のレアアース供給の約70%を握る中国に日本は対抗できるのか？経済安全保障と注目投資銘柄を徹底解説します。",
+  "tags": [
+    "南鳥島",
+    "レアアース",
+    "レアアース泥",
+    "中国",
+    "中国空母",
+    "EEZ",
+    "排他的経済水域",
+    "経済安全保障",
+    "経済安保",
+    "地政学",
+    "資源争奪戦",
+    "深海採掘",
+    "深海資源",
+    "水深6000m",
+    "レアメタル",
+    "希土類",
+    "ネオジム",
+    "ジスプロシウム",
+    "テルビウム",
+    "イットリウム",
+    "脱中国依存",
+    "サプライチェーン",
+    "半導体",
+    "EV",
+    "電気自動車",
+    "風力発電",
+    "再生可能エネルギー",
+    "防衛",
+    "日本の資源",
+    "海洋資源",
+    "JOGMEC",
+    "日本株",
+    "投資",
+    "注目銘柄",
+    "三井海洋開発",
+    "日本海洋掘削",
+    "住友金属鉱山",
+    "信越化学",
+    "TDK",
+    "大阪チタニウム",
+    "東邦チタニウム",
+    "テクノロジー投資",
+    "資源株",
+    "地政学リスク",
+    "台湾有事",
+    "第一列島線",
+    "太平洋",
+    "小笠原",
+    "海上自衛隊",
+    "防衛費",
+    "GDP比2%",
+    "岸田政権",
+    "国家安全保障戦略",
+    "重要鉱物",
+    "クリティカルミネラル",
+    "米中対立",
+    "デカップリング",
+    "フレンドショアリング",
+    "永久磁石",
+    "モーター",
+    "蓄電池",
+    "リチウム",
+    "コバルト",
+    "採掘技術",
+    "海底資源",
+    "マンガン団塊",
+    "深海探査",
+    "しんかい6500",
+    "ちきゅう",
+    "揚泥試験",
+    "JAMSTEC",
+    "東京大学",
+    "加藤泰浩",
+    "鹿島建設",
+    "大林組",
+    "IHI"
+  ],
+  "chapters": [
+    {
+      "type": "hook",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "まろくん、日本の近くに世界を変えるお宝が眠ってるって知ってる？",
+          "emotion": "happy",
+          "audioFile": "voices/0001_ponchan.wav",
+          "audioDuration": 4.288,
+          "frameCount": 133
+        },
+        {
+          "speaker": "maro",
+          "text": "お宝？海賊の金貨とかなのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0002_maro.wav",
+          "audioDuration": 2.923,
+          "frameCount": 92
+        },
+        {
+          "speaker": "ponchan",
+          "text": "ふふ、もっとすごいの！南鳥島の沖合、水深6000メートルの海底にレアアースの泥が大量に眠ってるんだよ！",
+          "emotion": "surprised",
+          "visual": {
+            "type": "keyword",
+            "text": "南鳥島レアアース泥"
+          },
+          "audioFile": "voices/0003_ponchan.wav",
+          "audioDuration": 7.296,
+          "frameCount": 223
+        },
+        {
+          "speaker": "maro",
+          "text": "レアアース…スマホとかEVに使われる超重要な資源なのだ",
+          "emotion": "thinking",
+          "audioFile": "voices/0004_maro.wav",
+          "audioDuration": 4.512,
+          "frameCount": 140
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そう！その埋蔵量がとんでもないの。日本の消費量の数百年分とも言われてるんだよ",
+          "emotion": "surprised",
+          "visual": {
+            "type": "stat",
+            "value": "数百年分",
+            "label": "日本のレアアース消費量換算"
+          },
+          "audioFile": "voices/0005_ponchan.wav",
+          "audioDuration": 5.76,
+          "frameCount": 177
+        },
+        {
+          "speaker": "maro",
+          "text": "数百年分！？それが本当なら日本は資源大国になれるのだ！",
+          "emotion": "surprised",
+          "audioFile": "voices/0006_maro.wav",
+          "audioDuration": 4.917,
+          "frameCount": 152
+        },
+        {
+          "speaker": "ponchan",
+          "text": "ところがね、この宝の山に中国が黙ってないの。2024年から中国空母が南鳥島周辺のEEZに何度も進入してるんだよ",
+          "emotion": "serious",
+          "audioFile": "voices/0007_ponchan.wav",
+          "audioDuration": 8.864,
+          "frameCount": 270
+        },
+        {
+          "speaker": "maro",
+          "text": "中国空母がわざわざ太平洋側まで来るのだ？それは穏やかじゃないぞ",
+          "emotion": "serious",
+          "visual": {
+            "type": "highlight",
+            "text": "中国空母が南鳥島周辺EEZに進入\n日本の資源開発を牽制か"
+          },
+          "audioFile": "voices/0008_maro.wav",
+          "audioDuration": 5.205,
+          "frameCount": 161
+        },
+        {
+          "speaker": "ponchan",
+          "text": "今日は南鳥島レアアース泥の採掘成功と中国の妨害行動、そして投資家が注目すべきポイントを解説していくよ！",
+          "emotion": "happy",
+          "audioFile": "voices/0009_ponchan.wav",
+          "audioDuration": 7.477,
+          "frameCount": 229
+        }
+      ],
+      "topic": "水深6000mの宝の山"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "まずレアアースがなぜ重要かを説明するね。レアアースは17種類の元素の総称で、ハイテク産業に欠かせない素材なの",
+          "emotion": "normal",
+          "audioFile": "voices/0010_ponchan.wav",
+          "audioDuration": 7.733,
+          "frameCount": 237
+        },
+        {
+          "speaker": "maro",
+          "text": "具体的にはどんなものに使われるのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0011_maro.wav",
+          "audioDuration": 2.827,
+          "frameCount": 89
+        },
+        {
+          "speaker": "ponchan",
+          "text": "EVモーターの永久磁石にはネオジムとジスプロシウム、風力発電のタービンにも同じ素材が使われるよ。スマホのスピーカーや防衛装備のミサイル誘導にも必須なの",
+          "emotion": "normal",
+          "visual": {
+            "type": "highlight",
+            "text": "レアアースの用途\nEV・風力発電・スマホ・防衛装備"
+          },
+          "audioFile": "voices/0012_ponchan.wav",
+          "audioDuration": 10.421,
+          "frameCount": 317
+        },
+        {
+          "speaker": "maro",
+          "text": "つまり現代社会のインフラを支える縁の下の力持ちなのだ",
+          "emotion": "thinking",
+          "audioFile": "voices/0013_maro.wav",
+          "audioDuration": 4.213,
+          "frameCount": 131
+        },
+        {
+          "speaker": "ponchan",
+          "text": "その通り！で、問題はこのレアアースの生産を中国が圧倒的に支配してること",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "rareEarthShare"
+          },
+          "audioFile": "voices/0014_ponchan.wav",
+          "audioDuration": 5.696,
+          "frameCount": 175
+        },
+        {
+          "speaker": "maro",
+          "text": "68%！世界の7割近くを中国が握ってるのだ…これは怖いぞ",
+          "emotion": "surprised",
+          "audioFile": "voices/0015_maro.wav",
+          "audioDuration": 6.112,
+          "frameCount": 188
+        },
+        {
+          "speaker": "ponchan",
+          "text": "しかも精錬・加工まで含めると中国のシェアは約90%に達するの。つまり採掘だけじゃなくて加工でも完全に依存してるんだよ",
+          "emotion": "serious",
+          "visual": {
+            "type": "stat",
+            "value": "約90%",
+            "label": "中国のレアアース精錬シェア"
+          },
+          "audioFile": "voices/0016_ponchan.wav",
+          "audioDuration": 8.523,
+          "frameCount": 260
+        },
+        {
+          "speaker": "maro",
+          "text": "原料から製品までほぼ中国頼みなのだ。これは2010年の尖閣問題の時にも問題になったのだ",
+          "emotion": "thinking",
+          "audioFile": "voices/0017_maro.wav",
+          "audioDuration": 7.285,
+          "frameCount": 223
+        },
+        {
+          "speaker": "ponchan",
+          "text": "よく覚えてるね！2010年に中国がレアアース輸出を事実上止めて、日本の製造業はパニックになったの。あの時ネオジムの価格は10倍以上に跳ね上がったんだよ",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "chinaExportControl"
+          },
+          "audioFile": "voices/0018_ponchan.wav",
+          "audioDuration": 10.453,
+          "frameCount": 318
+        },
+        {
+          "speaker": "maro",
+          "text": "そのグラフを見ると最近また規制が強まってるのだ",
+          "emotion": "serious",
+          "audioFile": "voices/0019_maro.wav",
+          "audioDuration": 3.499,
+          "frameCount": 109
+        },
+        {
+          "speaker": "ponchan",
+          "text": "2023年にはガリウムとゲルマニウムの輸出規制、2024年にはさらに範囲を広げたの。米中対立が深まるたびに中国は資源を武器にしてくるんだよ",
+          "emotion": "serious",
+          "audioFile": "voices/0020_ponchan.wav",
+          "audioDuration": 10.069,
+          "frameCount": 307
+        }
+      ],
+      "topic": "レアアースと中国支配"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "そこで注目されてるのが南鳥島のレアアース泥なの！東京大学の加藤泰浩教授のチームが2012年に発見して、ずっと研究が続いてたんだよ",
+          "emotion": "happy",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "year": "2012年",
+                "label": "東大チームが高濃度レアアース泥を発見",
+                "highlight": true
+              },
+              {
+                "year": "2013年",
+                "label": "JAMSTECが詳細調査開始",
+                "highlight": false
+              },
+              {
+                "year": "2022年",
+                "label": "揚泥パイロット試験に成功",
+                "highlight": true
+              },
+              {
+                "year": "2024年",
+                "label": "世界初の水深6000m揚泥成功",
+                "highlight": true
+              },
+              {
+                "year": "2025年〜",
+                "label": "商業化に向けた実証段階",
+                "highlight": false
+              }
+            ],
+            "title": "南鳥島レアアース開発の歩み"
+          },
+          "audioFile": "voices/0021_ponchan.wav",
+          "audioDuration": 9.536,
+          "frameCount": 291
+        },
+        {
+          "speaker": "maro",
+          "text": "2024年に水深6000メートルからの揚泥に成功したのだ？すごい技術なのだ！",
+          "emotion": "surprised",
+          "audioFile": "voices/0022_maro.wav",
+          "audioDuration": 6.251,
+          "frameCount": 192
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そうなの！6000メートルって富士山を1.6個分積み上げた深さだよ。そこから泥を吸い上げる技術を日本が世界で初めて実証したの",
+          "emotion": "happy",
+          "visual": {
+            "type": "stat",
+            "value": "6,000m",
+            "label": "採掘深度（富士山約1.6個分）"
+          },
+          "audioFile": "voices/0023_ponchan.wav",
+          "audioDuration": 8.288,
+          "frameCount": 253
+        },
+        {
+          "speaker": "maro",
+          "text": "で、どれくらいのレアアースが眠ってるのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0024_maro.wav",
+          "audioDuration": 3.093,
+          "frameCount": 97
+        },
+        {
+          "speaker": "ponchan",
+          "text": "推定埋蔵量はこんな感じだよ。特にジスプロシウムやテルビウムといった重レアアースが豊富なのが大きいの",
+          "emotion": "normal",
+          "visual": {
+            "type": "chart",
+            "key": "minamitorishimaReserve"
+          },
+          "audioFile": "voices/0025_ponchan.wav",
+          "audioDuration": 6.485,
+          "frameCount": 199
+        },
+        {
+          "speaker": "maro",
+          "text": "重レアアースは中国依存度が特に高いものなのだ。これが自前で取れるなら革命的だぞ",
+          "emotion": "surprised",
+          "audioFile": "voices/0026_maro.wav",
+          "audioDuration": 6.197,
+          "frameCount": 190
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まさにその通り！ただし課題もあるの。水深6000メートルの商業採掘はまだ世界中どこもやったことがなくて、コストと技術のハードルが高いんだよ",
+          "emotion": "thinking",
+          "audioFile": "voices/0027_ponchan.wav",
+          "audioDuration": 9.237,
+          "frameCount": 282
+        },
+        {
+          "speaker": "maro",
+          "text": "つまり技術は証明されたけど、ビジネスとして成り立つかはこれからなのだ",
+          "emotion": "thinking",
+          "visual": {
+            "type": "highlight",
+            "text": "技術実証は成功\n商業化のコスト削減が次の課題"
+          },
+          "audioFile": "voices/0028_maro.wav",
+          "audioDuration": 5.056,
+          "frameCount": 156
+        }
+      ],
+      "topic": "南鳥島の採掘成功"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここからが地政学的にヤバい話なの。2024年以降、中国海軍の空母「遼寧」や「山東」が太平洋側に展開して、南鳥島周辺のEEZに入ってきてるんだよ",
+          "emotion": "serious",
+          "audioFile": "voices/0029_ponchan.wav",
+          "audioDuration": 13.387,
+          "frameCount": 406
+        },
+        {
+          "speaker": "maro",
+          "text": "EEZへの進入自体は国際法上は違法ではないのだ。でも意図が問題だぞ",
+          "emotion": "thinking",
+          "visual": {
+            "type": "highlight",
+            "text": "EEZ進入は国際法上は合法\nしかし軍事的プレゼンスで開発を牽制"
+          },
+          "audioFile": "voices/0030_maro.wav",
+          "audioDuration": 5.973,
+          "frameCount": 184
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そう、中国の狙いは明確で、日本の資源開発を心理的に牽制することなの。採掘船や調査船の近くを軍艦が通過するだけで、民間企業はリスクを感じるでしょ？",
+          "emotion": "serious",
+          "audioFile": "voices/0031_ponchan.wav",
+          "audioDuration": 11.509,
+          "frameCount": 350
+        },
+        {
+          "speaker": "maro",
+          "text": "グレーゾーンの戦略なのだ。直接攻撃はしないけどプレッシャーをかけるのだ",
+          "emotion": "serious",
+          "audioFile": "voices/0032_maro.wav",
+          "audioDuration": 5.227,
+          "frameCount": 161
+        },
+        {
+          "speaker": "ponchan",
+          "text": "これに対して日本政府は防衛費を大幅に増やしてるの",
+          "emotion": "normal",
+          "visual": {
+            "type": "chart",
+            "key": "defensebudget"
+          },
+          "audioFile": "voices/0033_ponchan.wav",
+          "audioDuration": 3.477,
+          "frameCount": 109
+        },
+        {
+          "speaker": "maro",
+          "text": "2020年の5.3兆円から2025年には8.7兆円！すごい増え方なのだ",
+          "emotion": "surprised",
+          "audioFile": "voices/0034_maro.wav",
+          "audioDuration": 6.677,
+          "frameCount": 205
+        },
+        {
+          "speaker": "ponchan",
+          "text": "特に海上自衛隊の哨戒能力や島嶼防衛が強化されてて、南鳥島を含む太平洋側の警戒態勢も厚くなってるんだよ",
+          "emotion": "normal",
+          "visual": {
+            "type": "stat",
+            "value": "8.7兆円",
+            "label": "2025年度防衛費"
+          },
+          "audioFile": "voices/0035_ponchan.wav",
+          "audioDuration": 8.299,
+          "frameCount": 253
+        }
+      ],
+      "topic": "中国空母の妨害行動"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "じゃあ投資家目線で見てみよう！南鳥島レアアース開発が進めば恩恵を受ける企業群があるの",
+          "emotion": "happy",
+          "audioFile": "voices/0036_ponchan.wav",
+          "audioDuration": 5.941,
+          "frameCount": 183
+        },
+        {
+          "speaker": "maro",
+          "text": "どんな分野の企業なのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0037_maro.wav",
+          "audioDuration": 1.984,
+          "frameCount": 64
+        },
+        {
+          "speaker": "ponchan",
+          "text": "大きく3つ。まず深海採掘技術を持つ企業で、三井海洋開発や鹿島建設、IHIが挙がるよ",
+          "emotion": "normal",
+          "visual": {
+            "type": "highlight",
+            "text": "注目セクター①\n深海採掘技術：三井海洋開発・鹿島・IHI"
+          },
+          "audioFile": "voices/0038_ponchan.wav",
+          "audioDuration": 7.221,
+          "frameCount": 221
+        },
+        {
+          "speaker": "maro",
+          "text": "海底のインフラを作れる企業なのだ",
+          "emotion": "thinking",
+          "audioFile": "voices/0039_maro.wav",
+          "audioDuration": 2.635,
+          "frameCount": 84
+        },
+        {
+          "speaker": "ponchan",
+          "text": "次にレアアース精錬・加工の国産化を進める企業。住友金属鉱山や信越化学工業は既にレアアースの代替技術や国内精錬の研究を進めてるの",
+          "emotion": "normal",
+          "visual": {
+            "type": "highlight",
+            "text": "注目セクター②\n精錬・加工：住友金属鉱山・信越化学"
+          },
+          "audioFile": "voices/0040_ponchan.wav",
+          "audioDuration": 10.347,
+          "frameCount": 315
+        },
+        {
+          "speaker": "maro",
+          "text": "脱中国のサプライチェーンを作れる企業は強いのだ",
+          "emotion": "thinking",
+          "audioFile": "voices/0041_maro.wav",
+          "audioDuration": 3.648,
+          "frameCount": 114
+        },
+        {
+          "speaker": "ponchan",
+          "text": "3つ目はレアアースを大量に使うユーザー企業。TDKは永久磁石の世界大手だし、レアアースの安定調達ができれば競争力がさらに上がるよ",
+          "emotion": "normal",
+          "visual": {
+            "type": "highlight",
+            "text": "注目セクター③\nユーザー企業：TDK・日本電産"
+          },
+          "audioFile": "voices/0042_ponchan.wav",
+          "audioDuration": 9.419,
+          "frameCount": 287
+        },
+        {
+          "speaker": "maro",
+          "text": "レアアース価格の推移も気になるのだ",
+          "emotion": "thinking",
+          "visual": {
+            "type": "chart",
+            "key": "rareEarthPrice"
+          },
+          "audioFile": "voices/0043_maro.wav",
+          "audioDuration": 2.485,
+          "frameCount": 79
+        },
+        {
+          "speaker": "ponchan",
+          "text": "2022年のピークからは下がってるけど、中国が輸出規制を強化するたびに急騰するリスクがあるの。国産レアアースが実現すれば価格変動のヘッジにもなるんだよ",
+          "emotion": "normal",
+          "audioFile": "voices/0044_ponchan.wav",
+          "audioDuration": 10.261,
+          "frameCount": 312
+        }
+      ],
+      "topic": "投資家が注目すべき銘柄"
+    },
+    {
+      "type": "summary",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "今日のまとめだよ！まず南鳥島のレアアース泥は世界を変えるポテンシャルがあること",
+          "emotion": "happy",
+          "visual": {
+            "type": "keyword",
+            "text": "南鳥島レアアース泥"
+          },
+          "audioFile": "voices/0045_ponchan.wav",
+          "audioDuration": 5.013,
+          "frameCount": 155
+        },
+        {
+          "speaker": "maro",
+          "text": "日本の消費量の数百年分が眠ってるのだ",
+          "emotion": "normal",
+          "audioFile": "voices/0046_maro.wav",
+          "audioDuration": 3.413,
+          "frameCount": 107
+        },
+        {
+          "speaker": "ponchan",
+          "text": "2つ目、中国は世界のレアアース供給の約70%を握ってて、輸出規制を武器にしてくるリスクがあること",
+          "emotion": "serious",
+          "audioFile": "voices/0047_ponchan.wav",
+          "audioDuration": 7.264,
+          "frameCount": 222
+        },
+        {
+          "speaker": "maro",
+          "text": "2010年の教訓を忘れちゃダメなのだ",
+          "emotion": "serious",
+          "audioFile": "voices/0048_maro.wav",
+          "audioDuration": 2.869,
+          "frameCount": 91
+        },
+        {
+          "speaker": "ponchan",
+          "text": "3つ目、中国空母のEEZ進入は資源開発への牽制であり、日本は防衛と開発の両面で対応が必要なこと",
+          "emotion": "serious",
+          "visual": {
+            "type": "highlight",
+            "text": "防衛強化×資源開発\n経済安保の両輪が不可欠"
+          },
+          "audioFile": "voices/0049_ponchan.wav",
+          "audioDuration": 8.299,
+          "frameCount": 253
+        },
+        {
+          "speaker": "maro",
+          "text": "グレーゾーン戦略に負けない体制が大事なのだ",
+          "emotion": "thinking",
+          "audioFile": "voices/0050_maro.wav",
+          "audioDuration": 3.296,
+          "frameCount": 103
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そして投資家は深海採掘技術・精錬加工・レアアースユーザーの3セクターに注目してほしいの。商業化にはまだ数年かかるけど、国策テーマとして息の長い投資機会になるよ",
+          "emotion": "happy",
+          "visual": {
+            "type": "stat",
+            "value": "3セクター",
+            "label": "深海採掘・精錬加工・ユーザー企業"
+          },
+          "audioFile": "voices/0051_ponchan.wav",
+          "audioDuration": 11.733,
+          "frameCount": 357
+        },
+        {
+          "speaker": "maro",
+          "text": "国策に売りなし、という格言もあるのだ",
+          "emotion": "normal",
+          "audioFile": "voices/0052_maro.wav",
+          "audioDuration": 3.136,
+          "frameCount": 99
+        }
+      ],
+      "topic": "まとめと投資家への示唆"
+    },
+    {
+      "type": "cta",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "次回は台湾有事シナリオと半導体サプライチェーンへの影響を深掘りするよ！",
+          "emotion": "happy",
+          "audioFile": "voices/0053_ponchan.wav",
+          "audioDuration": 4.651,
+          "frameCount": 144
+        },
+        {
+          "speaker": "maro",
+          "text": "TSMCの動きも気になるのだ",
+          "emotion": "thinking",
+          "audioFile": "voices/0054_maro.wav",
+          "audioDuration": 2.571,
+          "frameCount": 82
+        },
+        {
+          "speaker": "ponchan",
+          "text": "チャンネル登録と高評価ボタンを押してくれると嬉しいな！通知オンも忘れずにね！",
+          "emotion": "happy",
+          "visual": {
+            "type": "keyword",
+            "text": "チャンネル登録＆通知ON"
+          },
+          "audioFile": "voices/0055_ponchan.wav",
+          "audioDuration": 4.843,
+          "frameCount": 150
+        },
+        {
+          "speaker": "maro",
+          "text": "また次の動画で会おうなのだ！",
+          "emotion": "happy",
+          "audioFile": "voices/0056_maro.wav",
+          "audioDuration": 2.048,
+          "frameCount": 66
+        }
+      ],
+      "topic": "次回予告"
+    }
+  ],
+  "chartData": {
+    "rareEarthShare": {
+      "data": [
+        {
+          "label": "中国",
+          "value": 68
+        },
+        {
+          "label": "ミャンマー",
+          "value": 10
+        },
+        {
+          "label": "オーストラリア",
+          "value": 6
+        },
+        {
+          "label": "アメリカ",
+          "value": 5
+        },
+        {
+          "label": "その他",
+          "value": 11
+        }
+      ],
+      "title": "世界のレアアース生産シェア（2023年）",
+      "chartType": "pie"
+    },
+    "rareEarthPrice": {
+      "data": [
+        {
+          "label": "2020年",
+          "value": 450
+        },
+        {
+          "label": "2021年",
+          "value": 900
+        },
+        {
+          "label": "2022年",
+          "value": 1200
+        },
+        {
+          "label": "2023年",
+          "value": 750
+        },
+        {
+          "label": "2024年",
+          "value": 680
+        }
+      ],
+      "title": "ネオジム酸化物価格推移（万円/トン）",
+      "chartType": "line"
+    },
+    "minamitorishimaReserve": {
+      "data": [
+        {
+          "label": "イットリウム",
+          "value": 780
+        },
+        {
+          "label": "ジスプロシウム",
+          "value": 54
+        },
+        {
+          "label": "テルビウム",
+          "value": 12
+        },
+        {
+          "label": "ユウロピウム",
+          "value": 9
+        }
+      ],
+      "title": "南鳥島レアアース泥推定埋蔵量（万トン）",
+      "chartType": "bar"
+    },
+    "chinaExportControl": {
+      "data": [
+        {
+          "label": "2010年（尖閣）",
+          "value": 100
+        },
+        {
+          "label": "2015年（WTO後）",
+          "value": 30
+        },
+        {
+          "label": "2023年（Ga/Ge）",
+          "value": 75
+        },
+        {
+          "label": "2024年（強化）",
+          "value": 90
+        }
+      ],
+      "title": "中国レアアース輸出規制の歴史",
+      "chartType": "bar"
+    },
+    "defensebudget": {
+      "data": [
+        {
+          "label": "2020年",
+          "value": 5.3
+        },
+        {
+          "label": "2021年",
+          "value": 5.3
+        },
+        {
+          "label": "2022年",
+          "value": 5.4
+        },
+        {
+          "label": "2023年",
+          "value": 6.8
+        },
+        {
+          "label": "2024年",
+          "value": 7.9
+        },
+        {
+          "label": "2025年",
+          "value": 8.7
+        }
+      ],
+      "title": "日本の防衛費推移（兆円）",
+      "chartType": "line"
+    }
+  },
+  "bgmVolume": 0.12,
+  "bgmMap": {
+    "hook": "bgm/news.mp3",
+    "explanation": "bgm/main_lofi.mp3",
+    "analysis": "bgm/main_lofi.mp3",
+    "summary": "bgm/uplifting_piano.mp3",
+    "cta": "bgm/uplifting_piano.mp3"
+  }
+}

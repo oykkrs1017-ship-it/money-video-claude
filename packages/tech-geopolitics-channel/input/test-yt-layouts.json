@@ -1,0 +1,121 @@
+{
+  "videoId": "test-yt",
+  "title": "YouTubeスタイル レイアウトテスト",
+  "chapters": [
+    {
+      "type": "hook",
+      "topic": "カラーカード比較",
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "楽天証券が発表した2つのポイントを見てください",
+          "visual": {
+            "type": "color-cards",
+            "title": "楽天証券が発表した内容",
+            "cards": [
+              {
+                "header": "ブックビルディング対応",
+                "headerColor": "blue",
+                "lines": ["SpaceXを米国株式IPOの", "ブックビルディング対象銘柄として", "取り扱う予定"]
+              },
+              {
+                "header": "NISA成長投資枠の対象",
+                "headerColor": "green",
+                "lines": ["米国株式IPOはNISA成長投資枠で", "購入でき、ブックビルディング"],
+                "highlight": "申込時にNISA成長枠を指定可",
+                "highlightColor": "#1e6e45"
+              }
+            ],
+            "footer": "2026年5月 楽天証券発表"
+          }
+        }
+      ]
+    },
+    {
+      "type": "explanation",
+      "topic": "ステップフロー",
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ブックビルディングの流れを5ステップで説明します",
+          "visual": {
+            "type": "step-icons",
+            "title": "ブックビルディングとは",
+            "steps": [
+              { "number": 1, "label": "応募", "icon": "✋", "body": "投資家が申し込む", "color": "blue" },
+              { "number": 2, "label": "需要集約", "icon": "📊", "body": "証券会社が需要を集める", "color": "blue" },
+              { "number": 3, "label": "価格決定", "icon": "$", "body": "公開価格が決まる", "color": "gold" },
+              { "number": 4, "label": "抽選", "icon": "🎲", "body": "抽選・配分で買える人が決まる", "color": "green" },
+              { "number": 5, "label": "上場", "icon": "🚀", "body": "上場日に市場で取引開始", "color": "gold" }
+            ],
+            "footer": "ここで大事なのは、申し込めば必ず買えるわけではないということ"
+          }
+        }
+      ]
+    },
+    {
+      "type": "analysis",
+      "topic": "VS比較",
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "特定口座とNISA口座の税金の差を見てみましょう",
+          "visual": {
+            "type": "vs-battle",
+            "title": "仮にTeslaを100万円分買っていたら——非課税の威力",
+            "left": {
+              "header": "特定口座の場合",
+              "headerColor": "blue",
+              "lines": ["100万円 → 3億9,000万円", "利益 3億8,900万円", "税率20.315%で"],
+              "highlight": "税金 約7,900万円",
+              "highlightColor": "#dc2626"
+            },
+            "right": {
+              "header": "NISA口座の場合",
+              "headerColor": "green",
+              "lines": ["100万円 → 3億9,000万円", "利益 3億8,900万円", "税金"],
+              "highlight": "0円",
+              "highlightColor": "#1e6e45"
+            },
+            "footer": "あくまで過去の単純計算。SpaceXが同じになるという話ではない"
+          }
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "topic": "3列カラーカード",
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "IPOには大きく3つのパターンがあります",
+          "visual": {
+            "type": "color-cards",
+            "title": "5社のまとめ——IPOには大きく3パターン",
+            "cards": [
+              {
+                "header": "①長期で大化けする",
+                "headerColor": "green",
+                "icon": "🚀",
+                "lines": ["Google・Tesla。", "上場後に事業の意味が", "どんどん広がる"]
+              },
+              {
+                "header": "②事業転換で報われる",
+                "headerColor": "blue",
+                "icon": "🔄",
+                "lines": ["Meta。初日も1年後も", "微妙だったが、", "長期で大きく報われる"]
+              },
+              {
+                "header": "③期待先行で調整",
+                "headerColor": "red",
+                "icon": "📉",
+                "lines": ["Rivian。初日は", "盛り上がったが、", "その後に大きく調整"]
+              }
+            ],
+            "footer": "初値だけで判断するものではない。上場後に何を実現するかが本当の勝負"
+          }
+        }
+      ]
+    }
+  ]
+}

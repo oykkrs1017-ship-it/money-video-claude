@@ -1,0 +1,401 @@
+videoId: "ep020"
+seed: "ep020"
+title: "マイクロン、黄金期突入！AI相場の主役が交代した"
+description: "2026年5月26日、マイクロンが1日で19%急騰し時価総額1兆ドルを突破。AIがメモリをコモディティから戦略資産に変えた歴史的転換点を解説。UBS目標株価1,625ドルの根拠、SKハイニックス・台湾メモリ株への波及、エントリー価格800〜820ドル・撤退ライン750ドル割れの具体的投資判断まで、新NISAで半導体ETFを積み立てている方にも使える情報をお届けします。"
+tags:
+  - "マイクロン"
+  - "MU株"
+  - "HBM"
+  - "AI半導体"
+  - "半導体株"
+  - "NVIDIA決算"
+  - "新NISA"
+  - "成長投資枠"
+  - "半導体ETF"
+  - "SOXX"
+  - "SKハイニックス"
+  - "メモリ株"
+  - "AI投資"
+  - "米国株"
+  - "個別株投資"
+  - "エントリー価格"
+  - "撤退ライン"
+  - "地政学リスク"
+  - "米中半導体戦争"
+  - "老後資金"
+  - "50代投資"
+  - "60代投資"
+  - "会社員投資"
+  - "S&P500"
+  - "TSMC"
+  - "台湾株"
+  - "UBS目標株価"
+  - "HBM4"
+  - "半導体サプライチェーン"
+  - "AI相場"
+
+bgmVolume: 0.12
+bgmMap:
+  hook: "bgm/news.mp3"
+  explanation: "bgm/main_lofi.mp3"
+  analysis: "bgm/uplifting_piano.mp3"
+  summary: "bgm/uplifting_piano.mp3"
+  cta: "bgm/なんということはない日常.mp3"
+
+chartData:
+  slide_001_chart:
+    title: "1日で19%急騰（2026年5月26日）"
+    type: bar
+    data:
+      - { label: "MU(5/26)", value: 19.29 }
+      - { label: "SK Hynix", value: 18 }
+      - { label: "南亞科(TW)", value: 10 }
+      - { label: "華邦電(TW)", value: 10 }
+  slide_002_chart:
+    title: "UBSが目標株価3倍に引き上げ"
+    type: bar
+    data:
+      - { label: "旧目標株価", value: 535 }
+      - { label: "現在株価(5/26)", value: 896 }
+      - { label: "新目標株価", value: 1625 }
+  slide_004_chart:
+    title: "マイクロン株価の歴史的サイクル（ドル）"
+    type: line
+    data:
+      - { label: "2018ピーク", value: 65 }
+      - { label: "2019底値", value: 28 }
+      - { label: "2021ピーク", value: 98 }
+      - { label: "2022底値", value: 48 }
+      - { label: "2026現在", value: 896 }
+  slide_005_chart:
+    title: "HBM市場規模予測（億ドル）"
+    type: bar
+    data:
+      - { label: "2024年", value: 200 }
+      - { label: "2025年", value: 350 }
+      - { label: "2026年(予)", value: 550 }
+      - { label: "2027年(予)", value: 750 }
+      - { label: "2028年(予)", value: 1000 }
+  slide_006_chart:
+    title: "HBM世界シェア（2026年）"
+    type: pie
+    data:
+      - { label: "SK Hynix", value: 50 }
+      - { label: "Samsung", value: 30 }
+      - { label: "Micron", value: 20 }
+  slide_008_chart:
+    title: "Micron売上高推移（億ドル）"
+    type: bar
+    data:
+      - { label: "FY25 Q2", value: 81 }
+      - { label: "FY25 Q3", value: 138 }
+      - { label: "FY25 Q4", value: 187 }
+      - { label: "FY26 Q1", value: 214 }
+      - { label: "FY26 Q2", value: 239 }
+  slide_009_chart:
+    title: "MU株：投資判断の3ライン（ドル）"
+    type: bar
+    data:
+      - { label: "撤退ライン", value: 750 }
+      - { label: "現在株価(5/26)", value: 896 }
+      - { label: "みずほ目標", value: 1000 }
+      - { label: "UBS目標", value: 1625 }
+  slide_010_chart:
+    title: "台湾メモリ株への波及（上昇率%）"
+    type: bar
+    data:
+      - { label: "南亞科(TW)", value: 10 }
+      - { label: "華邦電(TW)", value: 10 }
+      - { label: "廣穎(TW)", value: 7 }
+      - { label: "華東(TW)", value: 6 }
+  slide_011_chart:
+    title: "HBMシェア（SKハイニックスが過半）"
+    type: pie
+    data:
+      - { label: "SK Hynix", value: 50 }
+      - { label: "Samsung", value: 30 }
+      - { label: "Micron", value: 20 }
+  slide_012_chart:
+    title: "半導体ETF（SOXX）パフォーマンス推移"
+    type: line
+    data:
+      - { label: "2025年6月", value: 100 }
+      - { label: "2025年9月", value: 115 }
+      - { label: "2025年12月", value: 140 }
+      - { label: "2026年3月", value: 165 }
+      - { label: "2026年5月", value: 190 }
+  slide_013_chart:
+    title: "NVIDIAの台湾年間投資額推移（億ドル）"
+    type: bar
+    data:
+      - { label: "4〜5年前", value: 125 }
+      - { label: "現在", value: 1000 }
+      - { label: "目標", value: 1500 }
+  slide_014_chart:
+    title: "ガンマスクイーズ：コール出来高 vs 未平倉量"
+    type: bar
+    data:
+      - { label: "従来の未平倉量", value: 5340 }
+      - { label: "5/26の1日出来高", value: 53632 }
+
+infographics:
+  - id: "hbm_share_donut"
+    type: donut_chart
+    title: "HBM世界シェア3社寡占"
+    outputPath: "content/infographic_hbm_share_donut.png"
+    accentColor: "#0057B7"
+    data:
+      - { label: "SK Hynix", value: 50, color: "#0057B7" }
+      - { label: "Samsung", value: 30, color: "#888888" }
+      - { label: "Micron", value: 20, color: "#dc2626" }
+  - id: "hbm_market_bar"
+    type: bar_chart
+    title: "HBM市場2028年に1,000億ドルへ"
+    outputPath: "content/infographic_hbm_market_bar.png"
+    accentColor: "#16a34a"
+    data:
+      - { label: "2024年", value: 200, color: "#4a9eff" }
+      - { label: "2025年", value: 350, color: "#4a9eff" }
+      - { label: "2026年", value: 550, color: "#16a34a" }
+      - { label: "2027年", value: 750, color: "#16a34a" }
+      - { label: "2028年", value: 1000, color: "#ff6b35" }
+  - id: "mu_entry_stat"
+    type: stat_card
+    title: "MU推奨エントリー帯"
+    outputPath: "content/infographic_mu_entry_stat.png"
+    accentColor: "#dc2626"
+    value: "$800〜820"
+    label: "押し目エントリー目安"
+    subtext: "撤退ライン: $750割れ / UBS目標: $1,625"
+
+chapters:
+  - type: hook
+    topic: "マイクロン1兆ドル突破の衝撃"
+    lines:
+      - ponchan: "19.29%——これが2026年5月26日、たった1営業日でマイクロンの株価が跳ね上がった数字だよ。2011年以来最大の1日上昇率で、時価総額は一気に1兆ドルを初めて突破したんだ。"
+        emotion: serious
+        se: "se/impact.mp3"
+        show:
+          type: chart
+          key: slide_001_chart
+      - ponchan: "実はこの日、SK Hynixも同日に約18%上昇していて、台湾の南亞科・華邦電まで連動してストップ高になっているんだよ。1社だけじゃなく、メモリ業界全体が同時に動いた、これって相当異常な事態なんだよね。"
+        emotion: surprised
+      - maro: "え、マイクロンが1日で20%近くも上がるなんて、何かものすごい発表でもあったんだぞ？決算が神がかり的によかったとか、そういうことなのだ？"
+        emotion: surprised
+      - ponchan: "引き金を引いたのはUBSのアナリストレポートだよ。目標株価を535ドルから一気に1,625ドルへ、なんと204%引き上げたんだ。市場が読み取ったのは単なる目標株価の修正じゃなくて、『AIがメモリ産業の値付けを根本から変えた』という産業構造の転換宣言だったんだよ。"
+        emotion: serious
+        show:
+          type: chart
+          key: slide_002_chart
+      - maro: "目標株価が3倍って、アナリストがそんなに大胆に引き上げることって普通あるんだぞ？何か特別な根拠があるってことなのだ？"
+        emotion: thinking
+      - ponchan: "今日はその根拠を3つ話すよ。①なぜメモリ株がコモディティ株からAI成長株に変貌したのか、その構造的な理由。②マイクロン以外で次に爆上げする可能性がある関連銘柄はどこか、具体的な銘柄名つきで。③エントリー価格800〜820ドル・上昇トリガー・撤退ライン750ドルの3セットを明確にお伝えするよ。"
+        emotion: happy
+        show:
+          type: rich-panel
+          title: "今日わかること3選"
+          body: "2026年5月26日のマイクロン急騰が示すAI相場の主役交代。新NISAの成長投資枠や米国株口座を持つ投資家が明日すぐ使える判断材料をお届けします。"
+          points:
+            - text: "①メモリ株がAI成長株に変貌した構造的理由"
+              body: "景気サイクルの呪いが解けた根本原因を解説する。"
+            - text: "②次に爆上げする関連銘柄と具体的な買い場"
+              body: "SKハイニックス・台湾メモリ株・半導体ETFの比較を行う。"
+            - text: "③エントリー価格・上昇トリガー・撤退ラインの3セット"
+              body: "800〜820ドルの押し目狙い、750ドル割れ撤退という具体基準を提示する。"
+
+  - type: explanation
+    topic: "HBMが変えたメモリ産業の構造"
+    lines:
+      - ponchan: "まずメモリ株がなぜ長年『買ってはいけない株』と言われてきたかを理解しよう。DRAMもNANDも基本的にはコモディティ製品で、スマホが売れれば値上がり、売れ止まれば値崩れという需給サイクルの波がとても激しいんだよ。マイクロンの株価は過去に何度も70%以上暴落していて、これが景気循環株の呪いだったんだ。"
+        emotion: serious
+        se: "se/whoosh.mp3"
+        show:
+          type: chart
+          key: slide_004_chart
+      - maro: "2018年のピークから2019年の底値を見ると65ドルから28ドルまで落ちているのだ、確かに半分以下になってるのだから怖くて買えないのだ。じゃあなんで今は違うんだぞ？"
+        emotion: thinking
+      - ponchan: "キーワードはHBM、つまり高帯域幅メモリだよ。生成AIが爆発的に普及してNVIDIAのGPUが飛ぶように売れているけど、そのGPU1枚に積まれるHBMはスマートフォン数十台分の先端メモリに相当するんだよ。AIが普及すればするほど必ずHBMが必要になるという構造が、完全に需要の性質を変えたんだよね。"
+        emotion: serious
+        show:
+          type: chart
+          key: slide_005_chart
+      - maro: "HBM市場が2025年の350億ドルから2028年には1,000億ドルへ、年率40%の成長か、それは確かにスマホの売れ行きとは全然違うサイクルなのだ！"
+        emotion: surprised
+      - ponchan: "しかもHBMを作れる会社は世界に3社しかないんだよ。韓国のSKハイニックス、サムスン電子、そして米国のマイクロン。この3社寡占の構造の中で、マイクロンだけが唯一の米国系メーカーという点が地政学的に特別な意味を持つんだよ。"
+        emotion: serious
+        show:
+          type: chart
+          key: slide_006_chart
+      - maro: "3社しかないなら需要が増えても価格を下げなくていいし、米国政府が後ろ盾についているなら普通のコモディティ株とは全く違う扱いを受けるってことなのだ！"
+        emotion: happy
+      - ponchan: "そしてここがUBSレポートの核心なんだけど、従来のメモリ産業は四半期ごとに価格が決まる博打みたいなビジネスだったよね。でも今、AIデータセンター事業者たちは3年・5年という長期で供給量と価格を固定する契約に移行しているんだよ。UBSはMicronのDRAM生産能力の最大30%がこういう長期固定契約に移行すると予測しているんだ。"
+        emotion: serious
+        show:
+          type: stat
+          value: "3〜5年"
+          label: "AIデータセンターとの長期供給契約期間"
+          unit: "生産能力最大30%が固定価格契約に移行"
+      - maro: "3〜5年の契約って、まるでサブスクリプションモデルみたいですね！毎年利益が読めるようになるなら、投資家も安心して長期で持てるってことなのだ？"
+        emotion: happy
+      - ponchan: "その通りなんだよ。UBSが2027〜2029年のEPSを100ドル超で安定すると予測しているのはこのためだよ。そして実際の決算数字も裏付けになっているんだよね。FY2026 Q2の売上高は239億ドルで前年同期比なんと196%増、粗利益率は75%で過去最高を更新しているんだ。"
+        emotion: serious
+        show:
+          type: chart
+          key: slide_008_chart
+      - maro: "4四半期連続で過去最高を更新って、しかも次世代HBM4の2026年分がすでに完売済みで、顧客の需要の50〜66%しか満たせないって、それだけ欲しがってる企業が多いということなのだ！"
+        emotion: surprised
+
+  - type: analysis
+    topic: "投資判断：MU・SKハイニックス・台湾株・ETFの具体戦略"
+    lines:
+      - ponchan: "じゃあ投資判断に移るよ。MU株への今からのエントリーについては3つの要素で整理するね。現在株価が896ドルという急騰直後の水準なので、新規参入は高値掴みリスクがあるんだよ。狙い目は押し目の800〜820ドル帯、ここにアラートを設定しておくのが現実的な戦略だよ。"
+        emotion: serious
+        se: "se/whoosh.mp3"
+        show:
+          type: chart
+          key: slide_009_chart
+      - maro: "押し目って、いつ来るかわからなくて待ってる間に上がっちゃいそうで不安なのだ。撤退ラインはどこに置けばいいんだぞ？"
+        emotion: thinking
+      - ponchan: "撤退ラインは750ドル割れを設定すべきだよ。PERが急騰していることと、HBM供給が増加した場合の価格下落リスクを常に念頭に置いてほしいんだよね。逆に上昇トリガーは2026年下半期のHBM4量産本格化データと、長期供給契約の進捗発表。これが確認できれば1,200〜1,625ドルの目標株価が現実味を持ってくるんだよ。"
+        emotion: serious
+      - ponchan: "マイクロンの急騰は翌5月27日に台湾市場に即日波及したんだよ。台湾のDRAM双雄の南亞科と華邦電がそろってストップ高になって、両社とも過去最高値を更新したんだ。これは米国のMU株を買い逃した投資家が台湾・韓国の関連株に資金を移し始めているという重要なシグナルなんだよね。"
+        emotion: serious
+        show:
+          type: chart
+          key: slide_010_chart
+      - maro: "台湾株って日本から直接買えるんだぞ？証券会社によっては口座が必要だから、個人投資家には少しハードルが高い気がするのだ。"
+        emotion: thinking
+      - ponchan: "台湾株への直接投資には専用口座が必要だよ。でも次に注目すべき大本命はSKハイニックスなんだよね。HBM市場シェアは約50%で世界最大、NVIDIAのGPUに搭載されるHBMはSKハイニックス製が最も多くて、マイクロンと同週に時価総額1兆ドルを突破しているんだよ。"
+        emotion: serious
+        show:
+          type: chart
+          key: slide_011_chart
+      - maro: "SKハイニックスはHBMシェアが50%もあって、NVIDIAとの関係が深いのだ。でも韓国株だから日本から買うのに工夫が要りますよね、ETF経由という手もあるのだぞ？"
+        emotion: thinking
+      - ponchan: "個別株がちょっと怖いという方には半導体ETFという選択肢があるよ。SOXXなどは直近1年で90%を超える上昇をしていて、MUやSKハイニックス・サムスン・TSMCなどを分散保有できるんだよね。新NISAの成長投資枠でSOXXを購入できる証券会社もあるから、口座を持ってる人はすぐ確認してみてほしいんだよ。"
+        emotion: happy
+        show:
+          type: chart
+          key: slide_012_chart
+      - maro: "ETFならNISA口座でも買えるし、個別銘柄が決算ミスで急落しても影響が薄まるのだ。リスク許容度が低い50代・60代の投資家にはETFの方が向いてそうなのだ！"
+        emotion: happy
+      - ponchan: "地政学的な視点も加えておくよ。NVIDIAのCEO黄仁勲氏は台湾への年間投資を1,500億ドルまで拡大し、2030年に台湾新本社を設立すると宣言したんだよ。4〜5年前の投資額は100〜150億ドルだったのに今や1,000億ドル規模、台湾全体のサプライチェーンがAI革命の震央になるということだよね。"
+        emotion: serious
+        show:
+          type: chart
+          key: slide_013_chart
+      - maro: "台湾新本社設立って、それだけ台湾の製造技術と人材が必要ってことなのだ。メモリ・パッケージング・テスト企業まで恩恵が広がるなら、台湾関連ETFも面白そうなのだ！"
+        emotion: happy
+      - ponchan: "ただしマイクロン株が1日20%上がった裏側には、オプション市場のガンマスクイーズというメカニズムも働いていたんだよ。1,000ドルのコールオプションが1日で53,000枚以上売買されて、これは従来の未平倉量の実に10倍なんだよ。証券会社がヘッジで現物株を買い続け、それがさらに株価を押し上げる自己強化ループが起きているんだよね。"
+        emotion: serious
+        show:
+          type: chart
+          key: slide_014_chart
+      - maro: "つまり逆に下落するときも同じような急落が起きうるということなのだ！個人投資家として知っておかないと、急落に慌てて損切りしてしまう可能性があるのだ。"
+        emotion: serious
+      - ponchan: "だからリスクも3つ正直にお伝えするよ。1つ目はバリュエーションリスクで、PERが急騰しすぎて短期的に20〜30%の調整が来てもおかしくない。2つ目はサムスンの反撃で、2027年以降にHBM生産を大幅に増やせば価格競争が再燃する。3つ目は米中規制で、中国向けメモリ輸出規制強化で需要が失われる可能性があるんだよ。"
+        emotion: serious
+        show:
+          type: stat
+          value: "-20〜30%"
+          label: "短期バリュエーション調整リスク"
+          unit: "サムスン反撃・米中規制強化も複合リスク"
+      - maro: "じゃあ日本の個人投資家としては、このリスクを全部管理しながら投資しないといけないのだ。全力買いじゃなくてポジションサイズを抑えるのが賢明なのだぞ！"
+        emotion: thinking
+      - ponchan: "3社を比較してまとめると、HBMシェアはSKハイニックス50%・サムスン30%・マイクロン20%の順だよ。でも日本からの買いやすさではマイクロンが米国株口座で普通に買える点で一番アクセスしやすい。何より唯一の米国系メーカーとして政府の安全保障支援という政策的後ろ盾があるのが、シェアの低さを補って余りあるメリットなんだよ。"
+        emotion: serious
+        show:
+          type: comparison-table
+          title: "HBMメモリ3社：投資アクセス比較"
+          columns:
+            - { label: "Micron", winner: true }
+            - { label: "SK Hynix", winner: false }
+            - { label: "Samsung", winner: false }
+          rows:
+            - { label: "HBMシェア", values: ["約20%", "約50%", "約30%"] }
+            - { label: "日本からの投資", values: ["米国株口座でOK", "韓国株口座必要", "韓国株口座必要"] }
+            - { label: "政策的後ろ盾", values: ["米国政府支援○", "韓国政府支援△", "韓国政府支援△"] }
+            - { label: "時価総額", values: ["1兆ドル突破", "1兆ドル突破", "約3,000億ドル"] }
+          footer: "初心者はMUから、上級者はSKハイニックスETFを追加という段階的戦略が有効"
+
+  - type: summary
+    topic: "まとめと3段階アクションプラン"
+    lines:
+      - ponchan: "それでは今日のまとめ5箇条だよ。1、AIがHBMを戦略資産に変えてメモリ株はコモディティ株から成長株に転換した。2、マイクロンは1日19%急騰で時価総額1兆ドルを突破、UBS目標株価は1,625ドル。3、長期供給契約が景気サイクルリスクを大幅に低下させて利益の予測可能性が大きく高まった。"
+        emotion: serious
+        se: "se/bell.mp3"
+        show:
+          type: rich-panel
+          title: "今日のまとめ5箇条"
+          body: "AI×HBMがメモリ産業の構造を根本から変えた。景気サイクルの呪いが解け、コモディティ株から戦略資産株へ転換した歴史的分水嶺を理解することが投資判断の出発点になる。"
+          points:
+            - text: "①HBM×AI長期契約がメモリの呪いを解いた"
+              value: "CAGR40%"
+              unit: "HBM市場2025〜2028年成長率"
+              body: "スマホ依存の需給サイクルからAIインフラ必需品へ転換。安定利益が見通せる構造に変化した。"
+              source: "Micron Technology IR資料 2026年"
+            - text: "②マイクロン1日19%急騰・1兆ドル突破"
+              value: "$1,625"
+              unit: "UBS目標株価（現在比+81%）"
+              body: "2011年以来最大の1日上昇率。UBSは長期時価総額1.83兆ドルを予測しテスラ超えを見込む。"
+              source: "UBS Research Note 2026年5月"
+            - text: "③SKハイニックス・台湾株も連動する相場構造"
+              body: "MU急騰翌日に台湾の南亞科・華邦電がストップ高。メモリ相場は1社完結から多国連動型へ進化した。"
+            - text: "④リスク3点：バリュエーション・サムスン・規制"
+              body: "短期20〜30%調整・2027年サムスン増産・米中輸出規制強化の3点を常に管理すること。"
+      - maro: "5箇条、全部しっかり頭に入りました！特にメモリ株がコモディティから戦略資産に変わったという構造転換の理由が、今日一番よくわかったのだ！"
+        emotion: happy
+      - ponchan: "最後に3段階のアクションプランだよ。今すぐやること、MUをウォッチリストに入れて800〜820ドル帯へのアラートを設定する。そして新NISAの成長投資枠でSOXXなどの半導体ETFを少額購入して感覚を掴んでほしいんだよ。"
+        emotion: serious
+        show:
+          type: stat
+          value: "$800〜820"
+          label: "MU推奨エントリー帯（押し目狙い）"
+          unit: "撤退ライン: $750割れ / UBS目標: $1,625"
+      - ponchan: "1〜3ヶ月以内にMUが押し目に来たらエントリーして、撤退ラインは750ドル割れに設定する。SKハイニックスへは韓国株ETFや証券会社の取り扱い状況を調べてアクセスルートを確保しておいてほしいよ。3〜6ヶ月の視点では、HBM4の量産データと長期契約の進捗を確認しながらポジションを段階的に積み上げる戦略が現実的だよ。"
+        emotion: serious
+        show:
+          type: flow-chart
+          title: "3段階アクションプラン"
+          root:
+            label: "まず確認すること"
+            sublabel: "新NISA口座・米国株口座の有無"
+            icon: "📋"
+            children:
+              - label: "今すぐ（今週）"
+                sublabel: "ウォッチリスト登録"
+                highlight: true
+                detail:
+                  title: "即実行アクション"
+                  items: ["MUに$800〜820アラート設定", "SOXXをNISA口座で少額購入"]
+                  color: "#0057B7"
+              - label: "1〜3ヶ月以内"
+                detail:
+                  title: "押し目エントリー"
+                  items: ["MU押し目でエントリー・撤退ライン$750", "韓国ETF経由SKハイニックスを調査"]
+              - label: "3〜6ヶ月視点"
+                detail:
+                  title: "ポジション積み上げ"
+                  items: ["HBM4量産データ・長期契約進捗を確認", "段階的にポジションを積み上げ"]
+          footer: "あくまで自己判断・自己責任で実行すること"
+      - maro: "アラート設定はSBI証券や楽天証券のアプリで価格通知機能を使えばできるのだ。新NISAの成長投資枠でETFを買うのが一番ハードルが低いから、まずそこから始めてみるのが賢いのだぞ！"
+        emotion: happy
+
+  - type: cta
+    topic: "チャンネル登録のお願い"
+    lines:
+      - ponchan: "今日の動画はいかがだったかな？メモリ相場の主役交代とその構造的な理由、そして具体的な投資アクションプランまで一気にお届けしたよ。新NISAで半導体ETFを積み立てている方も、個別株でMUを狙っている方も、ぜひ今日の3要素を参考にしてほしいんだよね。"
+        emotion: happy
+        show:
+          type: rich-panel
+          title: "チャンネル登録でAI×投資情報を見逃さない"
+          body: "週2回更新。地政学×テクノロジー投資の具体的な判断材料をお届けします。"
+          points:
+            - text: "チャンネル登録＋ベルマークで最新情報を即受け取り"
+              body: "AI相場は動きが速い。更新のたびに通知が届く設定を推奨します。"
+            - text: "概要欄に今日紹介した銘柄まとめシートのリンクあり"
+              body: "MU・SKハイニックス・半導体ETFの比較データを無料でダウンロードできます。"
+      - maro: "次回はAMDとTSMCがこのマイクロン急騰の波に乗れるかどうか、AIサプライチェーン全体を解説してくれるのだな！個別銘柄の連動性が気になっていたからすごく楽しみなのだ！"
+        emotion: happy
+      - ponchan: "次回も地政学×具体的な投資戦略を出していくから、チャンネル登録とベルマークを押しておいてね。ぽんちゃんとまろくんでした、また次回！"
+        emotion: happy

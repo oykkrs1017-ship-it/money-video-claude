@@ -1,0 +1,1302 @@
+{
+  "videoId": "ep008",
+  "seed": "ep008",
+  "title": "2兆ドル工場Terafab！マスクが仕掛けるAI半導体革命",
+  "description": "イーロン・マスクがTesla/xAI/SpaceXを束ねて建設を主導する世界最大のAI半導体工場『Terafab』。Intelが製造パートナーとして参画し、TSMC依存からの脱却を図るこの計画は、米中半導体戦争の勝敗を左右しうる。冷戦期のSEMATECH構想との類似点、意外な勝者候補、そして個人投資家が今取るべきポジションまで徹底解説。",
+  "tags": [
+    "Terafab",
+    "イーロンマスク",
+    "AI半導体",
+    "半導体工場",
+    "Intel",
+    "TSMC",
+    "xAI",
+    "Tesla",
+    "SpaceX",
+    "半導体戦争",
+    "米中対立",
+    "地政学",
+    "投資戦略",
+    "半導体銘柄",
+    "CHIPS法",
+    "米国製造回帰",
+    "AI覇権",
+    "ファウンドリ",
+    "半導体製造",
+    "NVIDIA",
+    "AMD",
+    "Broadcom",
+    "個人投資家",
+    "銘柄分析",
+    "テック株",
+    "地政学リスク",
+    "サプライチェーン",
+    "SEMATECH",
+    "半導体国策"
+  ],
+  "chapters": [
+    {
+      "type": "hook",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "2兆ドル、日本円にして約300兆円という途方もない金額が、たった一つのAI半導体工場に投じられようとしているんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "stat",
+            "value": "2兆ドル（約300兆円）",
+            "label": "Terafab計画 総投資額"
+          },
+          "audioFile": "voices/0001_ponchan.wav",
+          "audioDuration": 9.429,
+          "frameCount": 287
+        },
+        {
+          "speaker": "maro",
+          "text": "300兆円って、日本の国家予算の2年分を超えてるレベルなのだ。一体誰がそんな計画を立ててるんだぞ？",
+          "emotion": "surprised",
+          "visual": {
+            "type": "rich-panel",
+            "title": "Terafab計画とは",
+            "icon": "🏗️",
+            "body": "イーロン・マスクが主導する世界最大のAI半導体製造施設。\nテキサス州を候補地とし、2025年に正式発表。",
+            "emphasis": "世界最大",
+            "points": [
+              "Tesla/xAI/SpaceXが需要を束ねる",
+              "Intelが製造パートナーとして参画",
+              "TSMC依存からの脱却が最大の狙い"
+            ]
+          },
+          "audioFile": "voices/0002_maro.wav",
+          "audioDuration": 9.429,
+          "frameCount": 287
+        },
+        {
+          "speaker": "ponchan",
+          "text": "その名はTerafab、イーロン・マスクがTesla・xAI・SpaceXの3社を束ねて建設を主導する世界最大のAI半導体工場なんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0003_ponchan.wav",
+          "audioDuration": 10.955,
+          "frameCount": 333
+        },
+        {
+          "speaker": "maro",
+          "text": "マスクがまた壮大なことを言い出したと思いきや、今回はIntelまで正式に参画しているという話なのだ、これは本気度が違うぞ。",
+          "emotion": "surprised",
+          "visual": {
+            "type": "rich-panel",
+            "title": "Intel参画の意味",
+            "icon": "🤝",
+            "body": "Intel Foundry Servicesがカスタムチップの受託製造を担当。\n最先端18Aプロセスの採用が見込まれる。",
+            "emphasis": "Intel 18Aプロセス",
+            "points": [
+              "Intelにとって最大のファウンドリ顧客候補",
+              "マスク3社のチップ需要は年間数十億ドル規模",
+              "米国内製造で地政学リスクを回避"
+            ]
+          },
+          "audioFile": "voices/0004_maro.wav",
+          "audioDuration": 10.336,
+          "frameCount": 315
+        },
+        {
+          "speaker": "ponchan",
+          "text": "しかもこの計画、単なるマスクの夢物語じゃなくて、米国政府のCHIPS法による補助金とも連動している国家プロジェクト級の話なんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0005_ponchan.wav",
+          "audioDuration": 11.083,
+          "frameCount": 337
+        },
+        {
+          "speaker": "maro",
+          "text": "つまり民間の野心と国策が合流しているということなのだ。これは過去の半導体産業の歴史を振り返ると、とんでもない転換点になりうるぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0006_maro.wav",
+          "audioDuration": 11.605,
+          "frameCount": 353
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そう、まさに1987年に日本の半導体攻勢に対抗して設立されたSEMATECHの現代版とも言える構図で、歴史が繰り返されようとしているんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "SEMATECH（1987年）",
+            "icon": "📜",
+            "body": "米国政府と14社の半導体企業が共同出資した半導体製造技術コンソーシアム。\n日本の半導体シェア拡大に対抗し、米国の製造技術基盤を維持することが目的だった。",
+            "emphasis": "1987年の再来",
+            "points": [
+              "政府資金＋民間連合の構図が酷似",
+              "当時は日本、今回はTSMC/中国が対抗軸",
+              "SEMATECHは米国半導体復権に成功した実績あり"
+            ]
+          },
+          "audioFile": "voices/0007_ponchan.wav",
+          "audioDuration": 11.616,
+          "frameCount": 353
+        },
+        {
+          "speaker": "maro",
+          "text": "SEMATECH！まさに冷戦期の半導体戦争の再来パターンなのだ。でもSEMATECHの投資額と比べると桁が何個も違うぞ。",
+          "emotion": "surprised",
+          "audioFile": "voices/0008_maro.wav",
+          "audioDuration": 10.091,
+          "frameCount": 307
+        },
+        {
+          "speaker": "ponchan",
+          "text": "その通りで、SEMATECHはインフレ調整しても約50億ドル規模だったのに対して、Terafabは初期だけで1000億ドル、最終的に2000億ドルに達するんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0009_ponchan.wav",
+          "audioDuration": 10.955,
+          "frameCount": 333
+        },
+        {
+          "speaker": "maro",
+          "text": "規模が40倍ということは、成功した場合の産業インパクトも桁違いに大きいということなのだ。投資家として絶対に押さえておくべきテーマだぞ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "投資家が注目すべき理由",
+            "icon": "💰",
+            "body": "Terafabは半導体サプライチェーン全体の勢力図を書き換える可能性がある。\nIntel・TSMC・NVIDIA・装置メーカーすべてに波及する。",
+            "emphasis": "勢力図の書き換え",
+            "points": [
+              "Intelの株価は計画発表後に大きく変動",
+              "TSMC独占体制が崩れるシナリオが浮上",
+              "装置メーカーへの大量受注が見込まれる"
+            ]
+          },
+          "audioFile": "voices/0010_maro.wav",
+          "audioDuration": 11.477,
+          "frameCount": 349
+        },
+        {
+          "speaker": "ponchan",
+          "text": "今日はこのTerafab計画の全貌を分解して、冷戦期SEMATECHとの類似点、意外な勝者候補、そして具体的な投資戦略まで一気に掘り下げていくよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0011_ponchan.wav",
+          "audioDuration": 10.987,
+          "frameCount": 334
+        },
+        {
+          "speaker": "maro",
+          "text": "これは見逃せない内容なのだ。半導体投資の方向性が大きく変わるかもしれないから、最後までしっかり聞いていくぞ。",
+          "emotion": "serious",
+          "audioFile": "voices/0012_maro.wav",
+          "audioDuration": 9.579,
+          "frameCount": 292
+        }
+      ],
+      "topic": "2兆ドルの巨大工場"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "まずTerafabの基本構造を整理していくね。この工場はマスクが率いるTesla・xAI・SpaceXの3社が主要な顧客兼出資者になるんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "Terafabの基本構造",
+            "number": 1,
+            "icon": "🏭",
+            "body": "Tesla/xAI/SpaceXの3社がチップ需要を集約し、Intelが受託製造する垂直統合モデル。\n従来のファウンドリモデルとは異なり、需要側が工場建設を主導する点が革新的。",
+            "emphasis": "需要側主導の新モデル",
+            "points": [
+              "Teslaは自動運転チップHW5以降を内製志向",
+              "xAIはGrok学習用カスタムAIチップを計画",
+              "SpaceXはStarlink衛星用の通信チップを大量消費",
+              "3社合計で年間チップ需要は数十億ドル規模"
+            ]
+          },
+          "audioFile": "voices/0013_ponchan.wav",
+          "audioDuration": 11.168,
+          "frameCount": 340
+        },
+        {
+          "speaker": "maro",
+          "text": "ちょっと待ってほしいのだ。普通は半導体工場を建てるのはTSMCやIntelみたいな製造会社であって、顧客側が工場を建てるのは異例だぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0014_maro.wav",
+          "audioDuration": 11.872,
+          "frameCount": 361
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まさにそこがTerafabの革新的なポイントで、マスクは自分たちのチップ需要があまりにも大きいから、自前の製造基盤を確保しないと事業が成り立たないと判断したんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "マスク3社のチップ需要",
+            "number": 2,
+            "icon": "📊",
+            "body": "TeslaだけでもFSD用チップの年間需要は数百万個単位。\nxAIのスーパーコンピュータ『コロッサス』は10万基のGPUを搭載し、さらに拡張予定。",
+            "emphasis": "自前製造の必然性",
+            "points": [
+              "Tesla：年間200万台以上の車両にFSDチップ搭載",
+              "xAI：2025年中にGPU30万基体制を計画",
+              "SpaceX：Starlink衛星6000基以上が稼働中"
+            ]
+          },
+          "audioFile": "voices/0015_ponchan.wav",
+          "audioDuration": 11.499,
+          "frameCount": 349
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、つまりマスクは半導体の買い手としてあまりにも巨大になりすぎて、TSMCに並んで待っている場合ではなくなったということなのだ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0016_maro.wav",
+          "audioDuration": 10.965,
+          "frameCount": 333
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そしてここにIntelが製造パートナーとして入ってくる構図がめちゃくちゃ重要で、Intel Foundry Servicesにとってこれは起死回生のチャンスなんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "globalFoundryShare"
+          },
+          "audioFile": "voices/0017_ponchan.wav",
+          "audioDuration": 9.707,
+          "frameCount": 296
+        },
+        {
+          "speaker": "maro",
+          "text": "このグラフを見ると、TSMCが約65%で圧倒的なのに対して、Intel Foundryのシェアはたった1.5%なのだ。これは厳しい現実だぞ。",
+          "emotion": "surprised",
+          "audioFile": "voices/0018_maro.wav",
+          "audioDuration": 13.376,
+          "frameCount": 406
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そうなの。Intelはファウンドリ事業を2021年に本格始動したけど、外部顧客がほとんど獲得できず赤字が続いていたんだよ。それがTerafabで一気に変わる可能性があるの。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "Intel 18Aプロセス",
+            "number": 3,
+            "icon": "🔧",
+            "body": "Intelが2025年後半に量産開始を目指す最先端製造技術。\nTSMCのN2プロセスに対抗するポジションで、裏面電力供給（BSPDN）を採用。",
+            "emphasis": "Intel 18A",
+            "points": [
+              "トランジスタ密度でTSMC N2に匹敵",
+              "裏面電力供給で電力効率を大幅改善",
+              "Terafabの主力プロセスとして採用見込み",
+              "歩留まり改善が最大の課題"
+            ]
+          },
+          "audioFile": "voices/0019_ponchan.wav",
+          "audioDuration": 12.416,
+          "frameCount": 377
+        },
+        {
+          "speaker": "maro",
+          "text": "18Aプロセスがうまくいけばすごいけど、Intelは過去にも10nmや7nmで大幅な遅延を繰り返してきた前科があるのだ。本当に大丈夫なのか心配だぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0020_maro.wav",
+          "audioDuration": 13.909,
+          "frameCount": 422
+        },
+        {
+          "speaker": "ponchan",
+          "text": "その懸念はもっともで、実はここにSEMATECHとの歴史的類似性が鍵を握っているんだよ。1987年のSEMATECHも同じような状況から始まったの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "year": "1987年",
+                "label": "SEMATECH設立（対日本）",
+                "highlight": true
+              },
+              {
+                "year": "1993年",
+                "label": "米国が半導体シェア首位奪還",
+                "highlight": false
+              },
+              {
+                "year": "2022年",
+                "label": "CHIPS法成立（対中国/TSMC依存）",
+                "highlight": true
+              },
+              {
+                "year": "2025年",
+                "label": "Terafab計画発表",
+                "highlight": true
+              },
+              {
+                "year": "2028年",
+                "label": "Terafab稼働目標",
+                "highlight": false
+              }
+            ],
+            "title": "半導体国策プロジェクトの歴史"
+          },
+          "audioFile": "voices/0021_ponchan.wav",
+          "audioDuration": 11.157,
+          "frameCount": 339
+        },
+        {
+          "speaker": "maro",
+          "text": "1987年から1993年のわずか6年で米国が首位を奪還したのは事実なのだ。国策と民間が本気で連携すると凄まじい成果が出ることは歴史が証明しているぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0022_maro.wav",
+          "audioDuration": 15.435,
+          "frameCount": 468
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まさにそこで、SEMATECHのときは日本のDRAMシェアが80%に達して米国が危機感を持った。今回はTSMCが最先端ロジック半導体の92%以上を製造している状況が引き金なんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "SEMATECH vs Terafab比較",
+            "number": 4,
+            "icon": "🔄",
+            "body": "両者とも『外国依存への危機感』が起点。\nしかし投資規模・対象技術・民間主導度が大きく異なる。",
+            "emphasis": "歴史は繰り返すが規模は桁違い",
+            "points": [
+              "SEMATECH：政府主導、14社参加、製造技術共有",
+              "Terafab：民間主導、マスク3社＋Intel、実製造",
+              "SEMATECH：約50億ドル → Terafab：最大2000億ドル",
+              "成功条件：18Aプロセスの歩留まり確保が最大関門"
+            ]
+          },
+          "audioFile": "voices/0023_ponchan.wav",
+          "audioDuration": 15.008,
+          "frameCount": 455
+        },
+        {
+          "speaker": "maro",
+          "text": "規模が40倍以上違うのに加えて、SEMATECHは技術開発コンソーシアムだったのに対して、Terafabは実際にチップを大量生産する工場なのだ。より直接的なインパクトがあるぞ。",
+          "emotion": "serious",
+          "audioFile": "voices/0024_maro.wav",
+          "audioDuration": 14.869,
+          "frameCount": 451
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そしてもう一つ重要なのが、CHIPS法による補助金の存在なんだよ。Intelは既にCHIPS法から78.6億ドルの補助金を獲得していて、これがTerafabの資金源の一部になるの。",
+          "emotion": "normal",
+          "visual": {
+            "type": "chart",
+            "key": "chipsActFunding"
+          },
+          "audioFile": "voices/0025_ponchan.wav",
+          "audioDuration": 14.933,
+          "frameCount": 453
+        },
+        {
+          "speaker": "maro",
+          "text": "IntelがCHIPS法で最大の受益者になっているのは知らなかったのだ。TSMCやSamsungよりも多くの補助金を受けているということは、米国政府がIntelに賭けている証拠だぞ。",
+          "emotion": "surprised",
+          "audioFile": "voices/0026_maro.wav",
+          "audioDuration": 14.805,
+          "frameCount": 449
+        }
+      ],
+      "topic": "Terafabの全貌"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここで改めて整理しておきたいのが、なぜTSMC依存がそこまで危険視されているかという根本的な問題なんだよ。数字で見ると衝撃的なの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "TSMC依存の実態",
+            "number": 1,
+            "icon": "⚠️",
+            "body": "最先端7nm以下のロジック半導体において、TSMCの製造シェアは92%超。\nApple・NVIDIA・AMD・Qualcommなど主要テック企業が全面依存している。",
+            "emphasis": "92%が台湾の1社に集中",
+            "points": [
+              "Apple A/Mシリーズ：100%TSMC製造",
+              "NVIDIA H100/B200：100%TSMC製造",
+              "AMD EPYC/Ryzen：100%TSMC製造",
+              "台湾海峡の地政学リスクが常に存在"
+            ]
+          },
+          "audioFile": "voices/0027_ponchan.wav",
+          "audioDuration": 10.261,
+          "frameCount": 312
+        },
+        {
+          "speaker": "maro",
+          "text": "92%という数字は異常な集中度なのだ。これがもし止まったら、スマホもデータセンターも自動運転も全部止まるということだぞ。",
+          "emotion": "serious",
+          "audioFile": "voices/0028_maro.wav",
+          "audioDuration": 10.741,
+          "frameCount": 327
+        },
+        {
+          "speaker": "ponchan",
+          "text": "しかもTSMCの工場は台湾西部の科学園区に集中していて、台湾海峡から直線距離でわずか100〜200kmしか離れていないんだよ。軍事的に見て非常に脆弱な立地なの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "地理的脆弱性",
+            "number": 2,
+            "icon": "🗺️",
+            "body": "TSMCの主要ファブは新竹・台中・台南の3拠点に集中。\nいずれも台湾海峡に面した西海岸に位置し、軍事衝突時に最前線となる。",
+            "emphasis": "海峡から100〜200km",
+            "points": [
+              "中国軍の短距離弾道ミサイル射程内",
+              "海上封鎖だけでも化学薬品の輸入が停止",
+              "EUV装置の保守部品も海外依存"
+            ]
+          },
+          "audioFile": "voices/0029_ponchan.wav",
+          "audioDuration": 13.824,
+          "frameCount": 419
+        },
+        {
+          "speaker": "maro",
+          "text": "だからマスクは自分のビジネスを守るために、米国内に製造拠点を確保する必要があったということなのだ。単なる野心じゃなくて合理的なリスク管理だぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0030_maro.wav",
+          "audioDuration": 12.459,
+          "frameCount": 378
+        },
+        {
+          "speaker": "ponchan",
+          "text": "ここで面白いのが、過去エピソードでも扱った台湾有事シナリオとは全く違う切り口になるということなんだよ。台湾有事は『壊れたらどうなるか』の話だったけど、Terafabは『壊れる前に代替を作る』話なの。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "攻めの地政学戦略",
+            "number": 3,
+            "icon": "🔮",
+            "body": "従来の議論は『台湾有事でサプライチェーンが断絶するリスク』に焦点。\nTerafabは断絶を前提に代替供給源を構築する攻めの戦略。",
+            "emphasis": "壊れる前に作る",
+            "points": [
+              "防御（リスク回避）から攻撃（供給確保）へ転換",
+              "マスク3社の需要だけで工場稼働率を維持可能",
+              "成功すれば他のテック企業もIntelに発注する流れ",
+              "TSMCの交渉力低下 → 価格競争が発生"
+            ]
+          },
+          "audioFile": "voices/0031_ponchan.wav",
+          "audioDuration": 15.765,
+          "frameCount": 477
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、つまりTerafabが成功すると、TSMCにとっては顧客を失うだけでなく、価格交渉力まで失う二重のダメージになるということなのだ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0032_maro.wav",
+          "audioDuration": 12.352,
+          "frameCount": 375
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まさにそうで、ここが今回のテーマの核心部分なんだよ。Terafabの成否によって、半導体産業の勝者と敗者が入れ替わる可能性があるの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "勝者と敗者のシナリオ",
+            "number": 4,
+            "icon": "🏆",
+            "body": "Terafab成功時と失敗時で、投資家が注目すべき銘柄が大きく変わる。\n成功シナリオではIntelとマスク関連企業が最大の受益者となる。",
+            "emphasis": "勝者は誰か？",
+            "points": [
+              "成功時の勝者：Intel・Tesla・半導体装置メーカー",
+              "成功時の敗者：TSMC（独占崩壊）・Samsung",
+              "失敗時の勝者：TSMC（独占維持）・NVIDIA",
+              "失敗時の敗者：Intel（信頼喪失）・マスク3社"
+            ]
+          },
+          "audioFile": "voices/0033_ponchan.wav",
+          "audioDuration": 10.091,
+          "frameCount": 307
+        },
+        {
+          "speaker": "maro",
+          "text": "投資家としてはどちらのシナリオに賭けるかで、ポートフォリオの組み方が180度変わるのだ。これは本当に重要な分岐点だぞ。",
+          "emotion": "serious",
+          "audioFile": "voices/0034_maro.wav",
+          "audioDuration": 10.101,
+          "frameCount": 308
+        },
+        {
+          "speaker": "ponchan",
+          "text": "だからこそ次のチャプターでは、具体的なバリュエーションとエントリー条件を銘柄ごとに詰めていくよ。感覚じゃなくて数字で判断するのが大事だからね。",
+          "emotion": "normal",
+          "audioFile": "voices/0035_ponchan.wav",
+          "audioDuration": 10.027,
+          "frameCount": 305
+        }
+      ],
+      "topic": "なぜTSMC依存が危険か"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "まずマクロ環境から整理していくね。AIアクセラレータ市場は2022年の300億ドルから2024年に920億ドルへ3倍以上に急拡大しているんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "chart",
+            "key": "aiChipDemandForecast"
+          },
+          "audioFile": "voices/0036_ponchan.wav",
+          "audioDuration": 12.064,
+          "frameCount": 366
+        },
+        {
+          "speaker": "maro",
+          "text": "2027年には2800億ドル予測なのだ。たった5年で約10倍という成長率は、スマートフォン普及期のモバイルチップ市場を超えるペースだぞ。",
+          "emotion": "surprised",
+          "visual": {
+            "type": "rich-panel",
+            "title": "AI半導体市場の爆発的成長",
+            "icon": "📈",
+            "body": "生成AI・自動運転・ロボティクスの3分野が同時に立ち上がり、半導体需要が爆発。\n2024年の920億ドルから2027年に2800億ドルへ成長見込み。",
+            "emphasis": "年平均成長率45%超",
+            "points": [
+              "データセンターGPU需要が最大のドライバー",
+              "自動運転向けカスタムチップ需要が2026年に本格化",
+              "エッジAI（スマホ・PC）向けも2025年から加速"
+            ]
+          },
+          "audioFile": "voices/0037_maro.wav",
+          "audioDuration": 12.085,
+          "frameCount": 367
+        },
+        {
+          "speaker": "ponchan",
+          "text": "この巨大な需要増加に対して、最先端半導体の供給能力はTSMCにほぼ一極集中しているのが現状で、需給ギャップが深刻化しているんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "需給ギャップの構造",
+            "number": 1,
+            "icon": "⚖️",
+            "body": "AIチップ需要は年率45%以上で伸びているが、TSMC単独の設備増強では追いつかない。\n2025年時点でNVIDIA・AMD・Appleの発注が数四半期先まで埋まっている。",
+            "emphasis": "供給が追いつかない",
+            "points": [
+              "TSMCの設備投資：2025年380〜420億ドル",
+              "それでもN3/N2の需要を完全には吸収できない",
+              "Terafabが補完的供給源として意味を持つ理由"
+            ]
+          },
+          "audioFile": "voices/0038_ponchan.wav",
+          "audioDuration": 11.456,
+          "frameCount": 348
+        },
+        {
+          "speaker": "maro",
+          "text": "つまりTerafabは地政学リスクの回避だけでなく、純粋に供給不足を埋めるためにも必要ということなのだ。これはビジネスロジックとしても成立しているぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0039_maro.wav",
+          "audioDuration": 12.203,
+          "frameCount": 371
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そしてここからが投資家にとって核心的な話になるんだけど、Terafabの恩恵を最も受けるのは意外にもIntelでもTeslaでもないかもしれないんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "意外な最大受益者",
+            "number": 2,
+            "icon": "🎯",
+            "body": "Terafab建設には膨大な半導体製造装置が必要。\nEUV露光装置・エッチング装置・検査装置メーカーへの受注が確実視される。",
+            "emphasis": "装置メーカーが隠れた勝者",
+            "points": [
+              "ASML：EUVリソグラフィ装置の独占供給者",
+              "Applied Materials：成膜・エッチング装置大手",
+              "東京エレクトロン：日本の装置メーカー筆頭",
+              "ASML 1台あたり約3.5億ドル"
+            ]
+          },
+          "audioFile": "voices/0040_ponchan.wav",
+          "audioDuration": 9.685,
+          "frameCount": 295
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、ゴールドラッシュで一番儲かったのはツルハシを売った人だったという話と同じ構図なのだ。装置メーカーはどちらのシナリオでも勝てる立場だぞ。",
+          "emotion": "happy",
+          "audioFile": "voices/0041_maro.wav",
+          "audioDuration": 11.371,
+          "frameCount": 346
+        },
+        {
+          "speaker": "ponchan",
+          "text": "素晴らしい指摘で、まさにその通りなんだよ。TerafabがうまくいってもいかなくてもTSMCも設備投資を続けるから、装置メーカーへの発注は減らないの。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "装置メーカーの両面勝ちポジション",
+            "number": 3,
+            "icon": "🔒",
+            "body": "Terafab成功→Intelが大量発注。Terafab失敗→TSMCが独占的に設備増強。\nどちらの場合も装置メーカーの売上は拡大する。",
+            "emphasis": "シナリオ非依存の投資対象",
+            "points": [
+              "ASML：2024年売上282億ユーロ、受注残400億ユーロ超",
+              "東京エレクトロン：2024年度売上約1.9兆円",
+              "Applied Materials：2024年度売上267億ドル",
+              "3社ともAI需要で向こう3年の受注が積み上がっている"
+            ]
+          },
+          "audioFile": "voices/0042_ponchan.wav",
+          "audioDuration": 10.795,
+          "frameCount": 328
+        },
+        {
+          "speaker": "maro",
+          "text": "つまりTerafabを巡る投資戦略は、本命のIntelに賭けるか、確実な装置メーカーを買うかという二択に整理できるのだ。リスク許容度で判断が分かれるぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0043_maro.wav",
+          "audioDuration": 12.64,
+          "frameCount": 384
+        }
+      ],
+      "topic": "マクロ環境と需要予測"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここからは具体的な銘柄ごとにバリュエーションとエントリー条件を詰めていくよ。まずはTerafabの製造パートナーであるIntelから見ていくね。",
+          "emotion": "normal",
+          "visual": {
+            "type": "chart",
+            "key": "intelRevenue"
+          },
+          "audioFile": "voices/0044_ponchan.wav",
+          "audioDuration": 9.141,
+          "frameCount": 279
+        },
+        {
+          "speaker": "maro",
+          "text": "Intelの売上は2021年の790億ドルから2024年には533億ドルまで落ち込んでいるのだ。3年で32%も減少しているのは相当厳しい状況だぞ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "Intel現状の財務体質",
+            "icon": "📉",
+            "body": "売上減少に加え、ファウンドリ事業の赤字が拡大。\n2024年のファウンドリ部門営業損失は約130億ドルに達した。",
+            "emphasis": "ファウンドリ赤字130億ドル",
+            "points": [
+              "売上高：533億ドル（前年比-1.7%）",
+              "ファウンドリ部門：営業損失130億ドル",
+              "配当は2024年に事実上停止",
+              "株価は2024年に約60%下落"
+            ]
+          },
+          "audioFile": "voices/0045_maro.wav",
+          "audioDuration": 15.413,
+          "frameCount": 467
+        },
+        {
+          "speaker": "ponchan",
+          "text": "だからこそTerafabはIntelにとって文字通りの生命線なんだよ。マスク3社が安定顧客として入ることで、ファウンドリ部門の赤字を一気に縮小できる可能性があるの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "Intel投資判断",
+            "number": 1,
+            "icon": "🎯",
+            "body": "現在の株価は約20ドル台前半、PBR約0.8倍で帳簿価値割れ。\n18Aプロセスの歩留まり確認が最大の上昇トリガー。",
+            "emphasis": "PBR0.8倍は歴史的割安水準",
+            "points": [
+              "エントリー：$18〜$22の押し目ゾーン",
+              "上昇トリガー：18A量産成功報道でPBR1.2倍（$30）到達",
+              "リスクシナリオ：18A遅延なら$15割れで撤退",
+              "時間軸：2025年後半〜2026年前半が判断の分水嶺"
+            ],
+            "color": "#0071C5"
+          },
+          "audioFile": "voices/0046_ponchan.wav",
+          "audioDuration": 11.36,
+          "frameCount": 345
+        },
+        {
+          "speaker": "maro",
+          "text": "PBR0.8倍ということは市場がIntelの資産価値すら信じていないということなのだ。逆に言えば、18Aさえ成功すれば株価は50%以上の上昇余地があるぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0047_maro.wav",
+          "audioDuration": 14.923,
+          "frameCount": 452
+        },
+        {
+          "speaker": "ponchan",
+          "text": "次にASMLを見ていくよ。ASMLはEUV露光装置を独占供給していて、Terafabにも確実にEUV装置が入る。2024年の売上は282億ユーロで受注残は400億ユーロを超えているんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ASML投資判断",
+            "number": 2,
+            "icon": "🔬",
+            "body": "EUV装置の独占供給者として不可欠な存在。\nPER約30倍は過去5年の平均的水準だが、受注残の厚みが安心材料。",
+            "emphasis": "受注残400億ユーロ超",
+            "points": [
+              "エントリー：€600〜€650（PER27倍相当）が妙味圏",
+              "上昇トリガー：High-NA EUV量産本格化で€800突破",
+              "リスクシナリオ：中国向け輸出規制強化で€550割れ",
+              "長期保有向き：3年で売上CAGR12〜15%見込み"
+            ],
+            "color": "#00A3E0"
+          },
+          "audioFile": "voices/0048_ponchan.wav",
+          "audioDuration": 16.939,
+          "frameCount": 513
+        },
+        {
+          "speaker": "maro",
+          "text": "ASMLはどのシナリオでも需要があるから、ボラティリティを気にする投資家にとっては最も安心感がある銘柄なのだ。ただし割安感は薄いぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0049_maro.wav",
+          "audioDuration": 11.541,
+          "frameCount": 351
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そしてもう一つ注目したいのが東京エレクトロンなんだよ。日本の半導体装置メーカーとして世界第3位で、エッチングや成膜装置でグローバルシェアを持っているの。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "東京エレクトロン投資判断",
+            "number": 3,
+            "icon": "🇯🇵",
+            "body": "2024年度売上約1.9兆円、AI関連需要で2025年度は過去最高更新が見込まれる。\n日本株としてアクセスしやすく、円建てでの投資が可能。",
+            "emphasis": "日本から投資できるAI半導体の本命",
+            "points": [
+              "エントリー：株価2万円〜2.3万円のレンジ（PER25倍以下）",
+              "上昇トリガー：米国新工場向け大型受注で3万円突破",
+              "リスクシナリオ：中国売上比率30%超が規制リスク",
+              "為替影響：円安は追い風だが円高$130割れで利益圧迫"
+            ],
+            "color": "#C41E3A"
+          },
+          "audioFile": "voices/0050_ponchan.wav",
+          "audioDuration": 11.339,
+          "frameCount": 345
+        },
+        {
+          "speaker": "maro",
+          "text": "東京エレクトロンは中国向け売上比率が30%を超えているのが気になるのだ。米中規制が強化されると直撃するリスクは無視できないぞ。",
+          "emotion": "serious",
+          "audioFile": "voices/0051_maro.wav",
+          "audioDuration": 11.637,
+          "frameCount": 354
+        },
+        {
+          "speaker": "ponchan",
+          "text": "鋭い指摘で、だからこそポートフォリオの中で1銘柄に集中させるのではなく、Intel・ASML・東京エレクトロンを組み合わせてリスクを分散させるのが合理的なんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "Terafab関連ポートフォリオ案",
+            "number": 4,
+            "icon": "📊",
+            "body": "リスク許容度に応じて3パターンの配分を提案。\nいずれもTerafab成功/失敗の両シナリオに対応する設計。",
+            "emphasis": "シナリオ対応型配分",
+            "points": [
+              "積極型：Intel40%/ASML30%/東京エレクトロン30%",
+              "中立型：ASML40%/東京エレクトロン35%/Intel25%",
+              "保守型：ASML50%/東京エレクトロン30%/Intel20%",
+              "ヘッジ：TSMC株10%をサテライト保有で保険"
+            ]
+          },
+          "audioFile": "voices/0052_ponchan.wav",
+          "audioDuration": 12.821,
+          "frameCount": 389
+        },
+        {
+          "speaker": "maro",
+          "text": "保守型でもIntelを20%入れているのは、PBR0.8倍の割安度がリスクリワードとして魅力的だからということなのだ。ゼロにはしないのがポイントだぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0053_maro.wav",
+          "audioDuration": 13.152,
+          "frameCount": 399
+        },
+        {
+          "speaker": "ponchan",
+          "text": "最後にTSMCの立場も確認しておくと、TSMCは現在PER約20倍で取引されていて、Terafab成功シナリオではPER16〜18倍への圧縮リスクがあるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "TSMCへの逆風シナリオ",
+            "number": 5,
+            "icon": "🔻",
+            "body": "Terafab成功時、TSMCの独占プレミアムが剥落するリスク。\n現在PER約20倍→独占崩壊で16〜18倍への圧縮可能性。",
+            "emphasis": "独占プレミアム剥落リスク",
+            "points": [
+              "現在PER約20倍：地政学リスク織り込み済みの水準",
+              "Terafab成功時：PER16倍（$140相当）まで下落余地",
+              "ただし台湾有事回避なら逆にPER25倍（$220）もありうる",
+              "既にポジション保有者は利食い水準の検討を推奨"
+            ]
+          },
+          "audioFile": "voices/0054_ponchan.wav",
+          "audioDuration": 14.357,
+          "frameCount": 435
+        },
+        {
+          "speaker": "maro",
+          "text": "つまりTSMC保有者にとってTerafabは明確なリスク要因で、成功確率をどう見積もるかで保有判断が変わるということなのだ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0055_maro.wav",
+          "audioDuration": 10.72,
+          "frameCount": 326
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そう、だからこそ先ほどのポートフォリオ案ではTSMCをヘッジとして10%だけサテライト保有する形にしているんだよ。どちらに転んでも致命傷にならない設計にしているの。",
+          "emotion": "normal",
+          "audioFile": "voices/0056_ponchan.wav",
+          "audioDuration": 12.299,
+          "frameCount": 373
+        }
+      ],
+      "topic": "個別銘柄・エントリー条件"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "最後に投資のタイムラインを具体的に整理していくよ。Terafabは2025年に計画発表、2026年に着工、2028年に稼働開始というスケジュールが見込まれているんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "year": "2025年Q2",
+                "label": "Terafab正式発表・詳細計画公開",
+                "highlight": true
+              },
+              {
+                "year": "2025年後半",
+                "label": "Intel 18A量産開始（歩留まり確認）",
+                "highlight": true
+              },
+              {
+                "year": "2026年",
+                "label": "Terafab着工・装置発注本格化",
+                "highlight": false
+              },
+              {
+                "year": "2027年",
+                "label": "装置搬入・試験稼働開始",
+                "highlight": false
+              },
+              {
+                "year": "2028年",
+                "label": "Terafab量産開始目標",
+                "highlight": true
+              }
+            ],
+            "title": "Terafab投資タイムライン"
+          },
+          "audioFile": "voices/0057_ponchan.wav",
+          "audioDuration": 13.365,
+          "frameCount": 405
+        },
+        {
+          "speaker": "maro",
+          "text": "2025年後半の18A量産開始が最初の大きな判断ポイントになるのだ。ここで歩留まりが確認できれば、Intel株は大きく動く可能性があるぞ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "投資判断のチェックポイント",
+            "icon": "⏰",
+            "body": "Terafab関連投資は3つの時間軸で判断ポイントを設定する。\n各ポイントで買い増し or 撤退を判断。",
+            "emphasis": "3つのチェックポイント",
+            "points": [
+              "①2025年後半：18A歩留まり70%以上→Intel買い増し",
+              "②2026年Q1：Terafab着工確認→装置メーカー買い増し",
+              "③2027年：試験稼働結果→全体ポジション最終判断",
+              "撤退条件：18A歩留まり50%未満ならIntel全量売却"
+            ]
+          },
+          "audioFile": "voices/0058_maro.wav",
+          "audioDuration": 13.248,
+          "frameCount": 402
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そしてここで一番重要なのは、Terafab計画が遅延した場合の撤退ラインを事前に決めておくことなんだよ。マスクのプロジェクトは過去にも大幅遅延の実績があるからね。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "撤退シナリオの設定",
+            "icon": "🚪",
+            "body": "マスク関連プロジェクトは壮大な計画と実行の遅延がセット。\nCybertruck・Robotaxi・Starshipすべて当初計画から大幅遅延した。",
+            "emphasis": "遅延は想定内にする",
+            "points": [
+              "1年遅延（2029年稼働）：許容範囲、ポジション維持",
+              "2年以上遅延：Intel株は$15割れで半量売却",
+              "計画中止報道：全銘柄即時撤退",
+              "代替指標：Intelの四半期決算でファウンドリ受注額を監視"
+            ]
+          },
+          "audioFile": "voices/0059_ponchan.wav",
+          "audioDuration": 11.392,
+          "frameCount": 346
+        },
+        {
+          "speaker": "maro",
+          "text": "CybertruckもRobotaxiも当初予定から2〜3年遅れたのは事実なのだ。だから遅延を前提にした投資計画を立てておくのが、マスク関連銘柄への投資の鉄則だぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0060_maro.wav",
+          "audioDuration": 13.995,
+          "frameCount": 424
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まとめると、Terafab関連投資は短期のイベントトレードではなく、2025年から2028年にかけての中期戦略として組み立てるべきものなんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "投資時間軸の整理",
+            "icon": "🗓️",
+            "body": "短期トレードではなく、3年間の中期投資として設計する。\n各チェックポイントでポジションサイズを段階的に調整。",
+            "emphasis": "3年の中期戦略",
+            "points": [
+              "2025年：偵察ポジション（全体の30%）を構築",
+              "2026年：着工確認で追加投入（50%まで）",
+              "2027年：試験結果でフルポジション or 撤退判断",
+              "焦って一括投入しないことが最大のリスク管理"
+            ]
+          },
+          "audioFile": "voices/0061_ponchan.wav",
+          "audioDuration": 10.709,
+          "frameCount": 326
+        },
+        {
+          "speaker": "maro",
+          "text": "段階的にポジションを構築するアプローチは、マスクの遅延リスクと18Aの技術リスクの両方に対応できる賢い方法なのだ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0062_maro.wav",
+          "audioDuration": 10.603,
+          "frameCount": 323
+        }
+      ],
+      "topic": "タイムラインと撤退条件"
+    },
+    {
+      "type": "summary",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここまでTerafab計画の全貌を解説してきたけど、最後に今日の内容を投資アクションプランとして整理していくよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "本日のまとめ",
+            "icon": "📋",
+            "body": "Terafabは1987年SEMATECH以来の米国半導体国策プロジェクト。\n成功すればTSMC一極集中が崩れ、半導体産業の勢力図が書き換わる。",
+            "emphasis": "40年ぶりの転換点",
+            "points": [
+              "マスク3社＋Intelの連合がTSMC独占に挑戦",
+              "装置メーカーはシナリオ非依存の勝者",
+              "18Aプロセスの成否が全ての分岐点",
+              "投資は段階的に、撤退ラインは事前に設定"
+            ]
+          },
+          "audioFile": "voices/0063_ponchan.wav",
+          "audioDuration": 7.872,
+          "frameCount": 241
+        },
+        {
+          "speaker": "maro",
+          "text": "冷戦期のSEMATECHが6年で成果を出した歴史を考えると、Terafabも2028〜2030年には結果が見えてくるはずなのだ。それまでの3年が勝負だぞ。",
+          "emotion": "serious",
+          "audioFile": "voices/0064_maro.wav",
+          "audioDuration": 13.419,
+          "frameCount": 407
+        },
+        {
+          "speaker": "ponchan",
+          "text": "具体的なアクションとしては、まず2025年後半のIntel 18A量産開始ニュースをウォッチすることが第一歩で、歩留まり70%以上が確認できれば偵察ポジションを取る判断ができるんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "明日からのアクション",
+            "icon": "✅",
+            "body": "Terafab関連投資は情報収集フェーズから始める。\n2025年後半がエントリー判断の最初のウインドウ。",
+            "emphasis": "まずは情報収集から",
+            "points": [
+              "①Intelの四半期決算でファウンドリ受注額を確認",
+              "②ASML・東京エレクトロンの受注動向を追跡",
+              "③Terafab関連の正式契約ニュースを監視",
+              "④$18〜$22のIntel押し目で偵察ポジション検討"
+            ]
+          },
+          "audioFile": "voices/0065_ponchan.wav",
+          "audioDuration": 14.816,
+          "frameCount": 449
+        },
+        {
+          "speaker": "maro",
+          "text": "情報収集フェーズからスタートするのは堅実なアプローチなのだ。焦って飛び乗ると、マスクの遅延リスクで含み損を抱える羽目になるぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0066_maro.wav",
+          "audioDuration": 10.667,
+          "frameCount": 325
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そして忘れてはいけないのが、Terafabが失敗するシナリオにも備えておくことなんだよ。その場合はTSMCの独占が続くので、TSMC株のサテライト保有がヘッジになるの。",
+          "emotion": "serious",
+          "audioFile": "voices/0067_ponchan.wav",
+          "audioDuration": 12.533,
+          "frameCount": 381
+        },
+        {
+          "speaker": "maro",
+          "text": "どちらに転んでも致命傷にならないポートフォリオを作るのが、地政学テーマの投資で一番大事な考え方なのだ。",
+          "emotion": "serious",
+          "audioFile": "voices/0068_maro.wav",
+          "audioDuration": 8.885,
+          "frameCount": 271
+        },
+        {
+          "speaker": "ponchan",
+          "text": "最後に一つだけ強調しておくと、Terafabは単なる一企業の工場建設ではなくて、米国の半導体覇権を左右する国家戦略レベルの話なんだよ。だからこそ個人投資家も無視できないテーマなの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "Terafabの地政学的意義",
+            "icon": "🌍",
+            "body": "半導体製造の一極集中を解消し、米国のAI覇権を確保するための国家プロジェクト。\n投資家にとっては10年に一度の構造変化。",
+            "emphasis": "10年に一度の構造変化",
+            "points": [
+              "CHIPS法＋民間資本の合流は歴史的転換点",
+              "成功すれば半導体地政学の前提が変わる",
+              "3年後に振り返ると2025年が分水嶺だった可能性"
+            ]
+          },
+          "audioFile": "voices/0069_ponchan.wav",
+          "audioDuration": 14.176,
+          "frameCount": 430
+        },
+        {
+          "speaker": "maro",
+          "text": "2025年がまさに分水嶺になるかもしれないのだ。今のうちに情報を集めて、チェックポイントごとに冷静に判断していく準備をしておくべきだぞ。",
+          "emotion": "serious",
+          "audioFile": "voices/0070_maro.wav",
+          "audioDuration": 11.883,
+          "frameCount": 361
+        },
+        {
+          "speaker": "ponchan",
+          "text": "Terafab計画の進捗は今後もこのチャンネルで追いかけていくから、最新情報を逃さないようにチャンネル登録しておいてね。",
+          "emotion": "happy",
+          "audioFile": "voices/0071_ponchan.wav",
+          "audioDuration": 8.117,
+          "frameCount": 248
+        },
+        {
+          "speaker": "maro",
+          "text": "半導体産業の歴史が動く瞬間を一緒にウォッチしていくのだ。次の動画も楽しみにしているぞ。",
+          "emotion": "happy",
+          "audioFile": "voices/0072_maro.wav",
+          "audioDuration": 7.755,
+          "frameCount": 237
+        }
+      ],
+      "topic": "投資アクションプラン"
+    },
+    {
+      "type": "cta",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "次回はTerafabとも密接に関わる『AI電力危機』をテーマに、データセンターの電力消費が2027年に世界全体の5%を超える衝撃的な予測を深掘りしていくよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "次回予告",
+            "icon": "⚡",
+            "body": "AI電力危機：データセンターが世界の電力を食い尽くす日",
+            "points": [
+              "原子力・送電網銘柄への投資機会",
+              "電力コストがAI覇権の新たなボトルネック"
+            ]
+          },
+          "audioFile": "voices/0073_ponchan.wav",
+          "audioDuration": 13.173,
+          "frameCount": 400
+        },
+        {
+          "speaker": "maro",
+          "text": "電力なしにTerafabも動かないのだ。半導体と電力は表裏一体のテーマだから、セットで押さえておくべきだぞ。",
+          "emotion": "serious",
+          "audioFile": "voices/0074_maro.wav",
+          "audioDuration": 9.12,
+          "frameCount": 278
+        },
+        {
+          "speaker": "ponchan",
+          "text": "チャンネル登録と高評価ボタンを押してもらえると、こういった地政学×投資の深掘り動画をもっとたくさん届けられるようになるから、ぜひお願いね。",
+          "emotion": "happy",
+          "audioFile": "voices/0075_ponchan.wav",
+          "audioDuration": 9.931,
+          "frameCount": 302
+        },
+        {
+          "speaker": "maro",
+          "text": "それでは次回の動画で会おうなのだ。Terafabの続報が入ったらコミュニティでも速報を出すから、通知もオンにしておくと良いぞ。",
+          "emotion": "happy",
+          "audioFile": "voices/0076_maro.wav",
+          "audioDuration": 9.557,
+          "frameCount": 291
+        }
+      ],
+      "topic": "次回予告"
+    }
+  ],
+  "chartData": {
+    "globalFoundryShare": {
+      "data": [
+        {
+          "label": "TSMC",
+          "value": 64.9
+        },
+        {
+          "label": "Samsung",
+          "value": 9.3
+        },
+        {
+          "label": "SMIC",
+          "value": 6.2
+        },
+        {
+          "label": "GlobalFoundries",
+          "value": 5.2
+        },
+        {
+          "label": "Intel Foundry",
+          "value": 1.5
+        },
+        {
+          "label": "その他",
+          "value": 12.9
+        }
+      ],
+      "title": "世界ファウンドリ市場シェア（2024年）",
+      "chartType": "pie"
+    },
+    "chipsActFunding": {
+      "data": [
+        {
+          "label": "Intel",
+          "value": 78.6
+        },
+        {
+          "label": "TSMC",
+          "value": 66
+        },
+        {
+          "label": "Samsung",
+          "value": 64
+        },
+        {
+          "label": "Micron",
+          "value": 61.4
+        },
+        {
+          "label": "GlobalFoundries",
+          "value": 15
+        }
+      ],
+      "title": "CHIPS法 補助金配分（主要企業・億ドル）",
+      "chartType": "bar"
+    },
+    "aiChipDemandForecast": {
+      "data": [
+        {
+          "label": "2022年",
+          "value": 300
+        },
+        {
+          "label": "2023年",
+          "value": 534
+        },
+        {
+          "label": "2024年",
+          "value": 920
+        },
+        {
+          "label": "2025年(予)",
+          "value": 1400
+        },
+        {
+          "label": "2027年(予)",
+          "value": 2800
+        }
+      ],
+      "title": "AIアクセラレータ市場規模推移（億ドル）",
+      "chartType": "line"
+    },
+    "intelRevenue": {
+      "data": [
+        {
+          "label": "2021年",
+          "value": 790
+        },
+        {
+          "label": "2022年",
+          "value": 631
+        },
+        {
+          "label": "2023年",
+          "value": 542
+        },
+        {
+          "label": "2024年",
+          "value": 533
+        }
+      ],
+      "title": "Intel売上高推移（億ドル）",
+      "chartType": "bar"
+    },
+    "sematchVsTerafab": {
+      "data": [
+        {
+          "label": "SEMATECH(1987年・調整後)",
+          "value": 50
+        },
+        {
+          "label": "Terafab(2025年・初期)",
+          "value": 1000
+        },
+        {
+          "label": "Terafab(最終計画)",
+          "value": 2000
+        }
+      ],
+      "title": "SEMATECH vs Terafab 投資規模比較（億ドル・インフレ調整）",
+      "chartType": "bar"
+    }
+  },
+  "bgmVolume": 0.12,
+  "bgmMap": {
+    "hook": "bgm/news.mp3",
+    "explanation": "bgm/main_lofi.mp3",
+    "analysis": "bgm/uplifting_piano.mp3",
+    "summary": "bgm/uplifting_piano.mp3",
+    "cta": "bgm/なんということはない日常.mp3"
+  }
+}

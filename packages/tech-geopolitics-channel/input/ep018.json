@@ -1,0 +1,1181 @@
+{
+  "videoId": "ep018",
+  "seed": "ep018",
+  "title": "なぜOpenAI上場でソフトバンクGだけが+20%になるのか【ゲーム理論×マクロ経済学】",
+  "description": "2026年5月22日、OpenAIがIPO申請。翌日ソフトバンクG(9984)はストップ高+20%を記録した。なぜ日本の投資持株会社が世界最大AIスタートアップの上場で爆上げするのか。Vision Fund・ARM・日銀利上げの三角形を解剖し、エントリー価格・目標株価・撤退ラインまで完全解説する。",
+  "tags": [
+    "OpenAI上場",
+    "ソフトバンクG",
+    "9984",
+    "ARM",
+    "IPO",
+    "Vision Fund",
+    "AI株",
+    "日本株投資",
+    "NISA銘柄",
+    "成長株",
+    "ゲーム理論",
+    "マクロ経済学",
+    "日銀利上げ",
+    "地政学投資",
+    "孫正義",
+    "エントリー価格",
+    "目標株価",
+    "撤退ライン",
+    "テクノロジー投資",
+    "AI投資",
+    "投資戦略2026",
+    "半導体株",
+    "個人投資家",
+    "30代投資",
+    "株式投資",
+    "成長株投資",
+    "IPO投資",
+    "ナスダック",
+    "日経225",
+    "テック株"
+  ],
+  "chapters": [
+    {
+      "type": "hook",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "5000億ドル——これが2026年5月22日にOpenAIがIPO申請した瞬間の評価額で、同じ日にソフトバンクGの株価がストップ高プラス20%を記録したんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "stat",
+            "value": "5000億ドル",
+            "label": "OpenAI IPO申請時評価額（2026年5月22日）"
+          },
+          "audioFile": "voices/0001_ponchan.wav",
+          "audioDuration": 13.323,
+          "frameCount": 404
+        },
+        {
+          "speaker": "ponchan",
+          "text": "実はNISAで米国AI株を積み立てている30代のあなたが、OpenAIを1株も持っていないのに、ソフトバンクGを保有しているだけでこの恩恵をまるごと受けられる構造になっているんだよ。",
+          "emotion": "surprised",
+          "visual": {
+            "type": "image",
+            "src": "content/img_stock_market.png",
+            "caption": "ソフトバンクG ストップ高＋20%（2026年5月22日）",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0002_ponchan.wav",
+          "audioDuration": 13.568,
+          "frameCount": 412
+        },
+        {
+          "speaker": "maro",
+          "text": "えっ、OpenAIって非上場のAI企業なのに、なんでソフトバンクGがそんなに爆上げするんだぞ？俺、ソフトバンクGって携帯会社じゃないかって思ってたのだ！",
+          "emotion": "surprised",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ソフトバンクGとは何者か",
+            "body": "ソフトバンクグループ(9984)は携帯キャリアではなく、AI・テクノロジー企業への投資を専業とする持株会社。孫正義氏が率いるVision Fund（総額1000億ドル超）を通じて世界中のスタートアップに出資している。2026年5月現在、OpenAIへの累計出資額は約400億ドルに達すると報じられている。",
+            "points": [
+              {
+                "text": "Vision Fund総額",
+                "value": "1000億ドル超",
+                "unit": "世界最大級のテックファンド",
+                "body": "Vision Fund 1（880億ドル）とVision Fund 2（500億ドル）を合わせると、単独ファンドとして世界最大規模のテック投資体制を持つ。",
+                "source": "SoftBank Group IR資料 2025年度"
+              },
+              {
+                "text": "OpenAI累計出資額",
+                "value": "約400億ドル",
+                "unit": "2026年5月時点推計",
+                "body": "2025年のStargate計画参加以降、出資規模が急拡大。IPO後の持分価値は出資コストの数倍になる可能性がある。",
+                "source": "Bloomberg報道 2026年5月"
+              }
+            ]
+          },
+          "audioFile": "voices/0003_maro.wav",
+          "audioDuration": 13.653,
+          "frameCount": 414
+        },
+        {
+          "speaker": "ponchan",
+          "text": "今日は3つ話すよ。①ソフトバンクGがOpenAI上場でなぜ+20%になる構造なのか、②ソフトバンクGとARMの具体的な買い場と目標株価、③日銀利上げでも成長株として買い続けられる根拠と撤退ラインだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "今日わかること3選",
+            "body": "この動画を最後まで見ると、OpenAI上場をきっかけにしたソフトバンクG・ARMへの投資判断が明確になる。数字ベースのエントリー条件と撤退ラインも提示するよ。",
+            "points": [
+              {
+                "text": "①なぜ+20%になるのか",
+                "body": "NAV構造・ゲーム理論・株主利益の連鎖を解説する。"
+              },
+              {
+                "text": "②買い場と目標株価",
+                "body": "ソフトバンクG(9984)とARM(ARM)の具体的な価格帯を提示する。"
+              },
+              {
+                "text": "③撤退ラインと日銀リスク",
+                "body": "日銀利上げシナリオ下でのリスクプレミアムと損切り水準を明示する。"
+              }
+            ]
+          },
+          "audioFile": "voices/0004_ponchan.wav",
+          "audioDuration": 17.077,
+          "frameCount": 517
+        },
+        {
+          "speaker": "maro",
+          "text": "OpenAIが上場したら、ソフトバンクGの持っている株の価値がわかる、ってことなのだ？それって株式市場でよく言う『含み益の顕在化』ってやつじゃないのだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "chart",
+            "key": "openai_valuation"
+          },
+          "audioFile": "voices/0005_maro.wav",
+          "audioDuration": 13.952,
+          "frameCount": 423
+        },
+        {
+          "speaker": "ponchan",
+          "text": "その通りで、まさにその『含み益の顕在化』がゲーム理論的に市場参加者全員を動かすトリガーになるんだよ。2021年に同じことがARMのIPOで起きていて、その日もソフトバンクGは急騰しているんだよね。",
+          "emotion": "serious",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "year": "2019年",
+                "label": "ウィーワーク上場失敗→NAV急落",
+                "highlight": false
+              },
+              {
+                "year": "2020年",
+                "label": "コロナ禍でVision Fund評価損拡大",
+                "highlight": false
+              },
+              {
+                "year": "2021年",
+                "label": "クーパン・Grab上場でNAV回復+20%超",
+                "highlight": true
+              },
+              {
+                "year": "2023年9月",
+                "label": "ARM再上場→SBG株価+15%",
+                "highlight": true
+              },
+              {
+                "year": "2026年5月",
+                "label": "OpenAI IPO申請→ストップ高+20%",
+                "highlight": true
+              }
+            ],
+            "title": "ソフトバンクG×IPO歴史年表"
+          },
+          "audioFile": "voices/0006_ponchan.wav",
+          "audioDuration": 16.373,
+          "frameCount": 496
+        }
+      ],
+      "topic": "OpenAI上場+20%の衝撃"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "じゃあまず、ソフトバンクGの株価がなぜOpenAI上場でここまで動くのか、その仕組みから説明するよ。鍵はNAVって概念なんだけど、これは『保有資産の純価値』のことなんだよね。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "NAVとは何か",
+            "number": 1,
+            "icon": "📊",
+            "body": "NAVとはNet Asset Value、つまり保有全資産の時価合計から負債を引いた純資産価値のこと。ソフトバンクGは携帯事業の利益ではなく、このNAVの拡大で株主価値を創造する会社なんだよ。株価はNAVに対して割引または割増で取引される。",
+            "points": [
+              {
+                "text": "NAV計算の構造",
+                "body": "ARM時価総額×保有比率 + OpenAI評価額×持分 + その他投資 − 純負債 = ソフトバンクGのNAV"
+              },
+              {
+                "text": "NAVディスカウント",
+                "value": "約20〜30%",
+                "unit": "過去5年平均",
+                "body": "通常、ソフトバンクGはNAVに対して20〜30%割引で取引される。割引率が縮小するだけでも株価は大きく上昇する。",
+                "source": "SoftBank Group IR資料 2025年度"
+              }
+            ]
+          },
+          "audioFile": "voices/0007_ponchan.wav",
+          "audioDuration": 13.973,
+          "frameCount": 424
+        },
+        {
+          "speaker": "maro",
+          "text": "つまりOpenAIが上場して評価額が5000億ドルって確定したら、ソフトバンクGが持っている分の価値も計算できるようになって、NAVがぐんと上がるってことなのだ！",
+          "emotion": "surprised",
+          "visual": {
+            "type": "image",
+            "src": "content/infographic_sbg_structure.png",
+            "caption": "ソフトバンクG→Vision Fund→OpenAI/ARM の投資構造",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0008_maro.wav",
+          "audioDuration": 13.355,
+          "frameCount": 405
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そう、完璧な理解だよ。そしてここにゲーム理論が絡んでくるんだよね。IPO申請が公表された瞬間、機関投資家・ヘッジファンド・個人投資家の全員が同じ計算をして、同じ方向に動くことが合理的な選択になるんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0009_ponchan.wav",
+          "audioDuration": 17.408,
+          "frameCount": 527
+        },
+        {
+          "speaker": "maro",
+          "text": "みんなが同じ計算をして同じ結論に達したら、全員が買いに走るのは当たり前だぞ！でもこれって持続するのだ？単なる一時的な興奮じゃないのだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ゲーム理論：支配戦略均衡",
+            "number": 2,
+            "icon": "🧠",
+            "body": "全プレイヤーが「他のプレイヤーも買う」と予測する場合、自分も買うことが支配戦略になる。これをナッシュ均衡という。OpenAI IPO申請は情報の不確実性を解消し、全市場参加者の予測を一致させる強力なシグナルとして機能した。",
+            "points": [
+              {
+                "text": "支配戦略の収束",
+                "body": "機関・ヘッジ・個人の全員が「他者も買う」と読めば、自分も買うことが最適解になる。これがストップ高を作る。"
+              },
+              {
+                "text": "情報の非対称性解消",
+                "body": "IPO申請以前はOpenAIの評価額が推計にすぎなかったが、申請により評価額が公的に確定。不確実性プレミアムが縮小した。"
+              },
+              {
+                "text": "過去の類似例",
+                "value": "+15%",
+                "unit": "ARM上場発表日のSBG上昇率（2023年）",
+                "body": "2023年9月のARM再上場発表時にも同じ構造でSBGが急騰した。今回のOpenAI上場はARMを上回る規模のため+20%を記録。",
+                "source": "東京証券取引所 日次株価データ 2023年"
+              }
+            ]
+          },
+          "audioFile": "voices/0010_maro.wav",
+          "audioDuration": 12.661,
+          "frameCount": 384
+        },
+        {
+          "speaker": "ponchan",
+          "text": "持続性については、短期の興奮と中長期の構造的上昇は分けて考える必要があるんだよ。一時的な興奮は1〜2週間で落ち着くけど、その後のOpenAI上場プロセスが進むにつれてNAVは段階的に上昇していくんだよね。",
+          "emotion": "normal",
+          "visual": {
+            "type": "chart",
+            "key": "sbg_nav_breakdown"
+          },
+          "audioFile": "voices/0011_ponchan.wav",
+          "audioDuration": 17.547,
+          "frameCount": 531
+        }
+      ],
+      "topic": "NAV構造とゲーム理論"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "次に、ソフトバンクGの保有資産の中でARMとOpenAIがそれぞれどれくらいの重みを持つのか、実際のNAVを計算してみるよ。これを見ると、なぜ今が特別な局面なのかがわかるんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "SBG NAV試算（2026年5月）",
+            "number": 3,
+            "icon": "💹",
+            "body": "ソフトバンクGのNAVは2026年5月時点で約40兆円と試算される。ARM保有株が最大のウェイトを占め、OpenAI持分が今回のIPO申請で初めて時価評価可能になった。この2つが同時に拡大しているのが今の相場の特殊性だ。",
+            "points": [
+              {
+                "text": "ARM保有価値（90%超保有）",
+                "value": "約22兆円",
+                "unit": "ARM時価総額×保有比率",
+                "body": "ソフトバンクGはARM株を上場時に売却せず90%超を保有継続。ARM株価の1%の変動がSBGのNAVを約2200億円動かす。",
+                "source": "ARM Holdings IR 2026年3月期決算"
+              },
+              {
+                "text": "OpenAI持分価値（推計）",
+                "value": "約6兆円",
+                "unit": "5000億ドル評価×持分比率8%",
+                "body": "Vision Fundを通じた持分比率は約8%と推計。IPO申請によりこの価値が初めて市場に可視化された。",
+                "source": "Bloomberg推計 2026年5月"
+              },
+              {
+                "text": "Vision Fund1/2その他",
+                "value": "約8兆円",
+                "unit": "ByteDance・Grab等",
+                "body": "非上場のByteDance（TikTok親会社）等も保有。地政学リスクで評価にブレがある。",
+                "source": "SoftBank Group IR資料 2026年3月期"
+              }
+            ]
+          },
+          "audioFile": "voices/0012_ponchan.wav",
+          "audioDuration": 14.56,
+          "frameCount": 441
+        },
+        {
+          "speaker": "maro",
+          "text": "ちょっと待つのだ。ARM保有が22兆円ってことは、ARM株が1割落ちたらNAVが2兆円以上吹っ飛ぶってことじゃないのだぞ？それって相当リスキーじゃないのだ？",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "arm_revenue_growth"
+          },
+          "audioFile": "voices/0013_maro.wav",
+          "audioDuration": 14.539,
+          "frameCount": 441
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まろくんの指摘は正確だよ。ARM依存がソフトバンクGの最大のリスク要因で、これはリスクシナリオとして後でちゃんと話すね。ただまず押さえておきたいのは、ARMがなぜ今この成長率を維持できているかなんだよ。",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ARMが成長を続ける理由",
+            "number": 4,
+            "icon": "💡",
+            "body": "ARMはスマートフォン向けチップ設計の事実上の標準（スマホの99%に搭載）から、2023年以降はAIデータセンター・サーバー向けへ急速に展開している。NVIDIA・Apple・Qualcommが全員ARMアーキテクチャに依存しており、AI需要の拡大がそのままARMのロイヤルティ収入増加に直結する構造になっている。",
+            "points": [
+              {
+                "text": "AI向けロイヤルティ単価上昇",
+                "value": "スマホ比5〜10倍",
+                "unit": "AI/サーバーチップのロイヤルティ単価",
+                "body": "スマートフォン向けは1チップあたり数セントだが、AI向けサーバーチップは数十セント〜数ドルのロイヤルティが発生する。AIチップの数量×単価上昇の複利効果が成長を加速させている。",
+                "source": "ARM Holdings Investor Day 2025"
+              },
+              {
+                "text": "FY2026売上高予想",
+                "value": "約45億ドル",
+                "unit": "前年比+28%成長予想",
+                "body": "AI向けの比率が全体の30%を超え始めており、今後2〜3年でさらに比率が上昇する見通し。",
+                "source": "ARM Holdings FY2026 Guidance"
+              }
+            ]
+          },
+          "audioFile": "voices/0014_ponchan.wav",
+          "audioDuration": 15.851,
+          "frameCount": 480
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、ARMってスマホだけじゃなくてAIサーバーにも入り込んでるんだぞ。NVIDIAもAMDも全部ARMに乗っかってるって、これは強すぎるじゃないのだ！",
+          "emotion": "happy",
+          "visual": {
+            "type": "image",
+            "src": "content/img_ai_chip.png",
+            "caption": "AIチップにARMアーキテクチャが搭載される構造",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0015_maro.wav",
+          "audioDuration": 13.291,
+          "frameCount": 403
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そしてこれが今回のOpenAI上場と合わさることで、ARM＋OpenAIという2つの爆発的成長資産を同時に保有するソフトバンクGの価値が、一気に再評価されたんだよ。テレビではなかなかここまで踏み込んだ話はしてくれないよね。",
+          "emotion": "serious",
+          "visual": {
+            "type": "image",
+            "src": "content/infographic_openai_valuation_donut.png",
+            "caption": "OpenAI株主構成推計（Vision Fund含むSBG持分約8%）",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0016_ponchan.wav",
+          "audioDuration": 17.269,
+          "frameCount": 523
+        }
+      ],
+      "topic": "ARM連鎖とNAV計算"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここから投資判断の核心に入るよ。ソフトバンクGの具体的なエントリー価格と目標株価を話す前に、今の日銀利上げ環境というマクロリスクをちゃんと整理しておく必要があるんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "日銀利上げとグロース株の関係",
+            "number": 1,
+            "icon": "🏦",
+            "body": "2026年5月現在、日銀は政策金利を0.5%に維持しているが、年内に0.75%〜1.0%への追加利上げが市場では織り込まれ始めている。金利が上がると将来キャッシュフローの割引率が高まり、利益の大部分が遠い将来にある成長株（グロース株）のバリュエーションが圧縮される。ソフトバンクGはこの典型的なグロース株だ。",
+            "points": [
+              {
+                "text": "グロース株への金利感応度",
+                "value": "PER圧縮リスク",
+                "unit": "金利+0.5%でPER約15%縮小の目安",
+                "body": "金利が0.5%上昇するとDCF計算上の割引率が上がり、成長株のPERは理論上15〜20%圧縮される。ソフトバンクGのNAV評価にも同様の影響が及ぶ。",
+                "source": "日本銀行 金融政策決定会合議事要旨 2026年4月"
+              },
+              {
+                "text": "ソフトバンクGの借入コスト",
+                "value": "有利子負債 約16兆円",
+                "unit": "2026年3月末",
+                "body": "ソフトバンクGは巨額の負債を抱えている。金利上昇は利払い費の増加を通じて直接的にキャッシュフローを圧迫するリスクがある。",
+                "source": "SoftBank Group 2026年3月期決算短信"
+              }
+            ]
+          },
+          "audioFile": "voices/0017_ponchan.wav",
+          "audioDuration": 13.131,
+          "frameCount": 398
+        },
+        {
+          "speaker": "maro",
+          "text": "じゃあ日銀が利上げするとソフトバンクGにとってはダブルパンチじゃないのだ？NAVが下がる上に借入コストも上がるって、これは持っていたら危ないじゃないのだぞ？",
+          "emotion": "serious",
+          "audioFile": "voices/0018_maro.wav",
+          "audioDuration": 12.459,
+          "frameCount": 378
+        },
+        {
+          "speaker": "ponchan",
+          "text": "これは重要な視点だよ。ただここに歴史的な類似事例があって、2004〜2006年の量的緩和解除局面でも、ソフトバンクGの前身は成長期待で乗り越えているんだよね。問題は金利上昇の速度と、ARM・OpenAIの成長速度のどちらが勝つかなんだよ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0019_ponchan.wav",
+          "audioDuration": 20.32,
+          "frameCount": 614
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、今回はARMとOpenAIっていう超強力な成長資産があるから、多少金利が上がっても打ち消せるかもしれないってことなのだ。でも『かもしれない』ってところが怖いのだぞ。",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "利上げシナリオ別NAV影響試算",
+            "number": 2,
+            "icon": "📉",
+            "body": "日銀の利上げ幅によってソフトバンクGのNAVと株価への影響は大きく異なる。ARM・OpenAIの成長が続けば利上げのマイナス影響を相殺できる可能性があるが、どちらかが崩れると株価は大幅下落するリスクがある。",
+            "points": [
+              {
+                "text": "利上げ+0.5%（ベースシナリオ）",
+                "value": "NAV影響 −5%程度",
+                "unit": "ARM成長継続なら相殺可能",
+                "body": "政策金利が0.5%から1.0%に上昇するシナリオ。ARM・OpenAIの成長が年+25%超を維持すれば、NAVへのマイナス影響は吸収できる計算になる。",
+                "source": "Goldman Sachs SBG分析レポート 2026年4月"
+              },
+              {
+                "text": "利上げ+1.0%（悲観シナリオ）",
+                "value": "NAV影響 −15〜20%",
+                "unit": "ARM株急落と複合",
+                "body": "急激な利上げとARM株下落が重なった場合、NAVが20%以上縮小するリスクがある。2022年の急落局面と類似した展開になりかねない。",
+                "source": "Morgan Stanley SBG分析 2026年5月"
+              }
+            ]
+          },
+          "audioFile": "voices/0020_maro.wav",
+          "audioDuration": 15.541,
+          "frameCount": 471
+        }
+      ],
+      "topic": "マクロ環境と日銀利上げリスク"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここから具体的な銘柄の買い場と撤退ラインを話すよ。こういう情報は次も見逃さないよう、今のうちにチャンネル登録しておいてね。まずソフトバンクG(9984)のエントリー戦略から解説するよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "chart",
+            "key": "sbg_stock_history"
+          },
+          "audioFile": "voices/0021_ponchan.wav",
+          "audioDuration": 15.893,
+          "frameCount": 481
+        },
+        {
+          "speaker": "maro",
+          "text": "よし、ここが一番知りたかったとこなのだ！ソフトバンクGは今12,300円くらいまで上がってるんだよね？今から買っても遅くないのだぞ？",
+          "emotion": "happy",
+          "visual": {
+            "type": "image",
+            "src": "content/infographic_entry_zone_bar.png",
+            "caption": "ソフトバンクG 投資判断ゾーン（2026年5月）",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0022_maro.wav",
+          "audioDuration": 11.851,
+          "frameCount": 360
+        },
+        {
+          "speaker": "ponchan",
+          "text": "今から飛びつき買いをするのは危ないんだよ。ストップ高の翌日には必ず利益確定売りが出るから、10,500円〜11,000円の押し目ゾーンまで下がってから買うのが合理的な判断なんだよね。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ソフトバンクG(9984) 投資判断",
+            "number": 1,
+            "icon": "📈",
+            "body": "現在株価12,300円はストップ高直後の過熱ゾーンにある。過去のIPO発表局面（ARM上場時2023年）では、発表翌日から1〜2週間以内に5〜10%の調整が入っている。今回も同様の調整後に仕込むのが教科書的な動作だ。",
+            "points": [
+              {
+                "text": "エントリー価格帯",
+                "value": "10,500〜11,000円",
+                "unit": "押し目買いゾーン",
+                "body": "IPO申請前の株価水準（約10,200円）から若干上の水準が心理的な意味でも重要な節目。この水準でのエントリーはリスクリワード比が2倍以上となる。"
+              },
+              {
+                "text": "目標株価（12ヶ月）",
+                "value": "15,000円",
+                "unit": "NAVディスカウント解消シナリオ",
+                "body": "OpenAI上場完了・ARM株維持・NAVディスカウント20%→10%縮小の3条件が揃えば、NAV試算ベースで15,000円を正当化できる。上昇率は現在比+22%相当。",
+                "source": "NAV試算モデルに基づく自己計算（2026年5月現在）"
+              },
+              {
+                "text": "撤退ライン",
+                "value": "9,500円割れ",
+                "unit": "損切りライン",
+                "body": "ARM株が15%以上下落し、OpenAI上場プロセスが遅延・中止になった場合は9,500円割れで撤退が合理的。ここを割ると次のサポートは8,000円台になる。"
+              }
+            ]
+          },
+          "audioFile": "voices/0023_ponchan.wav",
+          "audioDuration": 13.749,
+          "frameCount": 417
+        },
+        {
+          "speaker": "maro",
+          "text": "10,500円まで下がったら買って、9,500円割れたら諦めるってことなのだ。つまり最大損失は約5,000円、目標利益は4,500〜5,000円で、ほぼ1対1のリスクリワードになるんだぞ！",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "リスクリワード計算",
+            "number": 2,
+            "icon": "⚖️",
+            "body": "エントリー10,500円・目標15,000円・撤退9,500円のケースでリスクリワードを計算すると、リスク（損失幅）1,000円に対してリワード（利益幅）4,500円となり、リスクリワード比は4.5倍になる。これはモメンタム株投資としては魅力的な水準だ。",
+            "points": [
+              {
+                "text": "リスクリワード比",
+                "value": "4.5倍",
+                "unit": "押し目買い成功時",
+                "body": "撤退ライン9,500円・エントリー10,500円・目標15,000円のケース。リスク1,000円に対してリワード4,500円。一般的に2倍以上で「仕掛ける価値あり」とされる。"
+              },
+              {
+                "text": "NISAでの注意点",
+                "body": "ソフトバンクGはNISA成長投資枠で購入可能。ただしボラティリティが高いため、資産の10〜15%以内に抑えて他の銘柄と分散させることを強く推奨する。"
+              }
+            ]
+          },
+          "audioFile": "voices/0024_maro.wav",
+          "audioDuration": 16.757,
+          "frameCount": 507
+        },
+        {
+          "speaker": "ponchan",
+          "text": "次にARM(ARM)についても触れておくよ。ARMはナスダック上場で日本の証券口座からも特定口座・NISA成長枠で買える。ソフトバンクGより直接的にAI成長を取りに行きたい人向けなんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ARM(ARM) 投資判断",
+            "number": 3,
+            "icon": "🔧",
+            "body": "ARMはナスダック上場の半導体設計IP会社。現在株価は約165ドル（2026年5月）で、FY2026予想PERは約80倍と成長株として高いバリュエーションに置かれている。AI向けロイヤルティ比率の上昇がバリュエーション正当化の根拠となっている。",
+            "points": [
+              {
+                "text": "エントリー価格帯",
+                "value": "145〜155ドル",
+                "unit": "PER70倍水準の押し目",
+                "body": "現在の165ドルから10%程度の調整が入ったPER70倍水準（145〜155ドル）が仕込み水準。AI関連のモメンタムが続く限り、この水準は強いサポートになると考えられる。",
+                "source": "Bloomberg FY2026コンセンサスEPS予想より算出"
+              },
+              {
+                "text": "目標株価（12ヶ月）",
+                "value": "220ドル",
+                "unit": "AI向け売上比率40%達成シナリオ",
+                "body": "AI向けロイヤルティ比率が30%→40%に上昇し、PER90倍が持続するシナリオでは220ドルを正当化できる。これは現在比+33%相当。"
+              },
+              {
+                "text": "撤退ライン",
+                "value": "125ドル割れ",
+                "unit": "PER60倍割れ＝グロース魅力消滅",
+                "body": "AI向け成長が停滞しPER60倍水準を割り込んだ場合は成長プレミアムが剥落する。125ドル割れで撤退が合理的な判断となる。"
+              }
+            ]
+          },
+          "audioFile": "voices/0025_ponchan.wav",
+          "audioDuration": 17.472,
+          "frameCount": 529
+        },
+        {
+          "speaker": "maro",
+          "text": "ソフトバンクGはNISAで買えて、ARMはナスダックで直接買えるのだな。両方買えば実質OpenAI上場の恩恵を二重取りできるってことじゃないのだぞ！うまくできてるなあ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "chart",
+            "key": "nisa_impact"
+          },
+          "audioFile": "voices/0026_maro.wav",
+          "audioDuration": 14.955,
+          "frameCount": 453
+        },
+        {
+          "speaker": "ponchan",
+          "text": "二重取りは正しい発想だよ。ただ両方ともAI成長ストーリー依存の同方向リスクを持っているから、ポートフォリオ全体の中では2銘柄合計でも20%以内に収めるのが安全なんだよ。逆張りのヘッジとして金や債券ETFを持つことも有効だよね。",
+          "emotion": "normal",
+          "audioFile": "voices/0027_ponchan.wav",
+          "audioDuration": 18.293,
+          "frameCount": 553
+        }
+      ],
+      "topic": "ソフトバンクG・ARM 具体的投資判断"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "最後に、この動画で一番大事な逆張りシナリオを話しておくよ。実は今回のOpenAI上場で最も深く考えなければいけないのは、OpenAI自身の競合リスクなんだよ。これを考えないと長期投資で痛い目を見るんだよね。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "逆張りシナリオ：OpenAIが勝者ではない未来",
+            "number": 1,
+            "icon": "🔄",
+            "body": "構図C（逆張りシナリオ）として検討すべきは、AIモデルの競争激化によってOpenAIの独占的地位が崩れるケースだ。2026年5月時点でGemini（Google）・Llama（Meta）・Claude（Anthropic）が急追しており、オープンソースモデルの台頭がOpenAIのビジネスモデルを直撃するリスクがある。",
+            "points": [
+              {
+                "text": "オープンソースAIの脅威",
+                "body": "MetaのLlama 3以降、無料で利用できる高性能モデルが急増。企業がOpenAI APIから自社運用オープンソースに移行すると、OpenAIの売上成長が鈍化する可能性がある。"
+              },
+              {
+                "text": "5000億ドル評価の正当性",
+                "value": "売上比83倍",
+                "unit": "2025年売上約60億ドルとの比較",
+                "body": "5000億ドルは2025年売上60億ドルの83倍に相当する。この評価を正当化するには年率50%以上の成長が少なくとも5年続く必要がある。",
+                "source": "The Information OpenAI財務データ 2025年"
+              },
+              {
+                "text": "ソフトバンクGへの波及",
+                "body": "OpenAI評価額が20%下落すれば、SBGのNAVは約1.2兆円減少する計算。これはSBG株価換算で約300〜500円のマイナス要因となる。"
+              }
+            ]
+          },
+          "audioFile": "voices/0028_ponchan.wav",
+          "audioDuration": 16.427,
+          "frameCount": 497
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、OpenAI自体が将来的に価値を失う可能性もゼロじゃないのだ。でもそうなったとしても、ARMはOpenAI以外のAI全般に乗っかってるから、ARMの方が安全かもしれないのだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ARMは競争に左右されない理由",
+            "number": 2,
+            "icon": "🛡️",
+            "body": "ARMの最大の強みは、競合するAIモデル（OpenAI・Google・Meta・Anthropic）のどれが勝っても、そのAIを動かすチップのほぼ全てにARMのアーキテクチャが採用されているという構造にある。これはOS競争でどちらが勝ってもCPUを提供するIntelが儲かる構造と同じで、『シャベルを売る会社』としての位置づけだ。",
+            "points": [
+              {
+                "text": "ARMのポジション",
+                "value": "AI競争の勝者側",
+                "unit": "競合に依存しない収益構造",
+                "body": "Google・Apple・Amazon・NVIDIA、全社がARMを採用。OpenAIが負けてもGoogleが勝ってもARMのロイヤルティ収入は増加する。",
+                "source": "ARM Holdings Technology Report 2026"
+              },
+              {
+                "text": "カリフォルニア・ゴールドラッシュとの類比",
+                "body": "1849年のゴールドラッシュで最も儲けたのは金を掘った人ではなく、シャベルを売ったLevis Straussだった。ARMはAI時代のシャベル。ゲーム理論的にも最も安定した『支配戦略』を持つプレイヤーだ。"
+              }
+            ]
+          },
+          "audioFile": "voices/0029_maro.wav",
+          "audioDuration": 17.269,
+          "frameCount": 523
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そのフレーミングは完璧だよ。歴史的に見ると、技術革命の初期に最も安定的に儲けるのは、どの規格・会社が勝つかに依存しない『インフラ企業』なんだよね。ARMはまさにそのポジションを持っているんだよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "year": "1849年",
+                "label": "ゴールドラッシュ：Levi Straussがシャベル・ジーンズで勝利",
+                "highlight": false
+              },
+              {
+                "year": "1990年代",
+                "label": "インターネット革命：シスコ（ルーター）・インテル（CPU）が安定成長",
+                "highlight": true
+              },
+              {
+                "year": "2000年代",
+                "label": "スマホ革命：ARM（設計IP）・TSMC（製造）が全社に恩恵",
+                "highlight": true
+              },
+              {
+                "year": "2020年代",
+                "label": "AI革命：ARM（全AIチップのアーキテクチャ）が同じポジション",
+                "highlight": true
+              }
+            ],
+            "title": "技術革命で勝ったインフラ企業の歴史"
+          },
+          "audioFile": "voices/0030_ponchan.wav",
+          "audioDuration": 16.075,
+          "frameCount": 487
+        },
+        {
+          "speaker": "maro",
+          "text": "じゃあ30代でNISAを持っている俺としては、ソフトバンクGとARMをどんな比率で持てばいいのだぞ？具体的に教えてくれよのだ！",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ポートフォリオ組み込み戦略",
+            "number": 3,
+            "icon": "💼",
+            "body": "NISAを活用した30代投資家向けのポートフォリオ組み込み比率を提示する。AI関連銘柄への集中投資は高リターンを狙えるが、ボラティリティも高い。分散投資の原則を守りつつ、テーマ株として適切な比率で組み込むことが重要だ。",
+            "points": [
+              {
+                "text": "NISA成長枠でのAI銘柄比率",
+                "value": "20%以内",
+                "unit": "AI関連合計（SBG+ARM）",
+                "body": "ソフトバンクGとARMを合わせた比率が20%を超えると、AI相場の転換時に全体ポートフォリオへのダメージが大きくなる。上限20%を厳守しよう。"
+              },
+              {
+                "text": "ソフトバンクGとARMの比率",
+                "value": "SBG:ARM = 7:3",
+                "unit": "推奨比率（円建て換算）",
+                "body": "ソフトバンクGは円建てでNISA対応・配当もあるため主軸。ARMはドル建てリスクを取れる場合に加える上乗せ銘柄として位置づける。"
+              },
+              {
+                "text": "ヘッジとしての組み合わせ",
+                "body": "AIリスクのヘッジとして、金ETF（1540）や米国債ETFを10%程度持つことでポートフォリオ全体のシャープレシオが改善する。"
+              }
+            ]
+          },
+          "audioFile": "voices/0031_maro.wav",
+          "audioDuration": 11.307,
+          "frameCount": 344
+        }
+      ],
+      "topic": "ポートフォリオ戦略と逆張りシナリオ"
+    },
+    {
+      "type": "summary",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "じゃあ今日の内容をまとめるよ。OpenAI IPO申請でソフトバンクGが+20%になった理由は、NAV顕在化×ゲーム理論的な全プレイヤー同方向買い収束という構造だったんだよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "本日のまとめ",
+            "body": "OpenAI IPO申請はソフトバンクGのNAVを約6兆円押し上げる可能性を持つイベントだった。ゲーム理論的に全市場参加者が同時に買い方向に動くことが合理的となり、ストップ高を実現した。ただし今後の投資判断は冷静な押し目狙いが鍵になる。",
+            "points": [
+              {
+                "text": "なぜ+20%になったか",
+                "body": "NAVの顕在化（OpenAI評価額の可視化）＋全投資家の支配戦略収束（ゲーム理論）＋ARMとのダブル上昇期待が重なった。"
+              },
+              {
+                "text": "ソフトバンクG(9984) 投資戦略",
+                "value": "買い場: 10,500〜11,000円",
+                "unit": "目標: 15,000円 / 撤退: 9,500円割れ",
+                "body": "ストップ高からの利確売り押し目を待ってエントリー。日銀利上げとARM急落の両シナリオを常にモニタリングする。"
+              },
+              {
+                "text": "ARM 投資戦略",
+                "value": "買い場: 145〜155ドル",
+                "unit": "目標: 220ドル / 撤退: 125ドル割れ",
+                "body": "AIチップのインフラとして、OpenAIの勝敗に依存しない安定的な収益構造を持つ。AI革命の『シャベル企業』ポジション。"
+              }
+            ]
+          },
+          "audioFile": "voices/0032_ponchan.wav",
+          "audioDuration": 14.368,
+          "frameCount": 436
+        },
+        {
+          "speaker": "maro",
+          "text": "NAVディスカウントが縮小すれば株価はもっと上を目指せるってことだな。でも日銀利上げとARM株価次第でもろ逆に動くリスクもあるのだ。両方をちゃんと見ておく必要があるのだぞ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "リスクシナリオ再確認",
+            "body": "投資判断において最重要のリスク要因を2つ最終確認しておこう。どちらかが顕在化した場合は速やかに撤退ラインを機械的に実行すること。",
+            "points": [
+              {
+                "text": "リスク①：ARM株急落",
+                "body": "ARMがAI関連決算でガイダンス下振れを発表した場合、SBGのNAVが一気に縮小する。SBG株が9,500円を割ったら即撤退。"
+              },
+              {
+                "text": "リスク②：日銀急速利上げ",
+                "body": "日銀が市場予想を超えるペースで利上げを実施した場合、グロース株全体に売り圧力がかかる。マクロ環境の急変時も同様に撤退ラインを遵守する。"
+              }
+            ]
+          },
+          "audioFile": "voices/0033_maro.wav",
+          "audioDuration": 14.709,
+          "frameCount": 446
+        },
+        {
+          "speaker": "ponchan",
+          "text": "今日の教訓を一言でまとめると、ソフトバンクGへの投資はOpenAIへの直接出資ができない個人投資家が、日本のNISA口座で世界最大AI革命の果実をとれる数少ない手段なんだよ。ただし押し目を待つことと撤退ラインの厳守が絶対条件だよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "明日からのアクションプラン",
+            "body": "この動画を見た後すぐに実行できる3つのアクションを提示する。知識は使ってナンボ。明日の投資判断に直接活かしてほしい。",
+            "points": [
+              {
+                "text": "アクション①：ウォッチリスト設定",
+                "body": "ソフトバンクG(9984)に10,500円のアラートを設定する。証券アプリで今すぐ設定できる。押し目が来たら通知を受け取れるようにしておこう。"
+              },
+              {
+                "text": "アクション②：ARM(ARM)の価格確認",
+                "body": "ナスダックのARM株価を確認し、145〜155ドルゾーンに達したらNISA成長枠での購入を検討する。円建て換算も忘れずに。"
+              },
+              {
+                "text": "アクション③：日銀政策カレンダーの確認",
+                "body": "次回日銀金融政策決定会合（2026年6月予定）の前後は相場が荒れやすい。会合前後のエントリー・撤退判断には特に注意を払う。"
+              }
+            ]
+          },
+          "audioFile": "voices/0034_ponchan.wav",
+          "audioDuration": 18.688,
+          "frameCount": 565
+        },
+        {
+          "speaker": "maro",
+          "text": "じゃあ日本はOpenAI上場の恩恵を受けられる側なのだな！ソフトバンクGという橋を使えば、NISAで世界最大のAI企業の成長を取り込めるって、これはすごく使える知識をもらったのだぞ！",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "逆転のカード：日本にはソフトバンクGがある",
+            "body": "OpenAIは非上場のため、普通の個人投資家は直接投資できない。しかしソフトバンクGというNISA対応の日本株を通じて、OpenAI・ARMという世界最大のAI資産への実質的な投資が可能だ。これは日本の個人投資家だけが使える独自のルートといえる。",
+            "points": [
+              {
+                "text": "日本人投資家の優位性",
+                "body": "米国個人投資家はOpenAI IPO前に直接買えないが、日本株のソフトバンクGはいつでも東証で買える。この非対称性が今の機会を生んでいる。"
+              },
+              {
+                "text": "NISAという最強の器",
+                "body": "NISA成長投資枠でソフトバンクGを保有すれば、キャピタルゲインが全額非課税になる。20年後の出口でも税金ゼロで利益を受け取れる強力な手段だ。"
+              }
+            ]
+          },
+          "audioFile": "voices/0035_maro.wav",
+          "audioDuration": 16.405,
+          "frameCount": 497
+        }
+      ],
+      "topic": "まとめと投資アクションプラン"
+    },
+    {
+      "type": "cta",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "次回は「ARMvsインテル：AI半導体アーキテクチャ戦争で勝つ日本株の正体」を深掘りするよ。東京エレクトロンとレーザーテックが再び主役になる理由を、今回と同じく具体的なエントリー価格つきで解説するよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "次回予告",
+            "body": "ARM vs インテルのアーキテクチャ戦争が激化する2026年下半期、その恩恵を受ける日本の半導体装置株を徹底分析する。",
+            "points": [
+              {
+                "text": "次回のメイン銘柄",
+                "body": "東京エレクトロン（8035）・レーザーテック（6920）・信越化学（4063）のエントリー価格と目標株価を提示する。"
+              }
+            ]
+          },
+          "audioFile": "voices/0036_ponchan.wav",
+          "audioDuration": 16.448,
+          "frameCount": 498
+        },
+        {
+          "speaker": "maro",
+          "text": "今日の話、めちゃくちゃ実践的だったのだ！OpenAI上場ってニュースで聞いても自分には関係ないと思ってたけど、NISAのソフトバンクGで直接関係あるって知れて、本当に役に立ったのだぞ！",
+          "emotion": "happy",
+          "audioFile": "voices/0037_maro.wav",
+          "audioDuration": 16.352,
+          "frameCount": 495
+        },
+        {
+          "speaker": "ponchan",
+          "text": "こういう地政学×具体的な投資戦略の話を毎週出していくから、見逃さないようにチャンネル登録とベルマークを今すぐ押しておいてね。あなたのNISA口座が少しでもよくなるよう、一緒に学んでいこうよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "チャンネル登録のお願い",
+            "body": "毎週、地政学×テクノロジー×投資の具体的な戦略動画を投稿しています。エントリー価格・目標株価・撤退ラインまで踏み込んだ内容は、ここでしか聞けません。",
+            "points": [
+              {
+                "text": "チャンネル登録＋ベルマーク",
+                "body": "新動画が上がったら即通知を受け取れます。相場が動く前に情報をキャッチする習慣をつけましょう。"
+              }
+            ]
+          },
+          "audioFile": "voices/0038_ponchan.wav",
+          "audioDuration": 14.763,
+          "frameCount": 447
+        }
+      ],
+      "topic": "次回予告と登録促進"
+    }
+  ],
+  "chartData": {
+    "sbg_nav_breakdown": {
+      "data": [
+        {
+          "label": "ARM保有株",
+          "value": 22
+        },
+        {
+          "label": "Vision Fund1/2",
+          "value": 8
+        },
+        {
+          "label": "OpenAI出資分",
+          "value": 6
+        },
+        {
+          "label": "その他投資",
+          "value": 4
+        },
+        {
+          "label": "純負債",
+          "value": -12
+        }
+      ],
+      "title": "ソフトバンクG NAV内訳（2026年3月末推計）",
+      "chartType": "bar"
+    },
+    "openai_valuation": {
+      "data": [
+        {
+          "label": "2021年",
+          "value": 14
+        },
+        {
+          "label": "2023年",
+          "value": 86
+        },
+        {
+          "label": "2024年",
+          "value": 157
+        },
+        {
+          "label": "2025年",
+          "value": 300
+        },
+        {
+          "label": "2026年IPO申請時",
+          "value": 500
+        }
+      ],
+      "title": "OpenAI バリュエーション推移（十億ドル）",
+      "chartType": "line"
+    },
+    "arm_revenue_growth": {
+      "data": [
+        {
+          "label": "FY2022",
+          "value": 3
+        },
+        {
+          "label": "FY2023",
+          "value": 14
+        },
+        {
+          "label": "FY2024",
+          "value": 47
+        },
+        {
+          "label": "FY2025",
+          "value": 34
+        },
+        {
+          "label": "FY2026予",
+          "value": 28
+        }
+      ],
+      "title": "ARM 売上高成長率（前年比 %）",
+      "chartType": "bar"
+    },
+    "sbg_stock_history": {
+      "data": [
+        {
+          "label": "2020年安値",
+          "value": 4000
+        },
+        {
+          "label": "2021年高値",
+          "value": 10700
+        },
+        {
+          "label": "2023年安値",
+          "value": 5300
+        },
+        {
+          "label": "2025年末",
+          "value": 9800
+        },
+        {
+          "label": "2026年5月IPO申請前",
+          "value": 10200
+        },
+        {
+          "label": "2026年5月IPO申請後",
+          "value": 12300
+        }
+      ],
+      "title": "ソフトバンクG 株価推移（円）",
+      "chartType": "line"
+    },
+    "nisa_impact": {
+      "data": [
+        {
+          "label": "米国AI株（NVDIA等）",
+          "value": 45
+        },
+        {
+          "label": "ソフトバンクG",
+          "value": 15
+        },
+        {
+          "label": "ARM",
+          "value": 10
+        },
+        {
+          "label": "東京エレクトロン等",
+          "value": 20
+        },
+        {
+          "label": "その他",
+          "value": 10
+        }
+      ],
+      "title": "NISA成長投資枠でのAI関連銘柄比率（イメージ）",
+      "chartType": "pie"
+    }
+  },
+  "bgmVolume": 0.12,
+  "bgmMap": {
+    "hook": "bgm/news.mp3",
+    "explanation": "bgm/main_lofi.mp3",
+    "analysis": "bgm/uplifting_piano.mp3",
+    "summary": "bgm/uplifting_piano.mp3",
+    "cta": "bgm/なんということはない日常.mp3"
+  },
+  "infographics": [
+    {
+      "id": "sbg_structure",
+      "type": "flow_diagram",
+      "title": "ソフトバンクG投資構造",
+      "outputPath": "content/infographic_sbg_structure.png",
+      "accentColor": "#ff6b35",
+      "steps": [
+        {
+          "label": "ソフトバンクG(9984)",
+          "icon": "🏢"
+        },
+        {
+          "label": "Vision Fund 1/2",
+          "icon": "💰"
+        },
+        {
+          "label": "OpenAI / ARM / ByteDance",
+          "icon": "🤖"
+        },
+        {
+          "label": "IPO・上場益",
+          "icon": "📈"
+        },
+        {
+          "label": "NAV上昇→株価反映",
+          "icon": "🚀"
+        }
+      ]
+    },
+    {
+      "id": "openai_valuation_donut",
+      "type": "donut_chart",
+      "title": "OpenAI株主構成（推計）",
+      "outputPath": "content/infographic_openai_valuation_donut.png",
+      "accentColor": "#4a9eff",
+      "data": [
+        {
+          "label": "Microsoft",
+          "value": 49,
+          "color": "#00a4ef"
+        },
+        {
+          "label": "Vision Fund等SBG",
+          "value": 8,
+          "color": "#ff6b35"
+        },
+        {
+          "label": "創業チーム・従業員",
+          "value": 20,
+          "color": "#34a853"
+        },
+        {
+          "label": "その他VC",
+          "value": 23,
+          "color": "#aaaaaa"
+        }
+      ]
+    },
+    {
+      "id": "entry_zone_bar",
+      "type": "bar_chart",
+      "title": "ソフトバンクG 投資判断ゾーン",
+      "outputPath": "content/infographic_entry_zone_bar.png",
+      "accentColor": "#ff4444",
+      "data": [
+        {
+          "label": "撤退ライン（9,500円）",
+          "value": 9500,
+          "color": "#ff4444"
+        },
+        {
+          "label": "買いゾーン下限（10,500円）",
+          "value": 10500,
+          "color": "#ff9900"
+        },
+        {
+          "label": "現在株価（12,300円）",
+          "value": 12300,
+          "color": "#4a9eff"
+        },
+        {
+          "label": "目標株価（15,000円）",
+          "value": 15000,
+          "color": "#34a853"
+        }
+      ]
+    }
+  ]
+}

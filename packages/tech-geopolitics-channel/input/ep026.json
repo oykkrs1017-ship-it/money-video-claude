@@ -1,0 +1,553 @@
+{
+  "videoId": "ep026",
+  "seed": "ep026",
+  "title": "iDeCo大改正、知らないと大損します",
+  "description": "2026年12月、iDeCoが大改正！企業型DC加入の会社員は掛金上限が月2万円→6.2万円と3.1倍に拡大。年収600万円なら年22万円・30年で447万円の節税メリットが生まれます。落とし穴の「10年ルール」「60歳縛り」も徹底解説。新NISA・iDeCoの最適配分まで、老後資金を守るための完全ガイドです。",
+  "tags": [
+    "iDeCo",
+    "iDeCo改正",
+    "iDeCo掛金上限",
+    "企業型DC",
+    "節税",
+    "老後資金",
+    "会社員 節税",
+    "新NISA iDeCo 比較",
+    "確定拠出年金",
+    "退職所得控除",
+    "10年ルール",
+    "年末調整 節税",
+    "SBI証券 iDeCo",
+    "楽天証券 iDeCo",
+    "iDeCo シミュレーション",
+    "50代 iDeCo",
+    "60代 老後資金",
+    "会社員 老後",
+    "積立 節税",
+    "eMAXIS Slim S&P500",
+    "オルカン iDeCo",
+    "2026年 iDeCo",
+    "iDeCo 口座開設",
+    "iDeCo 手数料",
+    "退職金 iDeCo"
+  ],
+  "chapters": [
+    {
+      "type": "hook",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "こんにちは、ぽんちゃんです。皆さま、大変です！2026年12月にiDeCoが大改正されまして、会社員の掛金上限がなんと3倍以上に跳ね上がります。これを知らないと、老後資金で大損してしまうかもしれません！",
+          "emotion": "serious",
+          "audioFile": "voices/0001_ponchan.wav",
+          "audioDuration": 16.213,
+          "frameCount": 491
+        },
+        {
+          "speaker": "maro",
+          "text": "えっ、3倍ってそれ本当の話なのだ？iDeCoって会社員にはあまり関係ないものだと思っていたぞ…もしかして今まですごい損をしていたのだ？",
+          "emotion": "surprised",
+          "visual": {
+            "type": "stat",
+            "value": "3.1倍",
+            "label": "企業型DC加入の会社員・iDeCo掛金上限が拡大"
+          },
+          "audioFile": "voices/0002_maro.wav",
+          "audioDuration": 11.861,
+          "frameCount": 360
+        },
+        {
+          "speaker": "ponchan",
+          "text": "実はiDeCoの節税力ってNISAより強いケースがあるんだよ。なのに企業型DCに入っている会社員の月上限はたった2万円に抑えられていたの。それが今回の改正で一気に6.2万円まで広がるんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0003_ponchan.wav",
+          "audioDuration": 15.328,
+          "frameCount": 464
+        },
+        {
+          "speaker": "maro",
+          "text": "年間にすると、改正前が4.8万円で改正後が14.9万円ということなのだ！それって具体的にどのくらいお得になるんだぞ？",
+          "emotion": "surprised",
+          "visual": {
+            "type": "chart",
+            "key": "slide_001_chart"
+          },
+          "audioFile": "voices/0004_maro.wav",
+          "audioDuration": 11.499,
+          "frameCount": 349
+        },
+        {
+          "speaker": "ponchan",
+          "text": "今日は3つ話すよ。①なぜiDeCoはNISAより節税が強いのかという仕組みの話、②あなたの年収で年間いくら節税できるかの具体的な数字シミュレーション、③知らないと後悔する落とし穴と今すぐできる行動プランだよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "今日わかること3選",
+            "body": "この動画を最後まで見れば、明日から動けるiDeCo活用プランが手に入ります。",
+            "points": [
+              {
+                "text": "①なぜiDeCoはNISAより節税が強いのか",
+                "body": "積み立てた瞬間から所得税・住民税が減る「即時節税」の仕組みを解説します。"
+              },
+              {
+                "text": "②年収別・年間節税シミュレーション",
+                "body": "年収300万〜1000万円まで、改正後に満額拠出した場合の具体的な節税額を提示します。"
+              },
+              {
+                "text": "③落とし穴と今すぐできる行動プラン",
+                "body": "10年ルール・60歳縛り・手数料のリスクと、12月施行に間に合う申請タイムラインを解説します。"
+              }
+            ]
+          },
+          "audioFile": "voices/0005_ponchan.wav",
+          "audioDuration": 16.277,
+          "frameCount": 493
+        },
+        {
+          "speaker": "maro",
+          "text": "落とし穴があると聞くだけで怖くなるのだ。でも節税できる金額がそれだけ大きいなら、しっかり理解したうえで活用したいぞ。全部教えてほしいのだ！",
+          "emotion": "thinking",
+          "audioFile": "voices/0006_maro.wav",
+          "audioDuration": 11.968,
+          "frameCount": 364
+        }
+      ],
+      "topic": "iDeCo大改正2026年12月"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "まず、改正前後で何が変わるのかを整理しよう。最も大きな恩恵を受けるのが「企業型DCに加入している会社員」の方なんだよ。月2万円から6.2万円へ、実に3.1倍に上限が引き上げられるの。",
+          "emotion": "serious",
+          "audioFile": "voices/0007_ponchan.wav",
+          "audioDuration": 16.213,
+          "frameCount": 491
+        },
+        {
+          "speaker": "maro",
+          "text": "企業型DCって、会社が毎月積み立ててくれる退職金の積み立て制度のことなのだ？それとiDeCoって、同時に使えるものだったのだぞ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0008_maro.wav",
+          "audioDuration": 11.531,
+          "frameCount": 350
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そうなんだよ。企業型DCは会社が拠出してくれる分で、iDeCoは自分で追加で積み立てる分なの。今まで両方使う場合は合算で上限が低く抑えられていたんだけど、今回の改正でiDeCoの持ち分が大幅に広がったんだよ。",
+          "emotion": "normal",
+          "audioFile": "voices/0009_ponchan.wav",
+          "audioDuration": 16.544,
+          "frameCount": 501
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、つまり今まで企業型DCに入っていた人は、iDeCoの上限がすごく低くて損していたってことなのだ！それは知らなかったぞ。",
+          "emotion": "surprised",
+          "audioFile": "voices/0010_maro.wav",
+          "audioDuration": 10.88,
+          "frameCount": 331
+        },
+        {
+          "speaker": "ponchan",
+          "text": "iDeCoが最強の節税口座と言われる理由は、節税が3段階で同時に発動するからなんだよ。第1段が掛金の全額が所得控除されること、第2段が運用益が非課税になること、そして第3段が受け取り時にも退職所得控除や公的年金控除が使えることなんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "iDeCo節税の3段ロケット",
+            "body": "NISAは運用益が出たときだけ非課税になりますが、iDeCoは積み立てた瞬間から節税効果が確定します。この「即時節税」がiDeCoの最大の強みです。",
+            "points": [
+              {
+                "text": "第1段：掛金が全額所得控除",
+                "body": "積み立てた金額が全額、その年の所得から差し引かれ、所得税・住民税がすぐ減ります。会社員は年末調整で自動的に還付されます。",
+                "source": "国税庁「小規模企業共済等掛金控除」2024年"
+              },
+              {
+                "text": "第2段：運用益が非課税",
+                "body": "通常、投資信託の利益には20.315%の税金がかかりますが、iDeCo口座内では全額非課税で再投資されます。",
+                "source": "iDeCo公式サイト（国民年金基金連合会）2024年"
+              },
+              {
+                "text": "第3段：受取時も控除あり",
+                "body": "一時金で受け取れば退職所得控除、年金形式なら公的年金等控除が適用されます。",
+                "source": "国税庁「退職所得の課税」2024年"
+              }
+            ]
+          },
+          "audioFile": "voices/0011_ponchan.wav",
+          "audioDuration": 19.669,
+          "frameCount": 595
+        },
+        {
+          "speaker": "maro",
+          "text": "「拠出した瞬間に節税」って、具体的にどういうことなのだ？積み立てたお金がどこかに消えるわけじゃないのに、どうして税金が減るんだぞ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0012_maro.wav",
+          "audioDuration": 11.872,
+          "frameCount": 361
+        },
+        {
+          "speaker": "ponchan",
+          "text": "わかりやすく言うとね、月6.2万円をiDeCoに入れると、その分だけ「課税される収入」が減るの。年収600万円の人なら年間74.4万円が課税対象から外れるわけだから、その約20〜30%分だけ税金が戻ってくるイメージだよ。",
+          "emotion": "happy",
+          "audioFile": "voices/0013_ponchan.wav",
+          "audioDuration": 19.765,
+          "frameCount": 597
+        },
+        {
+          "speaker": "maro",
+          "text": "つまり投資の損得に関係なく、積み立てた年は必ず得するってことなのだ！それは確かにNISAにはない強みだぞ。でも60歳まで引き出せないって聞いたんだけど、それって不安じゃないのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0014_maro.wav",
+          "audioDuration": 15.947,
+          "frameCount": 483
+        },
+        {
+          "speaker": "ponchan",
+          "text": "60歳縛りは確かにデメリットだよ。でも逆に言えば老後資金として絶対に取り崩さないと決めているなら、それが最大の武器になるんだよ。緊急資金として生活費3ヶ月分を別口座に確保した上でiDeCoを使うのが鉄則だね。",
+          "emotion": "serious",
+          "audioFile": "voices/0015_ponchan.wav",
+          "audioDuration": 16.117,
+          "frameCount": 488
+        },
+        {
+          "speaker": "ponchan",
+          "text": "年収別の節税シミュレーションを見てみよう。改正後に月6.2万円を満額拠出した場合、年収300〜400万円の方でも年間11〜15万円の節税になるんだよ。年収600万円以上になると年22万円以上で、30年間続ければ節税だけで447万円以上の恩恵が出てくるの。",
+          "emotion": "happy",
+          "visual": {
+            "type": "chart",
+            "key": "slide_006_chart"
+          },
+          "audioFile": "voices/0016_ponchan.wav",
+          "audioDuration": 24,
+          "frameCount": 725
+        },
+        {
+          "speaker": "maro",
+          "text": "年収が低い方でも年11万円以上の節税ができるなら、かなり大きいのだ！でも年収が高い人ほど得をするのは、なんか不公平じゃないかと感じてしまうのだぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0017_maro.wav",
+          "audioDuration": 13.461,
+          "frameCount": 408
+        }
+      ],
+      "topic": "iDeCo改正の全体像と節税の仕組み"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "まろくんの「不公平じゃない？」という疑問、実はこれ通説への反論として僕は少し違う見方をしているんだよ。確かに高所得者ほど節税額は大きくなるけど、所得税の限界税率は高いほど大きいから、制度設計上は理にかなっているの。",
+          "emotion": "serious",
+          "audioFile": "voices/0018_ponchan.wav",
+          "audioDuration": 18.133,
+          "frameCount": 549
+        },
+        {
+          "speaker": "maro",
+          "text": "じゃあ年収が低い人でも、iDeCoに入る価値はあるということなのだ？具体的な数字で見たいのだぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0019_maro.wav",
+          "audioDuration": 8.128,
+          "frameCount": 248
+        },
+        {
+          "speaker": "ponchan",
+          "text": "改正前後の累積メリットを比べると差がよくわかるよ。企業型DC加入・年収600万円・税率20%の人が30年積み立てた場合、改正前の月2万円では累積節税は144万円だったの。改正後に月6.2万円まで増やすと447万円になるんだよ。差額はなんと303万円だね。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "slide_007_chart"
+          },
+          "audioFile": "voices/0020_ponchan.wav",
+          "audioDuration": 24.96,
+          "frameCount": 753
+        },
+        {
+          "speaker": "maro",
+          "text": "303万円の差って、本当に大きいのだ！でもそれって純粋な節税額だけで、運用益の非課税効果は含まれていないのだぞ？実際はもっと大きくなるんじゃないのだ？",
+          "emotion": "surprised",
+          "audioFile": "voices/0021_maro.wav",
+          "audioDuration": 14.507,
+          "frameCount": 440
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そのとおりなんだよ。ここからが僕の独自試算だよ。月6.2万円を年利5%で30年運用した場合、積立総額は2232万円で運用後の総額は約5136万円になるの。利益分2904万円に本来20.315%の税金がかかるとすると約590万円が非課税になる計算だよ。節税447万円と合わせるとトータルのメリットは1000万円を軽く超えるんだよ。",
+          "emotion": "happy",
+          "audioFile": "voices/0022_ponchan.wav",
+          "audioDuration": 31.317,
+          "frameCount": 944
+        },
+        {
+          "speaker": "maro",
+          "text": "1000万円超のメリットって、もはや老後資金の一部といえる規模なのだ！でもそんなに毎月6.2万円も払えるかどうか不安なんだぞ。生活が苦しくなったらどうするのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0023_maro.wav",
+          "audioDuration": 13.909,
+          "frameCount": 422
+        },
+        {
+          "speaker": "ponchan",
+          "text": "安心してほしいのが、掛金は月5,000円から始められるし途中で増減も自由なんだよ。エントリーのベストタイミングは今すぐ動くことで、口座開設の審査に1〜2ヶ月かかるから12月施行に満額で乗るには10月末が事実上のデッドラインなの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "エントリー・目標・撤退の3ライン",
+            "body": "iDeCoは一度入ったら60歳まで引き出せませんが、掛金の増減は可能です。生活費を圧迫しないよう段階的に増やすのが賢い戦略です。",
+            "points": [
+              {
+                "text": "エントリーベスト：今すぐ口座開設申請",
+                "value": "10月末",
+                "unit": "12月施行満額スタートのデッドライン",
+                "body": "口座開設から審査完了まで1〜2ヶ月かかります。12月施行に満額から乗るためには10月末の申請完了が必須です。",
+                "source": "国民年金基金連合会「iDeCo申請フロー」2024年"
+              },
+              {
+                "text": "目標：生活費3ヶ月分確保後に満額へ",
+                "body": "緊急資金として生活費3ヶ月分を別口座に確保してから、iDeCoの掛金を月6.2万円まで段階的に上げましょう。"
+              },
+              {
+                "text": "撤退シナリオ：生活が苦しくなったら月5,000円に減額",
+                "body": "60歳前に引き出すことはできませんが、掛金は月5,000円まで減額できます。入れすぎで生活を詰まらせないことが最優先です。"
+              }
+            ]
+          },
+          "audioFile": "voices/0024_ponchan.wav",
+          "audioDuration": 17.547,
+          "frameCount": 531
+        },
+        {
+          "speaker": "maro",
+          "text": "でも今日ぽんちゃんが言った「落とし穴」が気になるのだ。節税の話ばかりしていたけど、実際に損するケースもあるんじゃないのだぞ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0025_maro.wav",
+          "audioDuration": 10.667,
+          "frameCount": 325
+        },
+        {
+          "speaker": "ponchan",
+          "text": "鋭いね。落とし穴を3つ正直に話すよ。一番の要注意は2026年1月から導入された「退職所得控除10年ルール」なの。iDeCoを一時金で受け取ってから10年以内に会社の退職金を受け取ると、退職所得控除が削られてしまうんだよ。退職が近い50代の方は受取順序の設計が超重要なの。",
+          "emotion": "serious",
+          "audioFile": "voices/0026_ponchan.wav",
+          "audioDuration": 23.84,
+          "frameCount": 720
+        },
+        {
+          "speaker": "maro",
+          "text": "10年ルールって、順番を間違えると何百万円も損することになるのだ！退職が近い人は本当に注意が必要なんだな。じゃあどの証券会社でiDeCoを始めるのが一番いいんだぞ？",
+          "emotion": "surprised",
+          "audioFile": "voices/0027_maro.wav",
+          "audioDuration": 15.179,
+          "frameCount": 460
+        },
+        {
+          "speaker": "ponchan",
+          "text": "証券会社は4社の手数料がほぼ月171円で横並びだから、商品ラインナップと使いやすさで選ぶのがポイントだよ。まず第一推奨はSBI証券で、口座数が業界最大級で信託報酬が低い優良商品も豊富に揃っているの。楽天ポイントをすでに使っている方には楽天証券も相性がいいよ。",
+          "emotion": "normal",
+          "audioFile": "voices/0028_ponchan.wav",
+          "audioDuration": 22.987,
+          "frameCount": 694
+        },
+        {
+          "speaker": "maro",
+          "text": "手数料が全部同じなら、あとは商品の信託報酬の差が長期で効いてくるんですね！でもひとつ聞いていいのだぞ？iDeCoを最大活用すると、新NISAへの積み立ては減らすべきなのだぞ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0029_maro.wav",
+          "audioDuration": 15.84,
+          "frameCount": 480
+        }
+      ],
+      "topic": "累積メリット・投資判断・リスクと証券会社選び"
+    },
+    {
+      "type": "summary",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "まとめに入るよ。今日の核心は1つで「企業型DC加入の会社員は2026年12月からiDeCoの掛金上限が3.1倍になり、年収600万円なら年22万円・30年で447万円の節税ができる」ということなんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "今すぐできる3ステップ",
+            "body": "2026年12月施行に満額から乗るための行動プランです。STEP1・STEP2は今日中に着手できます。",
+            "points": [
+              {
+                "text": "STEP1：今日SBI証券か楽天証券のサイトを開く",
+                "value": "10月末",
+                "unit": "口座開設申請のデッドライン",
+                "body": "審査に1〜2ヶ月かかるため、12月施行に満額で乗るには今すぐ動くことが重要です。",
+                "source": "国民年金基金連合会「iDeCoの加入手続き」2024年"
+              },
+              {
+                "text": "STEP2：生活費3ヶ月分を別口座に確保する",
+                "body": "iDeCoは60歳まで引き出せません。緊急資金を先に確保してから掛金設定をしてください。"
+              },
+              {
+                "text": "STEP3：商品はeMAXIS Slim S&P500かオルカンから",
+                "body": "迷ったら信託報酬が最低水準のeMAXIS Slim全世界株式（オルカン）またはS&P500が無難な出発点です。"
+              }
+            ]
+          },
+          "audioFile": "voices/0030_ponchan.wav",
+          "audioDuration": 19.403,
+          "frameCount": 587
+        },
+        {
+          "speaker": "maro",
+          "text": "まろくんの疑問、NISAとiDeCoはどっちをどれだけ使えばいいかについても答えてほしいのだ！",
+          "emotion": "thinking",
+          "audioFile": "voices/0031_maro.wav",
+          "audioDuration": 7.744,
+          "frameCount": 237
+        },
+        {
+          "speaker": "ponchan",
+          "text": "老後資金が目的の積み立てはiDeCoを優先して、新NISAは途中で使う可能性があるお金や老後資金のプラス分に充てるのが今回の改正後の答えなんだよ。具体的には、iDeCoを満額6.2万円にした上でさらに余裕がある人だけ新NISAを追加するイメージだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0032_ponchan.wav",
+          "audioDuration": 19.968,
+          "frameCount": 604
+        },
+        {
+          "speaker": "maro",
+          "text": "つまり今まで新NISAだけ使っていた企業型DC加入者の会社員は、iDeCoの掛金を見直す大チャンスが来たということなのだ！今日から動けそうな気がしてきたぞ。",
+          "emotion": "happy",
+          "audioFile": "voices/0033_maro.wav",
+          "audioDuration": 13.504,
+          "frameCount": 410
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そうなんだよ。「退職が近い50代は10年ルールに注意して受取順序を設計する」「30〜40代は今すぐ口座開設して長期間の節税効果をフル活用する」という2種類のアクションが今日の最大のポイントだよ。日本にはまだiDeCoという強力な節税カードが残っているんだよ。",
+          "emotion": "happy",
+          "audioFile": "voices/0034_ponchan.wav",
+          "audioDuration": 20.629,
+          "frameCount": 623
+        },
+        {
+          "speaker": "maro",
+          "text": "テレビや職場ではなかなか教えてくれない具体的な数字と戦略が聞けてよかったのだ。特に10年ルールは退職前の50代には超重要な情報だったぞ！",
+          "emotion": "happy",
+          "audioFile": "voices/0035_maro.wav",
+          "audioDuration": 12.043,
+          "frameCount": 366
+        }
+      ],
+      "topic": "まとめ・今すぐできる3ステップ"
+    },
+    {
+      "type": "cta",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "今日のまとめです。iDeCo改正2026年12月施行で、企業型DC加入の会社員の掛金上限が月6.2万円へと3.1倍に拡大されます。年収600万円で年22万円・30年で447万円の節税メリットがあります。落とし穴の10年ルールと60歳縛りを理解した上で活用すれば、老後資金形成の最強の武器になるんだよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "stat",
+            "value": "月6.2万円",
+            "label": "2026年12月〜・企業型DC加入会社員のiDeCo掛金上限"
+          },
+          "audioFile": "voices/0036_ponchan.wav",
+          "audioDuration": 27.371,
+          "frameCount": 826
+        },
+        {
+          "speaker": "maro",
+          "text": "改正の恩恵を受けられる人は本当に今すぐ動かないともったいないのだ！口座開設の審査に時間がかかるから、10月末が実質のデッドラインだということを覚えておくぞ。",
+          "emotion": "serious",
+          "audioFile": "voices/0037_maro.wav",
+          "audioDuration": 13.472,
+          "frameCount": 409
+        },
+        {
+          "speaker": "ponchan",
+          "text": "今日の動画が役に立ったと思ったら、ぜひチャンネル登録といいねボタンを押してほしいんだよ。老後資金を守る情報を毎週お届けしているから、見逃したくない方はベルマークも一緒に押しておいてね。",
+          "emotion": "happy",
+          "audioFile": "voices/0038_ponchan.wav",
+          "audioDuration": 13.12,
+          "frameCount": 398
+        },
+        {
+          "speaker": "maro",
+          "text": "次回も地政学×具体的な投資戦略を出していくから、チャンネル登録とベルマークを押しておいてほしいのだ！ぽんちゃんチャンネルでまた会おうぞ！",
+          "emotion": "happy",
+          "audioFile": "voices/0039_maro.wav",
+          "audioDuration": 10.827,
+          "frameCount": 329
+        }
+      ],
+      "topic": "登録促進・次回予告"
+    }
+  ],
+  "chartData": {
+    "slide_001_chart": {
+      "data": [
+        {
+          "label": "改正前（月2万円）",
+          "value": 4.8
+        },
+        {
+          "label": "改正後（月6.2万円）",
+          "value": 14.9
+        }
+      ],
+      "title": "会社員iDeCo掛金上限の変化（年間換算・万円）",
+      "chartType": "bar"
+    },
+    "slide_006_chart": {
+      "data": [
+        {
+          "label": "年収300万円",
+          "value": 11.2
+        },
+        {
+          "label": "年収400万円",
+          "value": 14.9
+        },
+        {
+          "label": "年収600万円",
+          "value": 22.3
+        },
+        {
+          "label": "年収800万円",
+          "value": 22.3
+        },
+        {
+          "label": "年収1000万円",
+          "value": 24.6
+        }
+      ],
+      "title": "年収別 年間節税額（改正後・月6.2万円満額拠出）",
+      "chartType": "bar"
+    },
+    "slide_007_chart": {
+      "data": [
+        {
+          "label": "改正前（月2万円）",
+          "value": 144
+        },
+        {
+          "label": "改正後（月6.2万円）",
+          "value": 447
+        }
+      ],
+      "title": "改正前後の30年累積節税メリット比較（万円）",
+      "chartType": "bar"
+    }
+  },
+  "bgmVolume": 0.12,
+  "bgmMap": {
+    "hook": "bgm/news.mp3",
+    "explanation": "bgm/main_lofi.mp3",
+    "analysis": "bgm/main_lofi.mp3",
+    "summary": "bgm/uplifting_piano.mp3",
+    "cta": "bgm/uplifting_piano.mp3"
+  }
+}

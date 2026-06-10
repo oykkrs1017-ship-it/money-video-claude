@@ -1,0 +1,628 @@
+{
+  "videoId": "ep023",
+  "seed": "ep023",
+  "title": "S&P500、NVIDIAショックで今すぐ見直すべき",
+  "description": "NVIDIAの中国シェアが95%からほぼ0%に崩壊。CEOが自ら認めた前代未聞の逆転劇が、新NISAのS&P500インデックス積立にどう影響するか。NVIDIA8%ウェイトの計算、エントリー価格帯$190、撤退ライン$165まで徹底解説。老後資金を守る3ステップを提示します。",
+  "tags": [
+    "新NISA",
+    "S&P500",
+    "NVIDIA",
+    "米中半導体戦争",
+    "半導体株",
+    "投資初心者",
+    "老後資金",
+    "50代投資",
+    "60代投資",
+    "インデックス投資",
+    "iDeCo",
+    "つみたて投資枠",
+    "成長投資枠",
+    "地政学リスク",
+    "AI株",
+    "Huawei",
+    "DeepSeek",
+    "半導体規制",
+    "エントリー価格",
+    "撤退ライン",
+    "ピックアンドシャベル",
+    "Vertiv",
+    "GE Vernova",
+    "AI Overwatch Act",
+    "会社員投資",
+    "資産形成",
+    "株式投資",
+    "米国株",
+    "個別株投資",
+    "分散投資"
+  ],
+  "chapters": [
+    {
+      "type": "hook",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "95%がゼロになった——NVIDIAのCEOジェンスン・フアン氏が自ら認めたこの数字は、新NISAでS&P500を積み立てている全員に直撃する話なんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "stat",
+            "value": "95%",
+            "label": "2020年以前のNVIDIA中国シェア"
+          },
+          "audioFile": "voices/0001_ponchan.wav",
+          "audioDuration": 13.419,
+          "frameCount": 407
+        },
+        {
+          "speaker": "maro",
+          "text": "実はNVIDIAのシェアがこれほど崩壊しているなんて、テレビのニュースではほとんど報道されていないぞ。でもS&P500インデックスを持っているだけで、もうすでに影響を受けているってどういうことなんだぞ？",
+          "emotion": "surprised",
+          "audioFile": "voices/0002_maro.wav",
+          "audioDuration": 15.755,
+          "frameCount": 477
+        },
+        {
+          "speaker": "ponchan",
+          "text": "しかも今、話は単純な規制問題じゃないんだよ。トランプ政権が「少し売ってあげますよ」と手を差し伸べたら、習近平が「いらない、自分たちで開発する」と断った——売りたい側と買わない側が完全に逆転しているんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0003_ponchan.wav",
+          "audioDuration": 17.152,
+          "frameCount": 519
+        },
+        {
+          "speaker": "maro",
+          "text": "トランプさんが拒否られるなんて前代未聞だぞ。普通なら喜んで買うはずの最先端チップを中国が断るって、それだけ自国技術に自信がついてきたということなのだろうか？",
+          "emotion": "surprised",
+          "audioFile": "voices/0004_maro.wav",
+          "audioDuration": 13.643,
+          "frameCount": 414
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そうなんだよ。今日は3つのことを話すね。①NVIDIAの中国シェアが崩壊した本当の理由とHuaweiの実力、②この変化が新NISAのS&P500インデックスにどう波及するかの具体的な計算、③エントリー価格$190・撤退ライン$165を含む老後資金を守る投資アクションプランだよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "今日わかること3選",
+            "body": "NVIDIAの中国シェア崩壊は、他人事に見えてS&P500積立民の資産に直結している。3つの視点で整理していくよ。",
+            "points": [
+              {
+                "text": "①崩壊の本当の理由",
+                "body": "Huawei昇騰の実力とDeepSeekが証明した技術的自立の構造を解説"
+              },
+              {
+                "text": "②S&P500への波及計算",
+                "body": "NVIDIA8%ウェイトが意味すること——100万円投資への影響を試算"
+              },
+              {
+                "text": "③具体的な投資アクション",
+                "body": "エントリー$190・撤退$165・ピック＆シャベル分散の3ステップ"
+              }
+            ]
+          },
+          "audioFile": "voices/0005_ponchan.wav",
+          "audioDuration": 23.797,
+          "frameCount": 718
+        },
+        {
+          "speaker": "maro",
+          "text": "S&P500のインデックスを積み立てているだけでも、NVIDIAの動向から目を離せないということになるのだな。これは老後資金を考えている人には本当に大事な話だと感じるぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0006_maro.wav",
+          "audioDuration": 14.283,
+          "frameCount": 433
+        }
+      ],
+      "topic": "NVIDIA中国シェア崩壊と新NISAへの衝撃"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "まず規制の歴史を押さえておこう。2022年から2026年までの4年間、アメリカは半導体規制を強めたり緩めたりを繰り返してきたんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "slide_004_chart"
+          },
+          "audioFile": "voices/0007_ponchan.wav",
+          "audioDuration": 10.763,
+          "frameCount": 327
+        },
+        {
+          "speaker": "maro",
+          "text": "グラフを見ると、規制が強くなるにつれて中国の自立度スコアがむしろ上がっているぞ。まるで締め付けるたびに中国が強くなっているみたいで、これは一体どういう構造なのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0008_maro.wav",
+          "audioDuration": 13.728,
+          "frameCount": 416
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まさにそこが核心なんだよ。H100を禁止したら中国は対応チップを作り始めた。H800を規制したらさらに自国開発を加速した。中途半端なイジワルが中国の競争心に火を付けた、という皮肉な構造が起きているんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "year": "2022年10月",
+                "label": "H100禁止：中国向け先端チップ輸出を全面禁止",
+                "highlight": true
+              },
+              {
+                "year": "2023年10月",
+                "label": "H800規制：NVIDIA独自の迂回チップも規制対象に",
+                "highlight": false
+              },
+              {
+                "year": "2024年末",
+                "label": "H20限定：唯一許可されたチップも帯域幅制限で実用限界",
+                "highlight": false
+              },
+              {
+                "year": "2025年",
+                "label": "DeepSeek V3・V4が中国国産チップで世界最高水準に到達",
+                "highlight": true
+              },
+              {
+                "year": "2026年",
+                "label": "トランプ政権がH200輸出を個別審査に緩和→中国が拒否",
+                "highlight": true
+              }
+            ],
+            "title": "米中半導体規制と中国の対応：4年の軌跡"
+          },
+          "audioFile": "voices/0009_ponchan.wav",
+          "audioDuration": 16.715,
+          "frameCount": 506
+        },
+        {
+          "speaker": "maro",
+          "text": "じゃあ最初から規制しなければよかったということなのだろうか？規制したせいでかえって中国を強くしてしまったとしたら、アメリカの政策は完全に裏目に出たということになるのだぞ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0010_maro.wav",
+          "audioDuration": 13.653,
+          "frameCount": 414
+        },
+        {
+          "speaker": "ponchan",
+          "text": "これが私の独自の読みなんだけど、完全禁止ならまだ遅らせられたかもしれない。でも「少し売るけど最高性能は売らない」という中途半端な制限は、中国に明確な開発目標と切迫感を与えてしまったんだよ。冷戦期に米ソが宇宙開発を競ったのと全く同じ構図だよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0011_ponchan.wav",
+          "audioDuration": 20.565,
+          "frameCount": 621
+        },
+        {
+          "speaker": "ponchan",
+          "text": "次に中国の三大勢力を整理しよう。筆頭はHuaweiの昇騰チップ。2025年の出荷枚数は約81万2,000枚で国産AIチップの約50%を占めているんだよ。しかも単なるチップじゃなく、フレームワークからサービスまでワンストップで提供できる唯一のプレイヤーなんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0012_ponchan.wav",
+          "audioDuration": 21.237,
+          "frameCount": 642
+        },
+        {
+          "speaker": "maro",
+          "text": "CUDAエコシステムって何なんだぞ？名前は聞いたことあるけど、なぜそれが崩れるとNVIDIAにとって大ダメージなのかが今ひとつわからないのだ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0013_maro.wav",
+          "audioDuration": 11.595,
+          "frameCount": 352
+        },
+        {
+          "speaker": "ponchan",
+          "text": "CUDAはNVIDIAが20年かけて構築したソフトウェアの生態系なんだよ。プログラマーが「NVIDIAのGPUで動く」コードを書けば自動的に最適化されるという仕組みで、世界中のAI研究者がCUDAで学んできた。DeepSeek V4がリリース当日にHuawei昇騰対応だったことは、この牙城を崩した歴史的事件なんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0014_ponchan.wav",
+          "audioDuration": 24.341,
+          "frameCount": 735
+        },
+        {
+          "speaker": "ponchan",
+          "text": "もう一つ押さえておきたいのが議会対トランプの政策対立リスクだよ。AI Overwatch Actという法案が下院外交委員会を通過していて、H200を超えるチップの輸出を強制的に拒否できる仕組みを作ろうとしているんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0015_ponchan.wav",
+          "audioDuration": 15.819,
+          "frameCount": 479
+        },
+        {
+          "speaker": "maro",
+          "text": "同じ共和党なのに議会とトランプが真っ向対立するんだというのは驚きだぞ。でも確かに2019年のHuawei制裁でも最終的には強硬派が勝ったという話は、NVIDIAのリスクを考える上で絶対に無視できないのだな。",
+          "emotion": "surprised",
+          "audioFile": "voices/0016_maro.wav",
+          "audioDuration": 17.867,
+          "frameCount": 541
+        }
+      ],
+      "topic": "規制の歴史と逆転劇の構造"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここからが投資判断の核心だよ。新NISAでS&P500を積み立てているあなたに、まず確認してほしい数字がある。2026年5月末時点でNVIDIAはS&P500の約8%を占めているんだよ。これは史上最大の単一銘柄比率なんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "sp500_nvidia_weight"
+          },
+          "audioFile": "voices/0017_ponchan.wav",
+          "audioDuration": 19.509,
+          "frameCount": 590
+        },
+        {
+          "speaker": "maro",
+          "text": "インデックスだから安全って思っていたけど、実は100万円のS&P500投資のうち8万円がNVIDIA株に投資されているということになるのだな。それは確かに他人事では全然ないのだぞ。",
+          "emotion": "surprised",
+          "audioFile": "voices/0018_maro.wav",
+          "audioDuration": 15.179,
+          "frameCount": 460
+        },
+        {
+          "speaker": "ponchan",
+          "text": "しかも独自試算をしてみたよ。計算式はこうだよ。仮に新NISAのつみたて投資枠で月3万円、年36万円をS&P500に10年積み立てたとする。10年後の評価額を年7%成長で試算すると約497万円になるんだよ。そのうちNVIDIA8%分は約39万8,000円。NVIDIAが20%下落したら、その部分だけで約8万円の含み損が生まれる計算になるんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0019_ponchan.wav",
+          "audioDuration": 31.605,
+          "frameCount": 953
+        },
+        {
+          "speaker": "maro",
+          "text": "じゃあ具体的にNVIDIA株をどの価格帯で買えばいいんだぞ？今は$180〜$220のレンジだということだけど、ぽんちゃんはどのシナリオが一番可能性が高いと思うんだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0020_maro.wav",
+          "audioDuration": 14.699,
+          "frameCount": 445
+        },
+        {
+          "speaker": "ponchan",
+          "text": "私の見立てはベースシナリオが最も可能性が高いと思っているよ。中国市場は失ったまま、でも中東とインドという新しい市場が育ってきて$230〜$250に向かうという展開ね。エントリーは$190以下で仕込んで、PER33倍前後という過去平均水準を根拠にした目標株価$240が一つの目安だよ。",
+          "emotion": "thinking",
+          "visual": {
+            "type": "chart",
+            "key": "nvidia_price_scenario"
+          },
+          "audioFile": "voices/0021_ponchan.wav",
+          "audioDuration": 25.579,
+          "frameCount": 772
+        },
+        {
+          "speaker": "maro",
+          "text": "でも「それでも中国市場の損失は大きいのでは？」と考える人もいると思うぞ。年間数十億ドルの売上が消えたのに、中東やインドで本当に補えるんだろうか？という疑問が残るのだ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0022_maro.wav",
+          "audioDuration": 16.171,
+          "frameCount": 490
+        },
+        {
+          "speaker": "ponchan",
+          "text": "鋭い反論だよ。確かに中国向けの損失は推定年間数十億ドル規模。でもデータを見ると、サウジアラビアとUAEだけで2026年から5年間で5,000億ドル超のAIインフラ投資計画がある。しかもHuaweiは中東市場でまだ信頼構築の途中で、NVIDIAのブランドが通用する数少ない市場なんだよ。完全代替は難しいけど、市場規模の成長スピードは想定より速いというのが私の読みだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0023_ponchan.wav",
+          "audioDuration": 30.592,
+          "frameCount": 922
+        },
+        {
+          "speaker": "ponchan",
+          "text": "次にNVIDIAを直接保有するリスクを下げるためのピック＆シャベル戦略を見ていこう。ゴールドラッシュで儲けたのは金を掘った人ではなくツルハシを売った人、という話があるよね。Vertivはデータセンターの冷却・電源インフラで過去2年+250%、GE Vernovaのガスタービンは2029年まで納期が埋まっているほど需要が確実なんだよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "chart",
+            "key": "pickaxe_returns"
+          },
+          "audioFile": "voices/0024_ponchan.wav",
+          "audioDuration": 24.512,
+          "frameCount": 740
+        },
+        {
+          "speaker": "maro",
+          "text": "日本株のハーモニックドライブや安川電機も新NISAの成長投資枠で買えると聞いたことがあるぞ。日本円で取引できる銘柄でAI関連のピック＆シャベルを探すという選択肢も現実的なんだろうか？",
+          "emotion": "thinking",
+          "audioFile": "voices/0025_maro.wav",
+          "audioDuration": 16.992,
+          "frameCount": 514
+        },
+        {
+          "speaker": "ponchan",
+          "text": "もちろん日本株でも選択肢はあるよ。ファナックや安川電機はロボット×AIという文脈で米中どちらが勝っても恩恵を受けやすい構造なんだよ。成長投資枠の240万円を、米国ピック＆シャベル銘柄に120万円・日本のロボット関連に80万円・NVIDIA本体に40万円という比率で分けると、地政学リスクへの分散が効いてくるよ。",
+          "emotion": "happy",
+          "audioFile": "voices/0026_ponchan.wav",
+          "audioDuration": 27.136,
+          "frameCount": 819
+        },
+        {
+          "speaker": "ponchan",
+          "text": "最後に老後資金を守る撤退シナリオの設計をしっかり話しておくよ。感情で判断しないために機械的なルールを今日決めておくことが最も重要なんだよ。注意ラインは$175割れ、警戒はAI Overwatch Actが上院委員会を通過したとき、完全撤退は$165の終値割れ、この3段階を手帳に書いておいてほしいんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0027_ponchan.wav",
+          "audioDuration": 24.843,
+          "frameCount": 750
+        },
+        {
+          "speaker": "maro",
+          "text": "撤退ラインを事前に決めておくだけで、夜中に相場を見て眠れなくなる状態が確実に減りそうだぞ。60代の親にも同じルールを伝えてあげたいと思ったのだ。",
+          "emotion": "happy",
+          "audioFile": "voices/0028_maro.wav",
+          "audioDuration": 12.459,
+          "frameCount": 378
+        }
+      ],
+      "topic": "S&P500への波及と具体的投資判断"
+    },
+    {
+      "type": "summary",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "では今日のまとめをするよ。NVIDIA中国シェアが95%からゼロになった変化は、DeepSeekとHuaweiが証明した技術的自立という不可逆なトレンドなんだよ。この構造は1〜2年で元に戻ることはないと私は見ているよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0029_ponchan.wav",
+          "audioDuration": 16.8,
+          "frameCount": 509
+        },
+        {
+          "speaker": "maro",
+          "text": "つまり今まで「インデックスだから大丈夫」と思って積み立てていた人も、この話を知った上で保有比率を確認する必要があるということなのだな。知っているかどうかで老後資金の結果が変わってくるのだぞ。",
+          "emotion": "serious",
+          "audioFile": "voices/0030_maro.wav",
+          "audioDuration": 16.043,
+          "frameCount": 486
+        },
+        {
+          "speaker": "ponchan",
+          "text": "明日やることは3つだけだよ。一つ目、自分のNISA口座にログインしてS&P500の保有額に0.08を掛ける——それがNVIDIAの実質保有額だよ。二つ目、「AI Overwatch Act」で検索してブックマークする。三つ目、今すぐ手帳に「NVIDIA撤退ライン：$165」と書く。この3つだけで今日の動画を最大限に活かせるよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "明日から使える3ステップ",
+            "body": "難しい話は後でいい。まずこの3つだけ実行しよう。知識は行動に変えて初めて意味を持つよ。",
+            "points": [
+              {
+                "text": "①NVIDIA実質保有額を計算",
+                "body": "NISA口座の米国株評価額×0.08＝あなたのNVIDIA実質保有額。まず自分ごとにするための第一歩。"
+              },
+              {
+                "text": "②AI Overwatch Actをブックマーク",
+                "body": "法案の上院委員会通過ニュースが来たら即座に動けるよう、監視態勢を整えておく。"
+              },
+              {
+                "text": "③撤退ライン$165を手帳に書く",
+                "body": "感情で判断しないためのルール設定。今この瞬間に書いておくことが老後資金を守る唯一の方法。"
+              }
+            ]
+          },
+          "audioFile": "voices/0031_ponchan.wav",
+          "audioDuration": 26.699,
+          "frameCount": 805
+        },
+        {
+          "speaker": "maro",
+          "text": "今日一番響いたのは「機械的な撤退ラインを先に決める」という話だったぞ。投資って最終的には感情との戦いだから、ルールを先に決めるという発想は本当に大事なことだと感じたのだ。",
+          "emotion": "happy",
+          "audioFile": "voices/0032_maro.wav",
+          "audioDuration": 15.669,
+          "frameCount": 475
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そうだよ。投資の失敗の90%は知識不足ではなく感情による判断ミスから来ているんだよ。今日学んだ構造を理解した上で、ルールに沿って行動できれば老後資金は必ず守れる。一緒に学んでいこうね。",
+          "emotion": "happy",
+          "audioFile": "voices/0033_ponchan.wav",
+          "audioDuration": 15.211,
+          "frameCount": 461
+        },
+        {
+          "speaker": "maro",
+          "text": "ぽんちゃん、今日もわかりやすい解説をありがとうだぞ。新NISAの含み損が増えたら怖いと思っていたけど、今日の話で何をチェックすればいいかが明確になって、少し安心した気持ちになれたのだ。",
+          "emotion": "happy",
+          "audioFile": "voices/0034_maro.wav",
+          "audioDuration": 15.797,
+          "frameCount": 478
+        }
+      ],
+      "topic": "まとめと明日からの3ステップ"
+    },
+    {
+      "type": "cta",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "最後まで見てくれてありがとうね！今日の動画が「なるほど」と思えたなら、ぜひチャンネル登録と高評価ボタンをお願いしたいんだよ。このチャンネルは30〜60代の個人投資家に向けて、地政学とテクノロジーの視点で明日の投資判断に使える情報を毎週月曜日に届けているよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "stat",
+            "value": "6月9日",
+            "label": "次回公開予定"
+          },
+          "audioFile": "voices/0035_ponchan.wav",
+          "audioDuration": 19.968,
+          "frameCount": 604
+        },
+        {
+          "speaker": "maro",
+          "text": "次回ep024は中東AIメガプロジェクトの話で、サウジアラビアとUAEがNVIDIAの中国市場消失を本当に数字レベルで補えるのかどうかを検証するということで、それはとても楽しみだぞ。今日の話ともつながってくる内容だから絶対に見逃せないのだ。",
+          "emotion": "happy",
+          "audioFile": "voices/0036_maro.wav",
+          "audioDuration": 21.291,
+          "frameCount": 643
+        },
+        {
+          "speaker": "ponchan",
+          "text": "次回も地政学×具体的な投資戦略を出していくから、チャンネル登録とベルマークを押しておいてね。毎週月曜の朝に情報が届くように設定しておけば、相場が動く前に準備ができるようになるよ。",
+          "emotion": "happy",
+          "audioFile": "voices/0037_ponchan.wav",
+          "audioDuration": 14.037,
+          "frameCount": 426
+        }
+      ],
+      "topic": "チャンネル登録と次回予告"
+    }
+  ],
+  "chartData": {
+    "slide_004_chart": {
+      "data": [
+        {
+          "label": "2022年\nH100禁止",
+          "value": 20
+        },
+        {
+          "label": "2023年\nH800規制",
+          "value": 30
+        },
+        {
+          "label": "2024年\nH20限定",
+          "value": 45
+        },
+        {
+          "label": "2025年\nH20再開",
+          "value": 55
+        },
+        {
+          "label": "2026年\n個別審査",
+          "value": 40
+        }
+      ],
+      "title": "米国の対中半導体規制と中国自立度の推移",
+      "chartType": "line"
+    },
+    "nvidia_price_scenario": {
+      "data": [
+        {
+          "label": "撤退ライン",
+          "value": 165
+        },
+        {
+          "label": "注意ライン",
+          "value": 175
+        },
+        {
+          "label": "現在レンジ下限",
+          "value": 180
+        },
+        {
+          "label": "現在レンジ上限",
+          "value": 220
+        },
+        {
+          "label": "強気目標",
+          "value": 300
+        }
+      ],
+      "title": "NVIDIAシナリオ別目標株価",
+      "chartType": "bar"
+    },
+    "pickaxe_returns": {
+      "data": [
+        {
+          "label": "NVIDIA(2年)",
+          "value": 180
+        },
+        {
+          "label": "Vertiv(2年)",
+          "value": 250
+        },
+        {
+          "label": "GE Vernova(上場来)",
+          "value": 580
+        },
+        {
+          "label": "Lumentum(1年)",
+          "value": 45
+        }
+      ],
+      "title": "ピック＆シャベル銘柄パフォーマンス比較",
+      "chartType": "bar"
+    },
+    "sp500_nvidia_weight": {
+      "data": [
+        {
+          "label": "NVIDIA",
+          "value": 8
+        },
+        {
+          "label": "Apple",
+          "value": 7.1
+        },
+        {
+          "label": "Microsoft",
+          "value": 6.2
+        },
+        {
+          "label": "Amazon",
+          "value": 3.8
+        },
+        {
+          "label": "Meta",
+          "value": 2.9
+        }
+      ],
+      "title": "S&P500上位10銘柄のウェイト比較（2026年5月末）",
+      "chartType": "bar"
+    }
+  },
+  "bgmVolume": 0.12,
+  "bgmMap": {
+    "hook": "bgm/news.mp3",
+    "explanation": "bgm/main_lofi.mp3",
+    "analysis": "bgm/uplifting_piano.mp3",
+    "summary": "bgm/uplifting_piano.mp3",
+    "cta": "bgm/なんということはない日常.mp3"
+  },
+  "infographics": [
+    {
+      "id": "nvidia_china_share",
+      "type": "donut_chart",
+      "title": "NVIDIA中国シェアの変化",
+      "outputPath": "content/infographic_nvidia_china_share.png",
+      "accentColor": "#dc2626",
+      "data": [
+        {
+          "label": "2020年以前：中国",
+          "value": 95,
+          "color": "#dc2626"
+        },
+        {
+          "label": "2020年以前：その他",
+          "value": 5,
+          "color": "#4a9eff"
+        }
+      ]
+    },
+    {
+      "id": "portfolio_impact",
+      "type": "stat_card",
+      "title": "NVIDIA20%下落の影響試算",
+      "outputPath": "content/infographic_portfolio_impact.png",
+      "accentColor": "#dc2626",
+      "value": "-1.6%",
+      "label": "S&P500ポートフォリオへの直撃",
+      "subtext": "100万円投資→16,000円の含み損（NVIDIA-20%時）"
+    },
+    {
+      "id": "action_plan",
+      "type": "flow_diagram",
+      "title": "老後資金を守る3ステップ",
+      "outputPath": "content/infographic_action_plan.png",
+      "accentColor": "#16a34a",
+      "steps": [
+        {
+          "label": "NVIDIA実質保有比率を計算",
+          "icon": "📊"
+        },
+        {
+          "label": "AI Overwatch Actをブックマーク",
+          "icon": "🔖"
+        },
+        {
+          "label": "撤退ライン$165を手帳に書く",
+          "icon": "✍️"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,812 @@
+{
+  "scriptInput": {
+    "videoId": "ep003",
+    "seed": "ep003",
+    "title": "日本の石油95%が止まる？ホルムズ海峡危機",
+    "description": "米国・イスラエルのイラン攻撃でホルムズ海峡が封鎖。日本は原油の95%を中東に依存し、備蓄放出で時間を稼いでいるが、封鎖が長期化すれば深刻な影響は避けられない。投資家が今見るべきシナリオと注目セクターを解説。",
+    "tags": [
+      "ホルムズ海峡",
+      "イラン戦争",
+      "原油価格",
+      "エネルギー安全保障",
+      "日本経済"
+    ],
+    "chapters": [
+      {
+        "type": "hook",
+        "duration": 40,
+        "lines": [
+          {
+            "speaker": "ponchan",
+            "text": "今日3月22日、中東からの原油を積んだ最後のタンカーが千葉に入港したよ。これ以降、日本に届く中東産の原油は、当面ゼロになる。",
+            "emotion": "serious",
+            "audioFile": "voices/0001_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "えっ、ゼロ！？日本ってたしか原油のほとんどを中東から買ってるよね？それが止まるってどういうことなのだ？",
+            "emotion": "surprised",
+            "audioFile": "voices/0002_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "そう、日本の原油輸入の95.9%が中東産。そしてその大半が通るホルムズ海峡が、いま事実上封鎖されている。今日はこの危機の全体像と、投資家として何を考えるべきかを解説するよ。",
+            "emotion": "serious",
+            "audioFile": "voices/0003_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          }
+        ],
+        "visuals": [
+          {
+            "type": "keyword",
+            "text": "中東産原油の到着がゼロに",
+            "at": 0
+          },
+          {
+            "type": "stat",
+            "statData": {
+              "value": "95.9%",
+              "label": "中東依存度",
+              "subtext": "日本の原油輸入・2024年度"
+            },
+            "at": 6
+          }
+        ],
+        "topic": "最後のタンカーが到着"
+      },
+      {
+        "type": "explanation",
+        "duration": 180,
+        "lines": [
+          {
+            "speaker": "maro",
+            "text": "そもそも、なんでホルムズ海峡が封鎖されてるのだ？最初から教えてほしい。",
+            "emotion": "thinking",
+            "audioFile": "voices/0004_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "発端は2月28日。米国とイスラエルがイランに大規模な軍事攻撃を行い、最高指導者ハメネイ師が死亡した。イランは報復として、3月2日にホルムズ海峡の事実上の封鎖を宣言したんだ。",
+            "emotion": "serious",
+            "audioFile": "voices/0005_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "ホルムズ海峡ってどれくらい大事な場所なのだ？",
+            "emotion": "thinking",
+            "audioFile": "voices/0006_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "ホルムズ海峡はペルシャ湾と外洋を結ぶ唯一の出口で、最も狭い部分はわずか33キロ。ここを世界の石油消費量の約20%、1日あたり2020万バレルが通過しているんだ。",
+            "emotion": "normal",
+            "audioFile": "voices/0007_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "世界の石油の5分の1が通る場所が塞がれたってことか！それで原油価格はどうなったのだ？",
+            "emotion": "surprised",
+            "audioFile": "voices/0008_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "攻撃前のブレント原油は72ドルだったけど、3週間で112ドルまで急騰した。約56%の上昇だよ。IEAのトップはこれを『史上最大のエネルギー安全保障上の危機』と表現している。",
+            "emotion": "serious",
+            "audioFile": "voices/0009_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "56%の急騰はすごいのだ…。で、トランプ大統領は何て言ってるの？終わりそうなの？",
+            "emotion": "thinking",
+            "audioFile": "voices/0010_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "3月20日にトランプ大統領は『作戦の縮小を検討中』と投稿した。でも同じ日に『停戦はしない。相手を完全に叩いてる最中に停戦なんてしない』とも言っている。しかもイラン側も停戦を拒否していて、先行きは非常に不透明なんだ。",
+            "emotion": "serious",
+            "audioFile": "voices/0011_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "両方とも停戦する気がないのか…。これは長引きそうなのだ。",
+            "emotion": "sad",
+            "audioFile": "voices/0012_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          }
+        ],
+        "visuals": [
+          {
+            "type": "timeline",
+            "timelineData": {
+              "title": "ホルムズ海峡危機の経緯",
+              "events": [
+                {
+                  "year": "2/28",
+                  "label": "米・イスラエルがイラン攻撃",
+                  "highlight": true
+                },
+                {
+                  "year": "3/2",
+                  "label": "イランがホルムズ海峡封鎖を宣言",
+                  "highlight": true
+                },
+                {
+                  "year": "3/11",
+                  "label": "高市首相が備蓄放出を表明",
+                  "highlight": false
+                },
+                {
+                  "year": "3/16",
+                  "label": "IEA史上最大の協調備蓄放出",
+                  "highlight": false
+                },
+                {
+                  "year": "3/22",
+                  "label": "最後の中東産タンカーが日本到着",
+                  "highlight": true
+                }
+              ]
+            },
+            "at": 3
+          },
+          {
+            "type": "stat",
+            "statData": {
+              "value": "2020万",
+              "label": "バレル/日",
+              "subtext": "ホルムズ海峡通過量"
+            },
+            "at": 9
+          },
+          {
+            "type": "chart",
+            "data": "oil-price-timeline",
+            "chartType": "line",
+            "at": 15
+          },
+          {
+            "type": "keyword",
+            "text": "米・イラン双方が停戦を拒否",
+            "at": 21
+          }
+        ],
+        "topic": "何が起きているのか"
+      },
+      {
+        "type": "explanation",
+        "duration": 150,
+        "lines": [
+          {
+            "speaker": "ponchan",
+            "text": "ここからが本題。なぜ日本は特にこの危機に弱いのか。ポイントは3つあるよ。まず第1に、中東依存度の異常な高さ。2024年度の日本の原油輸入における中東依存度は95.9%で、過去最高を記録しているんだ。",
+            "emotion": "serious",
+            "audioFile": "voices/0013_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "95.9%！？ほぼ全部じゃないか。昔から分散しようって言ってなかったっけ？",
+            "emotion": "surprised",
+            "audioFile": "voices/0014_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "皮肉なことに、ロシア・ウクライナ戦争の後にロシア産原油の輸入を減らした結果、中東依存度がかえって上がってしまったんだ。1973年の第一次オイルショックの時でさえ、中東依存度は約80%だった。今はそれより高い。",
+            "emotion": "normal",
+            "audioFile": "voices/0015_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "分散しようとして逆に集中しちゃったのか。じゃあ第2のポイントは？",
+            "emotion": "thinking",
+            "audioFile": "voices/0016_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "第2は備蓄の実態。日本には官民合わせて254日分の石油備蓄がある。国家備蓄146日分、民間101日分、産油国共同7日分。一見すると充実してるように見える。",
+            "emotion": "normal",
+            "audioFile": "voices/0017_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "254日分あればだいぶ安心じゃないのだ？",
+            "emotion": "thinking",
+            "audioFile": "voices/0018_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "実はここが最大の落とし穴。今回放出したのは45日分、8000万バレル。でもこれは『時間稼ぎ』であって『解決策』じゃない。1990年の湾岸危機との決定的な違いは、当時はホルムズ海峡自体は閉まっていなかったこと。備蓄を使いながら補充もできた。",
+            "emotion": "serious",
+            "audioFile": "voices/0019_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "あ、そうか！今回は海峡が閉まってるから、使った分を補充できないってことか！",
+            "emotion": "surprised",
+            "audioFile": "voices/0020_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "その通り。使えば使うほど手元の在庫が一方的に減っていく。12月初旬までに封鎖が解除されれば供給途絶は避けられるという試算もあるけど、それ以上長引けば非常に厳しい。",
+            "emotion": "serious",
+            "audioFile": "voices/0021_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "代わりの輸送ルートはないのだ？第3のポイントがそれ？",
+            "emotion": "thinking",
+            "audioFile": "voices/0022_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "そう、第3は代替ルートの限界。最も現実的なのはUAEのフジャイラ経由パイプラインだけど、輸送能力は1日180万バレル。ホルムズ海峡の通過量2020万バレルのわずか9%にすぎない。",
+            "emotion": "normal",
+            "audioFile": "voices/0023_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "9%しかカバーできないのか…。『代替ルートがある』って聞くと安心しちゃうけど、全然足りないんだな。",
+            "emotion": "sad",
+            "audioFile": "voices/0024_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          }
+        ],
+        "visuals": [
+          {
+            "type": "chart",
+            "data": "oil-dependency",
+            "chartType": "pie",
+            "at": 0
+          },
+          {
+            "type": "keyword",
+            "text": "脱ロシアで中東依存度が過去最高に",
+            "at": 6
+          },
+          {
+            "type": "chart",
+            "data": "reserve-breakdown",
+            "chartType": "bar",
+            "at": 12
+          },
+          {
+            "type": "stat",
+            "statData": {
+              "value": "45日分",
+              "label": "今回の備蓄放出量",
+              "subtext": "8000万バレル"
+            },
+            "at": 18
+          },
+          {
+            "type": "chart",
+            "data": "bypass-capacity",
+            "chartType": "bar",
+            "at": 30
+          }
+        ],
+        "topic": "日本の脆弱性"
+      },
+      {
+        "type": "analysis",
+        "duration": 180,
+        "lines": [
+          {
+            "speaker": "maro",
+            "text": "この危機が続くと、日本の生活にはどう影響するのだ？",
+            "emotion": "thinking",
+            "audioFile": "voices/0025_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "まずガソリン価格。2月末から既に上昇が始まっていて、政府は3月19日にリッター170円を上限とするガソリン補助金を再導入した。ただし封鎖が長引けば財政負担がどんどん膨らむ。",
+            "emotion": "normal",
+            "audioFile": "voices/0026_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "電気代やガス代はどうなるのだ？",
+            "emotion": "thinking",
+            "audioFile": "voices/0027_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "日本には燃料費調整制度があって、原油やLNGの価格上昇が約2ヶ月のタイムラグで電気・ガス料金に反映される。だから5月以降の請求書に注意が必要だよ。",
+            "emotion": "normal",
+            "audioFile": "voices/0028_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "ちょっと待って、LNGの方は大丈夫って話もあったよね？",
+            "emotion": "thinking",
+            "audioFile": "voices/0029_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "いい質問。日本のLNG輸入のうち、ホルムズ海峡を通るのは実は6.3%だけ。最大の輸入先はオーストラリアの39.7%で、これはホルムズを経由しない。だから電力は原油ほど直接的な打撃は受けにくい。",
+            "emotion": "normal",
+            "audioFile": "voices/0030_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "おお、それはちょっと安心なのだ。でも食品とかはどうなの？",
+            "emotion": "thinking",
+            "audioFile": "voices/0031_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "食品は厳しい。農業用の燃料、肥料、農薬はすべて石油由来だし、物流コストも上がる。スーパーの食品価格は全般的に上昇圧力がかかるよ。1973年のオイルショックではトイレットペーパーの買い占めパニックが起きたのは有名な話だよね。",
+            "emotion": "serious",
+            "audioFile": "voices/0032_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "うわぁ、生活のあらゆるところに影響するのか。日本経済全体ではどれくらいのダメージなのだ？",
+            "emotion": "sad",
+            "audioFile": "voices/0033_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "野村総合研究所のシナリオでは、原油が130ドルに達するとGDPが0.65ポイント低下、インフレが1.14%上昇する可能性がある。しかも日銀にとっては最悪のジレンマ。コストプッシュのインフレに利上げで対応すれば景気を冷やすし、据え置けばインフレが止まらない。",
+            "emotion": "serious",
+            "audioFile": "voices/0034_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "金利を上げても地獄、上げなくても地獄ってやつか…。投資家としてはどう考えればいいのだ？",
+            "emotion": "thinking",
+            "audioFile": "voices/0035_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          }
+        ],
+        "visuals": [
+          {
+            "type": "stat",
+            "statData": {
+              "value": "170円/L",
+              "label": "ガソリン補助金上限",
+              "subtext": "3月19日再導入"
+            },
+            "at": 3
+          },
+          {
+            "type": "keyword",
+            "text": "5月以降の電気・ガス代に要注意",
+            "at": 9
+          },
+          {
+            "type": "chart",
+            "data": "lng-source",
+            "chartType": "bar",
+            "at": 15
+          },
+          {
+            "type": "stat",
+            "statData": {
+              "value": "▲0.65%",
+              "label": "GDP影響(130ドル時)",
+              "subtext": "野村総研シナリオ"
+            },
+            "at": 27
+          }
+        ],
+        "topic": "経済と生活への影響"
+      },
+      {
+        "type": "analysis",
+        "duration": 180,
+        "lines": [
+          {
+            "speaker": "ponchan",
+            "text": "投資家が考えるべきは、3つのシナリオだよ。楽観シナリオは4月中に海峡再開で原油80ドル台に回帰。基本シナリオは封鎖3〜6ヶ月で原油100〜130ドル。悲観シナリオは封鎖6ヶ月超で130ドルを大きく超える展開。",
+            "emotion": "normal",
+            "audioFile": "voices/0036_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "トランプ大統領もイランも停戦を拒否してるから、楽観シナリオはちょっと厳しいかもしれないのだ。",
+            "emotion": "thinking",
+            "audioFile": "voices/0037_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "その見方は妥当かもしれない。ゴールドマン・サックスは原油高が2027年まで続く可能性を示唆しているしね。ただ予測はあくまで予測だから、シナリオ別に備えることが大事。",
+            "emotion": "normal",
+            "audioFile": "voices/0038_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "具体的にどのセクターに注目すればいいのだ？",
+            "emotion": "thinking",
+            "audioFile": "voices/0039_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "まず恩恵を受ける可能性があるのは資源・エネルギー系。INPEXや商社の三菱商事・三井物産は原油高の恩恵を直接受けやすい。ENEOSなどの元売りも利益が拡大する構造にある。",
+            "emotion": "normal",
+            "audioFile": "voices/0040_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "原発とか再エネはどうなのだ？",
+            "emotion": "thinking",
+            "audioFile": "voices/0041_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "今注目すべきテーマだね。日本は現在15基の原子炉が稼働中で、エネルギー安全保障の観点から再稼働加速の議論が一気に盛り上がっている。再生エネルギーも『エネルギー自給率向上＝国の安全保障』という文脈で政策の追い風が吹く可能性がある。",
+            "emotion": "normal",
+            "audioFile": "voices/0042_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "逆にダメージを受けるのはどこなのだ？",
+            "emotion": "thinking",
+            "audioFile": "voices/0043_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "日本郵船や川崎汽船はホルムズ海峡の通行をすでに停止していて、海運セクターは直撃。石油化学はナフサ在庫の枯渇懸念があるし、航空は燃料コスト急騰、外食や小売はコスト転嫁と消費の冷え込みのダブルパンチになりやすい。",
+            "emotion": "serious",
+            "audioFile": "voices/0044_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "あと個人的に気になるのが、AIとかテック株への影響なのだ。関係あるの？",
+            "emotion": "thinking",
+            "audioFile": "voices/0045_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "実は大いにある。AIデータセンターは通常の3〜5倍の電力を消費する。原油高でエネルギーコストが跳ね上がると、ハイパースケーラーの設備投資計画が遅延するリスクがある。半導体メモリの需要にも波及するから、テック投資家も他人事じゃないんだよ。",
+            "emotion": "serious",
+            "audioFile": "voices/0046_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          }
+        ],
+        "visuals": [
+          {
+            "type": "chart",
+            "data": "scenario-oil-price",
+            "chartType": "bar",
+            "at": 0
+          },
+          {
+            "type": "keyword",
+            "text": "予測ではなく備えが大事",
+            "at": 6
+          },
+          {
+            "type": "keyword",
+            "text": "INPEX・商社・元売りに原油高の追い風",
+            "at": 12
+          },
+          {
+            "type": "stat",
+            "statData": {
+              "value": "15基",
+              "label": "稼働中の原子炉",
+              "subtext": "2026年3月時点"
+            },
+            "at": 18
+          },
+          {
+            "type": "keyword",
+            "text": "海運・石化・航空・小売に逆風",
+            "at": 24
+          },
+          {
+            "type": "keyword",
+            "text": "原油高はAIデータセンター投資にも波及",
+            "at": 30
+          }
+        ],
+        "topic": "投資シナリオと注目セクター"
+      },
+      {
+        "type": "summary",
+        "duration": 80,
+        "lines": [
+          {
+            "speaker": "ponchan",
+            "text": "今日のまとめ。ポイントは3つ。第1に、ホルムズ海峡の封鎖は『時間との戦い』。備蓄放出はあくまで45日分の時間稼ぎで、封鎖中は補充ができないという構造的な問題がある。",
+            "emotion": "serious",
+            "audioFile": "voices/0047_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "使えば減る一方ってことだったよね。",
+            "emotion": "normal",
+            "audioFile": "voices/0048_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "第2に、日本のエネルギー構造の脆弱性が改めて露呈した。中東依存95.9%という数字は、1973年のオイルショック時すら超えている。原発再稼働や再エネ拡大は、もはや環境問題ではなく安全保障の問題として議論が加速するだろう。",
+            "emotion": "normal",
+            "audioFile": "voices/0049_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "ponchan",
+            "text": "そして第3に、投資家は予測ではなく備えを。楽観・基本・悲観の3シナリオを頭に入れて、自分のポートフォリオにどう影響するかを今すぐ点検してほしい。エネルギー、金融政策、為替の3つの軸で考えるのがおすすめだよ。",
+            "emotion": "normal",
+            "audioFile": "voices/0050_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "予測は当たらないけど、備えは必ず役に立つってことだな。今日の話はめちゃくちゃ勉強になったのだ。",
+            "emotion": "happy",
+            "audioFile": "voices/0051_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          }
+        ],
+        "visuals": [
+          {
+            "type": "keyword",
+            "text": "①封鎖は時間との戦い",
+            "at": 0
+          },
+          {
+            "type": "keyword",
+            "text": "②エネルギー問題は安全保障問題",
+            "at": 6
+          },
+          {
+            "type": "keyword",
+            "text": "③3シナリオでポートフォリオ点検",
+            "at": 9
+          }
+        ],
+        "topic": "まとめと投資家への示唆"
+      },
+      {
+        "type": "cta",
+        "duration": 35,
+        "lines": [
+          {
+            "speaker": "ponchan",
+            "text": "このチャンネルでは、テクノロジーと地政学の交差点にある出来事を投資家目線で解説しています。中東情勢は引き続きウォッチしていくので、見逃さないようチャンネル登録をお願いします。",
+            "emotion": "happy",
+            "audioFile": "voices/0052_ponchan.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          },
+          {
+            "speaker": "maro",
+            "text": "次回は、この原油高がAIデータセンター投資にどう影響するかを深掘りする予定なのだ。エネルギーとテックの意外なつながり、お楽しみに！",
+            "emotion": "happy",
+            "audioFile": "voices/0053_maro.wav",
+            "audioDuration": 0.307,
+            "frameCount": 14
+          }
+        ],
+        "visuals": [
+          {
+            "type": "keyword",
+            "text": "次回：原油高×AIデータセンター",
+            "at": 3
+          }
+        ],
+        "topic": "次回予告"
+      }
+    ],
+    "chartData": {
+      "oil-dependency": [
+        {
+          "label": "中東",
+          "value": 95.9
+        },
+        {
+          "label": "その他",
+          "value": 4.1
+        }
+      ],
+      "oil-price-timeline": [
+        {
+          "label": "2月27日",
+          "value": 72
+        },
+        {
+          "label": "3月2日",
+          "value": 82
+        },
+        {
+          "label": "3月9日",
+          "value": 103
+        },
+        {
+          "label": "3月14日",
+          "value": 108
+        },
+        {
+          "label": "3月20日",
+          "value": 112
+        }
+      ],
+      "reserve-breakdown": [
+        {
+          "label": "国家備蓄",
+          "value": 146
+        },
+        {
+          "label": "民間備蓄",
+          "value": 101
+        },
+        {
+          "label": "産油国共同",
+          "value": 7
+        }
+      ],
+      "bypass-capacity": [
+        {
+          "label": "ホルムズ通過量",
+          "value": 2020
+        },
+        {
+          "label": "迂回能力",
+          "value": 180
+        }
+      ],
+      "scenario-oil-price": [
+        {
+          "label": "楽観(4月再開)",
+          "value": 80
+        },
+        {
+          "label": "基本(3-6ヶ月)",
+          "value": 115
+        },
+        {
+          "label": "悲観(6ヶ月超)",
+          "value": 150
+        }
+      ],
+      "japan-energy-mix": [
+        {
+          "label": "石油",
+          "value": 34.8
+        },
+        {
+          "label": "石炭",
+          "value": 24.4
+        },
+        {
+          "label": "天然ガス",
+          "value": 20.8
+        },
+        {
+          "label": "原子力",
+          "value": 8.5
+        },
+        {
+          "label": "再エネ他",
+          "value": 11.5
+        }
+      ],
+      "lng-source": [
+        {
+          "label": "豪州",
+          "value": 39.7
+        },
+        {
+          "label": "マレーシア",
+          "value": 14.8
+        },
+        {
+          "label": "ロシア",
+          "value": 8.9
+        },
+        {
+          "label": "中東(ホルムズ経由)",
+          "value": 6.3
+        },
+        {
+          "label": "その他",
+          "value": 30.3
+        }
+      ]
+    },
+    "bgmVolume": 0.12,
+    "bgmMap": {
+      "hook": "bgm/news.mp3",
+      "explanation": "bgm/main_lofi.mp3",
+      "analysis": "bgm/main_lofi.mp3",
+      "summary": "bgm/uplifting_piano.mp3",
+      "cta": "bgm/uplifting_piano.mp3"
+    }
+  }
+}

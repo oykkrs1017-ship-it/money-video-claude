@@ -1,0 +1,139 @@
+# input/script.yaml
+# YAML フォーマットのスクリプト定義
+# 変換: npx ts-node scripts/yaml-to-json.ts input/script.yaml
+
+videoId: "ep001"
+seed: "tech-invest-ep001"
+title: "半導体規制の裏側｜台湾TSMCと日本の未来"
+description: "2022年の米中半導体規制が日本の投資家にもたらす影響を解説します。"
+tags:
+  - "半導体"
+  - "TSMC"
+  - "地政学"
+  - "投資"
+  - "日本株"
+
+bgm: "bgm/main_lofi.mp3"
+bgmVolume: 0.12
+bgmMap:
+  hook: "bgm/news.mp3"
+  explanation: "bgm/main_lofi.mp3"
+  analysis: "bgm/main_lofi.mp3"
+  summary: "bgm/uplifting_piano.mp3"
+  cta: "bgm/uplifting_piano.mp3"
+
+chartData:
+  tsmc-revenue:
+    - label: "2020"
+      value: 47
+    - label: "2021"
+      value: 57
+    - label: "2022"
+      value: 76
+    - label: "2023"
+      value: 69
+    - label: "2024"
+      value: 88
+    - label: "2025"
+      value: 105
+
+chapters:
+  - type: hook
+    topic: "米中半導体戦争が勃発"
+    duration: 15
+    lines:
+      - maro: "ねえぽんちゃん、知ってた？今年の半導体規制で、日本企業の株価が大きく動いたのだ"
+        emotion: serious
+        show:
+          - image:
+              src: "content/map_usachina.png"
+              caption: "米中半導体戦争"
+              position: "top-center"
+              width: 1040
+              duration: 12
+              animation: "slide-left"
+      - ponchan: "え、そうなの？詳しく教えて！"
+        emotion: surprised
+
+  - type: explanation
+    topic: "日本企業への波及ルート"
+    duration: 30
+    lines:
+      - maro: "まず2022年、アメリカが中国への先端半導体の輸出を全面禁止したのだ"
+        emotion: serious
+        show:
+          - image:
+              src: "content/map_usachina.png"
+              caption: "米中対立の構図"
+              position: "top-center"
+              width: 1000
+              duration: 10
+              animation: "fade"
+      - ponchan: "でも、日本の企業はどう関係するの？"
+        emotion: normal
+      - maro: "日本の半導体製造装置メーカーも規制の対象になったのだ"
+        emotion: serious
+      - ponchan: "東京エレクトロンとかSCREENとか？"
+        emotion: surprised
+        show:
+          - chart:
+              data: "tsmc-revenue"
+              type: "line"
+      - maro: "そう！TSMCへの装置輸出には、政府の許可証が必要になったのだ"
+        emotion: normal
+        show:
+          - keyword: "半導体規制2022"
+
+  - type: analysis
+    topic: "長期投資家の視点"
+    duration: 25
+    lines:
+      - maro: "僕の分析では、この規制は短期ネガティブ、長期ポジティブなのだ"
+        emotion: thinking
+        show:
+          - image:
+              src: "content/map_taiwan.png"
+              caption: "台湾海峡の地政学リスク"
+              position: "top-center"
+              width: 1040
+              duration: 12
+              animation: "slide-right"
+      - ponchan: "なぜ長期的にポジティブなの？"
+        emotion: normal
+      - maro: "日本への半導体投資が急増しているからなのだ。TSMCの熊本工場がその象徴なのだ"
+        emotion: happy
+        show:
+          - stat:
+              value: "3.5兆円"
+              label: "TSMC熊本工場の総投資額"
+              subtext: "日本政府補助金：1.2兆円"
+              metrics:
+                - key: "雇用創出"
+                  value: "3,400人"
+                - key: "稼働開始"
+                  value: "2024年"
+                - key: "製造ノード"
+                  value: "12/16nm"
+      - ponchan: "ラピダスも北海道で最先端プロセスを目指してるね"
+        emotion: normal
+        show:
+          - keyword: "熊本TSMC工場"
+
+  - type: summary
+    topic: "今回のポイント整理"
+    duration: 15
+    lines:
+      - maro: "まとめると、半導体規制はリスクでもありチャンスでもあるのだ"
+        emotion: happy
+      - ponchan: "日本の装置メーカーと新工場への投資が注目ポイントね"
+        emotion: happy
+      - maro: "地政学リスクは分散投資と情報収集で乗り越えられるのだ"
+        emotion: happy
+
+  - type: cta
+    duration: 8
+    lines:
+      - maro: "チャンネル登録と高評価をよろしくなのだ！"
+        emotion: happy
+      - ponchan: "次回もお楽しみに！"
+        emotion: happy

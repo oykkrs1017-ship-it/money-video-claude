@@ -1,0 +1,824 @@
+{
+  "videoId": "ep006",
+  "seed": "ep006",
+  "title": "ホルムズ海峡封鎖で日本の電気が消える？エネルギー安保の現実",
+  "description": "イラン情勢が緊迫するなか、日本のエネルギーの95%が通過するホルムズ海峡が封鎖されたらどうなるのか？原油1バレル71ドルから急騰の可能性、電気代・ガソリン価格の暴騰シナリオ、そして投資家が注目すべきセクター（INPEX・再エネ・総合商社）を徹底解説します。",
+  "tags": [
+    "ホルムズ海峡",
+    "エネルギー安全保障",
+    "日本エネルギー",
+    "中東依存",
+    "原油価格",
+    "LNG",
+    "イラン",
+    "地政学リスク",
+    "石油危機",
+    "オイルショック",
+    "エネルギー危機",
+    "INPEX",
+    "インペックス",
+    "再生可能エネルギー",
+    "再エネ",
+    "総合商社",
+    "三菱商事",
+    "伊藤忠商事",
+    "三井物産",
+    "投資",
+    "株式投資",
+    "地政学",
+    "テクノロジー投資",
+    "エネルギー株",
+    "原油先物",
+    "WTI",
+    "ブレント原油",
+    "サウジアラビア",
+    "UAE",
+    "カタール",
+    "ペルシャ湾",
+    "中東",
+    "アメリカ軍",
+    "第五艦隊",
+    "タンカー",
+    "LNGタンカー",
+    "エネルギー輸入",
+    "電気代",
+    "ガソリン価格",
+    "円安",
+    "資源国",
+    "脱炭素",
+    "エネルギーミックス",
+    "原子力発電",
+    "核エネルギー",
+    "太陽光発電",
+    "風力発電",
+    "電力自由化",
+    "電力不足",
+    "省エネ",
+    "蓄電池",
+    "EV",
+    "電気自動車",
+    "水素",
+    "アンモニア",
+    "カーボンニュートラル",
+    "グリーンエネルギー",
+    "エネルギー転換",
+    "電力安定供給",
+    "停電リスク",
+    "エネルギー備蓄",
+    "石油備蓄",
+    "国家備蓄",
+    "IEA",
+    "OPEC",
+    "OPECプラス",
+    "石油メジャー",
+    "資源開発",
+    "上流開発",
+    "エネルギー安保投資",
+    "インフラ株",
+    "ユーティリティ株",
+    "リスクヘッジ",
+    "分散投資",
+    "ポートフォリオ",
+    "有事シナリオ",
+    "経済安全保障",
+    "エネルギー自給率",
+    "地政学投資"
+  ],
+  "chapters": [
+    {
+      "type": "hook",
+      "duration": 30,
+      "topic": "電気が消える海峡",
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "もし明日、ホルムズ海峡が完全に封鎖されたらどうなると思う？",
+          "emotion": "serious",
+          "audioFile": "voices/0001_ponchan.wav",
+          "audioDuration": 3.989,
+          "frameCount": 124
+        },
+        {
+          "speaker": "maro",
+          "text": "ホルムズ海峡？なんとなく聞いたことあるけど、どこにあるのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0002_maro.wav",
+          "audioDuration": 4.704,
+          "frameCount": 146
+        },
+        {
+          "speaker": "ponchan",
+          "text": "イランとオマーンの間にある、幅わずか33キロメートルの海峡なの",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ホルムズ海峡とは",
+            "number": 1,
+            "icon": "🌊",
+            "body": "ペルシャ湾とオマーン湾をつなぐ幅約33キロメートルの海峡。通航可能な航路は実質6キロメートル幅しかない「チョークポイント」。\n世界の石油・LNG輸送の要衝であり、ここが閉鎖されれば世界のエネルギー供給に直撃する。",
+            "emphasis": "33キロメートル",
+            "points": [
+              "世界の石油輸出量の約20パーセントが通過",
+              "世界のLNG貿易量の約30パーセントが通過",
+              "日本向けタンカーが1日平均10隻通航（平時93隻）",
+              "代替ルートはサウジの内陸パイプラインのみ"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0003_ponchan.wav",
+          "audioDuration": 4.491,
+          "frameCount": 139
+        },
+        {
+          "speaker": "maro",
+          "text": "たった33キロメートルの海峡が世界のエネルギーを左右するのか！",
+          "emotion": "surprised",
+          "audioFile": "voices/0004_maro.wav",
+          "audioDuration": 4.757,
+          "frameCount": 147
+        },
+        {
+          "speaker": "ponchan",
+          "text": "日本のエネルギーの実に95パーセントがこの海峡を通ってくるんだよ",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "japanEnergyDependency"
+          },
+          "audioFile": "voices/0005_ponchan.wav",
+          "audioDuration": 4.384,
+          "frameCount": 136
+        },
+        {
+          "speaker": "maro",
+          "text": "95パーセント！？封鎖されたら日本の電気が消えるのだ！",
+          "emotion": "surprised",
+          "audioFile": "voices/0006_maro.wav",
+          "audioDuration": 4.651,
+          "frameCount": 144
+        },
+        {
+          "speaker": "ponchan",
+          "text": "だから今のイラン情勢は、投資家として絶対に目を離せないの！",
+          "emotion": "serious",
+          "audioFile": "voices/0007_ponchan.wav",
+          "audioDuration": 3.904,
+          "frameCount": 122
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "title": "ホルムズ海峡の地政学的重要性",
+      "duration": 60,
+      "topic": "なぜホルムズ海峡が重要なのか",
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "まずホルムズ海峡がなぜ世界最重要のチョークポイントなのか説明するね",
+          "emotion": "normal",
+          "audioFile": "voices/0008_ponchan.wav",
+          "audioDuration": 4.384,
+          "frameCount": 136
+        },
+        {
+          "speaker": "maro",
+          "text": "チョークポイントってどういう意味なのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0009_maro.wav",
+          "audioDuration": 2.496,
+          "frameCount": 79
+        },
+        {
+          "speaker": "ponchan",
+          "text": "直訳すると「のどを絞める場所」ね。ここを押さえると相手国のエネルギーを止められるの",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ホルムズ海峡の通航実態",
+            "number": 2,
+            "icon": "🚢",
+            "body": "平時は1日あたり約93隻のタンカーがホルムズ海峡を通航する。サウジアラビア・UAE・クウェート・イラク・カタールからの石油・LNGを載せた船が列をなす。\n日本向けは1日平均10隻。年間で3650隻が日本のエネルギーを運ぶ計算になる。",
+            "emphasis": "1日93隻",
+            "points": [
+              "サウジアラビアの石油輸出の約80パーセントが通過",
+              "カタールのLNG輸出の大部分がこのルート",
+              "イラク・クウェート・UAEも同様に依存",
+              "代替パイプラインの能力は輸送量の約30パーセントのみ"
+            ],
+            "color": "#E8000D"
+          },
+          "audioFile": "voices/0010_ponchan.wav",
+          "audioDuration": 5.899,
+          "frameCount": 181
+        },
+        {
+          "speaker": "maro",
+          "text": "産油国自身もホルムズを使わないと輸出できないのだな",
+          "emotion": "thinking",
+          "audioFile": "voices/0011_maro.wav",
+          "audioDuration": 3.883,
+          "frameCount": 121
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そう、だからイランは「海峡を封鎖する」という脅しが最大の外交カードになるの",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "イランの封鎖能力",
+            "number": 3,
+            "icon": "⚠️",
+            "body": "イランは潜水艦・機雷・対艦ミサイルを大量保有し、ホルムズ海峡を実力で封鎖できる能力を持つ。\n2019年のタンカー攻撃事件や、ドローンを使った産油施設攻撃は、その能力の一端を示した。",
+            "emphasis": "機雷封鎖",
+            "points": [
+              "イラン海軍は機雷を5000基以上保有とされる",
+              "対艦巡航ミサイル「ヌール」の射程は170キロメートル",
+              "2019年にはホルムズ付近でタンカー2隻が攻撃を受けた",
+              "イラン革命防衛隊は独自の非対称戦術を持つ"
+            ],
+            "color": "#FF6600"
+          },
+          "audioFile": "voices/0012_ponchan.wav",
+          "audioDuration": 5.536,
+          "frameCount": 171
+        },
+        {
+          "speaker": "maro",
+          "text": "機雷5000基！それをまかれたら船が通れなくなるのだ",
+          "emotion": "surprised",
+          "audioFile": "voices/0013_maro.wav",
+          "audioDuration": 3.957,
+          "frameCount": 123
+        },
+        {
+          "speaker": "ponchan",
+          "text": "2026年4月現在、イランの核開発問題で米国との緊張が高まっているの",
+          "emotion": "serious",
+          "visual": {
+            "type": "timeline",
+            "title": "ホルムズをめぐる最近の動き",
+            "events": [
+              {
+                "year": "2019年6月",
+                "label": "ホルムズ近海でタンカー2隻が攻撃される",
+                "highlight": true
+              },
+              {
+                "year": "2020年1月",
+                "label": "米軍がイランのソレイマニ司令官を殺害、緊張が一気に高まる",
+                "highlight": true
+              },
+              {
+                "year": "2023年10月",
+                "label": "ガザ紛争勃発。イラン支援のフーシ派が紅海で商船を攻撃",
+                "highlight": true
+              },
+              {
+                "year": "2024年4月",
+                "label": "イランがイスラエルに直接攻撃。中東全域に緊張が拡大",
+                "highlight": true
+              },
+              {
+                "year": "2025年",
+                "label": "原油価格が71ドル台で高止まり。地政学プレミアムが継続",
+                "highlight": false
+              },
+              {
+                "year": "2026年4月",
+                "label": "イラン核協議が暗礁。米国の追加制裁が現実味を帯びる",
+                "highlight": true
+              }
+            ]
+          },
+          "audioFile": "voices/0014_ponchan.wav",
+          "audioDuration": 5.621,
+          "frameCount": 173
+        },
+        {
+          "speaker": "maro",
+          "text": "これだけ危機が続いているのに、日本はなぜ対策をしなかったのだ",
+          "emotion": "thinking",
+          "audioFile": "voices/0015_maro.wav",
+          "audioDuration": 4.672,
+          "frameCount": 145
+        },
+        {
+          "speaker": "ponchan",
+          "text": "それが次の章のテーマ、日本の中東依存95パーセントの構造的問題なの",
+          "emotion": "serious",
+          "audioFile": "voices/0016_ponchan.wav",
+          "audioDuration": 5.344,
+          "frameCount": 165
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "title": "封鎖シナリオと原油・LNG価格の衝撃",
+      "duration": 60,
+      "topic": "ホルムズ封鎖で原油・ガスはどうなるか",
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ではホルムズが実際に封鎖されたらどういう価格シナリオになるか見ていくよ",
+          "emotion": "serious",
+          "audioFile": "voices/0017_ponchan.wav",
+          "audioDuration": 4.16,
+          "frameCount": 129
+        },
+        {
+          "speaker": "maro",
+          "text": "今1バレル71ドルくらいだよな、それがどこまで上がるのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0018_maro.wav",
+          "audioDuration": 4.555,
+          "frameCount": 141
+        },
+        {
+          "speaker": "ponchan",
+          "text": "過去の事例と現在の需給から、段階別に3つのシナリオが考えられるの",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "原油価格シナリオ：封鎖の深刻度別",
+            "number": 4,
+            "icon": "📈",
+            "body": "1973年のオイルショック時は原油価格が約4倍に跳ね上がった。現在の供給構造はより複雑だが、ホルムズ封鎖の場合は短期で1バレル120〜200ドルに達する可能性が高い。",
+            "emphasis": "最大200ドル",
+            "points": [
+              "軽微な緊張（産油国牽制レベル）：1バレル85〜96ドル",
+              "部分封鎖（機雷・威嚇射撃）：1バレル120〜150ドル",
+              "完全封鎖（2週間超）：1バレル180〜200ドルも視野",
+              "完全封鎖が1ヶ月続けばスポット市場は事実上機能停止"
+            ],
+            "color": "#E8000D"
+          },
+          "audioFile": "voices/0019_ponchan.wav",
+          "audioDuration": 4.725,
+          "frameCount": 146
+        },
+        {
+          "speaker": "maro",
+          "text": "200ドル！？今の3倍近いのだ。ガソリンが1リットル400円超えるじゃないか！",
+          "emotion": "surprised",
+          "audioFile": "voices/0020_maro.wav",
+          "audioDuration": 5.952,
+          "frameCount": 183
+        },
+        {
+          "speaker": "ponchan",
+          "text": "電気代も連動して上がるよ。LNGの価格は原油と連動しているから",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "oilPriceScenario"
+          },
+          "audioFile": "voices/0021_ponchan.wav",
+          "audioDuration": 4.64,
+          "frameCount": 144
+        },
+        {
+          "speaker": "maro",
+          "text": "LNGって何なのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0022_maro.wav",
+          "audioDuration": 1.92,
+          "frameCount": 62
+        },
+        {
+          "speaker": "ponchan",
+          "text": "液化天然ガスのことね。日本の発電量の約35パーセントをLNGが担っているの",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "LNG封鎖の電気代への影響",
+            "number": 5,
+            "icon": "💡",
+            "body": "日本はLNG輸入量の約70パーセントをカタール・UAE・オマーンなど中東・ホルムズ経由国に依存。封鎖が続けば代替調達先の確保が困難になり、電力会社の燃料費が急騰する。\n2022年のウクライナ危機では電気代が約2倍に上昇した実績がある。",
+            "emphasis": "電気代2〜3倍",
+            "points": [
+              "日本の発電量の約35パーセントがLNG火力",
+              "LNG輸入の約70パーセントがホルムズ経由",
+              "スポット調達は通常契約の3〜5倍の価格になる可能性",
+              "産業用電力の高騰は製造業の競争力に直撃"
+            ],
+            "color": "#FF6600"
+          },
+          "audioFile": "voices/0023_ponchan.wav",
+          "audioDuration": 5.76,
+          "frameCount": 177
+        },
+        {
+          "speaker": "maro",
+          "text": "2022年ですら2倍になったのに、完全封鎖なら3倍もあり得るのか…",
+          "emotion": "surprised",
+          "audioFile": "voices/0024_maro.wav",
+          "audioDuration": 5.44,
+          "frameCount": 168
+        },
+        {
+          "speaker": "ponchan",
+          "text": "だから日本の中東依存という構造的脆弱性を正面から見る必要があるの",
+          "emotion": "serious",
+          "audioFile": "voices/0025_ponchan.wav",
+          "audioDuration": 4.928,
+          "frameCount": 152
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "title": "日本のエネルギー構造と95パーセントの脆弱性",
+      "duration": 60,
+      "topic": "中東依存95パーセントの内訳と構造的問題",
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "日本の中東依存95パーセントという数字の内訳を見ていくよ",
+          "emotion": "normal",
+          "audioFile": "voices/0026_ponchan.wav",
+          "audioDuration": 4.267,
+          "frameCount": 133
+        },
+        {
+          "speaker": "maro",
+          "text": "95パーセントってほぼ全部じゃないか。なんでそんなになったのだ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0027_maro.wav",
+          "audioDuration": 4.757,
+          "frameCount": 147
+        },
+        {
+          "speaker": "ponchan",
+          "text": "主要な輸入元はサウジアラビアが約40パーセント、UAEが約30パーセント、クウェートが約8パーセントなの",
+          "emotion": "normal",
+          "visual": {
+            "type": "chart",
+            "key": "japanOilImportSource"
+          },
+          "audioFile": "voices/0028_ponchan.wav",
+          "audioDuration": 7.755,
+          "frameCount": 237
+        },
+        {
+          "speaker": "maro",
+          "text": "サウジとUAEだけで70パーセントを超えるのか。集中しすぎだぞ",
+          "emotion": "surprised",
+          "audioFile": "voices/0029_maro.wav",
+          "audioDuration": 5.077,
+          "frameCount": 157
+        },
+        {
+          "speaker": "ponchan",
+          "text": "中東の石油は品質が高くて価格も安かった。だから戦後から一貫してこのルートに依存してきたの",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "日本のエネルギー自給率の実態",
+            "number": 6,
+            "icon": "🇯🇵",
+            "body": "日本のエネルギー自給率は約13パーセント（2023年度）と主要先進国で最低水準。G7の中でドイツが約40パーセント、米国が約100パーセントなのと比較して脆弱性は際立っている。\n2011年の原発停止後、化石燃料依存がさらに深まりエネルギー自給率は一時11パーセント台まで低下した。",
+            "emphasis": "自給率13パーセント",
+            "points": [
+              "石油の自給率はほぼ0パーセント。国内油田は微量",
+              "LNGも自国生産はなく100パーセント輸入依存",
+              "石炭も約99パーセントを輸入（豪州・インドネシア等）",
+              "原子力の再稼働が進んでも化石燃料依存は高い水準"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0030_ponchan.wav",
+          "audioDuration": 6.133,
+          "frameCount": 189
+        },
+        {
+          "speaker": "maro",
+          "text": "米国が自給率100パーセントなのに日本は13パーセント…その差は大きいのだ",
+          "emotion": "serious",
+          "audioFile": "voices/0031_maro.wav",
+          "audioDuration": 6.048,
+          "frameCount": 186
+        },
+        {
+          "speaker": "ponchan",
+          "text": "国家備蓄は原油換算で約90日分あるけれど、完全封鎖が長引けば限界が来るの",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "日本の石油備蓄と限界",
+            "number": 7,
+            "icon": "🛢️",
+            "body": "日本は政府備蓄と民間備蓄を合わせて約145日分のエネルギーを確保している。しかし完全封鎖が長期化した場合、代替調達（米国・ロシア・西アフリカ）には輸送に数週間〜数ヶ月かかる。\n1973年のオイルショックでは節電・ガソリン規制が3ヶ月以上続いた。",
+            "emphasis": "約145日分",
+            "points": [
+              "政府石油備蓄：約90日分（IEA義務水準を上回る）",
+              "民間在庫を加算すると約145日分",
+              "米国シェール油への切り替えには輸送で数週間",
+              "1973年のオイルショック時は電力不足で工場停止が続発"
+            ],
+            "color": "#7B2FBE"
+          },
+          "audioFile": "voices/0032_ponchan.wav",
+          "audioDuration": 5.856,
+          "frameCount": 180
+        },
+        {
+          "speaker": "maro",
+          "text": "145日分あれば半年は持つのか。でも長期化したら確かに厳しいのだ",
+          "emotion": "thinking",
+          "audioFile": "voices/0033_maro.wav",
+          "audioDuration": 5.749,
+          "frameCount": 177
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そしてここからが投資家として一番重要な話、恩恵を受ける銘柄の話をするよ",
+          "emotion": "serious",
+          "audioFile": "voices/0034_ponchan.wav",
+          "audioDuration": 5.312,
+          "frameCount": 164
+        }
+      ]
+    },
+    {
+      "type": "chapter",
+      "title": "投資家視点：ホルムズ危機で恩恵を受けるセクター",
+      "duration": 60,
+      "topic": "エネルギー危機で注目すべき銘柄・セクター",
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "地政学リスクが高まるとき、賢い投資家はどのセクターに注目するか解説するね",
+          "emotion": "normal",
+          "audioFile": "voices/0035_ponchan.wav",
+          "audioDuration": 5.184,
+          "frameCount": 160
+        },
+        {
+          "speaker": "maro",
+          "text": "危機で恩恵を受ける銘柄なんてあるのか？",
+          "emotion": "thinking",
+          "audioFile": "voices/0036_maro.wav",
+          "audioDuration": 2.997,
+          "frameCount": 94
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まず注目はINPEX（インペックス）。日本最大の石油・天然ガス開発会社だよ",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "注目銘柄①：INPEX（インペックス）",
+            "number": 8,
+            "icon": "⛽",
+            "body": "東証プライム上場の日本最大の石油・天然ガス開発会社（証券コード：1605）。オーストラリアのイクシスLNGプロジェクトなど世界20カ国以上で資源開発を手がける。\n原油価格が1バレル10ドル上昇すると年間営業利益が約400億円増加すると試算される。",
+            "emphasis": "原油高が直撃の恩恵銘柄",
+            "points": [
+              "証券コード：1605。日本最大の石油・ガス上流開発会社",
+              "イクシスLNG（豪州）：日本向けLNG供給の柱",
+              "原油10ドル高→営業利益約400億円増加の試算",
+              "配当利回りが高く、エネルギー危機時の防衛的銘柄"
+            ],
+            "color": "#E8000D"
+          },
+          "audioFile": "voices/0037_ponchan.wav",
+          "audioDuration": 6.805,
+          "frameCount": 209
+        },
+        {
+          "speaker": "maro",
+          "text": "原油が上がれば上がるほどINPEX（インペックス）が儲かる構造なのだな",
+          "emotion": "normal",
+          "audioFile": "voices/0038_maro.wav",
+          "audioDuration": 6.336,
+          "frameCount": 195
+        },
+        {
+          "speaker": "ponchan",
+          "text": "次は総合商社ね。三菱商事・三井物産・伊藤忠商事は資源権益を大量に保有しているの",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "注目セクター②：総合商社",
+            "number": 9,
+            "icon": "🏢",
+            "body": "日本の総合商社は世界中の資源権益（石油・LNG・石炭・銅）を保有しており、原油・LNG価格の上昇局面で業績が改善しやすい構造を持つ。\nバフェット氏が日本の商社株を大量購入したことで注目度が高まった。",
+            "emphasis": "資源権益を保有",
+            "points": [
+              "三菱商事（8058）：LNG・銅・豪州石炭の権益が柱",
+              "三井物産（8031）：LNG・鉄鉱石・石油上流が主力",
+              "伊藤忠商事（8001）：非資源も強く安定感のある構成",
+              "エネルギー高と円安の組み合わせで利益が膨らむ傾向"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0039_ponchan.wav",
+          "audioDuration": 6.976,
+          "frameCount": 214
+        },
+        {
+          "speaker": "maro",
+          "text": "バフェット氏が買った理由の一つにエネルギー権益があるのだな",
+          "emotion": "thinking",
+          "audioFile": "voices/0040_maro.wav",
+          "audioDuration": 3.936,
+          "frameCount": 123
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そして中長期で最も重要なのが再生可能エネルギー関連セクターだよ",
+          "emotion": "normal",
+          "visual": {
+            "type": "rich-panel",
+            "title": "注目セクター③：再生可能エネルギー",
+            "number": 10,
+            "icon": "☀️",
+            "body": "エネルギー危機のたびに、化石燃料依存からの脱却を加速する政策が打ち出される。太陽光・風力・水素・蓄電池のサプライチェーンに関わる企業が長期的な恩恵を受ける可能性が高い。\n2022年のエネルギー危機後、日本政府はGX（グリーントランスフォーメーション）計画として150兆円規模の投資目標を掲げた。",
+            "emphasis": "150兆円のGX計画",
+            "points": [
+              "太陽光パネル関連：レノバ・ウエストホールディングス等",
+              "蓄電池：村田製作所・TDK・パナソニック（電池部門）",
+              "水素・アンモニア：三菱重工業・川崎重工業",
+              "電力インフラ：関西電力・東北電力（原発再稼働メリット）"
+            ],
+            "color": "#00AA44"
+          },
+          "audioFile": "voices/0041_ponchan.wav",
+          "audioDuration": 4.491,
+          "frameCount": 139
+        },
+        {
+          "speaker": "maro",
+          "text": "危機があるたびに再エネ投資が加速するという流れがあるのだな",
+          "emotion": "thinking",
+          "audioFile": "voices/0042_maro.wav",
+          "audioDuration": 4.128,
+          "frameCount": 128
+        },
+        {
+          "speaker": "ponchan",
+          "text": "ただし投資はリスクを伴うので、自分のリスク許容度に合わせて慎重に判断してね",
+          "emotion": "serious",
+          "audioFile": "voices/0043_ponchan.wav",
+          "audioDuration": 5.173,
+          "frameCount": 160
+        }
+      ]
+    },
+    {
+      "type": "outro",
+      "duration": 30,
+      "topic": "まとめとチャンネル登録CTA",
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "今日のまとめをするね。ホルムズ海峡は日本のエネルギーの95パーセントが通る生命線なの",
+          "emotion": "normal",
+          "audioFile": "voices/0044_ponchan.wav",
+          "audioDuration": 5.899,
+          "frameCount": 181
+        },
+        {
+          "speaker": "maro",
+          "text": "封鎖されたら原油が200ドルになる可能性もあって、電気代も大幅に上がるのだな",
+          "emotion": "serious",
+          "audioFile": "voices/0045_maro.wav",
+          "audioDuration": 5.888,
+          "frameCount": 181
+        },
+        {
+          "speaker": "ponchan",
+          "text": "日本の備蓄は約145日分あるけど、長期化には対応しきれない構造的弱点があるの",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "今日のまとめ",
+            "number": 11,
+            "icon": "📌",
+            "body": "ホルムズ海峡は幅33キロメートルの「のど元」。ここが閉鎖されれば日本のエネルギーシステムは機能不全に陥る可能性がある。地政学リスクを理解した上で、エネルギー関連銘柄・再エネ・商社への分散投資を検討する価値がある。",
+            "emphasis": "地政学リスクを投資機会に",
+            "points": [
+              "ホルムズ封鎖→原油1バレル最大200ドルの可能性",
+              "日本の中東石油依存は95パーセントと構造的脆弱性あり",
+              "恩恵銘柄：INPEX（インペックス）・総合商社・再エネ関連",
+              "備蓄は約145日分。長期封鎖には代替調達が不可欠"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0046_ponchan.wav",
+          "audioDuration": 6.112,
+          "frameCount": 188
+        },
+        {
+          "speaker": "maro",
+          "text": "エネルギー安保ってこんなに身近な問題だったのだ。勉強になったのだ！",
+          "emotion": "happy",
+          "audioFile": "voices/0047_maro.wav",
+          "audioDuration": 4.992,
+          "frameCount": 154
+        },
+        {
+          "speaker": "ponchan",
+          "text": "チャンネル登録して通知をオンにしてね。地政学×投資の最新情報をお届けするよ！",
+          "emotion": "happy",
+          "audioFile": "voices/0048_ponchan.wav",
+          "audioDuration": 5.419,
+          "frameCount": 167
+        },
+        {
+          "speaker": "maro",
+          "text": "次回もよろしくなのだ！",
+          "emotion": "happy",
+          "audioFile": "voices/0049_maro.wav",
+          "audioDuration": 1.589,
+          "frameCount": 52
+        }
+      ]
+    }
+  ],
+  "chartData": {
+    "japanEnergyDependency": {
+      "title": "日本のエネルギー輸入先（中東依存95%）",
+      "chartType": "pie",
+      "data": [
+        {
+          "label": "サウジアラビア",
+          "value": 40
+        },
+        {
+          "label": "UAE",
+          "value": 30
+        },
+        {
+          "label": "クウェート",
+          "value": 10
+        },
+        {
+          "label": "カタール",
+          "value": 8
+        },
+        {
+          "label": "その他中東",
+          "value": 7
+        },
+        {
+          "label": "非中東",
+          "value": 5
+        }
+      ]
+    },
+    "oilPriceScenario": {
+      "title": "原油価格シナリオ（2024〜2026年・バレル/ドル）",
+      "chartType": "bar",
+      "data": [
+        {
+          "label": "2024年初",
+          "value": 71
+        },
+        {
+          "label": "現在（高止まり）",
+          "value": 96
+        },
+        {
+          "label": "部分封鎖シナリオ",
+          "value": 130
+        },
+        {
+          "label": "完全封鎖シナリオ",
+          "value": 200
+        }
+      ]
+    },
+    "japanOilImportSource": {
+      "title": "日本の石油輸入国別シェア（2024年）",
+      "chartType": "bar",
+      "data": [
+        {
+          "label": "サウジアラビア",
+          "value": 40
+        },
+        {
+          "label": "UAE",
+          "value": 30
+        },
+        {
+          "label": "クウェート",
+          "value": 10
+        },
+        {
+          "label": "カタール",
+          "value": 8
+        },
+        {
+          "label": "ロシア",
+          "value": 4
+        },
+        {
+          "label": "その他",
+          "value": 8
+        }
+      ]
+    }
+  }
+}

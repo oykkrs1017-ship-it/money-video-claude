@@ -1,0 +1,347 @@
+videoId: "ep005"
+seed: "ep005"
+title: "台湾有事で半導体が消える？サプライチェーン崩壊の現実"
+description: "台湾有事が起きた場合、世界の半導体サプライチェーンはどうなるのか？TSMCが担う先端半導体の世界シェアは90%超。もし供給が途絶えれば、スマホ・AI・自動車・防衛産業まで壊滅的打撃を受ける。地政学リスクと投資家が取るべきポジションを徹底解説します。"
+tags: ["台湾有事", "半導体", "サプライチェーン", "TSMC", "地政学リスク", "半導体不足", "中国", "台湾", "米中対立", "投資", "株式投資", "地政学", "テクノロジー投資", "半導体銘柄", "NVIDIA", "AMD", "インテル", "サムスン", "先端半導体", "EUV", "ASML", "半導体製造装置", "ファウンドリ", "チップ戦争", "経済安全保障", "デカップリング", "フレンドショアリング", "CHIPS法", "半導体補助金", "日本半導体", "ラピダス", "熊本TSMC", "JASM", "防衛産業", "軍事リスク", "台湾海峡", "中国軍", "人民解放軍", "海上封鎖", "第一列島線", "有事リスク", "地政学投資", "リスクヘッジ", "ポートフォリオ", "分散投資", "AI半導体", "データセンター", "クラウド", "GPU", "HBM", "先端パッケージング", "CoWoS", "半導体関連株", "SOX指数", "フィラデルフィア半導体指数", "東京エレクトロン", "レーザーテック", "ディスコ", "信越化学", "SUMCOシリコンウエハー", "半導体材料", "フォトレジスト", "ネオン", "レアガス", "サプライチェーンリスク", "BCP", "有事シナリオ", "台湾侵攻", "習近平", "統一", "中台関係", "安全保障", "NATO", "インド太平洋", "AUKUS", "クアッド", "半導体自給率", "経済制裁", "テック株", "成長株"]
+bgmVolume: 0.12
+bgmMap:
+  hook: "bgm/news.mp3"
+  explanation: "bgm/main_lofi.mp3"
+  analysis: "bgm/main_lofi.mp3"
+  summary: "bgm/uplifting_piano.mp3"
+  cta: "bgm/uplifting_piano.mp3"
+
+chartData:
+  tsmcShare:
+    title: "先端半導体（7nm以下）ファウンドリ世界シェア"
+    type: pie
+    data:
+      - { label: "TSMC", value: 92 }
+      - { label: "サムスン", value: 8 }
+  semiconductorGDP:
+    title: "半導体供給停止時の各国GDP損失推計（兆ドル）"
+    type: bar
+    data:
+      - { label: "米国", value: 1.6 }
+      - { label: "中国", value: 1.4 }
+      - { label: "EU", value: 0.9 }
+      - { label: "日本", value: 0.5 }
+      - { label: "韓国", value: 0.4 }
+  chipsActFunding:
+    title: "各国・地域の半導体補助金（億ドル）"
+    type: bar
+    data:
+      - { label: "米国 CHIPS法", value: 527 }
+      - { label: "EU 欧州チップス法", value: 470 }
+      - { label: "日本", value: 250 }
+      - { label: "韓国", value: 260 }
+      - { label: "中国 大基金", value: 410 }
+  taiwanChipExport:
+    title: "台湾の半導体輸出額推移（億ドル）"
+    type: line
+    data:
+      - { label: "2019年", value: 948 }
+      - { label: "2020年", value: 1082 }
+      - { label: "2021年", value: 1360 }
+      - { label: "2022年", value: 1450 }
+      - { label: "2023年", value: 1380 }
+      - { label: "2024年", value: 1720 }
+
+chapters:
+  - type: hook
+    topic: "台湾有事で世界が止まる"
+    lines:
+      - ponchan: "もし明日、台湾海峡で戦争が起きたらどうなると思う？"
+        emotion: serious
+      - maro: "うーん、ニュースでたまに見るけど、正直ピンとこないのだ"
+        emotion: thinking
+      - ponchan: "実はね、世界の先端半導体の92%がたった1つの島、台湾で作られてるの"
+        emotion: surprised
+        show:
+          type: rich-panel
+          number: 1
+          icon: "🏭"
+          title: "台湾＝世界の半導体工場"
+          body: "7nm以下の先端半導体ファウンドリシェアでTSMCは約92%を占める。サムスンが約8%で続くが、技術力・歩留まりの差は大きい。\n世界のスマホ・PC・AI・自動車の頭脳が台湾に集中している。"
+          emphasis: "92%"
+          points:
+            - "TSMC：先端ロジック半導体の世界シェア92%"
+            - "Apple・NVIDIA・AMDの最先端チップはすべてTSMC製"
+            - "台湾の半導体輸出額は2024年に1720億ドル超"
+          color: "#E8000D"
+      - maro: "92%！？それが止まったら世界中のハイテク製品が作れなくなるのだ！"
+        emotion: surprised
+      - ponchan: "そう、スマホもAIサーバーも電気自動車もF-35戦闘機も全部止まるよ"
+        emotion: serious
+        show: { type: chart, key: "tsmcShare" }
+      - maro: "軍事兵器まで影響あるのか…これは投資どころじゃない話だぞ"
+        emotion: serious
+      - ponchan: "だからこそ投資家は今このリスクを正しく理解しておく必要があるの！"
+        emotion: serious
+        show:
+          type: rich-panel
+          number: 2
+          icon: "⚠️"
+          title: "なぜ今「台湾有事」なのか"
+          body: "習近平政権は台湾統一を「歴史的使命」と明言。2027年までに軍事侵攻能力を整備するとCIA長官が証言した。\n米国はTSMCを「チョークポイント」と認識し、サプライチェーン再編を急いでいる。"
+          emphasis: "2027年"
+          points:
+            - "CIA長官：中国は2027年までに台湾侵攻能力を整備"
+            - "中国軍の台湾周辺での軍事演習が年々激化"
+            - "米国は台湾への武器供与を加速中"
+          color: "#0057B7"
+
+  - type: explanation
+    topic: "台湾有事の3つのシナリオ"
+    lines:
+      - ponchan: "まず台湾有事って一口に言っても、いくつかのシナリオがあるんだよ"
+        emotion: normal
+      - maro: "いきなり戦争ってわけじゃないのか？"
+        emotion: thinking
+      - ponchan: "そう、専門家の間では大きく3つのシナリオが想定されてるの"
+        emotion: normal
+        show:
+          type: rich-panel
+          number: 1
+          icon: "🔴"
+          title: "シナリオ①：海上封鎖"
+          body: "中国が台湾周辺の海域・空域を封鎖し、物流を遮断するシナリオ。直接的な武力行使なしに台湾経済を締め上げる。\n2022年のペロシ訪台時の軍事演習が予行演習とも言われている。"
+          emphasis: "海上封鎖"
+          points:
+            - "武力行使なしで国際法上のグレーゾーン"
+            - "半導体の輸出入が完全に停止する可能性"
+            - "世界の海運・航空貨物ルートにも影響"
+            - "数週間で世界の半導体在庫が枯渇"
+          color: "#FF6600"
+      - maro: "封鎖だけでも十分やばいのだ…"
+        emotion: surprised
+      - ponchan: "次が限定的な軍事衝突ね"
+        emotion: serious
+        show:
+          type: rich-panel
+          number: 2
+          icon: "🟠"
+          title: "シナリオ②：限定的軍事衝突"
+          body: "離島（金門島・馬祖島）への攻撃やミサイル威嚇で台湾に圧力をかけるシナリオ。\nTSMCの工場は直接被害を受けないが、従業員の避難や物流停止で生産は大幅に低下する。"
+          emphasis: "限定的軍事衝突"
+          points:
+            - "離島攻撃やミサイル威嚇による圧力"
+            - "TSMC工場は新竹・台南・高雄に集中"
+            - "従業員避難だけで生産能力は激減"
+            - "半導体生産は数ヶ月単位で停止の可能性"
+          color: "#FF3300"
+      - maro: "工場が無事でも人がいなければ動かないのだな"
+        emotion: thinking
+      - ponchan: "そして最悪のシナリオがこれだよ"
+        emotion: serious
+        show:
+          type: rich-panel
+          number: 3
+          icon: "⚫"
+          title: "シナリオ③：全面侵攻"
+          body: "中国人民解放軍が台湾本島に上陸作戦を実行するシナリオ。TSMC工場が物理的に破壊・接収される最悪の事態。\n米国は半導体技術の中国流出を防ぐため、工場を意図的に破壊する可能性も議論されている。"
+          emphasis: "全面侵攻"
+          points:
+            - "世界の先端半導体供給が完全に途絶"
+            - "復旧には最低でも3〜5年かかる"
+            - "米国による工場破壊計画（スコーチドアース）の報道も"
+            - "世界経済への損害は年間数兆ドル規模"
+          color: "#CC0000"
+      - maro: "自分たちで工場を壊す計画まであるのか…衝撃だぞ"
+        emotion: surprised
+      - ponchan: "それだけ先端半導体の技術が中国に渡ることを恐れてるってことなの"
+        emotion: serious
+        show:
+          type: timeline
+          title: "台湾有事をめぐる主要な動き"
+          events:
+            - { year: "2022年8月", label: "ペロシ米下院議長が訪台、中国が大規模軍事演習", highlight: true }
+            - { year: "2023年4月", label: "中国軍が台湾包囲演習を再実施", highlight: false }
+            - { year: "2023年7月", label: "CIA長官が2027年侵攻能力整備を証言", highlight: true }
+            - { year: "2024年5月", label: "頼清徳総統就任、中国が再び軍事演習", highlight: false }
+            - { year: "2024年10月", label: "中国軍「聯合利剣-2024B」演習を実施", highlight: true }
+            - { year: "2025年", label: "米国CHIPS法による工場建設が本格化", highlight: true }
+
+  - type: explanation
+    topic: "なぜ台湾に集中したのか"
+    lines:
+      - maro: "そもそもなんでこんなに台湾に集中しちゃったのだ？"
+        emotion: thinking
+      - ponchan: "これは30年以上かけて築かれた産業構造の結果なんだよ"
+        emotion: normal
+        show:
+          type: rich-panel
+          number: 4
+          icon: "🔬"
+          title: "TSMC一極集中の構造的理由"
+          body: "半導体のファウンドリ（受託製造）モデルを1987年に世界で初めて確立したのがTSMC。\n巨額の設備投資と技術蓄積、優秀な人材、台湾政府の産業政策が重なり、競合他社が追いつけない状況が生まれた。"
+          emphasis: "ファウンドリモデル"
+          points:
+            - "先端プロセスの研究開発費は年間60億ドル超"
+            - "EUV露光装置の導入数でも圧倒的1位"
+            - "Apple・NVIDIAなど顧客との緊密な協業体制"
+            - "台湾の理工系人材の厚み"
+          color: "#0057B7"
+      - maro: "他の国が追いつくのは簡単じゃないのだな"
+        emotion: thinking
+      - ponchan: "先端半導体の工場を1つ建てるのに200億ドル以上かかるし、技術者の育成にも何年もかかるの"
+        emotion: normal
+        show: { type: chart, key: "taiwanChipExport" }
+      - maro: "台湾の半導体輸出、右肩上がりだぞ…依存度はむしろ高まってるのだ"
+        emotion: surprised
+      - ponchan: "そうなの、2024年は1720億ドルを超えて過去最高。AI需要の爆発で依存度はさらに加速してるんだよ"
+        emotion: serious
+        show:
+          type: rich-panel
+          number: 5
+          icon: "🤖"
+          title: "AI時代が台湾依存を加速"
+          body: "NVIDIAのH100・B200、AMDのMI300XなどAI向け最先端GPUはすべてTSMCの先端プロセスで製造。\nAIデータセンター投資が世界で急拡大する中、TSMC以外の選択肢は事実上存在しない。"
+          emphasis: "AI向けGPU"
+          points:
+            - "NVIDIA・AMD・Broadcomの最先端チップ→全てTSMC"
+            - "先端パッケージングCoWoSもTSMCが独占"
+            - "AI需要で3nm・2nmプロセスの需要が急増"
+          color: "#7B2FBE"
+
+  - type: analysis
+    topic: "供給途絶の経済的衝撃"
+    lines:
+      - ponchan: "ここからは台湾の半導体供給が止まった場合の経済的インパクトを見ていくよ"
+        emotion: serious
+      - maro: "具体的にどれくらいの損害になるのだ？"
+        emotion: thinking
+      - ponchan: "ブルームバーグ・エコノミクスの試算では、世界のGDP損失は年間約5兆ドルにもなるの"
+        emotion: serious
+        show: { type: chart, key: "semiconductorGDP" }
+      - maro: "5兆ドル！？リーマンショックの世界GDP損失が約2兆ドルだから、その2.5倍だぞ！"
+        emotion: surprised
+      - ponchan: "しかも半導体は産業の裾野が広いから、直接的な損害だけじゃないんだよ"
+        emotion: serious
+        show:
+          type: rich-panel
+          number: 6
+          icon: "💥"
+          title: "波及する産業への影響"
+          body: "半導体は現代のあらゆる産業の基盤。供給停止は自動車、通信、医療機器、防衛まで連鎖的に影響する。\n2021年のチップ不足では自動車産業だけで2100億ドルの売上損失が発生した。"
+          emphasis: "あらゆる産業"
+          points:
+            - "自動車：1台あたり1000〜3000個の半導体を使用"
+            - "スマホ：新機種の生産が停止、価格が暴騰"
+            - "防衛：F-35戦闘機1機に数百個の先端チップ"
+            - "医療：MRI・CT・人工呼吸器も半導体依存"
+          color: "#E8000D"
+      - maro: "戦闘機にも使われてるってことは、安全保障にも直結するのだ"
+        emotion: serious
+      - ponchan: "そう、だから各国政府が必死でサプライチェーンの再編を進めてるの"
+        emotion: normal
+        show:
+          type: rich-panel
+          number: 7
+          icon: "🏗️"
+          title: "各国の半導体補助金競争"
+          body: "米国はCHIPS法で527億ドル、EUは欧州チップス法で470億ドル、日本も250億ドル規模の補助金を投入。\n中国は大基金3期で410億ドルを追加し、半導体自給率を高めようとしている。"
+          emphasis: "補助金競争"
+          points:
+            - "米国：TSMCアリゾナ工場・インテル支援"
+            - "日本：TSMC熊本工場（JASM）・ラピダス北海道"
+            - "EU：インテルのドイツ工場に100億ユーロ支援"
+            - "韓国：サムスン・SKハイニックスに税制優遇"
+          color: "#0057B7"
+      - maro: "すごい金額の補助金合戦になってるのだな"
+        emotion: surprised
+        show: { type: chart, key: "chipsActFunding" }
+
+  - type: analysis
+    topic: "投資家が注目すべき銘柄"
+    lines:
+      - ponchan: "じゃあ投資家としてはどういうポジションを取るべきか考えていこう"
+        emotion: normal
+      - maro: "台湾有事リスクがあるなら、半導体株は売りなのか？"
+        emotion: thinking
+      - ponchan: "単純に売ればいいって話じゃないの。むしろサプライチェーン再編の恩恵を受ける銘柄に注目すべきだよ"
+        emotion: normal
+        show:
+          type: rich-panel
+          number: 8
+          icon: "🇺🇸"
+          title: "米国：CHIPS法の恩恵銘柄"
+          body: "米国政府はCHIPS法で自国内の半導体製造能力を強化中。インテルは最大85億ドルの補助金を獲得。\nTSMCもアリゾナ州に3工場を建設中で、2028年までに2nmプロセスを米国内で量産する計画。"
+          emphasis: "インテル"
+          points:
+            - "インテル（INTC）：米国ファウンドリ再興の中核"
+            - "テキサス・インスツルメンツ（TXN）：車載半導体で国内生産強化"
+            - "グローバルファウンドリーズ（GFS）：成熟プロセスの米国生産"
+            - "アプライドマテリアルズ（AMAT）：製造装置需要増"
+          color: "#002868"
+      - maro: "アメリカ国内に工場を建てる会社がポイントなのだな"
+        emotion: thinking
+      - ponchan: "日本にも注目銘柄がたくさんあるよ"
+        emotion: happy
+        show:
+          type: rich-panel
+          number: 9
+          icon: "🇯🇵"
+          title: "日本：半導体復活の恩恵銘柄"
+          body: "TSMC熊本工場（JASM）の稼働開始やラピダスの2nmプロジェクトで日本の半導体産業が再活性化。\n半導体製造装置と素材は日本が世界トップクラスのシェアを持つ分野。"
+          emphasis: "製造装置と素材"
+          points:
+            - "東京エレクトロン（8035）：世界3位の半導体製造装置メーカー"
+            - "レーザーテック（6920）：EUVマスク検査で世界唯一"
+            - "信越化学（4063）：シリコンウエハー世界シェア約30%"
+            - "ディスコ（6146）：切断・研削装置で世界トップ"
+          color: "#BC002D"
+      - maro: "日本の装置・素材メーカーは台湾有事でもむしろ需要が増えるのか"
+        emotion: surprised
+      - ponchan: "工場をどこに建てようと、装置と素材は必ず必要だからね。地政学リスクのヘッジにもなるんだよ"
+        emotion: normal
+        show:
+          type: rich-panel
+          number: 3
+          icon: "🛡️"
+          title: "台湾有事への投資戦略"
+          body: "台湾有事リスクに備えるには、TSMCへの過度な集中を避けつつ、サプライチェーン分散の恩恵を受ける銘柄に分散投資が有効。\n防衛関連銘柄や金・コモディティもヘッジ手段となりうる。"
+          emphasis: "分散投資"
+          points:
+            - "半導体製造装置メーカー：地理的リスクに中立"
+            - "米国内生産拡大銘柄：CHIPS法の恩恵"
+            - "防衛関連：ロッキード・三菱重工など"
+            - "金・コモディティ：有事のリスクヘッジ"
+          color: "#2E7D32"
+
+  - type: summary
+    topic: "まとめと投資家への示唆"
+    lines:
+      - ponchan: "今日の内容をまとめるよ！"
+        emotion: happy
+        show:
+          type: rich-panel
+          number: 1
+          icon: "📝"
+          title: "今日のまとめ"
+          body: "台湾有事は「起きるか起きないか」ではなく「いつ起きてもおかしくない」リスクとして市場に織り込まれ始めている。\n先端半導体の台湾一極集中は構造的問題であり、解消には最低5〜10年かかる。"
+          emphasis: "構造的問題"
+          points:
+            - "先端半導体の92%がTSMC（台湾）に依存"
+            - "供給途絶なら世界GDP損失は年間約5兆ドル"
+            - "各国が数百億ドル規模の補助金で工場誘致"
+            - "製造装置・素材メーカーは地政学リスクに中立"
+          color: "#1565C0"
+      - maro: "台湾に集中しすぎてることがそもそものリスクなのだな"
+        emotion: thinking
+      - ponchan: "そうなの。だから投資家としては、リスクを恐れるだけじゃなくて、サプライチェーン再編という大きな構造変化に乗ることが大事だよ"
+        emotion: serious
+      - maro: "装置メーカーや素材メーカー、CHIPS法関連銘柄をチェックするのだ！"
+        emotion: happy
+      - ponchan: "有事が起きないことを祈りつつ、万が一に備えたポートフォリオを組んでおこうね"
+        emotion: normal
+
+  - type: cta
+    topic: "次回予告"
+    lines:
+      - ponchan: "次回はASMLとEUV露光装置の技術覇権について解説するよ！"
+        emotion: happy
+      - maro: "半導体を作る機械を作る会社…最強の上流企業だぞ！"
+        emotion: happy
+      - ponchan: "チャンネル登録と高評価ボタンを押して、次の動画も見逃さないでね！"
+        emotion: happy

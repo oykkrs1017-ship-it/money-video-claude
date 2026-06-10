@@ -1,0 +1,671 @@
+{
+  "videoId": "ep025",
+  "seed": "ep025",
+  "title": "関西電力・GE Vernova、黄金期突入！AIが電気を食い尽くす",
+  "description": "AIデータセンターの電力消費が2026年に2020年比3倍超の650TWhに達する見通しです。本当のボトルネックはもう半導体ではなく「電力そのもの」。Broadcomが好決算でも13%急落した理由、GE Vernova・Kinder Morgan・関西電力の具体的エントリー価格帯・目標株価・撤退ラインを解説します。老後資金を守りながら電力テーマを仕込む戦略とNISA活用術も。",
+  "tags": [
+    "電力株",
+    "AIデータセンター",
+    "GE Vernova",
+    "関西電力",
+    "Kinder Morgan",
+    "Bloom Energy",
+    "新NISA",
+    "成長投資枠",
+    "電力危機",
+    "天然ガス",
+    "原発再稼働",
+    "SMR",
+    "データセンター電力",
+    "AI投資",
+    "電力テーマ株",
+    "老後資金",
+    "個人投資家",
+    "株式投資",
+    "地政学投資",
+    "エネルギー株",
+    "米国株",
+    "日本株",
+    "配当株",
+    "2026年投資",
+    "投資初心者"
+  ],
+  "chapters": [
+    {
+      "type": "hook",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "こんにちは、ぽんちゃんです。皆さま、大変です。いまAIブームの裏側で、世界規模の「電力争奪戦」が静かに始まっていて、これを知らないと老後資金が大損になってしまうかもしれません！",
+          "emotion": "serious",
+          "visual": {
+            "type": "stat",
+            "value": "650 TWh",
+            "label": "2026年・世界データセンター消費電力予測"
+          },
+          "audioFile": "voices/0001_ponchan.wav",
+          "audioDuration": 14.507,
+          "frameCount": 440
+        },
+        {
+          "speaker": "ponchan",
+          "text": "NVIDIAの株を持っている方、ちょっと待ってください。実はAIが動くための「電気そのもの」が足りなくなっていて、本当のボトルネックはもう半導体ではないんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0002_ponchan.wav",
+          "audioDuration": 11.755,
+          "frameCount": 357
+        },
+        {
+          "speaker": "maro",
+          "text": "え、電気が足りないってどういうことなのだ？ChatGPTに質問するだけで、そんなに電気を使うのか？なんかピンとこないのだ。",
+          "emotion": "surprised",
+          "audioFile": "voices/0003_maro.wav",
+          "audioDuration": 11.264,
+          "frameCount": 342
+        },
+        {
+          "speaker": "ponchan",
+          "text": "実は2026年の世界データセンター消費電力は650TWhに達すると予測されていて、これは2020年の3倍以上なんだよ。日本全体の年間電力消費量のほぼ7割に相当する数字だよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "slide_001_chart"
+          },
+          "audioFile": "voices/0004_ponchan.wav",
+          "audioDuration": 14.869,
+          "frameCount": 451
+        },
+        {
+          "speaker": "maro",
+          "text": "7割って、日本全体の電気をデータセンターだけで食べちゃうってこと！？それって世界レベルの話なのだ？本当に信じられないのだ。",
+          "emotion": "surprised",
+          "audioFile": "voices/0005_maro.wav",
+          "audioDuration": 10.869,
+          "frameCount": 331
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そうなんだよ。そして2026年6月、Broadcomがなんと年間AI売上ガイダンスとして1000億ドル超という驚異的な数字を出したのに、株価は翌日13%も急落したんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "GPU vs 電力：ボトルネック移動の衝撃",
+            "body": "2026年6月、BroadcomはAI売上見通し1,000億ドル超を発表。しかし市場は失望売りで応答し株価は13%急落した。この逆説的な動きが示すのは、投資家の関心がGPUから電力容量（メガワット）へと完全にシフトしたという事実だ。",
+            "points": [
+              {
+                "text": "BroadcomのAI売上ガイダンス",
+                "value": "100B$超",
+                "unit": "2026年通期見通し",
+                "body": "過去最高の見通しを示したにもかかわらず株価は急落。市場はGPUではなく電力不足を織り込み始めた。",
+                "source": "Broadcom決算発表 2026年6月"
+              },
+              {
+                "text": "翌日の株価下落率",
+                "value": "-13%",
+                "unit": "決算発表翌営業日",
+                "body": "「もうGPUが希少品ではない、電気が希少品になった」という認識が市場で共有されつつある。",
+                "source": "Bloomberg市場データ 2026年6月"
+              }
+            ]
+          },
+          "audioFile": "voices/0006_ponchan.wav",
+          "audioDuration": 13.739,
+          "frameCount": 417
+        },
+        {
+          "speaker": "maro",
+          "text": "決算が良くても株価が下がるなんて、普通は逆じゃないのだ？市場って本当に不思議な動き方をするのだぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0007_maro.wav",
+          "audioDuration": 8.885,
+          "frameCount": 271
+        },
+        {
+          "speaker": "ponchan",
+          "text": "今日は3つ話すよ。①なぜ電力が世界規模で足りなくなっているのかという構造的な理由、②GE Vernova・Kinder Morgan・関西電力という具体的な銘柄の買い場と目標価格、③万が一シナリオが崩れた時の撤退ラインと新NISAの活用法だよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "今日わかること3選",
+            "body": "電力テーマ株は個人投資家がまだ気づいていない大きな投資機会。今日の3つを押さえれば明日の投資判断が変わる。",
+            "points": [
+              {
+                "text": "①電力危機の構造的理由",
+                "body": "AIモデル訓練・推論・冷却の3層構造でなぜ電力が指数関数的に増えるかを解説"
+              },
+              {
+                "text": "②爆上がり電力銘柄の買い場",
+                "body": "GE Vernova・Kinder Morgan・関西電力の具体的エントリー価格帯と目標株価を提示"
+              },
+              {
+                "text": "③撤退ライン＋NISA活用法",
+                "body": "老後資金を守りながら攻めるための撤退条件と新NISA成長投資枠での組み込み戦略"
+              }
+            ]
+          },
+          "audioFile": "voices/0008_ponchan.wav",
+          "audioDuration": 19.189,
+          "frameCount": 580
+        }
+      ],
+      "topic": "AIの電力ボトルネック"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "なぜこんなに電力が必要になったか、3つの理由があるんだよ。まず一つ目がAIモデルの訓練で、GPT-5クラスのモデルを一度学習させるだけで100〜250GWhという電力を消費するんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "電力消費が3倍になった構造的理由",
+            "body": "AIの電力消費は訓練・推論・冷却の3層が重なって指数関数的に膨らむ。NVIDIA Blackwell B200はTDP1,000W超でラックあたり100kW超に達する。",
+            "points": [
+              {
+                "text": "①訓練コスト",
+                "value": "100〜250GWh",
+                "unit": "GPT-5級モデル1回の学習",
+                "body": "GPT-4の3〜5倍。大規模モデルは定期的に再訓練されるため累積消費は膨大になる。",
+                "source": "IEA Electricity 2024 Report"
+              },
+              {
+                "text": "②推論コスト（リアルタイム）",
+                "body": "ユーザーがAIに質問するたびに発生。世界で毎秒何百万回もクエリが走り、積み上がると莫大な電力になる。",
+                "source": "Goldman Sachs AI Power Demand Report 2024"
+              },
+              {
+                "text": "③冷却コスト",
+                "value": "TDP 1,000W超",
+                "unit": "Blackwell B200 1枚あたり",
+                "body": "GPU1枚の発熱が1,000Wを超えるため冷却設備の電力も急増。ラックあたり100kW超が標準化しつつある。",
+                "source": "NVIDIA Blackwell Architecture Whitepaper 2024"
+              }
+            ]
+          },
+          "audioFile": "voices/0009_ponchan.wav",
+          "audioDuration": 14.933,
+          "frameCount": 453
+        },
+        {
+          "speaker": "maro",
+          "text": "訓練って一度やったら終わりじゃないの？毎回100〜250GWhも使うなら、それだけで電力会社が儲かりそうなのだ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0010_maro.wav",
+          "audioDuration": 10.133,
+          "frameCount": 309
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そうなんだよ、まろくん。モデルは定期的にアップデートされるし、新しいモデルが次々出てくるから訓練は繰り返されるんだよ。これだけで日本の5,000万世帯分の年間電力を超えてしまう計算になるよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0011_ponchan.wav",
+          "audioDuration": 14.133,
+          "frameCount": 429
+        },
+        {
+          "speaker": "maro",
+          "text": "推論っていうのは、私たちが毎日ChatGPTやGeminiに質問するやつのことだよな。そんな小さな一問一答が世界中で積み重なると、本当にそんな量になるのだぞ？",
+          "emotion": "surprised",
+          "audioFile": "voices/0012_maro.wav",
+          "audioDuration": 14.165,
+          "frameCount": 429
+        },
+        {
+          "speaker": "ponchan",
+          "text": "ここが問題の核心で、アメリカの電力需要は2008年から2023年まで15年間ほぼ横ばいだったんだよ。電力会社は設備投資を絞っていたのに、AIが突然ものすごい勢いで電気を要求し始めたんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "slide_005_chart"
+          },
+          "audioFile": "voices/0013_ponchan.wav",
+          "audioDuration": 16.085,
+          "frameCount": 487
+        },
+        {
+          "speaker": "maro",
+          "text": "日本でも2034年度には2025年の13倍になるってどういうこと？それって国内の発電所だけで本当に賄えるのだぞ？信じられないのだ。",
+          "emotion": "surprised",
+          "audioFile": "voices/0014_maro.wav",
+          "audioDuration": 12.683,
+          "frameCount": 385
+        },
+        {
+          "speaker": "ponchan",
+          "text": "電力広域的運営推進機関の試算だよ。データセンターは2〜3年で建てられるけど、発電所や送電線は10〜15年かかる。この建設スピードのギャップが今の電力危機を生んでいるんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0015_ponchan.wav",
+          "audioDuration": 14.389,
+          "frameCount": 436
+        },
+        {
+          "speaker": "ponchan",
+          "text": "今、世界のテック企業が何をしているか見てほしいんだけど、Microsoftはスリーマイル島の原発を再稼働させる20年契約を結んで、Googleは小型原子炉スタートアップを買収、AmazonはAWSデータセンターを原発の隣に建てたんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "テック巨人の電力争奪戦",
+            "body": "電力を確保できない企業はAI競争から脱落する。各社は電力確保のために前例のない手段に乗り出している。",
+            "points": [
+              {
+                "text": "Microsoft：スリーマイル島原発再稼働",
+                "body": "1979年の事故で有名なスリーマイル島の原発を20年間の電力購入契約で再稼働。データセンター専用に確保。",
+                "source": "Microsoft Press Release 2023年9月"
+              },
+              {
+                "text": "xAI COLOSSUS II：自前天然ガス発電所",
+                "body": "イーロン・マスクのxAIがギガワット級の電力を確保するため、自社敷地に天然ガス発電所を建設中。",
+                "source": "The Information 2024年"
+              },
+              {
+                "text": "Google：SMRスタートアップ買収",
+                "body": "カイロスパワーと小型モジュール炉22基の導入契約を締結。2030年代の電力需要をにらんだ先行投資。",
+                "source": "Google Blog 2023年10月"
+              }
+            ]
+          },
+          "audioFile": "voices/0016_ponchan.wav",
+          "audioDuration": 17.493,
+          "frameCount": 529
+        },
+        {
+          "speaker": "maro",
+          "text": "Microsoftが原発を再稼働させるって、もはやテック企業じゃなくてエネルギー会社じゃないのだ！電力を持っていないとAI競争に参加できない時代になったのだぞ。",
+          "emotion": "surprised",
+          "audioFile": "voices/0017_maro.wav",
+          "audioDuration": 12.821,
+          "frameCount": 389
+        },
+        {
+          "speaker": "ponchan",
+          "text": "原子力は長期的な解決策だけど建設に10年以上かかるから、今この瞬間のAI電力需要を実際に満たしているのは天然ガスなんだよ。Bloom Energyという燃料電池企業の株価はこの1年でなんと1,200%以上上昇したんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "slide_007_chart"
+          },
+          "audioFile": "voices/0018_ponchan.wav",
+          "audioDuration": 17.312,
+          "frameCount": 524
+        },
+        {
+          "speaker": "maro",
+          "text": "1,200%って、100万円が1,300万円になった計算なのだ！でもそれだけ上がったら今から買っても遅いんじゃないのだぞ？バブルに乗り遅れた感があるのだ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0019_maro.wav",
+          "audioDuration": 13.344,
+          "frameCount": 405
+        }
+      ],
+      "topic": "電力3倍消費の構造"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここからが今日の核心だよ。今買うべき銘柄をリスクと成長率のマトリクスで整理したんだけど、GE Vernovaはリスクと成長のバランスが最も良い安定高成長ゾーンにいるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "電力株ポジショニングマップ",
+            "body": "縦軸が成長期待、横軸がリスク水準。老後資金を守りながら攻めるなら、左上の「低リスク・高成長」エリアを狙う。",
+            "points": [
+              {
+                "text": "GE Vernova（最推奨・安定高成長）",
+                "body": "電力機器メーカーとして原子力・天然ガス・再エネすべてに対応。Q1 2026のDC向け受注2.4億ドルで受注残高が積み上がり中。リスクと成長のバランスが最良。",
+                "source": "GE Vernova 2026年Q1決算"
+              },
+              {
+                "text": "Kinder Morgan（配当+電力テーマ・低リスク）",
+                "body": "天然ガスパイプライン大手。将来DC電力需要の70%が自社資産を通ると試算。配当利回り5%超で老後資金向きの守り銘柄。",
+                "source": "Kinder Morgan IR資料 2025年"
+              },
+              {
+                "text": "関西電力（円建て・原発再稼働の恩恵）",
+                "body": "国内原発最多保有の電力会社。AI需要と原発再稼働の両方を持ち、為替リスクなしで電力テーマを持てる。",
+                "source": "関西電力 2026年3月期決算"
+              },
+              {
+                "text": "Bloom Energy・SMR関連（高成長・高リスク）",
+                "body": "1,200%上昇後のBloom Energyや商用化前のSMRスタートアップは投機的。老後資金の中核には不向き。"
+              }
+            ]
+          },
+          "audioFile": "voices/0020_ponchan.wav",
+          "audioDuration": 12.64,
+          "frameCount": 384
+        },
+        {
+          "speaker": "maro",
+          "text": "GE Vernovaって飛行機エンジンのGEと同じ会社なの？電力機器も作ってるのか、知らなかったのだ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0021_maro.wav",
+          "audioDuration": 8.555,
+          "frameCount": 261
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そうだよ、もともとGeneral Electricから分離した電力・エネルギー専業会社で、風力タービン・ガスタービン・原子炉設備まで全部作ってるんだよ。だからAI電力テーマのど真ん中に位置しているんだよ。",
+          "emotion": "happy",
+          "audioFile": "voices/0022_ponchan.wav",
+          "audioDuration": 15.168,
+          "frameCount": 460
+        },
+        {
+          "speaker": "ponchan",
+          "text": "では具体的な数字を見ていくよ。GE Vernovaは現在の株価から少し引いた340〜360ドル付近を狙って、目標は450ドル。これはQ1 2026の受注残高積み上がりペースから逆算した数字なんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "エントリー・目標・撤退の3点セット",
+            "body": "3銘柄すべてに買いゾーン・目標・撤退ラインを設定する。「なんとなく保有」は老後資金を守れない。",
+            "points": [
+              {
+                "text": "GE Vernova（米国株・成長枠向き）",
+                "value": "目標$450",
+                "unit": "エントリー$340〜$360",
+                "body": "Q1 2026のDC向け受注が24億ドルで受注残高が増加中。PER35倍は一見割高だが受注残高ベースのEPS成長率30%超を考慮すると正当化できる水準。撤退ライン：$300割れ。",
+                "source": "GE Vernova 2026年Q1決算・Bloomberg"
+              },
+              {
+                "text": "Kinder Morgan（米国株・配当再投資向き）",
+                "value": "目標$36",
+                "unit": "エントリー$26〜$28",
+                "body": "配当利回り約5%で受け取りながら電力テーマを保有できる。DC電力需要の70%が自社パイプライン経由という自社試算が実現すればEPS20%増。撤退ライン：$22割れ。",
+                "source": "Kinder Morgan IR 2025・自社試算"
+              },
+              {
+                "text": "関西電力（日本株・新NISA成長投資枠向き）",
+                "value": "目標3,800円",
+                "unit": "エントリー2,800〜3,000円",
+                "body": "原発再稼働による発電コスト低下とAI向け大口電力供給契約の両輪。PER12倍は電力会社として割安水準。撤退ライン：2,400円割れ。",
+                "source": "関西電力 2026年3月期決算・EDINET"
+              }
+            ]
+          },
+          "audioFile": "voices/0023_ponchan.wav",
+          "audioDuration": 17.632,
+          "frameCount": 533
+        },
+        {
+          "speaker": "maro",
+          "text": "撤退ラインって本当に守らないといけないの？少し待てば戻るんじゃないかって思ってしまうのだ。戻った時に売り逃してしまいそうで怖いのだぞ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0024_maro.wav",
+          "audioDuration": 10.965,
+          "frameCount": 333
+        },
+        {
+          "speaker": "ponchan",
+          "text": "普通はそう思うよね。でも老後資金の管理では「待てば戻る」は危険な考え方なんだよ。2000年のITバブル崩壊では半値に戻るまで15年かかった。撤退ラインは感情ではなくルールで決めることが大切なんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0025_ponchan.wav",
+          "audioDuration": 15.808,
+          "frameCount": 479
+        },
+        {
+          "speaker": "ponchan",
+          "text": "ここで独自試算を一つ見てほしいんだけど、新NISAの成長投資枠240万円のうち80万円をKinder Morganに入れて配当利回り5%で受け取ると、年間4万円が非課税で手元に入るんだよ。20年運用すると複利込みで約213万円になる計算だよ。",
+          "emotion": "happy",
+          "audioFile": "voices/0026_ponchan.wav",
+          "audioDuration": 20.608,
+          "frameCount": 623
+        },
+        {
+          "speaker": "maro",
+          "text": "80万円入れて20年後に213万円、それが全部非課税になるの？iDeCoと新NISAをうまく使えば老後資金の核にできるのだぞ、これは本当に大事な情報なのだ。",
+          "emotion": "happy",
+          "audioFile": "voices/0027_maro.wav",
+          "audioDuration": 15.179,
+          "frameCount": 460
+        },
+        {
+          "speaker": "ponchan",
+          "text": "ここで想定反論にも答えておくよ。「でも再生可能エネルギーが安くなったら電力テーマは終わるんじゃないの？」という意見があるんだけど、実はデータを見ると逆なんだよ。",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "上昇トリガーと撤退シナリオ",
+            "body": "「再エネが安くなれば天然ガスは不要」という通説は半分正しく半分間違い。再エネは間欠性があり、ベースロード電源としての天然ガスの役割は2030年代も続く見通し。",
+            "points": [
+              {
+                "text": "上昇トリガー①：テック大手のPPA契約発表",
+                "body": "MicrosoftやAmazonが電力会社と長期電力購入契約（PPA）を結ぶと発表された時が買い増しタイミング。GE Vernovaへの受注増に直結する。",
+                "source": "IEA World Energy Outlook 2024"
+              },
+              {
+                "text": "上昇トリガー②：米国電力規制緩和",
+                "body": "送電網の新設許可を迅速化する法案が通過するとデータセンター建設が加速。Kinder Morganのパイプライン稼働率が上がる。",
+                "source": "米エネルギー省 Grid Deployment Office 2025"
+              },
+              {
+                "text": "撤退シグナル：AI需要予測の大幅下方修正",
+                "body": "DatacenterHawk等の調査機関がDC建設計画の大量キャンセルを報告し始めたらAI投資バブル崩壊の先行指標。全電力株を見直す判断基準になる。",
+                "source": "DatacenterHawk Market Report 2025"
+              },
+              {
+                "text": "反論への回答：再エネが安くなっても天然ガスは不要にならない",
+                "body": "太陽光・風力は夜間・無風時に発電できないため24時間稼働のデータセンターには不向き。ベースロードとしての天然ガスの役割は2030年代も続く。IEAも2030年まで天然ガス需要増を予測。",
+                "source": "IEA Natural Gas Report 2024"
+              }
+            ]
+          },
+          "audioFile": "voices/0028_ponchan.wav",
+          "audioDuration": 11.925,
+          "frameCount": 362
+        },
+        {
+          "speaker": "maro",
+          "text": "PPA契約ってどこでニュースが流れるの？普通の人はどうやって確認すればいいのだぞ？見落としたらチャンスを逃しそうで怖いのだ。",
+          "emotion": "thinking",
+          "audioFile": "voices/0029_maro.wav",
+          "audioDuration": 10.677,
+          "frameCount": 325
+        },
+        {
+          "speaker": "ponchan",
+          "text": "証券会社の米国株アプリのニュースフィードか、Bloombergの無料版でGE Vernovaとkinder Morganをウォッチリストに入れると決算日や契約発表が通知されるよ。SBI証券や楽天証券の外国株ニュースでも日本語で流れるよ。",
+          "emotion": "happy",
+          "audioFile": "voices/0030_ponchan.wav",
+          "audioDuration": 16.544,
+          "frameCount": 501
+        }
+      ],
+      "topic": "電力株の投資戦略"
+    },
+    {
+      "type": "summary",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "今日のまとめです。AIのボトルネックはもう半導体ではなく電力へ移行済みで、Broadcomの好決算でも株価が急落したことがその証拠なんだよ。この認識一つで投資判断が根本から変わるよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "今日のまとめ：3つのアクション",
+            "body": "電力テーマは天然ガス・電力機器・原発再稼働の3軸。老後資金は守りながら攻める。焦らずエントリーゾーンを待つことが最重要。",
+            "points": [
+              {
+                "text": "アクション①：GE Vernovaをウォッチリスト登録",
+                "body": "$340〜$360に下がったタイミングを待つ。目標$450・撤退$300。新NISA成長投資枠で外国株として購入可能。"
+              },
+              {
+                "text": "アクション②：Kinder Morganで配当をもらいながら持つ",
+                "body": "$26〜$28がエントリーゾーン。目標$36・撤退$22。配当利回り5%超で新NISA成長投資枠に入れておくだけで毎年非課税収入が発生。"
+              },
+              {
+                "text": "アクション③：円建て安全策は関西電力",
+                "body": "2,800〜3,000円でエントリー、目標3,800円。為替リスクなし。国内株なのでiDeCoの運用先変更も検討価値あり。"
+              }
+            ]
+          },
+          "audioFile": "voices/0031_ponchan.wav",
+          "audioDuration": 14.069,
+          "frameCount": 427
+        },
+        {
+          "speaker": "maro",
+          "text": "3つ全部買わないといけないの？老後資金が少ない人はどれか1つを選ばないといけないと思うのだが、どれが一番おすすめなのだぞ？",
+          "emotion": "thinking",
+          "audioFile": "voices/0032_maro.wav",
+          "audioDuration": 10.453,
+          "frameCount": 318
+        },
+        {
+          "speaker": "ponchan",
+          "text": "1つだけ選ぶなら、まずはKinder Morganだよ。配当5%超で受け取りながら電力テーマを体験できて、撤退ラインも明確で心理的に持ちやすい。入門として最適で、慣れたらGE Vernovaを加えていくのが理想的な順番だよ。",
+          "emotion": "happy",
+          "audioFile": "voices/0033_ponchan.wav",
+          "audioDuration": 17.045,
+          "frameCount": 516
+        },
+        {
+          "speaker": "maro",
+          "text": "日本はもう電力不足で手遅れなのかって少し思ったけど、関西電力があるなら円建てで電力テーマに参加できるのだぞ。これは個人投資家にとって大きなチャンスなのだ。",
+          "emotion": "happy",
+          "audioFile": "voices/0034_maro.wav",
+          "audioDuration": 13.408,
+          "frameCount": 407
+        },
+        {
+          "speaker": "ponchan",
+          "text": "でも日本にはまだ原発再稼働という強力なカードが残っているんだよ。関西電力は国内で最も多くの原発を保有していて、AI電力需要と再稼働という二つの追い風を同時に受けられる、老後資金向きの攻守兼備の銘柄なんだよ。",
+          "emotion": "happy",
+          "audioFile": "voices/0035_ponchan.wav",
+          "audioDuration": 17.067,
+          "frameCount": 517
+        },
+        {
+          "speaker": "ponchan",
+          "text": "投資判断の基本をもう一度確認しておくよ。エントリー価格帯を必ず守る、撤退ラインをあらかじめ設定する、そして新NISAやiDeCoを使って利益を非課税にする。この3つが老後資金を守りながら電力テーマで増やす鉄則だよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0036_ponchan.wav",
+          "audioDuration": 17.195,
+          "frameCount": 520
+        }
+      ],
+      "topic": "電力株逆襲・アクションプラン"
+    },
+    {
+      "type": "cta",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "最後まで見ていただいて本当にありがとうございます。AIが電気を食い尽くす時代、電力株の逆襲はまだ始まったばかりで、多くの個人投資家が気づいていない大きなチャンスがそこにあると思っています。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "チャンネル登録とベルマークをぜひ！",
+            "body": "地政学×テクノロジー×具体的投資戦略を毎週お届けします。次回はSMR（小型モジュール炉）銘柄を深掘りします。",
+            "points": [
+              {
+                "text": "次回予告：SMR銘柄の正体",
+                "body": "2030年代の電力本命・小型モジュール炉。今から仕込む価値のある銘柄を徹底解説予定。"
+              }
+            ]
+          },
+          "audioFile": "voices/0037_ponchan.wav",
+          "audioDuration": 13.995,
+          "frameCount": 424
+        },
+        {
+          "speaker": "maro",
+          "text": "チャンネル登録とベルマークを押してくれると、次の動画で絶対に会えるのだぞ！SMRの話は本当に楽しみにしているのだ、今すぐ押しておくべきなのだぞ！",
+          "emotion": "happy",
+          "audioFile": "voices/0038_maro.wav",
+          "audioDuration": 12.907,
+          "frameCount": 392
+        },
+        {
+          "speaker": "ponchan",
+          "text": "次回も地政学×具体的な投資戦略を出していくから、チャンネル登録とベルマークを押しておいてね。それではまた次回、ぽんちゃんでした！",
+          "emotion": "happy",
+          "audioFile": "voices/0039_ponchan.wav",
+          "audioDuration": 9.557,
+          "frameCount": 291
+        }
+      ],
+      "topic": "チャンネル登録のお願い"
+    }
+  ],
+  "chartData": {
+    "slide_001_chart": {
+      "data": [
+        {
+          "label": "2020年",
+          "value": 200
+        },
+        {
+          "label": "2022年",
+          "value": 240
+        },
+        {
+          "label": "2024年",
+          "value": 350
+        },
+        {
+          "label": "2026年(予測)",
+          "value": 600
+        }
+      ],
+      "title": "世界データセンター消費電力の推移と予測（TWh）",
+      "chartType": "bar"
+    },
+    "slide_005_chart": {
+      "data": [
+        {
+          "label": "2025年(基準)",
+          "value": 1
+        },
+        {
+          "label": "2030年(予測)",
+          "value": 2
+        },
+        {
+          "label": "2034年(予測)",
+          "value": 13
+        }
+      ],
+      "title": "データセンター電力需要の拡大倍率（2025年基準）",
+      "chartType": "bar"
+    },
+    "slide_007_chart": {
+      "data": [
+        {
+          "label": "Bloom Energy",
+          "value": 1200
+        },
+        {
+          "label": "GE Vernova",
+          "value": 180
+        },
+        {
+          "label": "Kinder Morgan",
+          "value": 45
+        },
+        {
+          "label": "S&P500平均",
+          "value": 15
+        }
+      ],
+      "title": "電力関連銘柄の株価上昇率比較（過去1年・%）",
+      "chartType": "bar"
+    }
+  },
+  "bgmVolume": 0.12,
+  "bgmMap": {
+    "hook": "bgm/news.mp3",
+    "explanation": "bgm/main_lofi.mp3",
+    "analysis": "bgm/uplifting_piano.mp3",
+    "summary": "bgm/uplifting_piano.mp3",
+    "cta": "bgm/なんということはない日常.mp3"
+  },
+  "infographics": []
+}

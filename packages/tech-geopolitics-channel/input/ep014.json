@@ -1,0 +1,1543 @@
+{
+  "videoId": "ep014",
+  "seed": "ep014",
+  "title": "ホルムズ封鎖でINPEX・関西電力が動く理由",
+  "description": "2026年3月、ホルムズ海峡が事実上封鎖され原油は年初61ドルから117ドルへ急騰。日本の原油輸入の約88%が中東依存という構造的脆弱性が露わになった今、INPEXや関西電力など具体銘柄のエントリー価格・上昇トリガー・撤退ラインを徹底解説します。",
+  "tags": [
+    "ホルムズ海峡",
+    "原油価格",
+    "INPEX",
+    "関西電力",
+    "エネルギー投資",
+    "地政学リスク",
+    "日本株",
+    "原油高",
+    "中東情勢",
+    "エネルギー安全保障",
+    "スタグフレーション",
+    "商船三井",
+    "日本郵船",
+    "LNG",
+    "石油株",
+    "電力株",
+    "海運株",
+    "インフレ",
+    "資産防衛",
+    "個人投資家",
+    "銘柄分析",
+    "エントリー価格",
+    "撤退ライン",
+    "バリュエーション",
+    "テクノロジー投資",
+    "地政学",
+    "投資戦略",
+    "日本経済",
+    "エネルギー危機",
+    "原油先物"
+  ],
+  "chapters": [
+    {
+      "type": "hook",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "1バレル117ドル63セント——2026年4月、ホルムズ海峡封鎖で原油が年初から約90%急騰し、日本のエネルギーコストが根底から揺らいでいるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "stat",
+            "value": "117ドル",
+            "label": "WTI原油 2026年4月初旬の一時高値（年初比＋92%）"
+          },
+          "audioFile": "voices/0001_ponchan.wav",
+          "audioDuration": 13.205,
+          "frameCount": 401
+        },
+        {
+          "speaker": "maro",
+          "text": "え、年初は61ドルだったのに4月には117ドルって、たった3ヶ月で2倍近くになったってことなのだ？それって家計や株価にも直撃するんだぞ？",
+          "emotion": "surprised",
+          "visual": {
+            "type": "chart",
+            "key": "crude_oil_price"
+          },
+          "audioFile": "voices/0002_maro.wav",
+          "audioDuration": 13.269,
+          "frameCount": 403
+        },
+        {
+          "speaker": "ponchan",
+          "text": "今日は3つ話すよ。①なぜホルムズ封鎖で日本だけがこれほど追い詰められるのかという構造的な理由、②INPEX・関西電力・商船三井の具体的な買い場と価格帯、③万が一停戦が長引いた場合の撤退ラインだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "今日学べる3つのこと",
+            "number": 1,
+            "icon": "🎯",
+            "body": "ホルムズ封鎖は「遠い中東の話」じゃない。日本の光熱費・物価・株価に直結する話だよ。今日の3点を押さえれば明日の投資判断が変わるんだよ。",
+            "points": [
+              "①日本が88%中東依存という構造的脆弱性の正体",
+              "②INPEX・関西電力・商船三井の具体的エントリー価格帯",
+              "③停戦シナリオ別の上昇トリガーと撤退ライン"
+            ]
+          },
+          "audioFile": "voices/0003_ponchan.wav",
+          "audioDuration": 17.44,
+          "frameCount": 528
+        },
+        {
+          "speaker": "maro",
+          "text": "88%って…日本の原油のほぼ全部が中東から来てるってことなのだ。それが封鎖されたら本当にどうなるんだぞ、怖すぎるのだ。",
+          "emotion": "surprised",
+          "visual": {
+            "type": "image",
+            "src": "content/map_middleeast.png",
+            "caption": "ホルムズ海峡：幅約50km、世界の海上原油輸送の約20〜27%が通過",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0004_maro.wav",
+          "audioDuration": 11.456,
+          "frameCount": 348
+        },
+        {
+          "speaker": "ponchan",
+          "text": "2026年2月28日、米国とイスラエルがイランへの軍事攻撃を開始した。その数日後、イラン革命防衛隊が『海峡は閉鎖された』と宣言して、世界の原油市場は歴史的な大混乱に突入したんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "year": "2026年1月",
+                "label": "WTI原油 61ドル台で推移",
+                "highlight": false
+              },
+              {
+                "year": "2026年2月28日",
+                "label": "米・イスラエルがイランへ軍事攻撃開始",
+                "highlight": true
+              },
+              {
+                "year": "2026年3月2日",
+                "label": "IRGC「海峡閉鎖」宣言。大手海運4社が通過停止",
+                "highlight": true
+              },
+              {
+                "year": "2026年3月末",
+                "label": "WTI 117ドル超。IEAが「史上最大の供給障害」と表現",
+                "highlight": true
+              },
+              {
+                "year": "2026年4月8日",
+                "label": "米・イラン2週間停戦合意で株価急騰、日経平均2878円高",
+                "highlight": false
+              },
+              {
+                "year": "2026年4月23日",
+                "label": "原油80ドル台に下落も通航制約は継続",
+                "highlight": false
+              }
+            ],
+            "title": "ホルムズ封鎖クライシス 2026年"
+          },
+          "audioFile": "voices/0005_ponchan.wav",
+          "audioDuration": 16.672,
+          "frameCount": 505
+        },
+        {
+          "speaker": "maro",
+          "text": "2026年3月2日に海峡が閉鎖宣言されて、その日のうちに原油タンカーの通航がほぼゼロになったってこと？物流が一気に止まるなんて信じられないのだ。",
+          "emotion": "surprised",
+          "visual": {
+            "type": "chart",
+            "key": "hormuz_throughput"
+          },
+          "audioFile": "voices/0006_maro.wav",
+          "audioDuration": 13.259,
+          "frameCount": 402
+        },
+        {
+          "speaker": "ponchan",
+          "text": "封鎖前は1日平均24隻の原油タンカーが通過していたのに、3月1日には4隻まで落ち込んで、その後はほぼゼロが続いたんだよ。しかも大手海上保険会社が『戦争リスク保険』の引き受けを停止したから、保険なしでは船主が動けなくなったんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0007_ponchan.wav",
+          "audioDuration": 18.976,
+          "frameCount": 574,
+          "visual": {
+            "type": "comparison-table",
+            "title": "封鎖前後：ホルムズ海峡の状況",
+            "columns": [
+              {
+                "label": "封鎖前（2026年2月）",
+                "winner": false
+              },
+              {
+                "label": "封鎖後（2026年3月〜）",
+                "winner": false
+              }
+            ],
+            "rows": [
+              {
+                "label": "原油タンカー通過数/日",
+                "values": [
+                  "24隻",
+                  "ほぼ0隻"
+                ]
+              },
+              {
+                "label": "戦争リスク保険",
+                "values": [
+                  "通常引き受け",
+                  "引き受け停止"
+                ]
+              },
+              {
+                "label": "大手海運の対応",
+                "values": [
+                  "通常運航",
+                  "通過停止（4社）"
+                ]
+              },
+              {
+                "label": "原油価格(WTI)",
+                "values": [
+                  "61ドル台",
+                  "117ドル超"
+                ]
+              }
+            ],
+            "footer": "IEAは「世界の石油市場史上最大の供給障害」と表現"
+          }
+        },
+        {
+          "speaker": "maro",
+          "text": "日本郵船も商船三井も動けなかったということは、日本に向けての原油が完全に止まっていたってことなのだ？それで日本の電気代や物価がどうなったんだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "image",
+            "src": "content/img_oil.png",
+            "caption": "封鎖による供給喪失：日量1,300万バレル超（IEA試算）",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0008_maro.wav",
+          "audioDuration": 12.789,
+          "frameCount": 388
+        },
+        {
+          "speaker": "ponchan",
+          "text": "野村証券は2026年度のCPI上昇率の見通しを前年比プラス2.6%に引き上げたんだよ。さらに原油が120ドル高止まりしたらコアCPIがピーク時に前年同期比4%を超える可能性まで試算されているんだよ。これは家計に対する直撃だよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "image",
+            "src": "content/infographic_cpi_scenario.png",
+            "caption": "野村証券試算：原油120ドル高止まりでコアCPI4%超のリスク",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0009_ponchan.wav",
+          "audioDuration": 19.349,
+          "frameCount": 585
+        },
+        {
+          "speaker": "maro",
+          "text": "コアCPIが4%超えって、食料品や光熱費が全部上がるってことなのだ。これって日銀が追加利上げを急ぐことにもなりかねないんだぞ？株式市場にも影響しそうなのだ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "flow-chart",
+            "title": "原油高騰のインフレ連鎖",
+            "root": {
+              "label": "原油高騰",
+              "sublabel": "WTI 117ドル（年初比+92%）",
+              "icon": "🛢️",
+              "children": [
+                {
+                  "label": "電気・ガス代上昇",
+                  "sublabel": "家庭・企業の直接コスト増",
+                  "detail": {
+                    "title": "影響",
+                    "items": [
+                      "電気代+30〜40%",
+                      "ガス代+25〜35%"
+                    ],
+                    "color": "#cc4444"
+                  }
+                },
+                {
+                  "label": "輸送コスト上昇",
+                  "sublabel": "製造業・物流・小売を圧迫",
+                  "detail": {
+                    "items": [
+                      "トラック燃料費増",
+                      "製品価格に転嫁"
+                    ]
+                  }
+                },
+                {
+                  "label": "食料品・日用品値上がり",
+                  "sublabel": "実質賃金の目減り",
+                  "detail": {
+                    "items": [
+                      "食料品+8〜12%",
+                      "日用品+5〜10%"
+                    ]
+                  }
+                }
+              ]
+            },
+            "footer": "日銀の利上げ圧力も高まり、住宅ローン・設備投資コストも上昇"
+          },
+          "audioFile": "voices/0010_maro.wav",
+          "audioDuration": 14.731,
+          "frameCount": 446
+        },
+        {
+          "speaker": "ponchan",
+          "text": "だから今回の危機を『原油相場の乱高下』という相場の話で終わらせてはいけないんだよ。これは日本経済の構造的な脆弱性が一気に表面化した歴史的な分水嶺で、投資家として正しいポジションを取る絶好のタイミングでもあるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "comparison-table",
+            "title": "原油高で分かれる「恩恵」vs「ダメージ」",
+            "columns": [
+              {
+                "label": "恩恵を受ける側",
+                "winner": true
+              },
+              {
+                "label": "ダメージを受ける側",
+                "winner": false
+              }
+            ],
+            "rows": [
+              {
+                "label": "業種",
+                "values": [
+                  "資源・エネルギー・海運",
+                  "化学・航空・食品・運輸"
+                ]
+              },
+              {
+                "label": "代表銘柄",
+                "values": [
+                  "INPEX・関西電力・商船三井",
+                  "ANA・東レ・日清食品"
+                ]
+              },
+              {
+                "label": "コスト構造",
+                "values": [
+                  "原油＝収入源・競争優位",
+                  "原油＝コスト増要因"
+                ]
+              }
+            ],
+            "footer": "今日は恩恵を受ける側の具体的エントリー価格を徹底解説するよ"
+          },
+          "audioFile": "voices/0011_ponchan.wav",
+          "audioDuration": 16.917,
+          "frameCount": 512
+        }
+      ],
+      "topic": "原油117ドルの衝撃"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "まずホルムズ封鎖がなぜ日本にとってこれほど致命的なのかを理解するために、2026年に起きていることを時系列で整理してみようね。",
+          "emotion": "normal",
+          "visual": {
+            "type": "image",
+            "src": "content/infographic_japan_oil_import.png",
+            "caption": "日本の原油輸入：88%が中東依存（2025年実績）",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0012_ponchan.wav",
+          "audioDuration": 9.333,
+          "frameCount": 285
+        },
+        {
+          "speaker": "maro",
+          "text": "88%中東依存って改めて数字で見るとすごい数字なのだ。アメリカは自国でシェールオイルを採掘しているから自給できるのに、日本はなぜこんなに依存しているんだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "chart",
+            "key": "japan_energy_dependency"
+          },
+          "audioFile": "voices/0013_maro.wav",
+          "audioDuration": 14.197,
+          "frameCount": 430
+        },
+        {
+          "speaker": "ponchan",
+          "text": "日本は国内にほとんど油田を持っていないんだよ。アメリカのシェール革命以降、米国は世界最大の産油国になったけど、日本はそういった地下資源に恵まれていないから構造的に輸入に頼らざるを得ないんだよ。だからこそホルムズが閉まると直撃を受けるんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0014_ponchan.wav",
+          "audioDuration": 18.24,
+          "frameCount": 552,
+          "visual": {
+            "type": "flow-chart",
+            "title": "日本のエネルギー依存構造",
+            "root": {
+              "label": "日本の原油輸入",
+              "sublabel": "年間約150万バレル/日",
+              "icon": "🛢️",
+              "children": [
+                {
+                  "label": "中東ルート（88%）",
+                  "sublabel": "ホルムズ海峡経由",
+                  "highlight": true,
+                  "detail": {
+                    "title": "主要輸入先",
+                    "items": [
+                      "サウジアラビア 38%",
+                      "UAE 27%",
+                      "クウェート 10%"
+                    ],
+                    "color": "#cc4444"
+                  }
+                },
+                {
+                  "label": "非中東ルート（12%）",
+                  "sublabel": "ロシア・東南アジア等",
+                  "detail": {
+                    "items": [
+                      "ロシア制裁後は更に縮小",
+                      "代替調達コストが高い"
+                    ]
+                  }
+                }
+              ]
+            },
+            "footer": "サウジ・UAEの代替パイプラインでも海峡通過量の一部しか補えない"
+          }
+        },
+        {
+          "speaker": "maro",
+          "text": "サウジアラビアやUAEには一応パイプラインがあるって聞いたことがあるのだ。それでは補えないんだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "chart",
+            "key": "pipeline_vs_demand"
+          },
+          "audioFile": "voices/0015_maro.wav",
+          "audioDuration": 7.925,
+          "frameCount": 242
+        },
+        {
+          "speaker": "ponchan",
+          "text": "EIAの分析によれば、サウジとUAEの代替パイプライン能力を合わせても、ホルムズを通る量の一部しか代替できないんだよ。IEAの4月報告では、危機前に日量2,000万バレル超あったホルムズ経由の出荷が4月初めには日量約380万バレルに落ち込んだと発表しているんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "image",
+            "src": "content/infographic_hormuz_supply_drop.png",
+            "caption": "IEA：封鎖後の通過量は封鎖前比81%減",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0016_ponchan.wav",
+          "audioDuration": 21.131,
+          "frameCount": 638
+        },
+        {
+          "speaker": "maro",
+          "text": "2,000万バレルが380万バレルに…これって81%減ってことなのだ！そんなに急激に落ちたら世界の在庫なんてすぐに底をつくんじゃないのだぞ？",
+          "emotion": "surprised",
+          "visual": {
+            "type": "stat",
+            "value": "8,500万バレル",
+            "label": "3月の世界観測在庫の月間減少量（IEA）— 中東湾外では2億500万バレル減"
+          },
+          "audioFile": "voices/0017_maro.wav",
+          "audioDuration": 12.565,
+          "frameCount": 381
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そうなんだよ。在庫が減り続けると価格の下限が切り上がっていくんだよ。EIAの4月の短期エネルギー見通しではブレント価格が2026年の4〜6月期に115ドルでピークを付けると予測しているんだよ。2026年平均でも96ドルという見方なんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "supply_loss"
+          },
+          "audioFile": "voices/0018_ponchan.wav",
+          "audioDuration": 19.2,
+          "frameCount": 581
+        },
+        {
+          "speaker": "maro",
+          "text": "停戦になっても原油が下がりにくいのは在庫の問題があるからなのだ。じゃあ、停戦合意が出た4月8日の株価急騰のあとでも原油が高止まりしているのはそのせいなんだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "flow-chart",
+            "title": "停戦後も海峡再開に必要なステップ",
+            "root": {
+              "label": "停戦合意",
+              "sublabel": "4月8日 米・イラン停戦合意",
+              "icon": "🕊️",
+              "children": [
+                {
+                  "label": "海峡安全確認",
+                  "sublabel": "機雷除去・艦艇撤収",
+                  "detail": {
+                    "title": "所要期間",
+                    "items": [
+                      "数週間〜数ヶ月"
+                    ],
+                    "color": "#f5a623"
+                  }
+                },
+                {
+                  "label": "戦争リスク保険",
+                  "sublabel": "海上保険の再引き受け",
+                  "detail": {
+                    "items": [
+                      "保険会社の独自判断が必要"
+                    ]
+                  }
+                },
+                {
+                  "label": "制裁・港湾手続き",
+                  "sublabel": "イラン制裁の扱い整理",
+                  "detail": {
+                    "items": [
+                      "米国の制裁解除が前提"
+                    ]
+                  }
+                }
+              ]
+            },
+            "footer": "ADNOCのCEO：「アクセスは制限・条件付き・管理下」と明言"
+          },
+          "audioFile": "voices/0019_maro.wav",
+          "audioDuration": 14.027,
+          "frameCount": 425
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まさにそのとおりだよ。実際にKplerのレポートによれば、6週間の封鎖で中東からの原油輸出量は日量1,500万バレルから700万バレルへと半減したんだよ。この『需給ギャップ』は市場が日量約600万バレルの不足を抱えている状態で、停戦だけでは即座に埋まらないんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0020_ponchan.wav",
+          "audioDuration": 20.949,
+          "frameCount": 633,
+          "visual": {
+            "type": "comparison-table",
+            "title": "Kpler試算：封鎖6週間の損失",
+            "columns": [
+              {
+                "label": "封鎖前",
+                "winner": false
+              },
+              {
+                "label": "封鎖後",
+                "winner": false
+              }
+            ],
+            "rows": [
+              {
+                "label": "中東からの原油輸出量（百万バレル/日）",
+                "values": [
+                  "15.0",
+                  "7.0"
+                ]
+              },
+              {
+                "label": "精製所稼働削減",
+                "values": [
+                  "通常水準",
+                  "広域で稼働削減"
+                ]
+              },
+              {
+                "label": "市場の需給ギャップ",
+                "values": [
+                  "均衡",
+                  "600万バレル/日不足"
+                ]
+              }
+            ],
+            "footer": "Kpler レポート（2026年4月7日）"
+          }
+        },
+        {
+          "speaker": "maro",
+          "text": "じゃあ日本はもう完全にお手上げなのだ？中東頼みの構造が変わらない限り、何度でも同じことが起きるんだぞ…。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "日本の構造的ジレンマ",
+            "icon": "🇯🇵",
+            "body": "日本は石油備蓄（国家備蓄＋民間合計で約230日分）を持っているが、これは応急措置に過ぎない。IEAの最低基準（90日分）は十分に満たしているが、長期化する封鎖や繰り返す地政学リスクには根本的な解決策が必要なんだよ。",
+            "points": [
+              "石油備蓄は約230日分（国家＋民間）→応急措置にはなる",
+              "LNG備蓄は数週間〜1ヶ月程度と短い",
+              "再生可能エネルギーの比率：現状20%台で依然化石燃料依存",
+              "脱炭素と安全保障の両立が中長期の課題"
+            ]
+          },
+          "audioFile": "voices/0021_maro.wav",
+          "audioDuration": 9.333,
+          "frameCount": 285
+        },
+        {
+          "speaker": "ponchan",
+          "text": "でも、ここで視点を変えてみると日本に残されたカードが見えてくるんだよ。危機が長引くと原油を国内で持っている企業、つまりINPEXのような資源開発会社は利益が大幅に伸びる。そして電力会社も燃料費調整制度を通じてコスト転嫁できる仕組みがある。悲観だけで終わらせるのが最ももったいない話なんだよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "comparison-table",
+            "title": "エネルギー危機の「勝ち組」vs「負け組」",
+            "columns": [
+              {
+                "label": "恩恵（買いシナリオ）",
+                "winner": true
+              },
+              {
+                "label": "ダメージ（回避シナリオ）",
+                "winner": false
+              }
+            ],
+            "rows": [
+              {
+                "label": "資源・探鉱",
+                "values": [
+                  "INPEX（原油価格連動益）",
+                  "─"
+                ]
+              },
+              {
+                "label": "電力",
+                "values": [
+                  "関西電力（原子力比率高）",
+                  "火力依存の電力会社"
+                ]
+              },
+              {
+                "label": "海運",
+                "values": [
+                  "商船三井（タンカー運賃急騰）",
+                  "─"
+                ]
+              },
+              {
+                "label": "製造・航空",
+                "values": [
+                  "─",
+                  "ANA・JAL・化学メーカー"
+                ]
+              }
+            ],
+            "footer": "次のセクションでINPEX・関西電力・商船三井の具体的エントリー価格を解説するよ"
+          },
+          "audioFile": "voices/0022_ponchan.wav",
+          "audioDuration": 22.475,
+          "frameCount": 679
+        }
+      ],
+      "topic": "日本脆弱性の構造"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここから具体的な銘柄の買い場と撤退ラインを話すよ。こういう情報は次も見逃さないよう、今のうちにチャンネル登録しておいてね。それじゃあマクロ環境から整理するよ。",
+          "emotion": "normal",
+          "visual": {
+            "type": "chart",
+            "key": "eia_price_outlook"
+          },
+          "audioFile": "voices/0023_ponchan.wav",
+          "audioDuration": 11.968,
+          "frameCount": 364
+        },
+        {
+          "speaker": "maro",
+          "text": "EIAが2026年平均で96ドルって予測しているなら、まだまだ原油は高い水準が続くってことなのだ。じゃあ具体的にどの銘柄を、いくらで買えばいいんだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "今回分析する3銘柄",
+            "icon": "🎯",
+            "body": "原油高の直接的な恩恵を受ける3カテゴリから代表銘柄を選んで、エントリー価格・上昇トリガー・撤退ラインの3要素を分析するよ。",
+            "points": [
+              "①INPEX（1605）：国内最大の資源開発会社",
+              "②関西電力（9503）：原子力比率が高い電力会社",
+              "③商船三井（9104）：タンカー・LNG船を多数保有"
+            ]
+          },
+          "audioFile": "voices/0024_maro.wav",
+          "audioDuration": 14.101,
+          "frameCount": 428
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まず第1銘柄のINPEXだよ。INPEXは国内最大の石油・天然ガス開発会社で、原油価格の上昇が営業利益に直結するんだよ。2026年5月時点の株価は約2,600円前後、PERは約8.2倍で過去10年平均の11.5倍を大きく下回っているんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "inpex_valuation"
+          },
+          "audioFile": "voices/0025_ponchan.wav",
+          "audioDuration": 23.413,
+          "frameCount": 707
+        },
+        {
+          "speaker": "maro",
+          "text": "PER8.2倍って過去10年平均より3割以上割安ってことなのだ？地政学リスクのせいで売られすぎているってことなんだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "INPEX：エントリー分析",
+            "number": 1,
+            "icon": "📈",
+            "body": "原油90ドル台が継続する前提では、INPEXの2026年度EPS（1株当たり利益）は350〜380円程度が見込まれる。PER7〜8倍が成立する株価2,450〜3,040円が割安圏と判断できるんだよ。",
+            "points": [
+              "現在株価：約2,600円（2026年5月時点）",
+              "エントリーゾーン：2,300〜2,500円の押し目",
+              "上昇トリガー：原油100ドル突破・EPS上振れ確認",
+              "撤退ライン：原油70ドル割れ＋株価2,100円割れ"
+            ]
+          },
+          "audioFile": "voices/0026_maro.wav",
+          "audioDuration": 10.795,
+          "frameCount": 328
+        },
+        {
+          "speaker": "ponchan",
+          "text": "INPEXの上昇トリガーは大きく2つあるんだよ。1つ目は原油価格が100ドルを再度突破して高止まりが明確になること、2つ目は2026年8月の決算発表で通期EPS予想が上方修正されることだよ。現在の割安水準でエントリーしてEPS上振れを待つのが王道のシナリオだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0027_ponchan.wav",
+          "audioDuration": 22.304,
+          "frameCount": 674,
+          "visual": {
+            "type": "traffic-light",
+            "title": "INPEX 投資シナリオ判定",
+            "items": [
+              {
+                "signal": "go",
+                "label": "原油80〜100ドル水準継続",
+                "sublabel": "エントリー適正ゾーン",
+                "items": [
+                  "EPS350円以上→PER7〜8倍で割安",
+                  "押し目2,300〜2,500円が仕込み場"
+                ]
+              },
+              {
+                "signal": "go",
+                "label": "原油100ドル突破・高止まり",
+                "sublabel": "上値追いシナリオ",
+                "items": [
+                  "EPS400円超→PER10倍で4,000円視野",
+                  "決算EPS上方修正が確認トリガー"
+                ]
+              },
+              {
+                "signal": "stop",
+                "label": "原油70ドル割れ（停戦完全解決）",
+                "sublabel": "撤退シナリオ",
+                "items": [
+                  "EPS大幅下落でPER割安感消失",
+                  "2,100円割れで損切りが合理的"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "speaker": "maro",
+          "text": "PER7〜8倍という水準がどれだけ割安かがよくわかったのだ。次は関西電力を教えてくれないのだ？電力会社って原油が高くなると大変になるイメージがあるんだぞ。",
+          "emotion": "thinking",
+          "visual": {
+            "type": "image",
+            "src": "content/img_factory.png",
+            "caption": "関西電力：原子力発電比率の高さが「原油高防衛壁」になる",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0028_maro.wav",
+          "audioDuration": 14.624,
+          "frameCount": 443
+        },
+        {
+          "speaker": "ponchan",
+          "text": "普通の電力会社はそうなんだよ。でも関西電力は原子力発電の比率が国内トップクラスで、2025年度の発電構成では原子力が約30〜35%を占めているんだよ。原子力は燃料費が安定しているから、LNG価格が高騰しても相対的にコスト優位が際立つ逆説的な恩恵銘柄なんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0029_ponchan.wav",
+          "audioDuration": 23.68,
+          "frameCount": 715,
+          "visual": {
+            "type": "comparison-table",
+            "title": "電力会社：原油高の影響比較",
+            "columns": [
+              {
+                "label": "関西電力（9503）",
+                "winner": true
+              },
+              {
+                "label": "火力中心の電力会社",
+                "winner": false
+              }
+            ],
+            "rows": [
+              {
+                "label": "原子力比率",
+                "values": [
+                  "30〜35%",
+                  "0〜10%"
+                ]
+              },
+              {
+                "label": "LNG価格高騰の影響",
+                "values": [
+                  "限定的",
+                  "直撃・コスト増大"
+                ]
+              },
+              {
+                "label": "燃料費調整制度",
+                "values": [
+                  "一定転嫁可能",
+                  "転嫁に時間差"
+                ]
+              },
+              {
+                "label": "原油高時の競争優位",
+                "values": [
+                  "相対的にコスト安",
+                  "競争劣位"
+                ]
+              }
+            ],
+            "footer": "原子力比率の高さが原油高局面での「防衛壁」になる"
+          }
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、関西電力は原油が高くなると逆に競争力が上がるってことなのだ！これが「逆張り銘柄」ってやつなんだぞ。具体的な買い場はどのくらいなんだぞ？",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "関西電力：エントリー分析",
+            "number": 2,
+            "icon": "⚡",
+            "body": "2026年5月時点の関西電力の株価は2,400〜2,600円台で推移しており、PERは約12〜13倍程度。原子力の再稼働スケジュールと電気料金引き上げが利益押し上げの2大トリガーとなっているんだよ。",
+            "points": [
+              "現在株価：2,400〜2,600円台（2026年5月時点）",
+              "エントリーゾーン：2,200〜2,400円の押し目",
+              "上昇トリガー：追加原発再稼働承認＋電力需要増",
+              "撤退ライン：原油急落で他社コスト優位が消える局面（株価2,000円割れ）"
+            ]
+          },
+          "audioFile": "voices/0030_maro.wav",
+          "audioDuration": 13.685,
+          "frameCount": 415
+        },
+        {
+          "speaker": "ponchan",
+          "text": "関西電力の上昇トリガーは原子力の追加再稼働だよ。現在稼働中の原子炉に加えて、追加再稼働の認可が下りれば低コスト電力の供給量が増えて利益率が改善するんだよ。原油高と再生可能エネルギーの不安定性が続く局面では、安定した原子力発電の価値が再評価されるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "関西電力の2大上昇トリガー",
+            "icon": "🔋",
+            "body": "原油高局面では相対的な競争優位が際立つが、さらに2つのトリガーが加わると利益成長の加速が見込めるんだよ。",
+            "points": [
+              "①追加原発再稼働認可：低コスト電力の供給量増大",
+              "②電力需要の増加：AI・データセンター・EV充電インフラ",
+              "リスク：原発事故・規制強化で再稼働停止",
+              "撤退基準：原油60ドル割れ＋再稼働停止が同時に発生"
+            ]
+          },
+          "audioFile": "voices/0031_ponchan.wav",
+          "audioDuration": 21.984,
+          "frameCount": 664
+        },
+        {
+          "speaker": "maro",
+          "text": "INPEX と関西電力の2つがわかったのだ。あとは商船三井だけど、停戦になったら運賃が下がって株価が落ちるイメージがあるんだぞ。本当に買っていいのかな、なのだ。",
+          "emotion": "thinking",
+          "visual": {
+            "type": "image",
+            "src": "content/img_supply_chain.png",
+            "caption": "商船三井：タンカー事業とLNG船事業が2本柱",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0032_maro.wav",
+          "audioDuration": 15.061,
+          "frameCount": 456
+        },
+        {
+          "speaker": "ponchan",
+          "text": "商船三井は注意が必要な銘柄だよ。実際に4月8日の停戦合意報道で株価が反落しているんだよ。ただし長期視点で見ると、LNG船の需要は今後10年で大幅に増加するという構造的な追い風がある。短期トレードと長期保有では戦略を明確に分けて考える必要があるんだよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0033_ponchan.wav",
+          "audioDuration": 21.419,
+          "frameCount": 647,
+          "visual": {
+            "type": "scale-balance",
+            "title": "商船三井：短期 vs 長期の損益分岐",
+            "left": {
+              "label": "短期リスク",
+              "sublabel": "停戦→運賃急落",
+              "direction": "down",
+              "box": {
+                "title": "短期の懸念",
+                "items": [
+                  "停戦→ホルムズ再開で運賃下落",
+                  "株価は停戦報道で即反落（実績あり）",
+                  "スポット運賃の乱高下リスク"
+                ]
+              }
+            },
+            "right": {
+              "label": "長期の強み",
+              "sublabel": "LNG船長期契約",
+              "direction": "up",
+              "box": {
+                "title": "長期の優位性",
+                "items": [
+                  "LNG船は10〜20年の長期契約が主体",
+                  "地政学リスクの高まりで新造需要増",
+                  "エネルギー安全保障でLNG需要増は長期トレンド"
+                ]
+              }
+            },
+            "footer": "短期：封鎖継続なら保有継続。停戦確定なら一旦利確が合理的"
+          }
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、商船三井は短期と長期で全然違う見方をするべきなのだ。じゃあポートフォリオ全体でどう組み合わせたらいいのか教えてほしいのだ。比率とかタイムラインも気になるんだぞ。",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "商船三井：エントリー分析",
+            "number": 3,
+            "icon": "🚢",
+            "body": "2026年5月時点の商船三井の株価は6,400〜6,600円台で推移しており、PERは約9〜10倍。封鎖継続局面では恩恵を受けるが、停戦確定後は短期的な株価下落リスクがあるため、保有割合は他2銘柄より小さく設定することを推奨するよ。",
+            "points": [
+              "現在株価：6,400〜6,600円台（2026年5月時点）",
+              "短期エントリー：6,200円以下の押し目（封鎖継続前提）",
+              "長期エントリー：停戦後5,500〜5,800円まで下落した局面",
+              "撤退ライン：ホルムズ完全再開が確認されたら短期分を利確"
+            ]
+          },
+          "audioFile": "voices/0034_maro.wav",
+          "audioDuration": 14.016,
+          "frameCount": 425
+        },
+        {
+          "speaker": "ponchan",
+          "text": "ポートフォリオ全体の組み方は、原油高恩恵株をコアに据えながらリスクを分散させることが大切だよ。具体的には、エネルギー危機ヘッジとしてINPEX30%・関西電力25%・商船三井15%を基本配分にして、残り30%は既存のインデックス投資を維持するのが合理的な戦略だよ。",
+          "emotion": "serious",
+          "audioFile": "voices/0035_ponchan.wav",
+          "audioDuration": 24.128,
+          "frameCount": 728,
+          "visual": {
+            "type": "isometric-stack",
+            "title": "エネルギー危機ヘッジ・ポートフォリオ設計",
+            "layers": [
+              {
+                "label": "INPEX（30%）",
+                "sublabel": "コア：原油価格連動・割安PER8倍台",
+                "color": "#c04040",
+                "icon": "🛢️"
+              },
+              {
+                "label": "関西電力（25%）",
+                "sublabel": "逆張り：原子力比率高・原油高に強い",
+                "color": "#e06020",
+                "icon": "⚡"
+              },
+              {
+                "label": "商船三井（15%）",
+                "sublabel": "短期：封鎖継続局面のみ保有",
+                "color": "#a0a0b0",
+                "icon": "🚢"
+              }
+            ],
+            "corners": [
+              {
+                "position": "tl",
+                "label": "インデックス維持（30%）",
+                "sublabel": "既存NISAポジション等は変更しない",
+                "color": "#4a9eff"
+              },
+              {
+                "position": "tr",
+                "label": "ヘッジ比率調整",
+                "sublabel": "停戦確定後は商船三井を利確し他2銘柄へ移行",
+                "color": "#44aa66"
+              }
+            ],
+            "topLabel": "エネルギー危機ヘッジ設計"
+          }
+        }
+      ],
+      "topic": "銘柄・バリュエーション分析"
+    },
+    {
+      "type": "summary",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "今日のポイントをまとめるよ。2026年3月に現実となったホルムズ海峡封鎖は、日本の88%中東原油依存という構造的脆弱性を一気に露わにした歴史的な出来事だよ。これは相場の乱高下じゃなく、日本のエネルギー安全保障の問題なんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "今日のまとめ①：危機の構造",
+            "icon": "📋",
+            "body": "ホルムズ海峡封鎖は単なる原油価格の急騰ではなく、日本の産業・家計・金融政策に連鎖的な影響を与える構造的な危機だ。停戦後も海峡の完全正常化には時間がかかり、高原油価格は当面継続する。",
+            "points": [
+              "封鎖で世界供給が日量1,300万バレル超消失（IEA）",
+              "日本のCPI：野村証券試算で2026年度＋2.6%、最悪で4%超",
+              "停戦≠海峡再開：保険・安全確認・生産再稼働に時間"
+            ]
+          },
+          "audioFile": "voices/0036_ponchan.wav",
+          "audioDuration": 19.648,
+          "frameCount": 594
+        },
+        {
+          "speaker": "maro",
+          "text": "じゃあ今すぐできる投資アクションをまとめてほしいのだ。どの銘柄を、いくらで、どんな条件になったら売ればいいのかを整理してほしいんだぞ。",
+          "emotion": "normal",
+          "audioFile": "voices/0037_maro.wav",
+          "audioDuration": 10.603,
+          "frameCount": 323,
+          "visual": {
+            "type": "comparison-table",
+            "title": "3銘柄：エントリー・トリガー・撤退ライン一覧",
+            "columns": [
+              {
+                "label": "銘柄",
+                "winner": false
+              },
+              {
+                "label": "エントリーゾーン",
+                "winner": false
+              },
+              {
+                "label": "上昇トリガー",
+                "winner": false
+              },
+              {
+                "label": "撤退ライン",
+                "winner": false
+              }
+            ],
+            "rows": [
+              {
+                "label": "INPEX（1605）",
+                "values": [
+                  "INPEX",
+                  "2,300〜2,500円",
+                  "原油100ドル突破・EPS上方修正",
+                  "原油70ドル割れ＋株価2,100円割れ"
+                ]
+              },
+              {
+                "label": "関西電力（9503）",
+                "values": [
+                  "関西電力",
+                  "2,200〜2,400円",
+                  "追加原発再稼働認可",
+                  "原油60ドル割れ＋再稼働停止"
+                ]
+              },
+              {
+                "label": "商船三井（9104）",
+                "values": [
+                  "商船三井",
+                  "短期6,200円以下 / 長期5,500〜5,800円",
+                  "封鎖継続・LNG新契約",
+                  "ホルムズ完全再開確認で短期分利確"
+                ]
+              }
+            ],
+            "footer": "投資判断は最新情報と自身のリスク許容度を必ず確認すること"
+          }
+        },
+        {
+          "speaker": "ponchan",
+          "text": "重要なのは、この危機が歴史的に見ても繰り返されてきたパターンだということだよ。1973年のオイルショック、1990年の湾岸戦争、2022年のロシア・ウクライナ、そして2026年のホルムズ封鎖。日本はエネルギー依存構造を変えないまま、同じダメージを受け続けているんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "year": "1973年",
+                "label": "第1次オイルショック：原油4倍高・トイレットペーパー消失",
+                "highlight": false
+              },
+              {
+                "year": "1979年",
+                "label": "第2次オイルショック：イラン革命で原油高騰",
+                "highlight": false
+              },
+              {
+                "year": "1990年",
+                "label": "湾岸戦争：原油40ドル突破・日本経済に打撃",
+                "highlight": false
+              },
+              {
+                "year": "2022年",
+                "label": "ロシア・ウクライナ：LNG価格急騰・電力危機",
+                "highlight": false
+              },
+              {
+                "year": "2026年",
+                "label": "ホルムズ封鎖：WTI 117ドル・日本の88%依存が直撃",
+                "highlight": true
+              }
+            ],
+            "title": "日本を直撃した資源危機の歴史"
+          },
+          "audioFile": "voices/0038_ponchan.wav",
+          "audioDuration": 22.891,
+          "frameCount": 691
+        },
+        {
+          "speaker": "maro",
+          "text": "歴史は繰り返すのだ…でも今回と1973年のオイルショックで違うことって何かあるんだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "comparison-table",
+            "title": "1973年オイルショック vs 2026年ホルムズ封鎖",
+            "columns": [
+              {
+                "label": "1973年オイルショック",
+                "winner": false
+              },
+              {
+                "label": "2026年ホルムズ封鎖",
+                "winner": false
+              }
+            ],
+            "rows": [
+              {
+                "label": "原因",
+                "values": [
+                  "政治的禁輸（OPEC）",
+                  "軍事的物理封鎖（IRGC）"
+                ]
+              },
+              {
+                "label": "解除の速さ",
+                "values": [
+                  "数ヶ月で段階的解除",
+                  "停戦後も完全再開に時間"
+                ]
+              },
+              {
+                "label": "影響範囲",
+                "values": [
+                  "原油のみ",
+                  "原油＋LNG＋保険・海運停止"
+                ]
+              },
+              {
+                "label": "日本の再エネ比率",
+                "values": [
+                  "約2%",
+                  "約20%台（依然低い）"
+                ]
+              }
+            ],
+            "footer": "今回は多層構造の複合危機で1973年より解決が複雑"
+          },
+          "audioFile": "voices/0039_maro.wav",
+          "audioDuration": 8.299,
+          "frameCount": 253
+        },
+        {
+          "speaker": "ponchan",
+          "text": "だからこそ、個人投資家として今すべき行動は3つだよ。まず、原油高恩恵株（INPEX・関西電力）を割安水準で仕込むこと。次に、商船三井は封鎖継続局面のみの短期戦略で臨むこと。そして、既存のインデックス投資（NISA等）は慌てて売らないことだよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "traffic-light",
+            "title": "今すぐ取れる3つの投資アクション",
+            "items": [
+              {
+                "signal": "go",
+                "label": "INPEX（1605）を仕込む",
+                "sublabel": "エントリーゾーン：2,300〜2,500円",
+                "items": [
+                  "PER7〜8倍の割安水準",
+                  "原油80ドル以上継続が前提"
+                ]
+              },
+              {
+                "signal": "go",
+                "label": "関西電力（9503）を仕込む",
+                "sublabel": "エントリーゾーン：2,200〜2,400円",
+                "items": [
+                  "原子力比率の高さが防衛壁",
+                  "追加再稼働認可で上値"
+                ]
+              },
+              {
+                "signal": "caution",
+                "label": "商船三井（9104）は短期判断",
+                "sublabel": "封鎖継続中のみ保有",
+                "items": [
+                  "6,200円以下がエントリー",
+                  "停戦確定で短期分を利確"
+                ]
+              }
+            ]
+          },
+          "audioFile": "voices/0040_ponchan.wav",
+          "audioDuration": 23.339,
+          "frameCount": 705
+        },
+        {
+          "speaker": "maro",
+          "text": "今日の話を聞いて、ホルムズ封鎖が遠い話じゃなくて自分の財布と株に直結している問題だとよくわかったのだ。歴史を知れば同じ危機で慌てずに動けるんだぞ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "まとめ：危機を乗り越えるための視点",
+            "icon": "💪",
+            "body": "エネルギー危機は必ず終わりが来る。しかし日本の構造的脆弱性は短期では変わらない。その事実を受け入れた上で、適切な銘柄に割安で投資することが長期的な資産形成の鍵だよ。",
+            "points": [
+              "危機の構造を理解する→感情的な売買を防ぐ",
+              "割安な恩恵株を仕込む→インフレヘッジになる",
+              "撤退ラインを事前に決める→損失を限定できる"
+            ]
+          },
+          "audioFile": "voices/0041_maro.wav",
+          "audioDuration": 12.608,
+          "frameCount": 383
+        }
+      ],
+      "topic": "まとめと投資アクションプラン"
+    },
+    {
+      "type": "cta",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "今日は原油117ドルというホルムズ封鎖の衝撃と、INPEX・関西電力・商船三井の具体的なエントリー価格・撤退ラインまで掘り下げたよ。次回は『円安160円突破後の日本の次の一手』を深掘りするよ。エネルギー危機と円安が絡み合う局面での投資戦略を具体的に解説するから楽しみにしてね。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "次回予告",
+            "icon": "🔔",
+            "body": "ホルムズ危機×円安160円という二重の逆風が続く2026年、日本の個人投資家はどう動くべきか。次回も地政学×具体的な投資戦略を出していくよ。",
+            "points": [
+              "次回テーマ：円安160円突破後の資産防衛最終戦略",
+              "取り上げ銘柄：輸出株・外貨資産・金（ゴールド）"
+            ]
+          },
+          "audioFile": "voices/0042_ponchan.wav",
+          "audioDuration": 24.544,
+          "frameCount": 741
+        },
+        {
+          "speaker": "maro",
+          "text": "地政学と投資の話がこんなに具体的でわかりやすいチャンネルは他にないのだ！今のうちにチャンネル登録とベルマークを押しておくのだぞ！",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "チャンネル登録のお願い",
+            "icon": "👍",
+            "body": "次回も地政学×具体的な投資戦略を出していくから、チャンネル登録とベルマークを押しておいてね。見逃すと損する情報を毎回出しているよ。",
+            "points": [
+              "チャンネル登録でいち早く動画を受け取れる",
+              "ベルマーク（通知オン）で新着を見逃さない"
+            ]
+          },
+          "audioFile": "voices/0043_maro.wav",
+          "audioDuration": 10.261,
+          "frameCount": 312
+        },
+        {
+          "speaker": "ponchan",
+          "text": "最後まで見てくれてありがとう。今日学んだことを明日の投資判断に活かしてね。危機は怖いけど、正しい知識があれば必ず乗り越えられるんだよ。それじゃあまた次回ね！",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ご視聴ありがとうございました",
+            "icon": "🙌",
+            "body": "今日も最後まで見てくれてありがとう。危機を正しく理解して、冷静に投資判断をすることが30代投資家の最大の武器だよ。次回もお楽しみに！",
+            "points": [
+              "今日のポイントをメモして明日の投資判断に活用しよう",
+              "疑問があればコメント欄で質問してね"
+            ]
+          },
+          "audioFile": "voices/0044_ponchan.wav",
+          "audioDuration": 11.765,
+          "frameCount": 357
+        }
+      ],
+      "topic": "次回予告と登録促進"
+    }
+  ],
+  "chartData": {
+    "crude_oil_price": {
+      "data": [
+        {
+          "label": "1月初",
+          "value": 61
+        },
+        {
+          "label": "2月末",
+          "value": 72
+        },
+        {
+          "label": "3月初封鎖",
+          "value": 85
+        },
+        {
+          "label": "3月末",
+          "value": 117
+        },
+        {
+          "label": "4月初",
+          "value": 117.63
+        },
+        {
+          "label": "停戦報道後",
+          "value": 91
+        },
+        {
+          "label": "4月12日",
+          "value": 97
+        },
+        {
+          "label": "4月23日",
+          "value": 83
+        }
+      ],
+      "title": "WTI原油価格推移 2026年（ドル/バレル）",
+      "chartType": "line"
+    },
+    "hormuz_throughput": {
+      "data": [
+        {
+          "label": "封鎖前（平均）",
+          "value": 24
+        },
+        {
+          "label": "3月1日",
+          "value": 4
+        },
+        {
+          "label": "3月中旬以降",
+          "value": 1
+        },
+        {
+          "label": "4月初旬",
+          "value": 3
+        }
+      ],
+      "title": "ホルムズ海峡通過原油タンカー数（隻/日）",
+      "chartType": "bar"
+    },
+    "japan_energy_dependency": {
+      "data": [
+        {
+          "label": "中東全体",
+          "value": 88
+        },
+        {
+          "label": "サウジアラビア",
+          "value": 38
+        },
+        {
+          "label": "UAE",
+          "value": 27
+        },
+        {
+          "label": "クウェート",
+          "value": 10
+        },
+        {
+          "label": "その他中東",
+          "value": 13
+        },
+        {
+          "label": "非中東",
+          "value": 12
+        }
+      ],
+      "title": "日本の原油輸入先構成比（2025年実績）",
+      "chartType": "bar"
+    },
+    "inpex_valuation": {
+      "data": [
+        {
+          "label": "現在PER（倍）",
+          "value": 8.2
+        },
+        {
+          "label": "過去10年平均PER（倍）",
+          "value": 11.5
+        },
+        {
+          "label": "原油100ドル想定PER（倍）",
+          "value": 6.1
+        }
+      ],
+      "title": "INPEX バリュエーション比較（2026年5月時点）",
+      "chartType": "bar"
+    },
+    "supply_loss": {
+      "data": [
+        {
+          "label": "封鎖前通過量",
+          "value": 20
+        },
+        {
+          "label": "4月初旬通過量",
+          "value": 3.8
+        },
+        {
+          "label": "輸出喪失量",
+          "value": 13
+        },
+        {
+          "label": "代替ルート補填量",
+          "value": 3.8
+        }
+      ],
+      "title": "ホルムズ封鎖による世界供給損失（百万バレル/日）",
+      "chartType": "bar"
+    },
+    "pipeline_vs_demand": {
+      "title": "代替パイプライン容量 vs ホルムズ通過量（百万バレル/日）",
+      "type": "bar",
+      "data": [
+        {
+          "label": "ホルムズ通過量（封鎖前）",
+          "value": 20
+        },
+        {
+          "label": "迂回合計能力（サウジ+UAE）",
+          "value": 8
+        },
+        {
+          "label": "補填不能量",
+          "value": 12
+        }
+      ]
+    },
+    "eia_price_outlook": {
+      "title": "EIA ブレント原油価格見通し（ドル/バレル）",
+      "type": "bar",
+      "data": [
+        {
+          "label": "2026年Q2ピーク",
+          "value": 115
+        },
+        {
+          "label": "2026年平均",
+          "value": 96
+        },
+        {
+          "label": "2027年平均",
+          "value": 76
+        }
+      ]
+    }
+  },
+  "bgmVolume": 0.12,
+  "bgmMap": {
+    "hook": "bgm/news.mp3",
+    "explanation": "bgm/main_lofi.mp3",
+    "analysis": "bgm/uplifting_piano.mp3",
+    "summary": "bgm/uplifting_piano.mp3",
+    "cta": "bgm/なんということはない日常.mp3"
+  },
+  "infographics": [
+    {
+      "id": "japan_oil_import",
+      "type": "donut_chart",
+      "title": "日本の原油輸入先（2025年）",
+      "outputPath": "content/infographic_japan_oil_import.png",
+      "accentColor": "#ff6b35",
+      "data": [
+        {
+          "label": "中東依存",
+          "value": 88,
+          "color": "#ff6b35"
+        },
+        {
+          "label": "非中東",
+          "value": 12,
+          "color": "#4a9eff"
+        }
+      ]
+    },
+    {
+      "id": "hormuz_supply_drop",
+      "type": "bar_chart",
+      "title": "封鎖前後の供給量比較（百万バレル/日）",
+      "outputPath": "content/infographic_hormuz_supply_drop.png",
+      "accentColor": "#cc4444",
+      "data": [
+        {
+          "label": "封鎖前",
+          "value": 20,
+          "color": "#4a9eff"
+        },
+        {
+          "label": "4月初旬",
+          "value": 3.8,
+          "color": "#cc4444"
+        }
+      ]
+    },
+    {
+      "id": "inpex_entry_zone",
+      "type": "stat_card",
+      "title": "INPEXの仕込み目安",
+      "outputPath": "content/infographic_inpex_entry_zone.png",
+      "accentColor": "#f5a623",
+      "value": "PER 7〜8倍",
+      "label": "エントリーゾーン",
+      "subtext": "原油80ドル以上が継続する前提での割安圏"
+    },
+    {
+      "id": "cpi_scenario",
+      "type": "bar_chart",
+      "title": "原油価格シナリオ別 日本CPI予測（2026年度）",
+      "outputPath": "content/infographic_cpi_scenario.png",
+      "accentColor": "#cc4444",
+      "data": [
+        {
+          "label": "基本シナリオ（+2.6%）",
+          "value": 2.6,
+          "color": "#f5a623"
+        },
+        {
+          "label": "120ドル高止まり（+4%超）",
+          "value": 4.1,
+          "color": "#cc4444"
+        }
+      ]
+    }
+  ]
+}

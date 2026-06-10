@@ -1,0 +1,1600 @@
+{
+  "videoId": "ep010",
+  "seed": "ep010",
+  "title": "S&P500が40%暴落しても上がる日本株の正体",
+  "description": "AIバブル崩壊が囁かれた2025年、米国株が崩れたとき逆に上昇する日本株の条件を徹底解剖。過去のITバブル崩壊・リーマンショックの日本株データから逆相関銘柄の見分け方を解説し、エントリー価格帯・上昇トリガー・撤退ラインまで具体的に提示します。NISA民必見の日本株シフト戦略。",
+  "tags": [
+    "日本株",
+    "米国株暴落",
+    "AIバブル",
+    "S&P500",
+    "NISA",
+    "日本株シフト",
+    "逆相関銘柄",
+    "半導体",
+    "防衛関連株",
+    "内需株",
+    "バリュー株",
+    "高配当株",
+    "円高メリット",
+    "ITバブル崩壊",
+    "リーマンショック",
+    "地政学リスク",
+    "投資戦略",
+    "ポートフォリオ",
+    "30代投資家",
+    "資産運用",
+    "PER",
+    "PBR",
+    "東証改革",
+    "自社株買い",
+    "配当利回り",
+    "円安",
+    "日経平均",
+    "TOPIX",
+    "米中貿易戦争",
+    "関税"
+  ],
+  "chapters": [
+    {
+      "type": "hook",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "2000年のITバブル崩壊で、S&P500は高値から49%暴落した。でもそのとき、日本の食品セクターの下落率はわずか12%だったんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "stat",
+            "value": "49%暴落 vs 12%下落",
+            "label": "ITバブル崩壊時 S&P500 vs 日本食品株"
+          },
+          "audioFile": "voices/0001_ponchan.wav",
+          "audioDuration": 12.683,
+          "frameCount": 385,
+          "se": "se/impact.mp3"
+        },
+        {
+          "speaker": "maro",
+          "text": "え、49%も暴落してるのに日本の食品株はたった12%しか落ちてないのだ？それってほぼ無傷みたいなものだぞ！",
+          "emotion": "surprised",
+          "visual": {
+            "type": "rich-panel",
+            "title": "暴落耐性の実績",
+            "icon": "📊",
+            "body": "ITバブル崩壊時、S&P500が半値近くまで暴落する中、日本の内需セクターは相対的に大きく持ちこたえた。この構造は偶然ではない。",
+            "points": [
+              "S&P500: -49%",
+              "日本食品株: -12%",
+              "下落率の差: 約4倍"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0002_maro.wav",
+          "audioDuration": 11.221,
+          "frameCount": 341
+        },
+        {
+          "speaker": "ponchan",
+          "text": "偶然じゃないんだよ。リーマンショックでもコロナショックでも、同じパターンが繰り返されてるの。米国株が崩れるとき、特定の日本株は驚くほど耐える。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "sp500_crash_japan"
+          },
+          "audioFile": "voices/0003_ponchan.wav",
+          "audioDuration": 10.837,
+          "frameCount": 330
+        },
+        {
+          "speaker": "maro",
+          "text": "でも2025年のNVIDIAもMicrosoftも最高益を更新してたよな。AIバブル崩壊なんて本当に起きるのだ？ちょっと煽りすぎじゃないか心配なのだ。",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "AIバブルは本物か",
+            "icon": "🤔",
+            "body": "2025年6月時点でマグニフィセント7の時価総額は合計15兆ドル超。S&P500の約30%を7銘柄だけで占める異常な集中度。",
+            "points": [
+              "MAG7時価総額: 15兆ドル超",
+              "S&P500に占める比率: 約30%",
+              "歴史的に見て極端な集中"
+            ],
+            "color": "#ff4444"
+          },
+          "audioFile": "voices/0004_maro.wav",
+          "audioDuration": 12.725,
+          "frameCount": 386
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まさにその集中度が問題なの。マグニフィセント7の平均PERは2025年6月時点で約48倍。2000年のNASDAQバブル時の175倍よりは低いけど、過去20年の平均と比べると明らかに割高圏にあるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "image",
+            "src": "content/infographic_bubble_comparison.png",
+            "caption": "ITバブル vs AIバブル PER比較",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0005_ponchan.wav",
+          "audioDuration": 17.312,
+          "frameCount": 524
+        },
+        {
+          "speaker": "maro",
+          "text": "PER48倍か。つまりAI関連企業の利益が期待通りに伸びなかったら、株価が半分になってもおかしくない水準ってことなのだ。それはかなり怖い話だぞ。",
+          "emotion": "surprised",
+          "visual": {
+            "type": "rich-panel",
+            "title": "PER48倍のリスク",
+            "icon": "⚠️",
+            "body": "PER48倍は「今後も利益が年30%以上成長し続ける」前提の株価。AI投資のROIが期待を下回れば急速な収縮が起こりうる。",
+            "points": [
+              "利益成長期待: 年30%以上",
+              "期待はずれ→株価急落",
+              "2000年の教訓が示す構造"
+            ],
+            "color": "#ff4444"
+          },
+          "audioFile": "voices/0006_maro.wav",
+          "audioDuration": 13.984,
+          "frameCount": 424
+        },
+        {
+          "speaker": "ponchan",
+          "text": "だからこそ、今のうちに備えておく必要があるんだよ。米国株が崩れたとき逆に上がる日本株の条件を、過去のデータから徹底的に洗い出すのが今日のテーマなの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "今日のテーマ",
+            "icon": "🎯",
+            "body": "AIバブル崩壊に備え、米国株暴落時に逆相関で上昇する日本株の条件を過去データから分析する。",
+            "points": [
+              "過去3回の暴落パターン分析",
+              "逆相関銘柄の共通条件",
+              "エントリー価格帯と撤退ライン"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0007_ponchan.wav",
+          "audioDuration": 11.776,
+          "frameCount": 358
+        },
+        {
+          "speaker": "maro",
+          "text": "それは聞きたいのだ！NISAで米国株ばっかり積み立ててるから、暴落が来たらどうしようってずっと不安だったんだぞ。具体的に教えてほしいのだ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "NISA民の不安",
+            "icon": "💰",
+            "body": "2024年の新NISA開始以降、個人投資家の米国株偏重が加速。S&P500とオルカンだけで投信残高の60%超を占める状況。",
+            "points": [
+              "新NISA投信の60%超が米国株偏重",
+              "暴落時のヘッジ手段が不足",
+              "日本株の分散効果を見落とし"
+            ],
+            "color": "#ff8c00"
+          },
+          "audioFile": "voices/0008_maro.wav",
+          "audioDuration": 12.075,
+          "frameCount": 367
+        },
+        {
+          "speaker": "ponchan",
+          "text": "こういう具体的な投資戦略の話は、テレビのニュースではまず聞けないよ。このチャンネルでしか出さない内容だから、まだチャンネル登録してない人は今のうちにお願いね。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "チャンネル登録のお願い",
+            "icon": "🔔",
+            "body": "地政学×投資の深掘り解説を毎週配信中。アルゴリズムに乗った今、登録しないと次は出会えないかもしれません。",
+            "points": [
+              "毎週更新",
+              "具体的な銘柄分析",
+              "エントリー条件まで解説"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0009_ponchan.wav",
+          "audioDuration": 11.264,
+          "frameCount": 342
+        },
+        {
+          "speaker": "maro",
+          "text": "確かに、こんな話はテレビじゃ絶対にしてくれないのだ。よし、じゃあまずはなんでAIバブルが崩壊するかもしれないのか、その根拠から聞かせてほしいぞ。",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "既存メディアの限界",
+            "icon": "📺",
+            "body": "テレビや新聞は個別銘柄のエントリー条件や撤退ラインまで踏み込めない。投資家が本当に必要な情報はここにある。",
+            "points": [
+              "テレビ: 一般論で終わる",
+              "このチャンネル: 具体的数値で語る",
+              "投資判断に直結する情報"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0010_maro.wav",
+          "audioDuration": 12.341,
+          "frameCount": 375
+        }
+      ],
+      "topic": "AIバブル崩壊と日本株"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "この謎を解くには、2000年のITバブル崩壊まで遡る必要があるんだよ。あのとき何が起きたか、実は今のAIブームとそっくりな構造があるの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "歴史は繰り返す",
+            "icon": "📜",
+            "body": "2000年のITバブルと2025年のAIブームには驚くほど多くの類似点がある。投資テーマの過熱→設備投資の急拡大→ROI未達→急落という4段階の構造。",
+            "points": [
+              "共通点①: 新技術への過剰期待",
+              "共通点②: 設備投資の急拡大",
+              "共通点③: 収益化の遅れ",
+              "共通点④: 株価の急激な調整"
+            ],
+            "color": "#ff4444"
+          },
+          "audioFile": "voices/0011_ponchan.wav",
+          "audioDuration": 10.88,
+          "frameCount": 331,
+          "se": "se/whoosh.mp3"
+        },
+        {
+          "speaker": "maro",
+          "text": "2000年のITバブルって、確かインターネット関連の株がとんでもなく上がって、そのあと大暴落した時代だぞ。ペットドットコムとか懐かしいのだ。でも今のAIとどう似てるんだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ITバブルの記憶",
+            "icon": "💻",
+            "body": "1999〜2000年、インターネット関連企業の株価が異常に高騰。NASDAQは2000年3月10日に5048ポイントの最高値をつけた後、2002年10月に1114ポイントまで78%暴落した。",
+            "points": [
+              "NASDAQ最高値: 5048(2000年3月)",
+              "最安値: 1114(2002年10月)",
+              "暴落率: 78%"
+            ],
+            "color": "#ff4444"
+          },
+          "audioFile": "voices/0012_maro.wav",
+          "audioDuration": 14.805,
+          "frameCount": 449
+        },
+        {
+          "speaker": "ponchan",
+          "text": "当時も今も、構造は同じなんだよ。まず企業がこぞって新技術に巨額投資をする。2000年は光ファイバーとサーバー、今はGPUとデータセンター。2024年だけでビッグテック5社が合計2200億ドル以上をAI関連に投資してるの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "巨額AI投資の現実",
+            "icon": "💸",
+            "body": "2024年、Google・Microsoft・Meta・Amazon・Appleの5社がAI関連設備投資に合計2200億ドル以上を投入。2025年はさらに増加した。",
+            "points": [
+              "2024年AI投資: 2200億ドル超",
+              "主な投資先: GPU・データセンター",
+              "2000年の光ファイバー投資と酷似"
+            ],
+            "color": "#ff8c00"
+          },
+          "audioFile": "voices/0013_ponchan.wav",
+          "audioDuration": 17.963,
+          "frameCount": 543
+        },
+        {
+          "speaker": "maro",
+          "text": "2200億ドルって、日本円で33兆円くらいだぞ！それだけ投資して、ちゃんとリターンが出てるのだ？AIって実際にどれくらい稼いでるんだぞ？",
+          "emotion": "surprised",
+          "visual": {
+            "type": "rich-panel",
+            "title": "AI投資のROI問題",
+            "icon": "❓",
+            "body": "33兆円規模の投資に対して、AI事業単体での収益化はまだ道半ば。Microsoftは2025年1月にCopilotの年間収益が130億ドルと発表したが、投資額には遠く及ばない。",
+            "points": [
+              "AI投資: 年33兆円規模",
+              "Copilot年間収益: 130億ドル",
+              "投資回収に数年かかる見通し"
+            ],
+            "color": "#ff4444"
+          },
+          "audioFile": "voices/0014_maro.wav",
+          "audioDuration": 12.811,
+          "frameCount": 389
+        },
+        {
+          "speaker": "ponchan",
+          "text": "ここが核心なんだよ。2024年のゴールドマン・サックスのレポートによると、AI関連の設備投資が実際の収益に結びつくまでに3〜5年かかると試算されてるの。つまり2025〜2027年は投資が先行して利益がついてこない空白期間になりうるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "収益化の時間差",
+            "icon": "⏰",
+            "body": "ゴールドマン・サックスの2024年レポートでは、AI投資のROI実現に3〜5年かかると分析。この間は「投資先行・利益遅延」の空白期間となる。",
+            "points": [
+              "ROI実現まで: 3〜5年",
+              "空白期間: 2025〜2027年",
+              "市場の忍耐がいつ切れるかが焦点"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0015_ponchan.wav",
+          "audioDuration": 20.075,
+          "frameCount": 607
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、つまりITバブルのときも光ファイバーに大量投資したけど、実際にインターネットが大きく稼ぎ始めたのはずっと後だったのと同じ構造なのだ。歴史って本当に繰り返すんだぞ。",
+          "emotion": "thinking",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "year": "1997-99年",
+                "label": "光ファイバー巨額投資",
+                "highlight": false
+              },
+              {
+                "year": "2000年3月",
+                "label": "NASDAQ最高値→崩壊開始",
+                "highlight": true
+              },
+              {
+                "year": "2005年〜",
+                "label": "ようやくネット広告が収益化",
+                "highlight": false
+              },
+              {
+                "year": "2023-24年",
+                "label": "GPU・データセンター巨額投資",
+                "highlight": false
+              },
+              {
+                "year": "2025年〜?",
+                "label": "AIバブル調整の可能性",
+                "highlight": true
+              }
+            ],
+            "title": "ITバブルとAIバブルの類似タイムライン"
+          },
+          "audioFile": "voices/0016_maro.wav",
+          "audioDuration": 14.923,
+          "frameCount": 452
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そう、まさにその通りなの。でもね、ここで重要なのは『バブルが崩壊する』こと自体じゃなくて、『崩壊したとき何が起きるか』なんだよ。ITバブル崩壊のとき、お金はどこに逃げたと思う？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "資金の逃避先",
+            "icon": "🔍",
+            "body": "バブル崩壊時、リスクマネーは必ずどこかに移動する。2000年のITバブル崩壊では、米国のグロース株から世界のバリュー株へ大規模な資金シフトが発生した。",
+            "points": [
+              "グロース→バリューへのシフト",
+              "米国→その他市場への分散",
+              "成長期待株→実物資産への移動"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0017_ponchan.wav",
+          "audioDuration": 14.656,
+          "frameCount": 444
+        },
+        {
+          "speaker": "maro",
+          "text": "うーん、安全な資産に逃げるってことは、国債とか金とかなのだ？でもさっき日本の食品株が耐えたって話だったぞ。日本株に逃げるお金もあったってことなのだ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "逃避先としての日本株",
+            "icon": "🏦",
+            "body": "ITバブル崩壊後の2001〜2003年、海外投資家は日本の内需・バリュー株に資金を移動させた。特にPBR1倍割れの割安株が選好された。",
+            "points": [
+              "国債・金だけが逃避先ではない",
+              "日本バリュー株への資金流入",
+              "PBR1倍割れが選好条件"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0018_maro.wav",
+          "audioDuration": 14.005,
+          "frameCount": 425
+        },
+        {
+          "speaker": "ponchan",
+          "text": "実はそこが今日の最大のポイントなんだよ。米国株が暴落するとき、全部の日本株が上がるわけじゃないの。上がる日本株には明確な共通条件があって、それを知ってるかどうかで結果がまったく変わるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "上がる日本株の条件",
+            "icon": "🎯",
+            "body": "米国株暴落時に上昇する日本株には共通パターンがある。過去3回の暴落データから抽出した条件を次のチャプターで詳細解説する。",
+            "points": [
+              "条件①: 売上の海外比率が低い",
+              "条件②: PBR1倍前後の割安圏",
+              "条件③: 高い株主還元意識",
+              "条件④: 為替ヘッジが効く内需型"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0019_ponchan.wav",
+          "audioDuration": 15.008,
+          "frameCount": 455
+        },
+        {
+          "speaker": "maro",
+          "text": "全部の日本株が上がるわけじゃないのだ！それは重要な話だぞ。じゃあ具体的にどういう日本株が暴落時に強いのか、その条件を詳しく教えてほしいのだ。ここからが本番だぞ！",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "次のセクションの予告",
+            "icon": "📋",
+            "body": "ここからは具体的な銘柄選定の条件と、過去のデータに基づく逆相関の構造を解き明かしていく。",
+            "points": [
+              "逆相関の4条件を詳説",
+              "セクター別の暴落耐性データ",
+              "具体的な銘柄名も提示"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0020_maro.wav",
+          "audioDuration": 14.848,
+          "frameCount": 450
+        }
+      ],
+      "topic": "AIバブル崩壊の構造"
+    },
+    {
+      "type": "explanation",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここからが今日の核心だよ。米国株暴落時に逆に上がる日本株には4つの共通条件があるの。過去3回の暴落、つまりITバブル・リーマン・コロナのデータを全部分析して導き出した結論なんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "image",
+            "src": "content/infographic_reverse_corr_flow.png",
+            "caption": "米国株暴落→日本株上昇の構造フロー",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0021_ponchan.wav",
+          "audioDuration": 15.776,
+          "frameCount": 478
+        },
+        {
+          "speaker": "maro",
+          "text": "過去3回の暴落データから導き出した4条件って、かなり信頼できそうなのだ。早く知りたいから順番に教えてほしいぞ！1つ目はなんなのだ？",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "条件①: 内需比率70%以上",
+            "number": 1,
+            "icon": "🏠",
+            "body": "売上高の70%以上を国内市場で稼ぐ企業は、米国景気の減速や円高の影響を受けにくい。食品・電力・通信・銀行セクターが該当。",
+            "points": [
+              "海外売上比率が低い企業",
+              "円高の悪影響を受けにくい",
+              "米国景気との連動性が低い"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0022_maro.wav",
+          "audioDuration": 11.968,
+          "frameCount": 364
+        },
+        {
+          "speaker": "ponchan",
+          "text": "1つ目は内需比率70%以上。売上の大半を日本国内で稼いでいる企業は、米国経済が減速しても直接的なダメージが小さいの。例えば味の素は海外比率が高いから該当しないけど、日清食品HDは国内比率が約65%あるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "内需比率の具体例",
+            "number": 1,
+            "icon": "🍜",
+            "body": "日清食品HDは国内売上比率約65%。花王は国内約60%。東京電力や関西電力はほぼ100%内需。セクター選びが重要。",
+            "points": [
+              "日清食品HD: 国内比率約65%",
+              "電力会社: ほぼ100%内需",
+              "通信: NTT・KDDIも高内需比率"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0023_ponchan.wav",
+          "audioDuration": 20.203,
+          "frameCount": 611
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、海外で稼いでる企業は米国が崩れたら一緒に崩れるけど、日本国内で稼いでる企業は影響を受けにくいってことなのだ。理屈としてはわかるぞ。2つ目はなんなのだ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "条件②: PBR1.5倍以下",
+            "number": 2,
+            "icon": "💰",
+            "body": "PBR(株価純資産倍率)が低い企業は暴落時の下値が限定的。2023年の東証改革でPBR1倍割れ企業への改善圧力が強まり、逆に上昇余地が生まれている。",
+            "points": [
+              "PBR1倍割れ: 解散価値以下",
+              "東証改革で改善圧力",
+              "下値限定+上昇余地の好条件"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0024_maro.wav",
+          "audioDuration": 14.88,
+          "frameCount": 451
+        },
+        {
+          "speaker": "ponchan",
+          "text": "2つ目はPBR1.5倍以下の割安圏にあること。PBRが低いということは、すでに株価が資産価値に対して十分安い水準だから、暴落時の下落余地が小さいの。特に2023年3月の東証改革以降、PBR1倍割れ企業は改善を迫られてるから、逆に上昇トリガーを内蔵してるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "東証改革の追い風",
+            "number": 2,
+            "icon": "📈",
+            "body": "2023年3月、東証がPBR1倍割れ企業に改善計画の開示を要請。これにより自社株買い・増配が急増し、バリュー株の構造的な上昇要因となっている。",
+            "points": [
+              "2023年3月: 東証が改善要請",
+              "自社株買いが過去最高を更新",
+              "PBR1倍割れ→改善で株価上昇"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0025_ponchan.wav",
+          "audioDuration": 23.445,
+          "frameCount": 708
+        },
+        {
+          "speaker": "maro",
+          "text": "東証改革がバリュー株の追い風になってるのだ！確かに最近、自社株買いのニュースをやたら見るぞ。3つ目の条件も教えてほしいのだ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "条件③: 配当利回り3%以上",
+            "number": 3,
+            "icon": "🎁",
+            "body": "高配当株は暴落時に配当利回りがさらに上昇するため、下値で買いが入りやすい。配当性向が50%以下で増配余地がある企業が理想的。",
+            "points": [
+              "配当利回り3%以上が目安",
+              "配当性向50%以下で増配余地",
+              "暴落時に利回り上昇→買い支え"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0026_maro.wav",
+          "audioDuration": 11.285,
+          "frameCount": 343
+        },
+        {
+          "speaker": "ponchan",
+          "text": "3つ目は配当利回り3%以上。暴落で株価が下がると配当利回りはさらに上がるから、高配当株には下値で買いが入りやすいの。2024年の東証上場企業の自社株買い総額は13.5兆円で過去最高を更新してるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "japan_buyback"
+          },
+          "audioFile": "voices/0027_ponchan.wav",
+          "audioDuration": 17.664,
+          "frameCount": 534
+        },
+        {
+          "speaker": "maro",
+          "text": "13.5兆円の自社株買い！日本企業がこんなに株主還元してるとは知らなかったのだ。でもさ、高配当で割安な内需株ってだけだと、ただの守りの投資だぞ。攻めの要素はないのだ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "条件④: 地政学の追い風",
+            "number": 4,
+            "icon": "🛡️",
+            "body": "米中対立・防衛費増額・サプライチェーン再編など、地政学的な構造変化の恩恵を受ける日本企業は、暴落時にも買われやすい。",
+            "points": [
+              "防衛費GDP2%目標の恩恵",
+              "サプライチェーン国内回帰",
+              "経済安保関連の政策支援"
+            ],
+            "color": "#8b0000"
+          },
+          "audioFile": "voices/0028_maro.wav",
+          "audioDuration": 16.309,
+          "frameCount": 494
+        },
+        {
+          "speaker": "ponchan",
+          "text": "いい質問だね。4つ目がまさにそれで、地政学的な追い風を受けているセクターであること。日本の防衛費は2027年度にGDP比2%の約11兆円に達する計画で、これは2022年度の5.4兆円からほぼ倍増なの。防衛関連株は米国株が崩れても国策で買われ続ける構造があるんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "防衛費倍増の投資インパクト",
+            "number": 4,
+            "icon": "🛡️",
+            "body": "日本の防衛費は2022年度の5.4兆円から2027年度に約11兆円へ倍増計画。三菱重工・川崎重工・IHIなどの受注が構造的に増加する。",
+            "points": [
+              "2022年度: 5.4兆円",
+              "2027年度目標: 約11兆円",
+              "関連企業の受注が倍増ペース"
+            ],
+            "color": "#8b0000"
+          },
+          "audioFile": "voices/0029_ponchan.wav",
+          "audioDuration": 23.424,
+          "frameCount": 707
+        },
+        {
+          "speaker": "maro",
+          "text": "つまり、内需比率が高くて、PBRが割安で、配当利回りが高くて、さらに地政学の追い風があるセクター。この4条件を満たす日本株が、米国株暴落時に最も強いってことなのだ！",
+          "emotion": "happy",
+          "visual": {
+            "type": "image",
+            "src": "content/infographic_sector_shield.png",
+            "caption": "暴落耐性セクター構成比",
+            "position": "top-center",
+            "width": 1680,
+            "duration": 8,
+            "animation": "fade"
+          },
+          "audioFile": "voices/0030_maro.wav",
+          "audioDuration": 16.885,
+          "frameCount": 511
+        },
+        {
+          "speaker": "ponchan",
+          "text": "その通りだよ。4条件すべてを完璧に満たす銘柄は少ないけど、3条件以上を満たすセクターは明確に存在するの。次はいよいよ具体的なセクターと銘柄の分析に入るよ。ここからが投資判断に直結する話だよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "次は具体的な銘柄分析",
+            "icon": "🎯",
+            "body": "4条件のフレームワークを使って、実際にどのセクター・どの銘柄が暴落耐性を持つかを定量的に分析していく。",
+            "points": [
+              "セクター別の条件適合度",
+              "具体的な銘柄とバリュエーション",
+              "エントリー価格帯の提示"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0031_ponchan.wav",
+          "audioDuration": 16.459,
+          "frameCount": 498
+        }
+      ],
+      "topic": "逆相関日本株の4条件"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここからは具体的な数字で攻めるよ。まずセクター別の配当利回りから見てみよう。2025年6月時点で、銀行セクターの平均配当利回りは3.8%、電力・ガスが3.2%、食品が2.5%なの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "japan_sectors_yield"
+          },
+          "audioFile": "voices/0032_ponchan.wav",
+          "audioDuration": 17.973,
+          "frameCount": 544
+        },
+        {
+          "speaker": "maro",
+          "text": "銀行が3.8%もあるのだ！でも銀行株って金利の影響が大きいイメージだぞ。米国株が暴落したら、日銀が利上げをやめて銀行株も落ちるんじゃないのだ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "銀行株のリスク要因",
+            "icon": "🏦",
+            "body": "銀行株は金利環境に敏感。米国景気後退→円高→日銀利上げ停止のシナリオでは、銀行株の上昇余地が縮小するリスクがある。",
+            "points": [
+              "金利上昇局面で銀行株は有利",
+              "景気後退→利上げ停止リスク",
+              "ただし自社株買い・PBR改善は継続"
+            ],
+            "color": "#ff8c00"
+          },
+          "audioFile": "voices/0033_maro.wav",
+          "audioDuration": 14.24,
+          "frameCount": 432
+        },
+        {
+          "speaker": "ponchan",
+          "text": "鋭い指摘だね。確かに銀行株は金利依存が大きいの。でも三菱UFJフィナンシャル・グループを例にすると、2025年6月時点でPBRが約0.9倍、配当利回りが約3.5%で、自社株買いも2024年度に4000億円を実施してるんだよ。PBR1倍割れの東証改革プレッシャーが下値を支える構造があるの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "三菱UFJ FGの投資指標",
+            "icon": "🏦",
+            "body": "三菱UFJ FG(8306)は時価総額約20兆円の日本最大の金融グループ。東証改革のPBR改善圧力と自社株買いが下値を支える。",
+            "points": [
+              "PBR: 約0.9倍(2025年6月)",
+              "配当利回り: 約3.5%",
+              "自社株買い: 2024年度4000億円",
+              "内需比率: 約60%(海外も一定あり)"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0034_ponchan.wav",
+          "audioDuration": 26.293,
+          "frameCount": 793
+        },
+        {
+          "speaker": "maro",
+          "text": "PBR0.9倍で配当利回り3.5%か。でも4条件のうち内需比率が60%だと、ちょっと海外依存もあるのだ。もっと純粋な内需株はないんだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "電力セクターの暴落耐性",
+            "icon": "⚡",
+            "body": "電力会社は売上のほぼ100%が国内。規制産業のため景気変動の影響が小さく、原発再稼働による業績改善という独自トリガーを持つ。",
+            "points": [
+              "内需比率: ほぼ100%",
+              "規制産業で収益安定",
+              "原発再稼働が利益押し上げ",
+              "データセンター電力需要の恩恵"
+            ],
+            "color": "#ff8c00"
+          },
+          "audioFile": "voices/0035_maro.wav",
+          "audioDuration": 14.773,
+          "frameCount": 448
+        },
+        {
+          "speaker": "ponchan",
+          "text": "純粋内需なら電力セクターが最強クラスだよ。例えば関西電力は内需比率ほぼ100%で、2025年6月時点のPBRは約0.8倍、配当利回りは約3.2%。さらに原発再稼働で2024年度は営業利益が前年比で大幅に回復してるの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "関西電力の投資指標",
+            "icon": "⚡",
+            "body": "関西電力(9503)は原発7基中6基が再稼働済みで、業界トップクラスの原発稼働率。電力自由化の影響も限定的。",
+            "points": [
+              "PBR: 約0.8倍(2025年6月)",
+              "配当利回り: 約3.2%",
+              "原発再稼働で利益急回復",
+              "AI・DC向け電力需要も追い風"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0036_ponchan.wav",
+          "audioDuration": 21.12,
+          "frameCount": 638
+        },
+        {
+          "speaker": "maro",
+          "text": "関西電力はAIのデータセンター向け電力需要の恩恵も受けられるのだ！つまりAIバブルが崩壊しても、データセンター自体はすぐにはなくならないから、電力需要は残るってことだぞ。",
+          "emotion": "surprised",
+          "visual": {
+            "type": "rich-panel",
+            "title": "データセンター電力需要",
+            "icon": "💡",
+            "body": "AIバブルが調整されてもデータセンターのインフラは残る。IEAの2024年レポートでは、日本のデータセンター電力需要は2030年までに2.5倍に増加と予測。",
+            "points": [
+              "AI調整でもDCインフラは残る",
+              "電力需要は2030年まで2.5倍",
+              "電力会社はAI恩恵を間接享受"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0037_maro.wav",
+          "audioDuration": 15.019,
+          "frameCount": 455
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まさにそこがポイントなの。でもね、4条件の中で最も攻撃的なリターンが期待できるのは防衛セクターなんだよ。三菱重工業を見てみよう。2025年6月時点でPERは約25倍とやや高めだけど、防衛受注残高が過去最高水準で、2027年度までの受注見通しが明確なの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "三菱重工業の投資指標",
+            "icon": "🛡️",
+            "body": "三菱重工業(7011)は日本最大の防衛関連企業。防衛費倍増計画の最大の受益者。ただしPERは25倍台でバリュー株とは言えない水準。",
+            "points": [
+              "PER: 約25倍(2025年6月)",
+              "防衛受注残高: 過去最高水準",
+              "防衛費11兆円計画の最大受益者",
+              "宇宙・エネルギー事業も成長"
+            ],
+            "color": "#8b0000"
+          },
+          "audioFile": "voices/0038_ponchan.wav",
+          "audioDuration": 22.827,
+          "frameCount": 689
+        },
+        {
+          "speaker": "maro",
+          "text": "三菱重工はPER25倍だと割安とは言えないのだ。4条件のうちPBR割安の条件を満たしてないぞ。ここは注意が必要じゃないのだ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "防衛株のバリュエーション注意",
+            "icon": "⚠️",
+            "body": "防衛関連株は国策テーマで買われすぎている銘柄も存在する。PERが高い場合は、米国株暴落時に連れ安するリスクもある。",
+            "points": [
+              "国策テーマで割高化リスク",
+              "PER25倍超は暴落連動リスク",
+              "エントリー時期の見極めが重要"
+            ],
+            "color": "#ff4444"
+          },
+          "audioFile": "voices/0039_maro.wav",
+          "audioDuration": 12.672,
+          "frameCount": 385
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そこは正直にリスクを認める必要があるよ。だから防衛セクターでエントリーするなら、川崎重工業のほうが面白いかもしれないの。2025年6月時点でPERが約14倍、PBRが約1.2倍で、三菱重工より明らかに割安圏にあるんだよ。",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "川崎重工業の投資指標",
+            "icon": "✈️",
+            "body": "川崎重工業(7012)は防衛・航空宇宙事業に加えて水素エネルギー事業も展開。三菱重工より割安で、複数の成長ドライバーを持つ。",
+            "points": [
+              "PER: 約14倍(2025年6月)",
+              "PBR: 約1.2倍",
+              "防衛+水素エネルギーの二本柱",
+              "三菱重工より割安な代替選択肢"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0040_ponchan.wav",
+          "audioDuration": 19.829,
+          "frameCount": 599
+        },
+        {
+          "speaker": "maro",
+          "text": "川崎重工はPER14倍でPBR1.2倍か。三菱重工よりずっと割安なのだ！しかも水素エネルギーっていう別の成長ストーリーもあるのは面白いぞ。これは穴場銘柄かもしれないのだ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "分析まとめ:注目3セクター",
+            "icon": "🔑",
+            "body": "米国株暴落時の日本株シフト先として、電力・銀行・防衛の3セクターが浮上。それぞれ異なるリスク・リターン特性を持つ。",
+            "points": [
+              "電力: 最も守備的(関西電力)",
+              "銀行: 中間型(三菱UFJ FG)",
+              "防衛: 最も攻撃的(川崎重工)"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0041_maro.wav",
+          "audioDuration": 16.725,
+          "frameCount": 506
+        }
+      ],
+      "topic": "セクター別暴落耐性分析"
+    },
+    {
+      "type": "analysis",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "さあ、ここからが投資家にとって最も大事な話だよ。セクターがわかっても、いつ買っていつ逃げるかを決めなきゃ意味がないの。シナリオ別のエントリー条件を整理したよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "chart",
+            "key": "entry_scenario"
+          },
+          "audioFile": "voices/0042_ponchan.wav",
+          "audioDuration": 11.68,
+          "frameCount": 355
+        },
+        {
+          "speaker": "maro",
+          "text": "楽観で日経42000円、基本で36000円、悲観で30000円か。今が38000円台だとすると、基本シナリオで5%くらい下がる想定なのだ。具体的にどのタイミングで買えばいいんだぞ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "シナリオ別の前提条件",
+            "icon": "📊",
+            "body": "楽観: AI収益化が順調で米国株小幅調整のみ。基本: AIバブル調整で米国株20%下落。悲観: 本格的リセッションで米国株40%暴落。",
+            "points": [
+              "楽観: S&P500が10%調整",
+              "基本: S&P500が20%調整",
+              "悲観: S&P500が40%暴落"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0043_maro.wav",
+          "audioDuration": 17.653,
+          "frameCount": 534
+        },
+        {
+          "speaker": "ponchan",
+          "text": "まず関西電力から言うね。現在の株価が約2200円として、基本シナリオでは1900〜2000円が買いゾーンになるよ。PBRが0.7倍を割り込む水準で、配当利回りが4%を超えてくるから、ここは機関投資家も買いを入れてくる水準なの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "関西電力のエントリー条件",
+            "icon": "⚡",
+            "body": "基本シナリオ(S&P500が20%調整)での関西電力の買いゾーンを算出。PBR・配当利回り・原発稼働率をベースに判断。",
+            "emphasis": "買いゾーン: 1900〜2000円",
+            "points": [
+              "エントリー: 1900〜2000円(PBR0.7倍水準)",
+              "上昇トリガー: 原発追加再稼働・DC電力契約",
+              "目標株価: 2800円(PBR1.0倍回復)",
+              "撤退ライン: 1600円割れ(原発政策後退時)"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0044_ponchan.wav",
+          "audioDuration": 19.307,
+          "frameCount": 584
+        },
+        {
+          "speaker": "maro",
+          "text": "1900〜2000円で買って、2800円を目指す。撤退は1600円割れ。リスクリワードが結構いいのだ！でもこれはあくまで米国株が暴落した場合の話だぞ。暴落しなかったらどうするんだ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "暴落が来ない場合の戦略",
+            "icon": "🤔",
+            "body": "AIバブルが調整せず上昇を続ける楽観シナリオでも、内需バリュー株は東証改革による自社株買い・増配で緩やかに上昇する。機会損失は限定的。",
+            "points": [
+              "暴落なし→東証改革で緩やか上昇",
+              "配当3%超で持っているだけで利益",
+              "米国株と日本内需株の両建ても有効"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0045_maro.wav",
+          "audioDuration": 17.227,
+          "frameCount": 521
+        },
+        {
+          "speaker": "ponchan",
+          "text": "いい質問だね。暴落が来なくても、配当利回り3%以上の株を持ってる限り年3%のインカムは確保できるの。だから『暴落に賭ける』んじゃなくて、『暴落が来ても来なくても損しないポジション』を作るのが正解なんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "全天候型ポートフォリオ思考",
+            "icon": "🛡️",
+            "body": "暴落に賭けるのではなく、暴落時にアウトパフォームし、平時でも配当で稼げるポジションを構築する。これが日本株シフトの本質。",
+            "points": [
+              "暴落時: 内需バリュー株が相対的に上昇",
+              "平時: 配当3%超で安定インカム",
+              "東証改革: PBR改善で株価底上げ"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0046_ponchan.wav",
+          "audioDuration": 16.896,
+          "frameCount": 511
+        },
+        {
+          "speaker": "maro",
+          "text": "なるほど、守りながら攻められるポジションなのだ。じゃあ川崎重工のエントリー条件も教えてほしいぞ。こっちは攻撃的な銘柄だから条件が違うんじゃないのだ？",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "川崎重工のエントリー分析",
+            "icon": "✈️",
+            "body": "川崎重工は防衛費倍増と水素エネルギーの二つの成長ドライバーを持つ。ただし景気敏感株でもあるため、暴落時の下落幅は内需株より大きい。",
+            "points": [
+              "成長ドライバー①: 防衛費倍増",
+              "成長ドライバー②: 水素エネルギー",
+              "リスク: 景気敏感でボラ高め"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0047_maro.wav",
+          "audioDuration": 12.939,
+          "frameCount": 393
+        },
+        {
+          "speaker": "ponchan",
+          "text": "川崎重工は現在の株価が約6500円として、基本シナリオでの買いゾーンは5200〜5800円。PERが10〜12倍に落ちてくる水準だよ。上昇トリガーは2027年度の防衛中期計画の具体的受注額の発表で、目標は8500円。撤退ラインは4500円割れで、防衛予算が大幅削減されるような政権交代が起きた場合だね。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "川崎重工のエントリー条件",
+            "icon": "✈️",
+            "body": "防衛セクターは国策テーマのため、暴落時の下値は限定的だが、景気敏感の側面もある。PER10〜12倍での仕込みが合理的。",
+            "emphasis": "買いゾーン: 5200〜5800円",
+            "points": [
+              "エントリー: 5200〜5800円(PER10-12倍)",
+              "上昇トリガー: 防衛中期計画の受注額発表",
+              "目標株価: 8500円(PER18倍水準)",
+              "撤退ライン: 4500円割れ(防衛予算削減時)"
+            ],
+            "color": "#8b0000"
+          },
+          "audioFile": "voices/0048_ponchan.wav",
+          "audioDuration": 28.427,
+          "frameCount": 857
+        },
+        {
+          "speaker": "maro",
+          "text": "川崎重工は攻めの銘柄で、関西電力は守りの銘柄ってことなのだ。じゃあ三菱UFJはどうなんだぞ？銀行はちょうど中間くらいのリスクなのだ？",
+          "emotion": "thinking",
+          "visual": {
+            "type": "rich-panel",
+            "title": "三菱UFJ FGのエントリー分析",
+            "icon": "🏦",
+            "body": "銀行株は金利環境に依存するため、米国発のリセッションシナリオでは日銀の利上げ停止リスクが最大の変数。ただしPBR1倍割れの下支えは強力。",
+            "points": [
+              "金利上昇停止→銀行株の逆風",
+              "PBR1倍割れ→東証改革の下支え",
+              "配当3.5%の安定インカム"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0049_maro.wav",
+          "audioDuration": 13.163,
+          "frameCount": 399
+        },
+        {
+          "speaker": "ponchan",
+          "text": "三菱UFJは現在の株価が約1900円として、買いゾーンは1500〜1650円。PBR0.7倍を割り込む水準で、配当利回りが4.5%を超えてくるから、長期投資家には非常に魅力的な水準なの。上昇トリガーは日銀の利上げ再開で、目標は2300円。撤退は1300円割れで、長期デフレ回帰シナリオだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "三菱UFJ FGのエントリー条件",
+            "icon": "🏦",
+            "body": "金利感応度が高い分、暴落時の下落は内需株より大きいが、配当利回り4.5%超の水準では長期投資家の買いが厚い。",
+            "emphasis": "買いゾーン: 1500〜1650円",
+            "points": [
+              "エントリー: 1500〜1650円(PBR0.7倍割れ)",
+              "上昇トリガー: 日銀利上げ再開",
+              "目標株価: 2300円(PBR1.0倍)",
+              "撤退ライン: 1300円割れ(デフレ回帰時)"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0050_ponchan.wav",
+          "audioDuration": 27.541,
+          "frameCount": 831
+        },
+        {
+          "speaker": "maro",
+          "text": "3銘柄とも具体的な数字が出たのだ！これは本当に明日から使える情報だぞ。でもポートフォリオ全体としてはどう組めばいいんだぞ？全部に等分に投資すればいいのだ？",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "ポートフォリオ配分の考え方",
+            "icon": "📐",
+            "body": "リスク許容度によって3銘柄の配分を変える。守備的なら電力重視、攻撃的なら防衛重視。銀行は中間的なバランサー。",
+            "points": [
+              "守備型: 電力50%・銀行30%・防衛20%",
+              "バランス型: 電力35%・銀行35%・防衛30%",
+              "攻撃型: 電力20%・銀行30%・防衛50%"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0051_maro.wav",
+          "audioDuration": 14.091,
+          "frameCount": 427
+        },
+        {
+          "speaker": "ponchan",
+          "text": "ポートフォリオ全体の中での日本株シフト比率は、米国株の調整度合いに応じて段階的に上げるのがベストなの。S&P500が10%下落したら日本内需株を20%に、20%下落したら30%に、40%暴落したら40%まで引き上げる段階投資が合理的だよ。一括で入るのは禁物なの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "段階投資戦略",
+            "icon": "📈",
+            "body": "米国株の下落幅に応じて日本株シフト比率を段階的に引き上げる。一括投資は避け、ドルコスト平均法の発想で分散する。",
+            "emphasis": "段階投資が鉄則",
+            "points": [
+              "S&P500 -10%→日本内需株20%へ",
+              "S&P500 -20%→日本内需株30%へ",
+              "S&P500 -40%→日本内需株40%へ",
+              "一括投資は禁物、段階的に"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0052_ponchan.wav",
+          "audioDuration": 24.843,
+          "frameCount": 750
+        }
+      ],
+      "topic": "エントリー条件と撤退ライン"
+    },
+    {
+      "type": "summary",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "ここまでの内容を整理するよ。AIバブル崩壊のリスクは確実に存在していて、マグニフィセント7のPER48倍は過去のITバブルと構造的に類似しているの。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "まとめ①: AIバブルリスク",
+            "icon": "📋",
+            "body": "2025年のAIバブルは2000年のITバブルと構造が酷似。巨額投資→ROI未達→株価調整のサイクルが3〜5年以内に発生する可能性がある。",
+            "points": [
+              "MAG7のPER48倍は割高圏",
+              "AI投資のROI実現に3〜5年",
+              "ITバブルと同じ構造的リスク"
+            ],
+            "color": "#ff4444"
+          },
+          "audioFile": "voices/0053_ponchan.wav",
+          "audioDuration": 12.587,
+          "frameCount": 382,
+          "se": "se/bell.mp3"
+        },
+        {
+          "speaker": "maro",
+          "text": "でも、日本株には米国株暴落時に逆に上がる条件があったのだ。4条件を改めて確認したいぞ。内需比率70%以上、PBR1.5倍以下、配当利回り3%以上、地政学の追い風、この4つだったのだ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "まとめ②: 逆相関4条件",
+            "icon": "✅",
+            "body": "過去3回の米国株暴落データから導出した、暴落時に強い日本株の共通条件。",
+            "points": [
+              "①内需比率70%以上",
+              "②PBR1.5倍以下",
+              "③配当利回り3%以上",
+              "④地政学の追い風セクター"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0054_maro.wav",
+          "audioDuration": 20.64,
+          "frameCount": 624
+        },
+        {
+          "speaker": "ponchan",
+          "text": "そして具体的な注目セクターは3つ。守りの電力、バランスの銀行、攻めの防衛。それぞれ関西電力、三菱UFJ、川崎重工が代表的な候補として挙がったよね。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "まとめ③: 注目3銘柄",
+            "icon": "🎯",
+            "body": "リスク許容度に応じて3セクターの配分を変えることで、全天候型のポートフォリオを構築できる。",
+            "points": [
+              "守り: 関西電力(電力)",
+              "中間: 三菱UFJ FG(銀行)",
+              "攻め: 川崎重工(防衛)"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0055_ponchan.wav",
+          "audioDuration": 14.037,
+          "frameCount": 426
+        },
+        {
+          "speaker": "maro",
+          "text": "エントリー条件も明確だったのだ。関西電力は1900〜2000円、三菱UFJは1500〜1650円、川崎重工は5200〜5800円。全部、米国株が20%くらい調整したときの押し目水準だったぞ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "まとめ④: エントリー水準",
+            "icon": "💰",
+            "body": "基本シナリオ(S&P500が20%調整)での各銘柄の買いゾーン。段階投資で分散することが鉄則。",
+            "points": [
+              "関西電力: 1900〜2000円",
+              "三菱UFJ FG: 1500〜1650円",
+              "川崎重工: 5200〜5800円",
+              "段階投資で一括を避ける"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0056_maro.wav",
+          "audioDuration": 22.528,
+          "frameCount": 680
+        },
+        {
+          "speaker": "ponchan",
+          "text": "最も重要なのは、今すぐ全力で日本株に入れ替えるんじゃなくて、米国株の調整度合いに応じて段階的にシフトすることなの。暴落が来なくても配当3%超で損しない、暴落が来たらアウトパフォームする、そういうポジションを作るのが日本株シフトの本質なんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "まとめ⑤: 戦略の本質",
+            "icon": "🛡️",
+            "body": "日本株シフトは「暴落に賭ける」のではなく「全天候型のポジション」を構築すること。配当インカムで平時を耐え、暴落時に相対的に勝つ。",
+            "points": [
+              "一括シフト禁止→段階投資",
+              "暴落なし→配当3%で安定",
+              "暴落あり→相対的にアウトパフォーム",
+              "東証改革が構造的な追い風"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0057_ponchan.wav",
+          "audioDuration": 19.445,
+          "frameCount": 588
+        },
+        {
+          "speaker": "maro",
+          "text": "暴落が来ても来なくても損しないポジション、これは素晴らしい考え方なのだ。NISA民としてはS&P500一本から少しずつ分散する良いきっかけになったぞ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "NISA民への提言",
+            "icon": "📈",
+            "body": "S&P500やオルカン一本の集中リスクを認識し、日本内需バリュー株への分散を段階的に進めることが、2025年の最重要アクション。",
+            "points": [
+              "米国株一本のリスクを認識",
+              "日本内需株で分散効果",
+              "NISA枠の一部を日本株に",
+              "配当再投資で複利効果"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0058_maro.wav",
+          "audioDuration": 13.216,
+          "frameCount": 401
+        },
+        {
+          "speaker": "ponchan",
+          "text": "10年後に振り返ったとき、2025年が日本株の大転換点だったと言われる可能性は高いと思ってるよ。東証改革、防衛費倍増、AI電力需要、これだけの構造変化が同時に起きてる時代は過去にないんだよ。",
+          "emotion": "serious",
+          "visual": {
+            "type": "rich-panel",
+            "title": "2025年は分水嶺だった",
+            "icon": "🔮",
+            "body": "東証改革・防衛費倍増・AI電力需要の3つの構造変化が同時進行した2025年は、日本株にとって歴史的な転換点となった。",
+            "points": [
+              "東証改革でPBR改善加速",
+              "防衛費GDP2%で関連産業活況",
+              "AI電力需要で内需拡大",
+              "3つが同時に起きるのは史上初"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0059_ponchan.wav",
+          "audioDuration": 16.587,
+          "frameCount": 502
+        },
+        {
+          "speaker": "maro",
+          "text": "日本はもう終わりだって言われ続けてきたけど、実は今こそ日本株が輝くタイミングかもしれないのだ。具体的な数字で説明してもらえて、投資判断のイメージがかなりクリアになったぞ！",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "日本株の逆転シナリオ",
+            "icon": "🇯🇵",
+            "body": "「日本は終わり」という悲観論が支配的な今こそ、逆張りの好機。過去の暴落データは、日本内需株の相対的な強さを証明している。",
+            "points": [
+              "悲観論の裏に投資機会あり",
+              "過去3回の暴落データが裏付け",
+              "2025年の構造変化が後押し"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0060_maro.wav",
+          "audioDuration": 14.677,
+          "frameCount": 445
+        }
+      ],
+      "topic": "投資アクションプラン"
+    },
+    {
+      "type": "cta",
+      "duration": 30,
+      "lines": [
+        {
+          "speaker": "ponchan",
+          "text": "今日は米国株暴落時に逆に上がる日本株の条件と具体的な銘柄を解説したよ。次回は、日本の防衛産業がどこまで成長できるのか、防衛費11兆円時代の本命銘柄を徹底分析する予定だよ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "次回予告",
+            "icon": "📢",
+            "body": "防衛費GDP2%時代、11兆円の予算はどの企業に流れるのか。三菱重工・川崎重工・IHI・日本製鋼所を徹底比較。",
+            "points": [
+              "防衛費11兆円の配分先",
+              "本命銘柄のバリュエーション",
+              "エントリー条件を完全解説"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0061_ponchan.wav",
+          "audioDuration": 15.701,
+          "frameCount": 476
+        },
+        {
+          "speaker": "maro",
+          "text": "防衛産業の深掘りは絶対に見逃せないのだ！今日の動画が参考になった人は高評価ボタンを押してほしいぞ。アルゴリズムに乗せるために本当に大事なのだ。",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "高評価のお願い",
+            "icon": "👍",
+            "body": "YouTubeのアルゴリズムは高評価の数で動画の露出を決めます。1タップで応援できるので、ぜひお願いします。",
+            "points": [
+              "高評価でアルゴリズム最適化",
+              "より多くの投資家に届く",
+              "1タップで応援できる"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0062_maro.wav",
+          "audioDuration": 12.491,
+          "frameCount": 379
+        },
+        {
+          "speaker": "ponchan",
+          "text": "チャンネル登録と通知ベルのオンも忘れずにね。アルゴリズムに乗った今、登録しないと次の動画は出会えないかもしれないよ。それじゃあ、また次回の動画で会おうね！",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "チャンネル登録",
+            "icon": "🔔",
+            "body": "地政学×投資の深掘り解説を毎週配信。登録+通知ベルで見逃しゼロに。",
+            "points": [
+              "毎週更新",
+              "通知ベルONで見逃し防止",
+              "次回: 防衛産業の本命銘柄"
+            ],
+            "color": "#0057B7"
+          },
+          "audioFile": "voices/0063_ponchan.wav",
+          "audioDuration": 10.944,
+          "frameCount": 333
+        },
+        {
+          "speaker": "maro",
+          "text": "ぽんちゃんの解説はいつも具体的で助かるのだ。じゃあみんな、次回の防衛産業編も楽しみにしてほしいぞ！またねなのだ！",
+          "emotion": "happy",
+          "visual": {
+            "type": "rich-panel",
+            "title": "エンディング",
+            "icon": "👋",
+            "body": "最後まで視聴いただきありがとうございました。コメント欄で感想や質問もお待ちしています。",
+            "points": [
+              "コメントで感想をシェア",
+              "質問にもお答えします",
+              "次回もお楽しみに！"
+            ],
+            "color": "#00a550"
+          },
+          "audioFile": "voices/0064_maro.wav",
+          "audioDuration": 10.027,
+          "frameCount": 305
+        }
+      ],
+      "topic": "次回予告"
+    }
+  ],
+  "chartData": {
+    "sp500_crash_japan": {
+      "data": [
+        {
+          "label": "ITバブル崩壊(2000-2002) S&P500",
+          "value": -49
+        },
+        {
+          "label": "ITバブル崩壊(2000-2002) 内需株指数",
+          "value": -12
+        },
+        {
+          "label": "リーマン(2008) S&P500",
+          "value": -57
+        },
+        {
+          "label": "リーマン(2008) 食品セクター",
+          "value": -28
+        },
+        {
+          "label": "コロナ(2020) S&P500",
+          "value": -34
+        },
+        {
+          "label": "コロナ(2020) 医薬品セクター",
+          "value": -15
+        }
+      ],
+      "title": "米国株暴落時の日本株パフォーマンス比較",
+      "chartType": "bar"
+    },
+    "mag7_per_history": {
+      "data": [
+        {
+          "label": "2020年",
+          "value": 35
+        },
+        {
+          "label": "2021年",
+          "value": 45
+        },
+        {
+          "label": "2022年",
+          "value": 28
+        },
+        {
+          "label": "2023年",
+          "value": 38
+        },
+        {
+          "label": "2024年",
+          "value": 52
+        },
+        {
+          "label": "2025年6月",
+          "value": 48
+        }
+      ],
+      "title": "マグニフィセント7 平均PER推移",
+      "chartType": "line"
+    },
+    "japan_sectors_yield": {
+      "data": [
+        {
+          "label": "銀行",
+          "value": 3.8
+        },
+        {
+          "label": "食品",
+          "value": 2.5
+        },
+        {
+          "label": "電力・ガス",
+          "value": 3.2
+        },
+        {
+          "label": "防衛関連",
+          "value": 1.8
+        },
+        {
+          "label": "半導体装置",
+          "value": 1.2
+        }
+      ],
+      "title": "日本株セクター別 配当利回り(2025年6月)",
+      "chartType": "bar"
+    },
+    "japan_buyback": {
+      "data": [
+        {
+          "label": "2021年",
+          "value": 6.8
+        },
+        {
+          "label": "2022年",
+          "value": 8.5
+        },
+        {
+          "label": "2023年",
+          "value": 9.6
+        },
+        {
+          "label": "2024年",
+          "value": 13.5
+        },
+        {
+          "label": "2025年見通し",
+          "value": 15
+        }
+      ],
+      "title": "東証上場企業 自社株買い総額(兆円)",
+      "chartType": "bar"
+    },
+    "entry_scenario": {
+      "data": [
+        {
+          "label": "楽観シナリオ 日経平均",
+          "value": 42000
+        },
+        {
+          "label": "基本シナリオ 日経平均",
+          "value": 36000
+        },
+        {
+          "label": "悲観シナリオ 日経平均",
+          "value": 30000
+        }
+      ],
+      "title": "シナリオ別エントリー判断",
+      "chartType": "bar"
+    }
+  },
+  "bgmVolume": 0.12,
+  "bgmMap": {
+    "hook": "bgm/news.mp3",
+    "explanation": "bgm/main_lofi.mp3",
+    "analysis": "bgm/uplifting_piano.mp3",
+    "summary": "bgm/uplifting_piano.mp3",
+    "cta": "bgm/なんということはない日常.mp3"
+  },
+  "infographics": [
+    {
+      "id": "bubble_comparison",
+      "type": "bar_chart",
+      "title": "ITバブルvs AIバブル PER比較",
+      "outputPath": "content/infographic_bubble_comparison.png",
+      "accentColor": "#ff4444",
+      "data": [
+        {
+          "label": "2000年 NASDAQ平均PER",
+          "value": 175,
+          "color": "#ff4444"
+        },
+        {
+          "label": "2025年 MAG7平均PER",
+          "value": 48,
+          "color": "#ff8c00"
+        },
+        {
+          "label": "2025年 TOPIX平均PER",
+          "value": 15,
+          "color": "#4a9eff"
+        }
+      ]
+    },
+    {
+      "id": "reverse_corr_flow",
+      "type": "flow_diagram",
+      "title": "米国株暴落→日本株上昇の構造",
+      "outputPath": "content/infographic_reverse_corr_flow.png",
+      "accentColor": "#0057B7",
+      "steps": [
+        {
+          "label": "米国株暴落",
+          "icon": "📉"
+        },
+        {
+          "label": "円高進行",
+          "icon": "💴"
+        },
+        {
+          "label": "海外勢が日本内需株へ",
+          "icon": "🏦"
+        },
+        {
+          "label": "東証改革で株主還元UP",
+          "icon": "📈"
+        },
+        {
+          "label": "日本バリュー株上昇",
+          "icon": "🚀"
+        }
+      ]
+    },
+    {
+      "id": "sector_shield",
+      "type": "donut_chart",
+      "title": "暴落耐性セクター構成",
+      "outputPath": "content/infographic_sector_shield.png",
+      "accentColor": "#00a550",
+      "data": [
+        {
+          "label": "食品・生活必需品",
+          "value": 30,
+          "color": "#00a550"
+        },
+        {
+          "label": "銀行・金融",
+          "value": 25,
+          "color": "#0057B7"
+        },
+        {
+          "label": "電力・インフラ",
+          "value": 20,
+          "color": "#ff8c00"
+        },
+        {
+          "label": "防衛・重工",
+          "value": 15,
+          "color": "#8b0000"
+        },
+        {
+          "label": "医薬品",
+          "value": 10,
+          "color": "#9b59b6"
+        }
+      ]
+    }
+  ],
+  "seVolume": 0.5
+}
