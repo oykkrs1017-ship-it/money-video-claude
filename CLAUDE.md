@@ -1,43 +1,43 @@
-# CLAUDE.md - クノロジー投×地政学 YouTubeチャンネル自動生
+# CLAUDE.md - テクノロジー投資×地政学 YouTubeチャンネル自動生成
 
-## プロジェクト概
-クノロジー投×地政学のYouTubeチャンネル動画を動生成するモノレポ
-台本生  音声合  動画レンダリング  YouTube公 のパイプラインを統合
+## プロジェクト概要
+テクノロジー投資×地政学のYouTubeチャンネル動画を自動生成するモノレポ。
+台本生成 → 音声合成 → 動画レンダリング → YouTube公開 のパイプラインを統合。
 
-## コマン
+## コマンド
 ```bash
-# 動画パッケージpackages/tech-geopolitics-channel/
-npm run dev            # Remotion Studio起
-npm run build          # ビル
-npx tsc --noEmit       # TypeScript型チェク
-npx remotion still     # スクリーンショ
+# 動画パッケージ（packages/tech-geopolitics-channel/）
+npm run dev            # Remotion Studio起動
+npm run build          # ビルド
+npx tsc --noEmit       # TypeScript型チェック
+npx remotion still     # スクリーンショット
 npx remotion render    # MP4レンダリング
 
-#  統合パイプライン推奨
-# 1コマンドで「トピック選  台本生  音声/画/インフォ生」まで完
-npm run new-ep              # ニュース既存データで実行Studio起動で確認
-npm run new-ep:fresh        # ニュース再取得してから実行（週1推奨
-npm run new-ep:render       # MP4レンダリングまで一括実
-#  完後に Still確認コマンドと upload コマンドが表示され
+# ★ 統合パイプライン（推奨）
+# 1コマンドで「トピック選定 → 台本生成 → 音声/画像/インフォ生成」まで完了
+npm run new-ep              # ニュース既存データで実行（Studio起動で確認）
+npm run new-ep:fresh        # ニュース再取得してから実行（週1推奨）
+npm run new-ep:render       # MP4レンダリングまで一括実行
+# ★ 完了後に Still確認コマンドと upload コマンドが表示される
 
-# ep生パイプライン手動個別実行
-# 1. 台本生
-npx ts-node --transpile-only scripts/generate-script.ts --topic "トピク" --ep epXXX
+# ep生成パイプライン（手動個別実行）
+# 1. 台本生成
+npx ts-node --transpile-only scripts/generate-script.ts --topic "トピック" --ep epXXX
 # 2. YAML→JSON変換
 npx ts-node --transpile-only scripts/yaml-to-json.ts input/epXXX.yaml
-# 2.5 script-input.json を更新 忘れるとStillで旧エピソードタイトルが
+# 2.5 script-input.json を更新（忘れるとStillで旧エピソードタイトルが出る）
 cp input/epXXX.json input/script-input.json
-# 3. 音声生
+# 3. 音声生成
 npx ts-node --transpile-only scripts/generate-voices.ts --input input/epXXX.json
-# 4. インフォグラフィク生 忘れるとrender失
+# 4. インフォグラフィック生成（忘れるとrender失敗）
 npx ts-node --transpile-only scripts/generate-infographics.ts --input input/epXXX.json
-# 4.5 AI解説画像生成（台本に ai-infographic ビジュアルがある場合
+# 4.5 AI解説画像生成（台本に ai-infographic ビジュアルがある場合）
 npx ts-node --transpile-only scripts/generate-ai-infographics.ts --input input/epXXX.json
-# 4.6 インフォグラフィク後琼Adobe MCP任意Claude  MCP ールを呼ぶ
-#   手: adobe_mandatory_init  --list で対象確  Adobe MCP で輝度/コントラス/色温度補正  --download で上書き保
+# 4.6 インフォグラフィック後処理（Adobe MCP・任意）Claude が MCP ツールを呼ぶ
+#   手順: adobe_mandatory_init → --list で対象確認 → Adobe MCP で輝度/コントラスト/色温度補正 → --download で上書き保存
 #   詳細: .claude/rules/adobe-enhance.md
 npx ts-node --transpile-only scripts/enhance-infographics.ts --list --input input/epXXX.json
-# 5. Still確認3フレーム Remotion Studio確  ユーザー承
+# 5. Still確認（3フレーム）→ Remotion Studio確認 → ユーザー承認
 # 6. レンダリング
 npx remotion render src/index.ts MainVideo output/epXXX.mp4
 
@@ -65,104 +65,104 @@ node_modules/.bin/remotion still src/index.ts SlidesVideo output/check_fXXX.png 
 node_modules/.bin/remotion render src/index.ts SlidesVideo output/epXXX.mp4 --props input/script-input.json --timeout 60000
 # SV-10.5. Shorts レンダリング（ダイジェスト型・CTA3秒付き・ep023〜デフォルト）
 node_modules/.bin/remotion render src/index.ts ShortsVideo output/epXXX_shorts.mp4 --props input/script-input.json --timeout 60000
-# 7. YouTube公開（メイン + Shorts）tsconfig-paths須
+# 7. YouTube公開（メイン + Shorts）tsconfig-paths 必須
 node_modules/.bin/ts-node -r tsconfig-paths/register --transpile-only scripts/upload-youtube.ts output/epXXX.mp4 --input input/epXXX.yaml --thumbnail "output/thumbnail.jpeg"
 node_modules/.bin/ts-node -r tsconfig-paths/register --transpile-only scripts/upload-youtube.ts output/epXXX_shorts.mp4 --input input/epXXX.yaml --thumbnail "output/thumbnail.jpeg" --shorts
 ```
 
-## アーキクチャ
-- モノレポ構packages/
+## アーキテクチャ
+- モノレポ構成（packages/）
 - Remotion + React で動画レンダリング
-- VOICEVOX で音声合localhost:50021
-- Claude API で台本自動生
+- VOICEVOX で音声合成（localhost:50021）
+- Claude API で台本自動生成
 
-## ィレクトリ構
+## ディレクトリ構成
 ```
 packages/tech-geopolitics-channel/
 ├── input/          # 台本YAML/JSON
-├── output/         # 生物MP4, PNG, props.json
+├── output/         # 生成物（MP4, PNG, props.json）
 ├── public/voices/  # 音声WAVファイル
-├── public/images/  # コンン画
+├── public/images/  # コンテンツ画像
 ├── scripts/        # CLI スクリプト
 └── src/
     ├── compositions/  # Remotionコンポジション
-    ├── components/    # Reactコンポネン
-    ├── styles/        # ーマ設
-    └── utils/         # 型定義・ユーィリィ
+    ├── components/    # Reactコンポーネント
+    ├── styles/        # テーマ設定
+    └── utils/         # 型定義・ユーティリティ
 ```
 
-## Plan Mode 須トリガー
+## Plan Mode 必須トリガー
 
-以下ずれかに該当する場合、実前に ** Plan Mode で調査・計画してから着手す**
+以下のいずれかに該当する場合、実装前に **必ず Plan Mode で調査・計画してから着手する**
 
 - 3 ファイル以上を同時に変更する
 - 新しい npm パッケージを追加する
-- VOICEVOX クライアントRemotion コアcompositions/を改修する
-- スクリプトのパイプライン序や引数インターフェースを変え
-- 新しい ep シリーズ Composition Type を追加する
+- VOICEVOX クライアント・Remotion コア（compositions/）を改修する
+- スクリプトのパイプライン順序や引数インターフェースを変える
+- 新しい ep シリーズ・Composition Type を追加する
 
 詳細: `.claude/rules/plan-mode.md`
 
-## 注意事
-- レンダリング前に `npx tsc --noEmit` でチェクverify-checklist も参照
-- 音声WAVが欠けるとサイレント動画になるで事前確
-- アプロード不可。ずユーザー確認を取る
-- レンダリング・アプロード前の検証手: `.claude/rules/verify-checklist.md`
+## 注意事項
+- レンダリング前に `npx tsc --noEmit` で型チェック（verify-checklist も参照）
+- 音声WAVが欠けるとサイレント動画になるので事前確認
+- 無断アップロード不可。必ずユーザー確認を取る
+- レンダリング・アップロード前の検証手順: `.claude/rules/verify-checklist.md`
 
-## 実行前チェクリスト（スクリプト実行時
-- `packages/.env` がロードされてるかEXA_API_KEY, YouTube API 等
-- YouTube OAuth トクンが有効か（アプロードセション開始前
-- 実行ディレクトリ `packages/tech-geopolitics-channel/` である
+## 実行前チェックリスト（スクリプト実行時）
+- `packages/.env` がロードされているか（EXA_API_KEY, YouTube API 等）
+- YouTube OAuth トークンが有効か（アップロードはセッション開始前に確認）
+- 実行ディレクトリが `packages/tech-geopolitics-channel/` であるか
 
 ## Verification Rule
-「設定済み」「動化済み」「動作してる」と主張するとき、確認したファイルパスと行番号をず示する。記から断言しな
+「設定済み」「自動化済み」「動作している」と主張するとき、確認したファイルパスと行番号を必ず提示する。記憶から断言しない。
 
 ## Session End Protocol
-ep完主要機実完後毎回自動で learnings  `tasks/lessons.md` + daily log に記録する指示不覼
+ep完成・主要機能実装完了後、毎回自動で learnings を `tasks/lessons.md` + daily log に記録する（指示不要）。
 
 ## 並行作業
-レンダリング開始後別 worktree で次 ep の台本・音声を並行して進めることを検討する。詳細: `.claude/rules/worktree-workflow.md`
+レンダリング開始後、別 worktree で次 ep の台本・音声を並行して進めることを検討する。詳細: `.claude/rules/worktree-workflow.md`
 
 ## 詳細ルール
-ドメイン固有ルールは `.claude/rules/` に割管
+ドメイン固有ルールは `.claude/rules/` に分割管理。
 
 ## プロジェクト固有学び・原則
-- `.claude/skills/voicevox-workflow/SKILL.md`  VOICEVOX誤読防止・2層対策フロー
-- `.claude/skills/remotion-still-check/SKILL.md`  Still確認フレームの選び方
-- `.claude/skills/thumbnail-generation/SKILL.md`  サムネイル高度プロンプト設
-- `.claude/rules/single-source-of-truth.md`  設定値は1所に定義する原則
-- `tasks/lessons.md`  時系列教訓集
-- `tasks/todo.md`  進行中タスク
+- `.claude/skills/voicevox-workflow/SKILL.md` — VOICEVOX誤読防止・2層対策フロー
+- `.claude/skills/remotion-still-check/SKILL.md` — Still確認フレームの選び方
+- `.claude/skills/thumbnail-generation/SKILL.md` — サムネイル高度プロンプト設計
+- `.claude/rules/single-source-of-truth.md` — 設定値は1箇所に定義する原則
+- `tasks/lessons.md` — 時系列教訓集
+- `tasks/todo.md` — 進行中タスク
 
-## タスク管
+## タスク管理
 @tasks/todo.md
 @tasks/lessons.md
 
-## 教訓格フロー
+## 教訓昇格フロー
 
 ```
-lessons.md に記録即時
-     同じ問題が2回発
-.claude/rules/{topic}.md に原則ファイルとして格
-     容確
-MEMORY.md インクスを更新~/.claude/projects/.../memory/MEMORY.md
+lessons.md に記録（即時）
+  ↓ 同じ問題が2回発生
+.claude/rules/{topic}.md に原則ファイルとして昇格
+  ↓ 内容確認
+MEMORY.md インデックスを更新（~/.claude/projects/.../memory/MEMORY.md）
 ```
 
-格の判断基:
-- 同じ失敗パターン2回以上発生し
-- 「毎回確認が要」な手が定型化できる
-- VOICEVOX誤読・Remotionレイアウト等ドメイン知
+昇格の判断基準:
+- 同じ失敗パターンが2回以上発生した
+- 「毎回確認が必要」な手順が定型化できる
+- VOICEVOX誤読・Remotionレイアウト等のドメイン知識
 
-## ai-money-shorts 固有注意事
-- キャラ名色は `src/types/character.ts` の CHARACTER_CONFIGS が唯一の定義
-- VOICEVOXにはキストをそまま渡さず `normalizeForVoicevox()` を通す
-- Still確認セクション startFrame+30F 以降フレームを指定す
-- 新しい誤読を発見したら `src/utils/textNormalizer.ts` と `prompts/script-system-prompt.md` の両方に追
+## ai-money-shorts 固有注意事項
+- キャラ名・色は `src/types/character.ts` の CHARACTER_CONFIGS が唯一の定義
+- VOICEVOXにはテキストをそのまま渡さず `normalizeForVoicevox()` を通す
+- Still確認はセクション startFrame+30F 以降のフレームを指定する
+- 新しい誤読を発見したら `src/utils/textNormalizer.ts` と `prompts/script-system-prompt.md` の両方に追記
 
 ---
 
-## 行動規
+## 行動規範
 
 詳細: `.claude/rules/behavior-rules.md`
 
-要点: 実前にえる・シンプルさ優先外科的変更・ゴール起点・トクン予算厳守（タスク4k/セション30k失敗大声で報告
+要点: 実装前に考える・シンプルさ優先・外科的変更・ゴール起点・トークン予算厳守（タスク4k/セッション30k）・失敗は大声で報告
