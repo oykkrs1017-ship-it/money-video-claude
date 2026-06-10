@@ -1,5 +1,6 @@
 import React from 'react';
-import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
+import { useCurrentFrame, useVideoConfig, interpolate, Sequence } from 'remotion';
+import { EndingSequence, ENDING_DURATION_SEC } from '../components/EndingSequence';
 import { ScriptInput, ScriptLine } from '../utils/types';
 import { buildTimeline, getVariation } from '@money-video/domain';
 import { THEMES } from '../styles/themes';
@@ -29,6 +30,7 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
   const variation = getVariation(scriptInput.seed);
   const theme = THEMES[variation.theme];
   const { timeline, totalFrames, titleFrames } = buildTimeline(scriptInput, fps);
+  const endingFrames = Math.round(ENDING_DURATION_SEC * fps);
 
   // 現在フレームに対応するセリフを検索
   const currentEntry = timeline.find((e) => frame >= e.startFrame && frame < e.endFrame) ?? null;
@@ -127,7 +129,7 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
             style={variation.titleStyle}
             startFrame={0}
             color="#ffffff"
-            fontSize={Math.floor(width * 0.055)}
+            fontSize={Math.floor(Math.min(width * 0.055, (width * 0.78) / Math.max(scriptInput.title.length, 1)))}
           />
           {/* 下部アクセントライン */}
           <div style={{
@@ -226,6 +228,11 @@ export const MainVideo: React.FC<MainVideoProps> = ({ scriptInput }) => {
           pointerEvents: 'none',
         }} />
       )}
+
+      {/* エンディング（本編終了後 20 秒の固定エンディング画面） */}
+      <Sequence from={totalFrames} durationInFrames={endingFrames}>
+        <EndingSequence />
+      </Sequence>
     </div>
   );
 };

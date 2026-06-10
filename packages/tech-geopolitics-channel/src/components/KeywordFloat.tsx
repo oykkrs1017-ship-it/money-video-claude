@@ -78,11 +78,11 @@ export const KeywordFloat: React.FC<KeywordFloatProps> = ({
           textAlign: 'center',
           whiteSpace: 'nowrap',
           textShadow: [
-            '-2px -2px 0 rgba(0,0,0,0.8)',
-            '2px -2px 0 rgba(0,0,0,0.8)',
-            '-2px 2px 0 rgba(0,0,0,0.8)',
-            '2px 2px 0 rgba(0,0,0,0.8)',
-            '0 0 20px rgba(255,221,68,0.4)',
+            '-2px -2px 0 rgba(0,0,0,0.9)',
+            '2px -2px 0 rgba(0,0,0,0.9)',
+            '-2px 2px 0 rgba(0,0,0,0.9)',
+            '2px 2px 0 rgba(0,0,0,0.9)',
+            `0 0 24px ${color}`,
           ].join(', '),
         }}
       >

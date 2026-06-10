@@ -8,6 +8,7 @@ interface MetanStageProps {
   startFrame: number;
   position?: 'left' | 'right' | 'center';
   height?: number;
+  offsetX?: number;
 }
 
 export const MetanStage: React.FC<MetanStageProps> = ({
@@ -16,6 +17,7 @@ export const MetanStage: React.FC<MetanStageProps> = ({
   startFrame,
   position = 'left',
   height = 320,
+  offsetX = 0,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -57,9 +59,9 @@ export const MetanStage: React.FC<MetanStageProps> = ({
 
   const positionStyle: React.CSSProperties =
     position === 'left'
-      ? { left: '-8%' }
+      ? { left: `${-180 - offsetX}px` }
       : position === 'right'
-      ? { right: '-8%' }
+      ? { right: `${-180 - offsetX}px` }
       : { left: '50%', transform: 'translateX(-50%)' };
 
   const translateY = interpolate(slideIn, [0, 1], [height * 0.3, 0]);

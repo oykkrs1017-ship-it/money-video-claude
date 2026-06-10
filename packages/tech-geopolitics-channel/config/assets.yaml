@@ -1,0 +1,59 @@
+# fetch-images.ts で使うルックアップテーブル
+# 新しいマップ・ロゴ・国旗・検索キーワードを追加したらここを更新する
+
+mapCoords:
+  map_taiwan:   { lon: 121.0, lat: 23.5,  zoom: 6, width: 600, height: 400 }
+  map_usachina: { lon: 128.0, lat: 30.0,  zoom: 3, width: 700, height: 420 }
+  map_japan:    { lon: 137.0, lat: 37.5,  zoom: 5, width: 500, height: 600 }
+  map_china:    { lon: 105.0, lat: 35.0,  zoom: 4, width: 640, height: 480 }
+  map_asia:     { lon: 110.0, lat: 30.0,  zoom: 3, width: 700, height: 500 }
+  map_world:    { lon: 10.0,  lat: 20.0,  zoom: 1, width: 800, height: 480 }
+  map_europe:   { lon: 15.0,  lat: 52.0,  zoom: 3, width: 700, height: 500 }
+  map_middleeast: { lon: 45.0, lat: 25.0, zoom: 4, width: 700, height: 480 }
+  map_southeastasia: { lon: 110.0, lat: 5.0, zoom: 4, width: 700, height: 500 }
+
+logoDomains:
+  logo_tsmc:           tsmc.com
+  logo_nvidia:         nvidia.com
+  logo_samsung:        samsung.com
+  logo_intel:          intel.com
+  logo_apple:          apple.com
+  logo_softbank:       softbank.jp
+  logo_google:         google.com
+  logo_microsoft:      microsoft.com
+  logo_amazon:         amazon.com
+  logo_meta:           meta.com
+  logo_arm:            arm.com
+  logo_asml:           asml.com
+  logo_tokyo_electron: tel.com
+  logo_keyence:        keyence.com
+  logo_fanuc:          fanuc.com
+  logo_shin_etsu:      shinetsu.co.jp
+  logo_disco:          disco.co.jp
+  logo_lasertec:       lasertec.co.jp
+
+flagCodes:
+  flag_jp: JP
+  flag_us: US
+  flag_cn: CN
+  flag_tw: TW
+  flag_kr: KR
+  flag_de: DE
+  flag_gb: GB
+  flag_in: IN
+  flag_au: AU
+  flag_eu: EU
+  flag_fr: FR
+  flag_ru: RU
+
+imgSearchTerms:
+  img_semiconductor: "semiconductor chip microchip"
+  img_ai_chip:       "AI processor chip technology"
+  img_supply_chain:  "global supply chain logistics"
+  img_datacenter:    "data center servers"
+  img_stock_market:  "stock market trading chart"
+  img_oil:           "oil barrel crude petroleum"
+  img_currency:      "currency exchange dollar yen"
+  img_factory:       "manufacturing factory industrial"
+  img_defense:       "military defense technology"
+  img_satellite:     "satellite space technology"

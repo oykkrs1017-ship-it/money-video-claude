@@ -1,152 +1,91 @@
 /**
- * scripts/generate-voices.ts
- * script-input.json の全セリフを VOICEVOX で音声合成し、
- * 各セリフの audioDuration / frameCount を自動付与して保存する。
+ * scripts/generate-voices.ts  (thin CLI shim)
  *
- * 使い方: npx ts-node scripts/generate-voices.ts --input ./input/script-input.json
+ * 旧 CLI 互換:
+ *   npx ts-node scripts/generate-voices.ts --input ./input/script-input.json
+ *
+ * ロジック本体は packages/adapters と packages/usecases に移設済み。
+ * このファイルは argv パース → DI wiring → ユースケース呼び出しに専念する。
+ *
+ * 挙動保証:
+ *   - FPS=30, BUFFER_FRAMES=5, SPEED_SCALE=1.15（旧スクリプトと同値）
+ *   - 保存先: ./public/voices/ 配下、ファイル名は "NNNN_<speaker>.wav"
+ *   - script-input.json の各 line に audioFile / audioDuration / frameCount を付与
+ *   - VOICEVOX テキスト正規化は VoicevoxClient が内部適用
+ *   - 合成失敗時は 3.0s フォールバックで続行（旧スクリプトと同挙動）
  */
-import * as fs from 'fs';
 import * as path from 'path';
-import * as http from 'http';
+import { createLogger } from '@money-video/shared-ts';
+import { VoicevoxClient, DEFAULT_VOICEVOX_CONFIG } from '@money-video/adapters/tts';
+import {
+  FileSystemVoiceStorage,
+  FileSystemScriptStore,
+  FileSystemVoiceCache,
+} from '@money-video/adapters/storage';
+import { resolveSpeakerId } from '@money-video/adapters/tts';
+import { GenerateVoiceUseCase } from '@money-video/usecases/generateVoice';
 
-const VOICEVOX_HOST = 'http://localhost:50021';
+/** 旧スクリプトと同値の既定値 */
 const FPS = 30;
-const BUFFER_FRAMES = 5; // 各セリフの末尾に追加するバッファフレーム
-const SPEED_SCALE = 1.15;
+const BUFFER_FRAMES = 5;
+const VOICES_DIR_RELATIVE = 'voices'; // script-input.json 側の参照 "voices/0001_maro.wav"
 
-const SPEAKER_IDS: Record<string, number> = {
-  maro: 3,
-  ponchan: 2,
-};
+function parseArgs(argv: string[]): { inputPath: string } {
+  const idx = argv.indexOf('--input');
+  const inputPath = idx >= 0 && argv[idx + 1] ? argv[idx + 1]! : './input/script-input.json';
+  return { inputPath: path.resolve(inputPath) };
+}
 
-// ---------- HTTP ヘルパー ----------
+async function main(): Promise<void> {
+  const { inputPath } = parseArgs(process.argv.slice(2));
 
-function httpGet(url: string): Promise<string> {
-  return new Promise((resolve, reject) => {
-    http.get(url, (res) => {
-      let data = '';
-      res.on('data', (chunk) => (data += chunk));
-      res.on('end', () => resolve(data));
-      res.on('error', reject);
-    }).on('error', reject);
+  // ベースディレクトリは public/ 直下。ユースケースに voicesDirRelative="voices" を渡すことで
+  // 旧スクリプトが書き込んでいた public/voices/xxxx.wav と同じパスに保存される。
+  const publicDir = path.resolve('./public');
+
+  const logger = createLogger({ name: 'generate-voices', level: 'info' });
+
+  const tts = new VoicevoxClient({
+    ...DEFAULT_VOICEVOX_CONFIG,
+    // VOICEVOX_URL 環境変数があれば優先（shared-ts/env を直接は読まず最小限の上書き）
+    baseUrl: process.env.VOICEVOX_URL ?? DEFAULT_VOICEVOX_CONFIG.baseUrl,
   });
-}
+  const storage = new FileSystemVoiceStorage(publicDir);
+  const scriptStore = new FileSystemScriptStore();
+  // content hash キャッシュ。cache/voices/ にヒットすれば VOICEVOX を呼ばず frameCount を復元する。
+  const voiceCache = new FileSystemVoiceCache(path.resolve('./cache/voices'));
 
-function httpPost(url: string, body: string, contentType = 'application/json'): Promise<Buffer> {
-  return new Promise((resolve, reject) => {
-    const urlObj = new URL(url);
-    const options = {
-      hostname: urlObj.hostname,
-      port: Number(urlObj.port) || 80,
-      path: urlObj.pathname + urlObj.search,
-      method: 'POST',
-      headers: {
-        'Content-Type': contentType,
-        'Content-Length': Buffer.byteLength(body),
-      },
-    };
-    const req = http.request(options, (res) => {
-      const chunks: Buffer[] = [];
-      res.on('data', (c) => chunks.push(c));
-      res.on('end', () => resolve(Buffer.concat(chunks)));
-      res.on('error', reject);
-    });
-    req.on('error', reject);
-    req.write(body);
-    req.end();
+  const useCase = new GenerateVoiceUseCase({
+    tts,
+    storage,
+    scriptStore,
+    resolveSpeakerId,
+    logger,
+    voiceCache,
   });
-}
 
-// ---------- WAV ヘッダーから再生時間を取得 ----------
+  const result = await useCase.execute({
+    inputPath,
+    voicesDirRelative: VOICES_DIR_RELATIVE,
+    fps: FPS,
+    bufferFrames: BUFFER_FRAMES,
+  });
 
-function getWavDuration(wavBuffer: Buffer): number {
-  // WAV ヘッダー: bytes 24-27 = SampleRate, bytes 28-31 = ByteRate
-  // DataSize は bytes 40-43（標準44バイトヘッダーの場合）
-  const sampleRate = wavBuffer.readUInt32LE(24);
-  const byteRate = wavBuffer.readUInt32LE(28);
-  const dataSize = wavBuffer.readUInt32LE(40);
-  return dataSize / byteRate;
-}
-
-// ---------- VOICEVOX 音声合成 ----------
-
-async function synthesize(text: string, speakerId: number): Promise<Buffer> {
-  // 1. audio_query
-  const queryUrl = `${VOICEVOX_HOST}/audio_query?text=${encodeURIComponent(text)}&speaker=${speakerId}`;
-  const queryJson = await httpGet(queryUrl);
-  const query = JSON.parse(queryJson);
-
-  // speedScale を適用
-  query.speedScale = SPEED_SCALE;
-
-  // 2. synthesis
-  const wavBuffer = await httpPost(
-    `${VOICEVOX_HOST}/synthesis?speaker=${speakerId}`,
-    JSON.stringify(query),
-    'application/json'
+  logger.info(
+    {
+      inputPath,
+      successCount: result.successCount,
+      failureCount: result.failureCount,
+      cacheHits: result.cacheHits,
+      totalDurationSec: Number(result.totalDurationSec.toFixed(2)),
+    },
+    'generate-voices: done',
   );
-  return wavBuffer;
 }
 
-// ---------- メイン ----------
-
-async function main() {
-  const args = process.argv.slice(2);
-  const inputIdx = args.indexOf('--input');
-  const inputPath = inputIdx >= 0 ? args[inputIdx + 1] : './input/script-input.json';
-
-  if (!fs.existsSync(inputPath)) {
-    console.error(`❌ ファイルが見つかりません: ${inputPath}`);
-    process.exit(1);
-  }
-
-  const scriptInput = JSON.parse(fs.readFileSync(inputPath, 'utf-8'));
-  const voicesDir = path.resolve('./public/voices');
-  if (!fs.existsSync(voicesDir)) fs.mkdirSync(voicesDir, { recursive: true });
-
-  let lineIndex = 0;
-  let totalLines = 0;
-  scriptInput.chapters.forEach((ch: any) => totalLines += ch.lines.length);
-
-  console.log(`🎙️  ${totalLines} セリフを音声合成します...`);
-
-  for (const chapter of scriptInput.chapters) {
-    for (const line of chapter.lines) {
-      lineIndex++;
-      const speakerId = SPEAKER_IDS[line.speaker] ?? 3;
-      const fileName = `${String(lineIndex).padStart(4, '0')}_${line.speaker}.wav`;
-      const filePath = path.join(voicesDir, fileName);
-
-      process.stdout.write(`  [${lineIndex}/${totalLines}] ${line.speaker}: ${line.text.slice(0, 20)}... `);
-
-      try {
-        const wavBuffer = await synthesize(line.text, speakerId);
-        fs.writeFileSync(filePath, wavBuffer);
-
-        const duration = getWavDuration(wavBuffer);
-        const frameCount = Math.floor(duration * FPS) + BUFFER_FRAMES;
-
-        line.audioFile = `voices/${fileName}`;
-        line.audioDuration = Math.round(duration * 1000) / 1000;
-        line.frameCount = frameCount;
-
-        console.log(`✅ ${duration.toFixed(2)}s (${frameCount}f)`);
-      } catch (err) {
-        console.error(`❌ 失敗: ${(err as Error).message}`);
-        // フォールバック: 3秒想定
-        line.audioFile = `voices/${fileName}`;
-        line.audioDuration = 3.0;
-        line.frameCount = Math.floor(3.0 * FPS) + BUFFER_FRAMES;
-      }
-    }
-  }
-
-  // 更新した JSON を書き戻す
-  fs.writeFileSync(inputPath, JSON.stringify(scriptInput, null, 2), 'utf-8');
-  console.log(`\n✅ 完了！${inputPath} に audioFile / audioDuration / frameCount を保存しました。`);
-}
-
-main().catch((err) => {
-  console.error('Fatal:', err);
+main().catch((err: unknown) => {
+  const logger = createLogger({ name: 'generate-voices', level: 'error' });
+  const message = err instanceof Error ? err.message : String(err);
+  logger.fatal({ err: message }, 'generate-voices: fatal');
   process.exit(1);
 });

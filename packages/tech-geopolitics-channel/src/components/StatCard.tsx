@@ -1,6 +1,7 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, spring, interpolate } from 'remotion';
 import { StatCardData } from '../utils/types';
+import { GLASS } from '../styles/glass';
 
 interface StatCardProps {
   data: StatCardData;
@@ -64,10 +65,12 @@ export const StatCard: React.FC<StatCardProps> = ({
         style={{
           width: '100%',
           height,
-          borderRadius: 14,
-          border: `2px solid rgba(255,255,255,0.25)`,
-          boxShadow: `0 12px 48px rgba(0,0,0,0.7), 0 0 0 1px ${accentColor}44, 0 0 40px ${accentColor}22`,
-          background: `linear-gradient(135deg, rgba(10,10,20,0.95) 0%, rgba(20,20,40,0.92) 100%)`,
+          borderRadius: GLASS.radius,
+          border: GLASS.border,
+          boxShadow: `${GLASS.shadow}, 0 0 40px ${accentColor}22`,
+          background: GLASS.bg,
+          backdropFilter: GLASS.blur,
+          WebkitBackdropFilter: GLASS.blur,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',

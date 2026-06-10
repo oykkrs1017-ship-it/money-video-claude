@@ -1,11 +1,11 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
 import { BackgroundType } from '../utils/types';
-import { ThemeConfig } from '../styles/themes';
+import { ThemeColors } from '../styles/themes';
 
 interface BackgroundRendererProps {
   type: BackgroundType;
-  theme: ThemeConfig;
+  theme: ThemeColors;
 }
 
 export const BackgroundRenderer: React.FC<BackgroundRendererProps> = ({ type, theme }) => {
@@ -190,6 +190,90 @@ export const BackgroundRenderer: React.FC<BackgroundRendererProps> = ({ type, th
               );
             }
           })}
+        </svg>
+      );
+    }
+
+    // ---- 6. chalk: 黒板テクスチャ＋チョーク粉が漂う ----
+    case 'chalk': {
+      // チョーク粉ダスト（小さな白い粒子がゆっくり落下）
+      const dustCount = 30;
+      const dust = Array.from({ length: dustCount }, (_, i) => {
+        const sx = ((i * 2654435761) >>> 0) % 10000 / 10000;
+        const sy = ((i * 2246822519) >>> 0) % 10000 / 10000;
+        const speed = 0.2 + (((i * 3266489917) >>> 0) % 10000 / 10000) * 0.5;
+        const size  = 1 + (((i * 374761393) >>> 0) % 10000 / 10000) * 2.5;
+        const x = sx * width;
+        const totalTravel = height + 60;
+        const y = ((sy * height + frame * speed) % totalTravel) - 30;
+        const opacity = 0.08 + speed * 0.12;
+        return { x, y, size, opacity };
+      });
+
+      // 黒板の横線（白墨の消し跡）
+      const eraseLines = [0.25, 0.55, 0.78].map((ratio, i) => ({
+        y: height * ratio,
+        width: width * (0.4 + (i * 0.15)),
+        x: width * (i * 0.12),
+        opacity: 0.04 + i * 0.02,
+      }));
+
+      return (
+        <svg style={{ position: 'absolute', inset: 0 }} width={width} height={height}>
+          {/* 明るい黒板ベース色 */}
+          <rect width={width} height={height} fill="#3D6B5E" />
+          {/* 中央を明るく・端を自然に暗くするグラデーション（控えめ） */}
+          <defs>
+            <radialGradient id="chalk-vignette" cx="50%" cy="40%" r="65%">
+              <stop offset="0%"   stopColor="#5A9080" stopOpacity="0.5" />
+              <stop offset="100%" stopColor="#1e4a3c" stopOpacity="0.45" />
+            </radialGradient>
+          </defs>
+          <rect width={width} height={height} fill="url(#chalk-vignette)" />
+          {/* 消し跡ライン（少し明るく） */}
+          {eraseLines.map((l, i) => (
+            <rect key={i} x={l.x} y={l.y - 4} width={l.width} height={8}
+              fill="#ffffff" opacity={0.07 + i * 0.03} rx={4} />
+          ))}
+          {/* チョーク粉ダスト（明るめ） */}
+          {dust.map((d, i) => (
+            <circle key={i} cx={d.x} cy={d.y} r={d.size}
+              fill="#ffffff" opacity={d.opacity * 1.4} />
+          ))}
+          {/* 黒板の枠線（明るい木枠） */}
+          <rect x={0} y={0} width={width} height={height}
+            fill="none" stroke="#C8921A" strokeWidth={28} opacity={0.75} />
+        </svg>
+      );
+    }
+
+    // ---- 7. news-gradient: 明るいニューススタジオ風 ----
+    case 'news-gradient': {
+      const angle = interpolate(frame, [0, 900], [160, 200], { extrapolateRight: 'wrap' });
+      // 下部に薄いアクセントラインを流す（ニューステロップ帯）
+      const lineOffset = (frame * 1.2) % width;
+      return (
+        <svg style={{ position: 'absolute', inset: 0 }} width={width} height={height}>
+          <defs>
+            <linearGradient id="news-bg" x1="0" y1="0" x2="1" y2="1"
+              gradientTransform={`rotate(${angle}, 0.5, 0.5)`}>
+              <stop offset="0%"   stopColor={theme.backgroundGradient[0]} />
+              <stop offset="100%" stopColor={theme.backgroundGradient[1]} />
+            </linearGradient>
+            {/* 上部ハイライト */}
+            <linearGradient id="news-top" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"   stopColor="#ffffff" stopOpacity="0.35" />
+              <stop offset="40%"  stopColor="#ffffff" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+          <rect width={width} height={height} fill={`url(#news-bg)`} />
+          <rect width={width} height={height} fill="url(#news-top)" />
+          {/* 下部テロップ帯（薄い） */}
+          <rect x={0} y={height * 0.88} width={width} height={height * 0.12}
+            fill={theme.accent} opacity={0.08} />
+          {/* 流れるアクセントライン */}
+          <rect x={lineOffset - width} y={height * 0.89} width={width * 0.6} height={3}
+            fill={theme.accent} opacity={0.25} rx={2} />
         </svg>
       );
     }

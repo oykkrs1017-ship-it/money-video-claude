@@ -1,6 +1,7 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { ChapterType } from '../utils/types';
+import { GLASS } from '../styles/glass';
 
 interface TopicBadgeProps {
   topic: string;
@@ -11,13 +12,19 @@ interface TopicBadgeProps {
 }
 
 // チャプタータイプ別のラベルと色
-const CHAPTER_META: Record<ChapterType, { label: string; color: string; icon: string }> = {
-  hook:        { label: '注目',  color: '#e53e3e', icon: '●' },
-  explanation: { label: '解説',  color: '#3182ce', icon: '▶' },
-  analysis:    { label: '分析',  color: '#805ad5', icon: '◆' },
-  summary:     { label: 'まとめ', color: '#2f855a', icon: '✔' },
-  cta:         { label: 'INFO',  color: '#d69e2e', icon: '★' },
+const CHAPTER_META: Record<string, { label: string; color: string; icon: string }> = {
+  hook:          { label: '注目',  color: '#e53e3e', icon: '●' },
+  explanation:   { label: '解説',  color: '#3182ce', icon: '▶' },
+  explanation_2: { label: '解説②', color: '#2b6cb0', icon: '▶' },
+  analysis:      { label: '分析',  color: '#805ad5', icon: '◆' },
+  analysis_2:    { label: '分析②', color: '#6b46c1', icon: '◆' },
+  summary:       { label: 'まとめ', color: '#2f855a', icon: '✔' },
+  cta:           { label: 'INFO',  color: '#d69e2e', icon: '★' },
+  chapter:       { label: '解説',  color: '#3182ce', icon: '▶' },
+  outro:         { label: 'まとめ', color: '#2f855a', icon: '✔' },
 };
+
+const CHAPTER_META_FALLBACK = { label: '解説', color: '#3182ce', icon: '▶' };
 
 export const TopicBadge: React.FC<TopicBadgeProps> = ({
   topic,
@@ -40,7 +47,7 @@ export const TopicBadge: React.FC<TopicBadgeProps> = ({
   const translateX = interpolate(slideIn, [0, 1], [-320, 0]);
   const opacity = interpolate(slideIn, [0, 0.3], [0, 1], { extrapolateRight: 'clamp' });
 
-  const meta = CHAPTER_META[chapterType];
+  const meta = CHAPTER_META[chapterType] ?? CHAPTER_META_FALLBACK;
   const badgeColor = accentColor ?? meta.color;
 
   return (
@@ -64,8 +71,8 @@ export const TopicBadge: React.FC<TopicBadgeProps> = ({
           alignItems: 'center',
           gap: 6,
           backgroundColor: badgeColor,
-          padding: '4px 14px',
-          borderRadius: 4,
+          padding: '4px 16px',
+          borderRadius: 20,
           width: 'fit-content',
         }}
       >
@@ -87,21 +94,25 @@ export const TopicBadge: React.FC<TopicBadgeProps> = ({
       {/* トピックテキスト */}
       <div
         style={{
-          backgroundColor: 'rgba(0,0,0,0.82)',
+          backgroundColor: 'rgba(0,0,0,0.55)',
+          backdropFilter: GLASS.blur,
+          WebkitBackdropFilter: GLASS.blur,
           borderLeft: `4px solid ${badgeColor}`,
           padding: '8px 16px',
-          borderRadius: '0 6px 6px 0',
-          maxWidth: 380,
+          borderRadius: '0 12px 12px 0',
+          maxWidth: 540,
         }}
       >
         <span
           style={{
-            fontSize: 26,
+            fontSize: topic.length <= 15 ? 26 : topic.length <= 22 ? 22 : 18,
             fontWeight: 700,
             color: '#ffffff',
             lineHeight: 1.35,
             letterSpacing: '0.02em',
             textShadow: '0 1px 6px rgba(0,0,0,0.8)',
+            display: 'block',
+            wordBreak: 'break-all',
           }}
         >
           {topic}

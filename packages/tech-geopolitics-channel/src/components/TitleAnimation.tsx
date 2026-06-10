@@ -94,7 +94,9 @@ export const TitleAnimation: React.FC<TitleAnimationProps> = ({
       case 'split-reveal': {
         const topY = interpolate(progress, [0, 1], [-60, 0]);
         const bottomY = interpolate(progress, [0, 1], [60, 0]);
-        const half = Math.ceil(title.length / 2);
+        // 【 や 】 の前後など自然な区切り位置で分割（なければ中央）
+        const naturalBreak = title.indexOf('【');
+        const half = naturalBreak > 0 ? naturalBreak : Math.ceil(title.length / 2);
         return (
           <div style={{ overflow: 'hidden', position: 'relative' }}>
             <div style={{ transform: `translateY(${topY}px)`, opacity: progress }}>
@@ -120,7 +122,7 @@ export const TitleAnimation: React.FC<TitleAnimationProps> = ({
         left: '50%',
         transform: 'translate(-50%, -50%)',
         textAlign: 'center',
-        width: '80%',
+        width: '90%',
         zIndex: 20,
       }}
     >
@@ -145,6 +147,8 @@ const TitleText: React.FC<{ title: string; color: string; fontSize: number }> = 
       ].join(', '),
       lineHeight: 1.3,
       letterSpacing: '0.02em',
+      whiteSpace: 'normal',
+      wordBreak: 'break-all',
     }}
   >
     {title}

@@ -44,13 +44,35 @@ export const SETTINGS = {
 
 // キャラクターごとの利用可能な画像ファイル
 export const AVAILABLE_IMAGES: Record<string, string[]> = {
+  "ep006": [
+    "01_hormuz_map.png",
+    "02_energy_dependency.png",
+    "03_oil_price_scenario.png",
+    "04_blockade_flow.png",
+    "05_investment_map.png",
+    "06_thumbnail.png"
+  ],
   "kuro_zunda": [
     "mouth_close.png",
     "mouth_open.png"
   ],
+  "maro": [
+    "maro_angry.png",
+    "maro_close.png",
+    "maro_happy.png",
+    "maro_open.png",
+    "maro_sad.png"
+  ],
   "metan": [
     "mouth_close.png",
     "mouth_open.png"
+  ],
+  "ponchan": [
+    "ponchan_angry.png",
+    "ponchan_close.png",
+    "ponchan_happy.png",
+    "ponchan_open.png",
+    "ponchan_sad.png"
   ],
   "zundamon": [
     "mouth_close.png",

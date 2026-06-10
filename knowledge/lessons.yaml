@@ -1,0 +1,38 @@
+# knowledge/lessons.yaml
+# 蓄積教訓 — Keep/Discard 判定済みの学習済みルール
+# knowledge-keeper エージェントが自動追記する
+# directive.yaml の active_lessons に昇格したものは scope: channel-wide
+
+version: 1
+updated: "2026-04-05"
+
+lessons:
+  - id: "les_001"
+    verdict: "KEEP"
+    scope: "channel-wide"
+    category: "hook_structure"
+    do: "hookの最初のセリフで具体的な数字（金額・パーセント・年数）を明示する"
+    dont: "「今日は〜について話すよ」という前置きで始める"
+    reason: "視聴者の離脱は最初の10秒に集中する。数字は即座に興味を喚起する"
+    episodes: []
+    created: "2026-04-05"
+
+  - id: "les_002"
+    verdict: "KEEP"
+    scope: "channel-wide"
+    category: "visual_sync"
+    do: "analysisチャプターでグラフを使う際は、台詞でグラフの数値を直接読み上げる"
+    dont: "「このグラフを見てください」とだけ言ってグラフに言及しない"
+    reason: "視覚と音声の一致が理解度と視聴継続率を高める（dual coding theory）"
+    episodes: []
+    created: "2026-04-05"
+
+  - id: "les_003"
+    verdict: "TENTATIVE"
+    scope: "channel-wide"
+    category: "script_length"
+    do: "analysisチャプターを2つに分割し、それぞれ8〜10セリフにまとめる"
+    dont: "analysisを1チャプターに詰め込んで15セリフ以上にする"
+    reason: "長いチャプターは中盤離脱を招く（仮説中: 検証エピソード数不足）"
+    episodes: []
+    created: "2026-04-05"

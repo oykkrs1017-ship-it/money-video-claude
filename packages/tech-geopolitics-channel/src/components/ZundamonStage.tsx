@@ -13,6 +13,8 @@ interface ZundamonStageProps {
   position?: 'left' | 'right' | 'center';
   /** キャラの高さ(px) デフォルト 320 */
   height?: number;
+  /** 外側方向への追加オフセット(px) デフォルト 0 */
+  offsetX?: number;
 }
 
 export const ZundamonStage: React.FC<ZundamonStageProps> = ({
@@ -21,6 +23,7 @@ export const ZundamonStage: React.FC<ZundamonStageProps> = ({
   startFrame,
   position = 'right',
   height = 320,
+  offsetX = 0,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -65,9 +68,9 @@ export const ZundamonStage: React.FC<ZundamonStageProps> = ({
   // 水平位置
   const positionStyle: React.CSSProperties =
     position === 'left'
-      ? { left: '-8%' }
+      ? { left: `${-180 - offsetX}px` }
       : position === 'right'
-      ? { right: '-8%' }
+      ? { right: `${-180 - offsetX}px` }
       : { left: '50%', transform: 'translateX(-50%)' };
 
   // スライドイン: 画面外(下)から登場

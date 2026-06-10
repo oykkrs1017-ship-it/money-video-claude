@@ -1,0 +1,84 @@
+# knowledge/competitor-channels.yaml
+# 競合・参考YouTubeチャンネル一覧
+# topic-researcher エージェントがリサーチ時に参照する
+# チャンネルIDは YouTube チャンネルURL の @〜 部分 または /channel/UC〜 部分
+
+channels:
+  # ─── 投資×テック系（直接競合）──────────────────────────────────────────────
+  # handle に @xxx または channel/UCID を指定（両方 yt-dlp で使用可能）
+  - handle: "channel/UCFXl12dZUPs7MLy_dMkMZYw"
+    name: "高橋ダン（日本語）"
+    category: "investment_tech"
+    note: "グローバル視点の投資・経済解説"
+
+  - handle: "@ryogakucho"
+    name: "両学長"
+    category: "investment"
+    note: "個人投資家向け資産形成"
+
+  - handle: "channel/UCfJEDCUlzQl4-atLp6Z9DcQ"
+    name: "テスタ"
+    category: "investment"
+    note: "株式投資・デイトレード"
+
+  # ─── 地政学・ニュース解説系 ──────────────────────────────────────────────────
+  - handle: "@kazuyahkd"
+    name: "KAZUYA Channel"
+    category: "geopolitics"
+    note: "時事・保守系ニュース解説"
+
+  # ─── 追加チャンネル（ハンドル未確認 — URLで直接確認後に追記してください）──────
+  # - handle: "@CHANNEL_HANDLE"
+  #   name: "チャンネルくらら / CGS"
+  #   category: "geopolitics"
+  #   note: "地政学・安全保障"
+  #
+  # - handle: "@CHANNEL_HANDLE"
+  #   name: "ナスダック100太郎"
+  #   category: "investment_tech"
+  #   note: "米国株・テック株投資"
+
+# ─── ニュースリサーチ用キーワード ────────────────────────────────────────────
+# research-topics.ts がExa/WebSearchで使用するキーワード一覧
+keywords_for_news:
+  # 半導体・製造業
+  - "半導体 輸出規制 2026"
+  - "TSMC 投資 日本"
+  - "エヌビディア GPU 規制"
+  - "インテル 半導体 工場"
+
+  # AI・データセンター
+  - "AI データセンター 投資"
+  - "大規模言語モデル 電力"
+  - "OpenAI Microsoft 競争"
+
+  # 地政学・貿易
+  - "米中 貿易摩擦 最新"
+  - "輸出規制 日本 影響"
+  - "関税 半導体 影響"
+
+  # エネルギー・宇宙
+  - "核融合 投資 最新"
+  - "SpaceX スターリンク 日本"
+  - "再生可能エネルギー 投資"
+
+  # 日本経済
+  - "円安 テック企業 影響"
+  - "日本 産業政策 半導体"
+
+# ─── Reddit 投資コミュニティ（--with-reddit フラグで有効化）──────────────────────
+# rdt-cli が未インストールの場合は自動でスキップされる
+# インストール方法: pip install rdt-cli → rdt login
+subreddits:
+  - handle: "investing"
+    focus: "米国株・ETF 投資家センチメント（英語圏最大の投資コミュニティ）"
+  - handle: "japanfinance"
+    focus: "在日外国人・日本在住者の資産運用・税金・NISA"
+  - handle: "stocks"
+    focus: "個別銘柄の最新話題・決算反応"
+
+# ─── リサーチ設定 ─────────────────────────────────────────────────────────────
+settings:
+  max_videos_per_channel: 10     # 1チャンネルあたり取得する最新動画数
+  news_lookback_days: 7          # ニュース検索の遡及日数
+  max_news_per_keyword: 5        # キーワードあたりのニュース件数

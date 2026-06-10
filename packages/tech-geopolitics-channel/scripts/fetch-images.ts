@@ -15,59 +15,34 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as https from 'https';
 import * as http from 'http';
+import * as crypto from 'crypto';
 import { URL } from 'url';
+import { parse as parseYaml } from 'yaml';
 
 // ---------------------------------------------------------------------------
-// Lookup tables
+// Lookup tables（config/assets.yaml からロード）
 // ---------------------------------------------------------------------------
 
-const MAP_COORDS: Record<string, { lon: number; lat: number; zoom: number; width: number; height: number }> = {
-  'map_taiwan':   { lon: 121.0, lat: 23.5,  zoom: 6,  width: 600, height: 400 },
-  'map_usachina': { lon: 128.0, lat: 30.0,  zoom: 3,  width: 700, height: 420 },
-  'map_japan':    { lon: 137.0, lat: 37.5,  zoom: 5,  width: 500, height: 600 },
-  'map_china':    { lon: 105.0, lat: 35.0,  zoom: 4,  width: 640, height: 480 },
-  'map_asia':     { lon: 110.0, lat: 30.0,  zoom: 3,  width: 700, height: 500 },
-  'map_world':    { lon: 10.0,  lat: 20.0,  zoom: 1,  width: 800, height: 480 },
-};
+interface AssetsConfig {
+  mapCoords: Record<string, { lon: number; lat: number; zoom: number; width: number; height: number }>;
+  logoDomains: Record<string, string>;
+  flagCodes: Record<string, string>;
+  imgSearchTerms: Record<string, string>;
+}
 
-const LOGO_DOMAINS: Record<string, string> = {
-  'logo_tsmc':           'tsmc.com',
-  'logo_nvidia':         'nvidia.com',
-  'logo_samsung':        'samsung.com',
-  'logo_intel':          'intel.com',
-  'logo_apple':          'apple.com',
-  'logo_softbank':       'softbank.jp',
-  'logo_google':         'google.com',
-  'logo_microsoft':      'microsoft.com',
-  'logo_amazon':         'amazon.com',
-  'logo_meta':           'meta.com',
-  'logo_arm':            'arm.com',
-  'logo_asml':           'asml.com',
-  'logo_tokyo_electron': 'tel.com',
-};
+function loadAssetsConfig(): AssetsConfig {
+  const configPath = path.resolve(__dirname, '..', 'config', 'assets.yaml');
+  if (!fs.existsSync(configPath)) {
+    throw new Error(`assets.yaml が見つかりません: ${configPath}`);
+  }
+  return parseYaml(fs.readFileSync(configPath, 'utf-8')) as AssetsConfig;
+}
 
-const FLAG_CODES: Record<string, string> = {
-  'flag_jp': 'JP',
-  'flag_us': 'US',
-  'flag_cn': 'CN',
-  'flag_tw': 'TW',
-  'flag_kr': 'KR',
-  'flag_de': 'DE',
-  'flag_gb': 'GB',
-  'flag_in': 'IN',
-  'flag_au': 'AU',
-  'flag_eu': 'EU',
-};
-
-const IMG_SEARCH_TERMS: Record<string, string> = {
-  'img_semiconductor': 'semiconductor chip microchip',
-  'img_ai_chip':       'AI processor chip technology',
-  'img_supply_chain':  'global supply chain logistics',
-  'img_datacenter':    'data center servers',
-  'img_stock_market':  'stock market trading chart',
-  'img_oil':           'oil barrel crude petroleum',
-  'img_currency':      'currency exchange dollar yen',
-};
+const ASSETS = loadAssetsConfig();
+const MAP_COORDS = ASSETS.mapCoords;
+const LOGO_DOMAINS = ASSETS.logoDomains;
+const FLAG_CODES = ASSETS.flagCodes;
+const IMG_SEARCH_TERMS = ASSETS.imgSearchTerms;
 
 // ---------------------------------------------------------------------------
 // Types
@@ -75,6 +50,8 @@ const IMG_SEARCH_TERMS: Record<string, string> = {
 
 interface ImageData {
   src: string;
+  /** 外部画像URL（指定時は fetch-images が自動ダウンロードして src に保存） */
+  url?: string;
   caption?: string;
   position?: string;
   width?: number;
@@ -285,6 +262,32 @@ async function fetchImgImage(key: string, destPath: string): Promise<void> {
 }
 
 // ---------------------------------------------------------------------------
+// Direct URL image download
+// ---------------------------------------------------------------------------
+
+/**
+ * 任意のURL から画像をダウンロードして public/content/ に保存する。
+ * 既に存在する場合はスキップ。
+ * @returns "content/<fileName>" 形式の src パス
+ */
+async function downloadUrlImage(url: string, destDir: string): Promise<string> {
+  const urlHash = crypto.createHash('md5').update(url).digest('hex').slice(0, 8);
+  const extMatch = url.match(/\.(jpg|jpeg|png|webp|gif|svg)(\?.*)?$/i);
+  const ext = extMatch?.[1] ?? 'jpg';
+  const fileName = `web_${urlHash}.${ext}`;
+  const destPath = path.join(destDir, fileName);
+
+  if (fs.existsSync(destPath)) {
+    console.log(`  [SKIP] Already exists: ${fileName}`);
+    return `content/${fileName}`;
+  }
+
+  await downloadFile(url, destPath);
+  console.log(`  [OK] Downloaded: ${fileName}`);
+  return `content/${fileName}`;
+}
+
+// ---------------------------------------------------------------------------
 // Route image download by prefix
 // ---------------------------------------------------------------------------
 
@@ -407,25 +410,60 @@ async function main(): Promise<void> {
   const scriptContent = fs.readFileSync(absoluteInputPath, 'utf-8');
   const script = JSON.parse(scriptContent) as ScriptInput;
 
-  // Collect all unique imageData.src values from visuals
-  const seenSrcs = new Set<string>();
+  // Ensure public/content directory exists (needed early for URL downloads)
+  const publicContentDir = path.resolve('./public/content');
+  if (!fs.existsSync(publicContentDir)) {
+    fs.mkdirSync(publicContentDir, { recursive: true });
+    console.log(`Created directory: ${publicContentDir}`);
+  }
+
+  // --- Step 1: Process imageData.url fields (download and update src) ---
+  let urlDownloadCount = 0;
+  let scriptModified = false;
+
   for (const chapter of script.chapters) {
     for (const visual of chapter.visuals ?? []) {
+      if (visual.type === 'image' && visual.imageData?.url) {
+        const imgData = visual.imageData;
+        const imgUrl = imgData.url as string;
+        process.stdout.write(`[URL] ${imgUrl.slice(0, 60)}... `);
+        try {
+          const newSrc = await downloadUrlImage(imgUrl, publicContentDir);
+          imgData.src = newSrc;
+          urlDownloadCount++;
+          scriptModified = true;
+        } catch (err) {
+          const message = err instanceof Error ? err.message : String(err);
+          console.log(`\n  [ERROR] ${message}`);
+        }
+      }
+    }
+  }
+
+  if (scriptModified) {
+    fs.writeFileSync(absoluteInputPath, JSON.stringify(script, null, 2), 'utf-8');
+    console.log(`\nUpdated ${urlDownloadCount} URL image(s) and saved: ${absoluteInputPath}`);
+  }
+
+  // --- Step 2: Collect all unique image src values from visuals ---
+  const seenSrcs = new Set<string>();
+  for (const chapter of script.chapters) {
+    // Schema v1: chapter.visuals[].imageData.src
+    for (const visual of (chapter as any).visuals ?? []) {
       if (visual.type === 'image' && visual.imageData?.src) {
         seenSrcs.add(visual.imageData.src);
+      }
+    }
+    // Schema v2: chapter.lines[].visual.src (current format)
+    for (const line of (chapter as any).lines ?? []) {
+      if (line.visual?.type === 'image' && line.visual?.src) {
+        seenSrcs.add(line.visual.src as string);
       }
     }
   }
 
   const imageSrcs = Array.from(seenSrcs);
   console.log(`\nFound ${imageSrcs.length} unique image(s) in ${absoluteInputPath}\n`);
-
-  // Ensure public/content directory exists
-  const publicContentDir = path.resolve('./public/content');
-  if (!fs.existsSync(publicContentDir)) {
-    fs.mkdirSync(publicContentDir, { recursive: true });
-    console.log(`Created directory: ${publicContentDir}`);
-  }
 
   // Ensure output directory exists
   const outputDir = path.resolve('./output');

@@ -180,6 +180,7 @@ ${topic}
 
 // ---- メイン ----
 async function main() {
+  if (!topic) throw new Error('--topic オプションが必要です');
   console.log('🤖 Claude API で台本を生成中...');
   console.log(`📌 トピック: ${topic}`);
   console.log('');

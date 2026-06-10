@@ -1,5 +1,6 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, spring, interpolate } from 'remotion';
+import { GLASS } from '../styles/glass';
 
 export interface TimelineEvent {
   year: string;           // "2017" や "2020年Q3" など
@@ -24,8 +25,8 @@ interface TimelineScrollProps {
   height?: number;
 }
 
-const NODE_SPACING = 280; // イベント間隔（px）
-const NODE_RADIUS = 14;
+const NODE_SPACING = 440; // イベント間隔（px）
+const NODE_RADIUS = 32;
 
 export const TimelineScroll: React.FC<TimelineScrollProps> = ({
   events,
@@ -34,7 +35,7 @@ export const TimelineScroll: React.FC<TimelineScrollProps> = ({
   scrollSpeed = 1.5,
   activeIndex,
   accentColor = '#4a9eff',
-  textColor = '#ffffff',
+  textColor = '#333333',
   width = 1200,
   height = 220,
 }) => {
@@ -75,6 +76,11 @@ export const TimelineScroll: React.FC<TimelineScrollProps> = ({
       position: 'relative',
       overflow: 'hidden',
       opacity: fadeIn,
+      background: GLASS.bg,
+      backdropFilter: GLASS.blur,
+      WebkitBackdropFilter: GLASS.blur,
+      borderRadius: GLASS.radius,
+      border: GLASS.border,
     }}>
       {/* タイトル */}
       {title && (
@@ -82,13 +88,13 @@ export const TimelineScroll: React.FC<TimelineScrollProps> = ({
           position: 'absolute',
           top: 0, left: 0, right: 0,
           textAlign: 'center',
-          fontSize: 16,
-          fontWeight: 700,
-          color: textColor,
-          opacity: 0.8,
-          textShadow: '0 1px 4px rgba(0,0,0,0.8)',
+          fontSize: 44,
+          fontWeight: 800,
+          color: '#1a1a1a',
+          opacity: 0.95,
+          textShadow: '0 1px 3px rgba(255,255,255,0.6)',
           zIndex: 10,
-          padding: '6px 0',
+          padding: '16px 0',
         }}>
           {title}
         </div>
@@ -97,10 +103,10 @@ export const TimelineScroll: React.FC<TimelineScrollProps> = ({
       {/* スクロールコンテナ */}
       <div style={{
         position: 'absolute',
-        top: title ? 28 : 0,
+        top: title ? 64 : 0,
         left: 0,
         width: totalWidth,
-        height: title ? height - 28 : height,
+        height: title ? height - 64 : height,
         transform: `translateX(${-scrollX + width * 0.15}px)`,
       }}>
         {/* メインライン */}
@@ -113,8 +119,8 @@ export const TimelineScroll: React.FC<TimelineScrollProps> = ({
           <line
             x1={0} y1={lineY}
             x2={totalWidth} y2={lineY}
-            stroke={`${accentColor}33`}
-            strokeWidth={3}
+            stroke={`rgba(0,0,0,0.25)`}
+            strokeWidth={4}
           />
           {/* アクティブまでのハイライトライン */}
           {activeIndex !== undefined && (
@@ -202,11 +208,11 @@ export const TimelineScroll: React.FC<TimelineScrollProps> = ({
                 {/* 年ラベル */}
                 <text
                   x={cx}
-                  y={lineY + NODE_RADIUS + 20}
+                  y={lineY + NODE_RADIUS + 44}
                   textAnchor="middle"
-                  fill={isActive ? accentColor : isFuture ? `${textColor}55` : `${textColor}99`}
-                  fontSize={isActive ? 16 : 13}
-                  fontWeight={isActive ? 900 : 600}
+                  fill={isActive ? accentColor : isFuture ? 'rgba(0,0,0,0.35)' : 'rgba(0,0,0,0.75)'}
+                  fontSize={isActive ? 48 : 40}
+                  fontWeight={isActive ? 900 : 700}
                   opacity={nodeSpring}
                 >
                   {event.year}
@@ -215,8 +221,8 @@ export const TimelineScroll: React.FC<TimelineScrollProps> = ({
                 {/* イベント名（上段・偶数インデックス） */}
                 {i % 2 === 0 && (
                   <foreignObject
-                    x={cx - 110} y={lineY - 115}
-                    width={220} height={90}
+                    x={cx - 180} y={lineY - 260}
+                    width={360} height={240}
                   >
                     <div style={{
                       textAlign: 'center',
@@ -224,23 +230,23 @@ export const TimelineScroll: React.FC<TimelineScrollProps> = ({
                       transform: `translateY(${interpolate(nodeSpring, [0, 1], [-10, 0])}px)`,
                     } as React.CSSProperties}>
                       <div style={{
-                        fontSize: isActive ? 15 : 13,
+                        fontSize: isActive ? 32 : 26,
                         fontWeight: isActive ? 800 : 600,
-                        color: isActive ? '#fff' : `${textColor}cc`,
-                        textShadow: '0 1px 6px rgba(0,0,0,0.9)',
-                        lineHeight: 1.3,
-                        padding: isActive ? '4px 8px' : '2px 4px',
-                        background: isActive ? `${accentColor}33` : 'transparent',
-                        borderRadius: 6,
-                        border: isActive ? `1px solid ${accentColor}66` : 'none',
+                        color: '#1a1a1a',
+                        textShadow: 'none',
+                        lineHeight: 1.35,
+                        padding: isActive ? '10px 16px' : '6px 12px',
+                        background: isActive ? `${accentColor}33` : 'rgba(0,0,0,0.06)',
+                        borderRadius: 10,
+                        border: isActive ? `2px solid ${accentColor}` : '1px solid rgba(0,0,0,0.15)',
                       }}>
                         {event.label}
                       </div>
                       {event.description && isActive && (
                         <div style={{
-                          fontSize: 11,
+                          fontSize: 24,
                           color: `${textColor}88`,
-                          marginTop: 4,
+                          marginTop: 8,
                           lineHeight: 1.4,
                         }}>
                           {event.description}
@@ -253,8 +259,8 @@ export const TimelineScroll: React.FC<TimelineScrollProps> = ({
                 {/* イベント名（下段・奇数インデックス） */}
                 {i % 2 !== 0 && (
                   <foreignObject
-                    x={cx - 110} y={lineY + NODE_RADIUS + 42}
-                    width={220} height={90}
+                    x={cx - 180} y={lineY + NODE_RADIUS + 60}
+                    width={360} height={240}
                   >
                     <div style={{
                       textAlign: 'center',
@@ -262,23 +268,23 @@ export const TimelineScroll: React.FC<TimelineScrollProps> = ({
                       transform: `translateY(${interpolate(nodeSpring, [0, 1], [10, 0])}px)`,
                     } as React.CSSProperties}>
                       <div style={{
-                        fontSize: isActive ? 15 : 13,
+                        fontSize: isActive ? 32 : 26,
                         fontWeight: isActive ? 800 : 600,
-                        color: isActive ? '#fff' : `${textColor}cc`,
-                        textShadow: '0 1px 6px rgba(0,0,0,0.9)',
-                        lineHeight: 1.3,
-                        padding: isActive ? '4px 8px' : '2px 4px',
-                        background: isActive ? `${accentColor}33` : 'transparent',
-                        borderRadius: 6,
-                        border: isActive ? `1px solid ${accentColor}66` : 'none',
+                        color: '#1a1a1a',
+                        textShadow: 'none',
+                        lineHeight: 1.35,
+                        padding: isActive ? '10px 16px' : '6px 12px',
+                        background: isActive ? `${accentColor}33` : 'rgba(0,0,0,0.06)',
+                        borderRadius: 10,
+                        border: isActive ? `2px solid ${accentColor}` : '1px solid rgba(0,0,0,0.15)',
                       }}>
                         {event.label}
                       </div>
                       {event.description && isActive && (
                         <div style={{
-                          fontSize: 11,
+                          fontSize: 24,
                           color: `${textColor}88`,
-                          marginTop: 4,
+                          marginTop: 8,
                           lineHeight: 1.4,
                         }}>
                           {event.description}

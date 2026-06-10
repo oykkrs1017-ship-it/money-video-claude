@@ -6,51 +6,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { execSync } from 'child_process';
-
-// ---- VariationEngine (インライン実装: Node.js から import しやすいよう独立) ----
-type ThemeType = 'midnight-blue' | 'forest-green' | 'warm-sunset' | 'arctic-white' | 'crimson-dark';
-type TitleStyleType = 'slide-left' | 'fade-scale' | 'typewriter' | 'glitch' | 'split-reveal';
-type CharacterLayoutType = 'left-right' | 'bottom-center' | 'picture-in-picture' | 'alternating';
-type SubtitleStyleType = 'bottom-bar' | 'floating' | 'highlight-word' | 'cinematic';
-type TransitionType = 'fade' | 'slide' | 'zoom' | 'wipe' | 'dissolve';
-type BackgroundType = 'gradient' | 'particles' | 'grid' | 'wave' | 'geometric';
-
-interface VariationConfig {
-  theme: ThemeType; titleStyle: TitleStyleType; characterLayout: CharacterLayoutType;
-  subtitleStyle: SubtitleStyleType; transition: TransitionType; background: BackgroundType;
-}
-
-const THEMES: ThemeType[] = ['midnight-blue', 'forest-green', 'warm-sunset', 'arctic-white', 'crimson-dark'];
-const TITLE_STYLES: TitleStyleType[] = ['slide-left', 'fade-scale', 'typewriter', 'glitch', 'split-reveal'];
-const CHARACTER_LAYOUTS: CharacterLayoutType[] = ['left-right', 'bottom-center', 'picture-in-picture', 'alternating'];
-const SUBTITLE_STYLES: SubtitleStyleType[] = ['bottom-bar', 'floating', 'highlight-word', 'cinematic'];
-const TRANSITIONS: TransitionType[] = ['fade', 'slide', 'zoom', 'wipe', 'dissolve'];
-const BACKGROUNDS: BackgroundType[] = ['gradient', 'particles', 'grid', 'wave', 'geometric'];
-
-function hashSeed(seed: string): number {
-  let hash = 5381;
-  for (let i = 0; i < seed.length; i++) {
-    hash = ((hash << 5) + hash) ^ seed.charCodeAt(i);
-    hash = hash >>> 0;
-  }
-  return hash;
-}
-
-function pick<T>(arr: T[], hash: number, offset: number): T {
-  return arr[Math.abs((hash + offset * 2654435769) >>> 0) % arr.length];
-}
-
-function getVariation(seed: string): VariationConfig {
-  const hash = hashSeed(seed);
-  return {
-    theme:           pick(THEMES,            hash, 0),
-    titleStyle:      pick(TITLE_STYLES,      hash, 1),
-    characterLayout: pick(CHARACTER_LAYOUTS, hash, 2),
-    subtitleStyle:   pick(SUBTITLE_STYLES,   hash, 3),
-    transition:      pick(TRANSITIONS,       hash, 4),
-    background:      pick(BACKGROUNDS,       hash, 5),
-  };
-}
+// Phase 1 rewire: VariationEngine は @money-video/domain に一本化。インライン実装を廃止。
+import { getVariation } from '@money-video/domain';
 
 // ---- ユーティリティ ----
 function run(cmd: string, label: string) {
