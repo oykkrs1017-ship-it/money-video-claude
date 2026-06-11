@@ -11,58 +11,26 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { parse as parseYaml } from 'yaml';
 import { schema } from '@money-video/domain';
-import type { InfographicSpec } from '@money-video/domain';
+import type {
+  InfographicSpec,
+  SpeakerType,
+  EmotionType,
+  ChapterType,
+  ChartType,
+  SlideLayout,
+  ImagePosition,
+  ImageAnimation,
+  SlideCompareColumn,
+  SlideNumber,
+  CompareItemData,
+  TimelineEventData,
+  Visual,
+  ChartDataPoint,
+  ChartDataSet,
+} from '@money-video/domain';
 
-// ---------- 型定義 (src/utils/types.ts から必要なものをインライン) ----------
-
-type SpeakerType = 'maro' | 'ponchan';
-type EmotionType = 'normal' | 'happy' | 'surprised' | 'thinking' | 'serious' | 'sad';
-type ChapterType = 'hook' | 'explanation' | 'analysis' | 'summary' | 'cta';
-type ChartType = 'line' | 'bar' | 'pie' | 'area';
+// VisualLegacy のみローカル定義（後方互換用・domain には存在しない）
 type VisualType = 'chart' | 'keyword' | 'splitCompare' | 'timeline' | 'split' | 'image' | 'stat' | 'slide';
-type ImagePosition = 'top-left' | 'top-right' | 'top-center' | 'center-right' | 'center';
-type ImageAnimation = 'fade' | 'slide-right' | 'slide-left' | 'zoom';
-type SlideLayout = 'bullets' | 'compare' | 'numbers' | 'quote' | 'steps' | 'highlight';
-
-interface SlideCompareColumn {
-  label: string;
-  color?: string;
-  items: string[];
-}
-
-interface SlideNumber {
-  value: string;
-  label: string;
-  subtext?: string;
-}
-
-interface CompareItemData {
-  label: string;
-  value?: string;
-  subtext?: string;
-  color?: string;
-  items?: string[];
-}
-
-interface TimelineEventData {
-  year: string;
-  label: string;
-  description?: string;
-  highlight?: boolean;
-  color?: string;
-}
-
-/** 新形式: 行単位ビジュアル discriminated union */
-type Visual =
-  | { type: 'chart'; key: string; chartType?: ChartType; title?: string }
-  | { type: 'image'; src?: string; url?: string; caption?: string; position?: ImagePosition; width?: number; duration?: number; animation?: ImageAnimation }
-  | { type: 'slide'; layout?: SlideLayout; title?: string; bullets?: string[]; highlight?: string; subtext?: string; quote?: string; attribution?: string; numbers?: SlideNumber[]; left?: SlideCompareColumn; right?: SlideCompareColumn; color?: string }
-  | { type: 'stat'; value: string; label: string; subtext?: string; metrics?: { key: string; value: string }[] }
-  | { type: 'highlight'; text: string }
-  | { type: 'keyword'; text: string }
-  | { type: 'timeline'; events: TimelineEventData[]; title?: string; activeIndex?: number; scrollSpeed?: number }
-  | { type: 'split'; left: CompareItemData; right: CompareItemData; title?: string }
-  | { type: 'rich-panel'; number?: number; title: string; icon?: string; body?: string; emphasis?: string; points?: string[]; color?: string };
 
 /** 旧形式: チャプターレベルのビジュアル（後方互換） */
 interface VisualLegacy {
@@ -115,18 +83,6 @@ interface Chapter {
   /** @deprecated 後方互換のため残存。新形式では ScriptLine.visual を使用 */
   visuals?: VisualLegacy[];
   topic?: string;
-}
-
-interface ChartDataPoint {
-  label: string;
-  value: number;
-  color?: string;
-}
-
-interface ChartDataSet {
-  title?: string;
-  chartType?: ChartType;
-  data: ChartDataPoint[];
 }
 
 interface ScriptInput {
