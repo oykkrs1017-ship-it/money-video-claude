@@ -25,10 +25,12 @@ import * as fs from 'fs';
 dotenv.config({ path: path.join(__dirname, '..', '..', '.env') });
 dotenv.config({ path: path.join(__dirname, '..', '.env'), override: true });
 
+import { z } from 'zod';
 import { GenerateScriptUseCase } from '@money-video/usecases/generateScript';
 import { ExaTopicResearcher } from '@money-video/adapters/research';
 import { makeScriptDeps } from './lib/useCaseDeps';
 import { runScript } from './lib/run-script';
+import { readJsonValidated } from '@money-video/shared-ts';
 
 // ─── 定数 ─────────────────────────────────────────────────────────────────────
 
@@ -78,11 +80,12 @@ function nextEpId(): string {
   return `ep${String(next).padStart(3, '0')}`;
 }
 
-interface NextTopic {
-  title: string;
-  theme?: string;
-  titleCandidates?: string[];
-}
+const NextTopicSchema = z.object({
+  title: z.string(),
+  theme: z.string().optional(),
+  titleCandidates: z.array(z.string()).optional(),
+});
+type NextTopic = z.infer<typeof NextTopicSchema>;
 
 function readNextTopic(): NextTopic {
   const p = path.join(inputDir, 'next-topic.json');
@@ -91,7 +94,7 @@ function readNextTopic(): NextTopic {
     console.error(`❌ input/next-topic.json が見つかりません`);
     process.exit(1);
   }
-  return JSON.parse(fs.readFileSync(p, 'utf-8')) as NextTopic;
+  return readJsonValidated(p, NextTopicSchema);
 }
 
 // ─── main ─────────────────────────────────────────────────────────────────────

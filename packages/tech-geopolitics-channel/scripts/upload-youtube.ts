@@ -167,7 +167,7 @@ async function main(): Promise<void> {
 
     const existingPath = path.join(rootDir, 'brain', 'scorecards', `${epId}.json`);
     if (fs.existsSync(existingPath)) {
-      const existing = JSON.parse(fs.readFileSync(existingPath, 'utf8')) as any;
+      const existing = JSON.parse(fs.readFileSync(existingPath, 'utf8')) as { production?: unknown; hypothesisId?: string | null };
       scorecard.production = existing.production;
       scorecard.hypothesisId = existing.hypothesisId ?? null;
     }

@@ -11,7 +11,8 @@
     "./logger": "./src/logger.ts",
     "./env": "./src/env.ts",
     "./errors": "./src/errors.ts",
-    "./id": "./src/id.ts"
+    "./id": "./src/id.ts",
+    "./json": "./src/json.ts"
   },
   "scripts": {
     "test": "vitest run",
