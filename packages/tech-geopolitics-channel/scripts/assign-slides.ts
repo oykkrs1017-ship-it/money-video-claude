@@ -18,6 +18,11 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
+import {
+  assignSectionChapterIndices,
+  assignCoverTocAudioFiles,
+  type SlideMapEntry,
+} from './lib/slide-assignment';
 
 // ─── 引数解析 ────────────────────────────────────────────────────────────────
 const args = process.argv.slice(2);
@@ -43,15 +48,6 @@ for (const p of [slidesPath, scriptPath, slideMapPath]) {
 }
 
 // ─── 型定義 ──────────────────────────────────────────────────────────────────
-
-interface SlideMapEntry {
-  slideNum: number;
-  slidePng: string;
-  type: string;
-  audioFile?: string;
-  audioFiles?: string[];
-  chapterIndex?: number;
-}
 
 interface ScriptLine {
   audioFile?: string;
@@ -79,7 +75,7 @@ interface SlidesJson {
 }
 
 // ─── データ読み込み ──────────────────────────────────────────────────────────
-const slideMap: SlideMapEntry[]  = JSON.parse(fs.readFileSync(slideMapPath, 'utf-8'));
+let slideMap: SlideMapEntry[]    = JSON.parse(fs.readFileSync(slideMapPath, 'utf-8'));
 const scriptInput: ScriptInput   = JSON.parse(fs.readFileSync(scriptPath, 'utf-8'));
 const slidesJson: SlidesJson     = JSON.parse(fs.readFileSync(slidesPath, 'utf-8'));
 
@@ -107,25 +103,10 @@ for (const ch of scriptInput.chapters) {
 // ─── Step 1: sectionエントリにchapterIndexを付与 ─────────────────────────────
 // 直後のvisualエントリのaudioFileからchapterIndexを推定する
 console.log('\n[assign-slides] Step 1: section → chapterIndex付与');
-for (let i = 0; i < slideMap.length; i++) {
-  const entry = slideMap[i];
-  if (entry.type !== 'section') continue;
-  if (entry.chapterIndex !== undefined) {
-    console.log(`  slide-${entry.slideNum} [section] chapterIndex=${entry.chapterIndex} (既存)`);
-    continue;
-  }
-  // 直後のvisualエントリを探す
-  const nextVisual = slideMap.slice(i + 1).find(e => e.type === 'visual' && e.audioFile);
-  if (nextVisual?.audioFile) {
-    const ci = audioToChapterIndex.get(nextVisual.audioFile) ?? 0;
-    entry.chapterIndex = ci;
-    console.log(`  slide-${entry.slideNum} [section] → ch${ci} (${nextVisual.audioFile}から推定)`);
-  } else {
-    // フォールバック: 前のvisualのchapterIndex + 1
-    const prevVisual = slideMap.slice(0, i).reverse().find(e => e.type === 'visual' && e.audioFile);
-    const prevCi = prevVisual?.audioFile ? (audioToChapterIndex.get(prevVisual.audioFile) ?? 0) : 0;
-    entry.chapterIndex = prevCi + 1;
-    console.log(`  slide-${entry.slideNum} [section] → ch${prevCi + 1} (フォールバック)`);
+slideMap = assignSectionChapterIndices(slideMap, audioToChapterIndex);
+for (const entry of slideMap) {
+  if (entry.type === 'section') {
+    console.log(`  slide-${entry.slideNum} [section] chapterIndex=${entry.chapterIndex}`);
   }
 }
 
@@ -134,33 +115,14 @@ console.log('\n[assign-slides] Step 2: cover/toc → visual変換');
 const hookLines = linesByRole.get('hook') ?? [];
 const hookAudios = hookLines.map(l => l.audioFile).filter((f): f is string => !!f);
 
-for (const entry of slideMap) {
-  if (entry.type !== 'cover' && entry.type !== 'toc') continue;
-  if ((entry.audioFiles?.length ?? 0) > 0) {
-    console.log(`  slide-${entry.slideNum} [${entry.type}] audioFiles既存: ${entry.audioFiles?.length}本`);
-    continue;
+const beforeStep2 = slideMap.map(e => e.type);
+slideMap = assignCoverTocAudioFiles(slideMap, hookAudios);
+slideMap.forEach((entry, i) => {
+  const before = beforeStep2[i];
+  if ((before === 'cover' || before === 'toc') && entry.type === 'visual') {
+    console.log(`  slide-${entry.slideNum} [${before}→visual] audioFiles:${entry.audioFiles?.length}本`);
   }
-
-  if (entry.type === 'cover') {
-    // hookの最初の2セリフを割り当て
-    const files = hookAudios.slice(0, 2);
-    if (files.length > 0) {
-      entry.type = 'visual';
-      entry.audioFile = files[0];
-      entry.audioFiles = files;
-      console.log(`  slide-${entry.slideNum} [cover→visual] audioFiles:${files.length}本`);
-    }
-  } else if (entry.type === 'toc') {
-    // hookの3〜4セリフ目を割り当て（目次紹介）
-    const files = hookAudios.slice(2, 4);
-    if (files.length > 0) {
-      entry.type = 'visual';
-      entry.audioFile = files[0];
-      entry.audioFiles = files;
-      console.log(`  slide-${entry.slideNum} [toc→visual] audioFiles:${files.length}本`);
-    }
-  }
-}
+});
 
 // ─── Step 3: slides.jsonに追加スライドがあれば末尾に追加 ─────────────────────
 console.log('\n[assign-slides] Step 3: 追加スライドの検出・追加');
