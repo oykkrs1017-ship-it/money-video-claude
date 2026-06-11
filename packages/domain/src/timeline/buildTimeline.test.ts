@@ -101,4 +101,11 @@ describe('buildTimeline', () => {
       [1, 0],
     ]);
   });
+
+  it('sets titleFrames=0 and starts first line at frame 0 when hideTitleCard is true', () => {
+    const script = makeScript({ hideTitleCard: true });
+    const result = buildTimeline(script, FPS);
+    expect(result.titleFrames).toBe(0);
+    expect(result.timeline[0]?.startFrame).toBe(0);
+  });
 });
