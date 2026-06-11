@@ -6,12 +6,12 @@
  * スキップ判定・manifest 記録は runner.ts が担う。
  */
 
-import { execSync } from 'child_process';
 import * as fs from 'fs';
 import * as path from 'path';
 import { fail, type PipelineStep } from './runner';
 import { GenerateVoiceUseCase } from '@money-video/usecases/generateVoice';
 import { makeVoiceDeps } from '../lib/useCaseDeps';
+import { runScript as _runScript, runRemotionRender } from '../lib/run-script';
 
 /** 音声生成の既定値（旧 generate-voices.ts と同値） */
 const FPS = 30;
@@ -23,11 +23,9 @@ const VOICES_DIR_RELATIVE = 'voices';
 // ─────────────────────────────────────────────
 
 /** ts-node でサブスクリプトを同期実行し、失敗時は即終了 */
-export function runScript(scriptPath: string, extraArgs: string[] = []): void {
-  const quotedArgs = extraArgs.map((a) => (a.includes(' ') ? `"${a}"` : a)).join(' ');
-  const cmd = `npx ts-node --transpile-only ${scriptPath} ${quotedArgs}`.trimEnd();
+function runScript(scriptPath: string, extraArgs: string[] = []): void {
   try {
-    execSync(cmd, { stdio: 'inherit', cwd: path.resolve('.') });
+    _runScript(scriptPath, extraArgs);
   } catch {
     fail(`${path.basename(scriptPath)} が失敗しました`);
   }
@@ -165,9 +163,8 @@ export function buildSteps(ctx: PipelineContext, flags: PipelineFlags): Pipeline
       inputs: [ctx.propsOutPath],
       outputs: [ctx.mp4Path],
       run: () => {
-        const cmd = `npx remotion render src/index.ts MainVideo --props "${ctx.propsOutPath}" --output "${ctx.mp4Path}"`;
         try {
-          execSync(cmd, { stdio: 'inherit', cwd: path.resolve('.') });
+          runRemotionRender(['src/index.ts', 'MainVideo', '--props', ctx.propsOutPath, '--output', ctx.mp4Path]);
         } catch {
           fail('remotion render が失敗しました');
         }

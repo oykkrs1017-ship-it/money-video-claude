@@ -17,7 +17,7 @@
 
 import * as path from 'path';
 import * as fs from 'fs';
-import { execSync } from 'child_process';
+import { runRemotionRender } from './lib/run-script';
 
 interface Args {
   epId: string;
@@ -58,10 +58,7 @@ function main(): void {
 
   process.stdout.write(`[render-shorts] ShortsVideo レンダリング開始 → ${outputFile}\n`);
 
-  execSync(
-    `npx remotion render ShortsVideo "${outputFile}"`,
-    { cwd: packageRoot, stdio: 'inherit' },
-  );
+  runRemotionRender(['ShortsVideo', outputFile], { cwd: packageRoot });
 
   process.stdout.write(`[render-shorts] 完了: ${outputFile}\n`);
 }

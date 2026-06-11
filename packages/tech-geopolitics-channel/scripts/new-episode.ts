@@ -22,13 +22,13 @@
 import * as dotenv from 'dotenv';
 import * as path from 'path';
 import * as fs from 'fs';
-import { execSync } from 'child_process';
 dotenv.config({ path: path.join(__dirname, '..', '..', '.env') });
 dotenv.config({ path: path.join(__dirname, '..', '.env'), override: true });
 
 import { GenerateScriptUseCase } from '@money-video/usecases/generateScript';
 import { ExaTopicResearcher } from '@money-video/adapters/research';
 import { makeScriptDeps } from './lib/useCaseDeps';
+import { runScript } from './lib/run-script';
 
 // ─── 定数 ─────────────────────────────────────────────────────────────────────
 
@@ -65,10 +65,6 @@ function ok(msg: string): void {
 function info(msg: string): void {
   // eslint-disable-next-line no-console
   console.log(`${YELLOW}ℹ  ${msg}${RESET}`);
-}
-
-function run(cmd: string): void {
-  execSync(cmd, { stdio: 'inherit', cwd: packageRoot });
 }
 
 /** input/ ディレクトリ内の最大 ep 番号 + 1 を返す */
@@ -114,12 +110,11 @@ async function main(): Promise<void> {
 
   banner(2, 'トピック選定');
   // --fresh のときだけニュース再取得。--with-exa 指定時は select-topic でも Exa（課金）を併用。
-  const selectArgs = [FRESH ? '--fresh' : '', FRESH && WITH_EXA ? '--with-exa' : '']
-    .filter(Boolean)
-    .join(' ');
-  run(
-    `npx ts-node --transpile-only ${path.join(scriptsDir, 'select-topic.ts')} ${selectArgs}`.trimEnd(),
-  );
+  const selectExtraArgs = [
+    ...(FRESH ? ['--fresh'] : []),
+    ...(FRESH && WITH_EXA ? ['--with-exa'] : []),
+  ];
+  runScript(path.join(scriptsDir, 'select-topic.ts'), selectExtraArgs, { cwd: packageRoot });
   const topic = readNextTopic();
   ok(`選択済みトピック: ${topic.title}`);
 
@@ -155,28 +150,22 @@ async function main(): Promise<void> {
   // ─── Step 4: SEO最適化 ────────────────────────────────────────────────────
 
   banner(4, 'SEO最適化 (optimize-seo)');
-  run(
-    `npx ts-node --transpile-only ${path.join(scriptsDir, 'optimize-seo.ts')} input/${epId}.yaml --auto`,
-  );
+  runScript(path.join(scriptsDir, 'optimize-seo.ts'), [`input/${epId}.yaml`, '--auto'], { cwd: packageRoot });
   ok(`SEO最適化完了: input/${epId}.yaml`);
 
   // ─── Step 5: 音声 / 画像 / インフォグラフィック生成 ──────────────────────
 
   banner(5, '音声・画像・インフォグラフィック生成 (generate.ts)');
 
-  const generateFlags = RENDER ? '--render --no-studio' : '--no-studio';
-  run(
-    `npx ts-node --transpile-only ${path.join(scriptsDir, 'generate.ts')} input/${epId}.yaml ${generateFlags}`,
-  );
+  const generateExtraArgs = [`input/${epId}.yaml`, '--no-studio', ...(RENDER ? ['--render'] : [])];
+  runScript(path.join(scriptsDir, 'generate.ts'), generateExtraArgs, { cwd: packageRoot });
 
   // ─── Step 6: Shorts レンダリング（縦型・hook チャプター）──────────────────
   // 新規発見の最大入口。本編レンダリング時のみ実行し、失敗しても本編には影響させない。
   if (RENDER) {
     banner(6, 'Shorts レンダリング (render-shorts)');
     try {
-      run(
-        `npx ts-node --transpile-only ${path.join(scriptsDir, 'render-shorts.ts')} --ep ${epId}`,
-      );
+      runScript(path.join(scriptsDir, 'render-shorts.ts'), ['--ep', epId], { cwd: packageRoot });
       ok(`Shorts レンダリング完了: output/${epId}_shorts.mp4`);
     } catch (err) {
       info(`Shorts レンダリングをスキップ（本編には影響なし）: ${err instanceof Error ? err.message : String(err)}`);

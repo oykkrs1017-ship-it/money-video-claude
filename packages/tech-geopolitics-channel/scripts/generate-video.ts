@@ -5,21 +5,9 @@
  */
 import * as fs from 'fs';
 import * as path from 'path';
-import { execSync } from 'child_process';
 // Phase 1 rewire: VariationEngine は @money-video/domain に一本化。インライン実装を廃止。
 import { getVariation } from '@money-video/domain';
-
-// ---- ユーティリティ ----
-function run(cmd: string, label: string) {
-  console.log(`\n▶ ${label}`);
-  console.log(`  $ ${cmd}`);
-  try {
-    execSync(cmd, { stdio: 'inherit', cwd: path.resolve('.') });
-  } catch (e) {
-    console.error(`❌ "${label}" が失敗しました`);
-    throw e;
-  }
-}
+import { runScript, runRemotionRender } from './lib/run-script';
 
 // ---- メイン ----
 async function main() {
@@ -64,10 +52,8 @@ async function main() {
   if (hasAudio) {
     console.log('\n⏭️  音声ファイルが既に存在するためスキップします（再生成する場合は public/voices/ を削除）');
   } else {
-    run(
-      `npx ts-node scripts/generate-voices.ts --input "${inputPath}"`,
-      'VOICEVOX 音声合成'
-    );
+    console.log('\n▶ VOICEVOX 音声合成');
+    runScript('scripts/generate-voices.ts', ['--input', inputPath]);
   }
 
   // 5. output ディレクトリ作成
@@ -80,10 +66,8 @@ async function main() {
   const propsPath = path.join(outputDir, `${videoId}_props.json`);
   fs.writeFileSync(propsPath, JSON.stringify({ scriptInput }), 'utf-8');
 
-  run(
-    `npx remotion render src/index.ts MainVideo "${outputPath}" --props="${propsPath}"`,
-    'Remotion レンダリング'
-  );
+  console.log('\n▶ Remotion レンダリング');
+  runRemotionRender(['src/index.ts', 'MainVideo', outputPath, `--props=${propsPath}`]);
 
   // 7. 後片付け
   if (fs.existsSync(propsPath)) fs.unlinkSync(propsPath);

@@ -11,7 +11,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import { execSync } from 'child_process';
+import { runScript } from './lib/run-script';
 
 // ─── 定数 ─────────────────────────────────────────────────────────────────────
 
@@ -175,10 +175,7 @@ function main(): void {
 
   if (collect) {
     console.log(`${CYAN}▶ アナリティクス収集中...${RESET}`);
-    execSync(
-      `node_modules/.bin/ts-node --transpile-only scripts/collect-analytics.ts --all`,
-      { stdio: 'inherit', cwd: packageRoot },
-    );
+    runScript('scripts/collect-analytics.ts', ['--all'], { cwd: packageRoot });
   }
 
   const cards = loadScorecards().slice(0, n);
