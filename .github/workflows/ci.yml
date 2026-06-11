@@ -25,3 +25,8 @@ jobs:
 
       - name: Test (all workspaces)
         run: npm test
+
+      - name: Coverage (usecases + channel)
+        run: |
+          npm run test -w packages/usecases -- --coverage --reporter=verbose
+          npm run test -w packages/tech-geopolitics-channel -- --coverage --reporter=verbose
