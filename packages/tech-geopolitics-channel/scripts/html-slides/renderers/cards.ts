@@ -352,7 +352,7 @@ export function renderStackedShare(def: SlideDef): string {
             sctx.fillText(hlLabel, boxX + boxW / 2, boxY + 28);
           }
         }
-      } catch(e) {}
+      } catch(e) { console.warn('[stacked-chart] callout draw error:', e); }
     }
   ` : '';
 

@@ -68,6 +68,11 @@ interface Visual {
   text?: string;
 }
 
+interface LineVisual {
+  type: string;
+  src?: string;
+}
+
 interface Line {
   speaker: string;
   text: string;
@@ -75,6 +80,7 @@ interface Line {
   audioFile?: string;
   audioDuration?: number;
   frameCount?: number;
+  visual?: LineVisual;
 }
 
 interface Chapter {
@@ -448,16 +454,9 @@ async function main(): Promise<void> {
   // --- Step 2: Collect all unique image src values from visuals ---
   const seenSrcs = new Set<string>();
   for (const chapter of script.chapters) {
-    // Schema v1: chapter.visuals[].imageData.src
-    for (const visual of (chapter as any).visuals ?? []) {
-      if (visual.type === 'image' && visual.imageData?.src) {
-        seenSrcs.add(visual.imageData.src);
-      }
-    }
-    // Schema v2: chapter.lines[].visual.src (current format)
-    for (const line of (chapter as any).lines ?? []) {
-      if (line.visual?.type === 'image' && line.visual?.src) {
-        seenSrcs.add(line.visual.src as string);
+    for (const line of chapter.lines ?? []) {
+      if (line.visual?.type === 'image' && line.visual.src) {
+        seenSrcs.add(line.visual.src);
       }
     }
   }
