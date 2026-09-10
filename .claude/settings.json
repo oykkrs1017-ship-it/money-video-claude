@@ -233,6 +233,39 @@
           }
         ]
       }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/session-start-context.js\"",
+            "timeout": 8
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/session-end-capture.js\"",
+            "timeout": 8
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \".claude/hooks/precompact-handoff.js\"",
+            "timeout": 8
+          }
+        ]
+      }
     ]
   }
 }
