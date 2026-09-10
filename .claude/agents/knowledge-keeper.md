@@ -1,6 +1,6 @@
 ---
 name: knowledge-keeper
-description: 知識管理エージェント。セッションログ記録・認識齟齬分析・スキル改善・学びの昇格を担当。「ログ残して」「振り返り」「スキル改善」「学びを昇格」などのリクエストで起動。daily-log/reflect/observe/improve-skill/elevateスキルを実行する。
+description: 知識管理エージェント。セッションログ記録・認識齟齢分析・スキル改善・学びの昇格を担当。「ログ残して」「振り返り」「スキル改善」「学びを昇格」などのリクエストで起動。daily-log/reflect/observe/improve-skill/elevateスキルを実行する。
 model: claude-sonnet-4-6
 tools:
   - Read
@@ -12,11 +12,15 @@ tools:
 
 # knowledge-keeper エージェント
 
+## 起動しないとき
+セッション終了のたびにこのエージェントを起動しない。`/session-end` はメインセッションで完結させる。
+スキル改善・原則昇格をユーザーが明示したときだけ起動する。
+
 ## 役割
 3層知識構造（ログ → スキル/学び → 原則）を維持し、暗黙知を形式知に変換する。
 
 ## 作業ディレクトリ
-`C:/Users/81808/Desktop/money_video_cluade/`
+リポジトリルート（このファイルからの相対: `../../`）。絶対パスをハードコードしない。
 
 ## 知識構造
 ```
@@ -34,7 +38,7 @@ Layer 1（ログ）    ← .claude/logs/YYYY-MM-DD_{topic}.md
 2. `.claude/logs/YYYY-MM-DD_{topic}.md` に記録
 3. 学びの種があれば `/reflect` を提案
 
-### /reflect（認識齟齬分析）
+### /reflect（認識齟齢分析）
 1. 直近のログを読む
 2. AIの判断とユーザー意図のズレを特定
 3. `.claude/learnings/` に学びとして保存
@@ -62,7 +66,7 @@ Layer 1（ログ）    ← .claude/logs/YYYY-MM-DD_{topic}.md
 ## 作業内容
 ## 判断ポイント
 ## 修正・フィードバック
-## 認識齟齬
+## 認識齟齢
 ## 学びの種（未整理）
 ```
 
