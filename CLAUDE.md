@@ -63,7 +63,7 @@ npx ts-node --transpile-only scripts/assign-slides.ts --ep epXXX
 node_modules/.bin/remotion still src/index.ts SlidesVideo output/check_fXXX.png --props input/script-input.json --frame XXX
 # SV-10. メイン動画レンダリング
 node_modules/.bin/remotion render src/index.ts SlidesVideo output/epXXX.mp4 --props input/script-input.json --timeout 60000
-# SV-10.5. Shorts レンダリング（ダイジェスト型・CTA3秒付き・ep023〜デフォルト）
+# SV-10.5. Shorts レンダリング（ダイジェスト型・CTA3秒付きニep023〜デフォルト）
 node_modules/.bin/remotion render src/index.ts ShortsVideo output/epXXX_shorts.mp4 --props input/script-input.json --timeout 60000
 # 7. YouTube公開（メイン + Shorts）tsconfig-paths 必須
 node_modules/.bin/ts-node -r tsconfig-paths/register --transpile-only scripts/upload-youtube.ts output/epXXX.mp4 --input input/epXXX.yaml --thumbnail "output/thumbnail.jpeg"
@@ -118,7 +118,12 @@ packages/tech-geopolitics-channel/
 「設定済み」「自動化済み」「動作している」と主張するとき、確認したファイルパスと行番号を必ず提示する。記憶から断言しない。
 
 ## Session End Protocol
-ep完成・主要機能実装完了後、毎回自動で learnings を `tasks/lessons.md` + daily log に記録する（指示不要）。
+毎回の長文振り返りは禁止。決定的スナップショットは hook（SessionEnd / SessionStart / PreCompact）が `.claude/logs/` に書く。
+
+- 新しい耐久知があるときだけ `/session-end`（`.claude/commands/session-end.md`）
+- 原則: `.claude/rules/session-end.md`
+- スキル: `.claude/skills/session-wrap/SKILL.md`
+- `tasks/lessons.md` と `tasks/todo.md` をセッション開始時に全件読まない
 
 ## 並行作業
 レンダリング開始後、別 worktree で次 ep の台本・音声を並行して進めることを検討する。詳細: `.claude/rules/worktree-workflow.md`
@@ -131,17 +136,17 @@ ep完成・主要機能実装完了後、毎回自動で learnings を `tasks/le
 - `.claude/skills/remotion-still-check/SKILL.md` — Still確認フレームの選び方
 - `.claude/skills/thumbnail-generation/SKILL.md` — サムネイル高度プロンプト設計
 - `.claude/rules/single-source-of-truth.md` — 設定値は1箇所に定義する原則
-- `tasks/lessons.md` — 時系列教訓集
-- `tasks/todo.md` — 進行中タスク
+- `.claude/skills/session-wrap/SKILL.md` — セッション終了の記録可否
+- `tasks/lessons.md` — 時系列教訓集（オンデマンド）
+- `tasks/todo.md` — 進行中タスク（「進行中」のみ）
 
 ## タスク管理
-@tasks/todo.md
-@tasks/lessons.md
+進行中タスクは `tasks/todo.md` の「進行中」だけ読む。教訓は失敗が再発したとき `tasks/lessons.md` の最新見出しから読む。`@` による全件ロードはしない。
 
 ## 教訓昇格フロー
 
 ```
-lessons.md に記録（即時）
+新しい耐久知があるときだけ lessons.md に 15 行以内で記録
   ↓ 同じ問題が2回発生
 .claude/rules/{topic}.md に原則ファイルとして昇格
   ↓ 内容確認
